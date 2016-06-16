@@ -3,7 +3,7 @@ wikitaxa
 
 
 
-[![Build Status](https://travis-ci.org/ropenscilabs/wikitaxa.svg?branch=master)](https://travis-ci.org/ropenscilabs/wikitaxa)
+[![Build Status](https://api.travis-ci.org/ropenscilabs/wikitaxa.svg?branch=master)](https://travis-ci.org/ropenscilabs/wikitaxa)
 
 `wikitaxa` - taxonomy data from Wikipedia/Wikidata/Wikispecies
 
