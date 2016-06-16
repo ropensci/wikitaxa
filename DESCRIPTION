@@ -1,0 +1,22 @@
+Package: wikitaxa
+Title: Taxonomic Information from Wikipedia
+Description: Taxonomic information from Wikipedia, Wikidata, and
+    Wikispecies.
+Version: 0.0.1.9000
+License: MIT + file LICENSE
+URL: https://github.com/ropenscilabs/wikitaxa
+BugReports: https://github.com/ropenscilabs/wikitaxa/issues
+Authors@R: c(
+    person("Scott", "Chamberlain", role = c("aut", "cre"), email = "myrmecocystus@gmail.com")
+  )
+LazyData: yes
+VignetteBuilder: knitr
+Depends:
+    R(>= 3.2.1)
+Imports:
+    WikidataR,
+    data.table
+Suggests:
+    testthat,
+    knitr
+RoxygenNote: 5.0.1
