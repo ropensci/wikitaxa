@@ -23,7 +23,7 @@ build_wiki_url(wiki, type = NULL, page = NULL, api = FALSE,
 
 \item{redirects}{(boolean) If the requested page is set to a redirect, resolve it.}
 
-\item{format}{(character) See \url{https://en.wikipedia.org/w/api.php} for supported formats.}
+\item{format}{(character) See \url{https://en.wikipedia.org/w/api.php} for supported output formats.}
 
 \item{utf8}{(boolean) If \code{TRUE}, encodes most (but not all) non-ASCII characters as UTF-8 instead of replacing them with hexadecimal escape sequences.}
 

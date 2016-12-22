@@ -33,6 +33,11 @@ stuff ...
 "xxxx"
 ```
 
+## Contributors
+
+* [Ethan Welty](https://github.com/ezwelty)
+* [Scott Chamberlain](https://github.com/sckott)
+
 ## Meta
 
 * Please [report any issues or bugs](https://github.com/ropenscilabs/wikitaxa/issues).

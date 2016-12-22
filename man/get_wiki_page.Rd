@@ -7,7 +7,7 @@
 get_wiki_page(url, ...)
 }
 \arguments{
-\item{url}{() MediaWiki page url.}
+\item{url}{(character) MediaWiki page url.}
 
 \item{...}{Arguments passed to \code{\link{build_wiki_url}} if \code{url} is a static page url.}
 }
