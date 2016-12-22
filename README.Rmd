@@ -25,13 +25,37 @@ devtools::install_github("ropenscilabs/wikitaxa")
 library('wikitaxa')
 ```
 
-## Foo bar
-
-stuff ...
+## wiki data
 
 ```{r}
-"xxxx"
+res <- wiki_data("Poa annua")
+res$descriptions
 ```
+
+## wikipedia
+
+```{r}
+pg <- get_wiki_page("https://en.wikipedia.org/wiki/Malus_domestica")
+res <- parse_wiki_page(pg)
+res$iwlinks
+```
+
+## wikicommons
+
+```{r}
+pg <- get_wiki_page("https://commons.wikimedia.org/wiki/Abelmoschus")
+res <- parse_wikicommons_page(pg)
+res$common_names[1:3]
+```
+
+## wikispecies
+
+```{r}
+pg <- get_wiki_page("https://species.wikimedia.org/wiki/Malus_domestica")
+res <- parse_wikispecies_page(pg)
+res$common_names[1:3]
+```
+
 
 ## Contributors
 
