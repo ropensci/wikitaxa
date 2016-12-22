@@ -230,7 +230,7 @@ parse_wikispecies_page <- function(page, types = c("langlinks", "iwlinks", "exte
     # <b>language:</b>&nbsp;[name|<a>name</a>]
     # Name formats:
     # name1, name2
-    vernacular_html <- xml2::xml_find_all(xml, xpath = "(//h2/span[@id='Vernacular_names']/parent::*/following-sibling::div)[1]")
+    vernacular_html <- xml2::xml_find_all(xml, xpath = "(//h2/span[@id='Vernacular_names']/parent::*/following-sibling::div)[1]/p")
     languages_html <- xml2::xml_find_all(vernacular_html, xpath = "b")
     languages <- gsub("\\s*:\\s*", "", sapply(languages_html, xml2::xml_text))
     names_html <- xml2::xml_find_all(vernacular_html, xpath = "b[not(following-sibling::*[1][self::a])]/following-sibling::text()[1] | b/following-sibling::*[1][self::a]/text()")
