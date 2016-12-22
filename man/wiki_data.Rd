@@ -3,7 +3,7 @@
 \name{wiki_data}
 \alias{get_wiki_id}
 \alias{wiki_data}
-\title{Wikipedia taxonomy data}
+\title{Wikidata taxonomy data}
 \usage{
 wiki_data(x, property = NULL, ...)
 
@@ -21,7 +21,7 @@ get_wiki_id(x, language = "en", limit = 10, ...)
 \item{limit}{(integer) records to return. Default: 10}
 }
 \description{
-Wikipedia taxonomy data
+Wikidata taxonomy data
 }
 \examples{
 \dontrun{

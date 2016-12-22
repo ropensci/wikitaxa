@@ -2,5 +2,12 @@
 
 S3method(wiki_data,default)
 S3method(wiki_data,wiki_id)
+export(build_wiki_url)
 export(get_wiki_id)
+export(get_wiki_page)
+export(parse_wiki_page)
+export(parse_wiki_url)
+export(parse_wikicommons_page)
+export(parse_wikipedia_page)
+export(parse_wikispecies_page)
 export(wiki_data)

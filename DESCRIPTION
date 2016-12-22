@@ -15,7 +15,12 @@ Depends:
     R(>= 3.2.1)
 Imports:
     WikidataR,
-    data.table
+    data.table,
+    stringr,
+    curl,
+    httr,
+    jsonlite,
+    xml2
 Suggests:
     testthat,
     knitr,

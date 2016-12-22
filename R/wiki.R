@@ -1,4 +1,6 @@
-#' Wikipedia taxonomy data
+# Wikidata ----------------
+
+#' Wikidata taxonomy data
 #'
 #' @export
 #' @param x (character) a taxonomic name
