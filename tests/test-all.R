@@ -1,3 +1,3 @@
-library("testthat")
-library("wikitaxa")
+library(testthat)
+library(wikitaxa)
 test_check("wikitaxa")
