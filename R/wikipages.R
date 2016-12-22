@@ -1,15 +1,16 @@
-# Wiki (general) ----------------
+# MediaWiki (general) ----------------
 
-#' Parse Wiki URL
+#' Parse MediaWiki Page URL
 #'
-#' Supports both wiki page urls and their equivalent API calls.
+#' Parse a MediaWiki page url into its component parts (wiki name, wiki type, and page title). Supports both static page urls and their equivalent API calls.
 #'
+#' @param url (character) MediaWiki page url.
 #' @export
-#' @family Wiki functions
+#' @family MediaWiki functions
 #' @examples
 #' parse_wiki_url("https://en.wikipedia.org/wiki/Malus_domestica")
 #' parse_wiki_url("https://en.wikipedia.org/w/api.php?page=Malus_domestica")
-parse_wiki_url <- function(url, api = FALSE) {
+parse_wiki_url <- function(url) {
   url <- curl::curl_unescape(url)
   if (grepl("/w/api.php?", url)) {
     matches <- stringr::str_match(url, "//([^\\.]+).([^\\.]+).[^/]*/w/api\\.php\\?.*page=([^&]+).*$")
@@ -23,17 +24,26 @@ parse_wiki_url <- function(url, api = FALSE) {
   ))
 }
 
-#' Build Wiki URL
+#' Build MediaWiki Page URL
 #'
-#' Supports both wiki page urls and their equivalent API calls.
+#' Builds a MediaWiki page url from its component parts (wiki name, wiki type, and page title). Supports both static page urls and their equivalent API calls.
 #'
+#' @param wiki (character | list) Either the wiki name or a list with \code{$wiki}, \code{$type}, and \code{$page} (the output of \code{\link{parse_wiki_url}}).
+#' @param type (character) Wiki type.
+#' @param page (character) Wiki page title.
+#' @param api (boolean) Whether to return an API call or a static page url (default). If \code{FALSE}, all following (API-only) arguments are ignored.
+#' @param action (character) See \url{https://en.wikipedia.org/w/api.php} for supported actions. This function currently only supports "parse".
+#' @param redirects (boolean) If the requested page is set to a redirect, resolve it.
+#' @param format (character) See \url{https://en.wikipedia.org/w/api.php} for supported output formats.
+#' @param utf8 (boolean) If \code{TRUE}, encodes most (but not all) non-ASCII characters as UTF-8 instead of replacing them with hexadecimal escape sequences.
+#' @param prop (character) Properties to retrieve, either as a character vector or pipe-delimited string. See \url{https://en.wikipedia.org/w/api.php?action=help&modules=parse} for supported properties.
 #' @export
-#' @family Wiki functions
+#' @family MediaWiki functions
 #' @examples
 #' build_wiki_url("en", "wikipedia", "Malus domestica")
-#' build_wiki_url("en", "wikipedia", "Malus domestica", api = TRUE)
 #' build_wiki_url(parse_wiki_url("https://en.wikipedia.org/wiki/Malus_domestica"))
-build_wiki_url <- function(wiki, type = NULL, page = NULL, format = "json", action = "parse", redirects = TRUE, api = FALSE) {
+#' build_wiki_url("en", "wikipedia", "Malus domestica", api = TRUE)
+build_wiki_url <- function(wiki, type = NULL, page = NULL, api = FALSE, action = "parse", redirects = TRUE, format = "json", utf8 = TRUE, prop = c("text", "langlinks", "categories", "links", "templates", "images", "externallinks", "sections", "revid", "displaytitle", "iwlinks", "properties")) {
   if (is.null(type) && is.null(page)) {
     type <- wiki$type
     page <- wiki$page
@@ -42,7 +52,11 @@ build_wiki_url <- function(wiki, type = NULL, page = NULL, format = "json", acti
   page <- gsub(" ", "_", page)
   if (api) {
     base_url <- httr::parse_url(paste0("https://", wiki, ".", type, ".org/w/api.php"))
-    query <- c(page = page, mget(c("format", "action", "redirects")))
+    if (!utf8) {
+      utf8 <- "" # To ensure it is removed
+    }
+    prop <- paste(prop, collapse = "|")
+    query <- c(page = page, mget(c("action", "redirects", "format", "utf8", "prop")))
     query <- query[sapply(query, "!=", "")]
     url <- httr::modify_url(base_url, query = query)
     return(url)
@@ -51,30 +65,34 @@ build_wiki_url <- function(wiki, type = NULL, page = NULL, format = "json", acti
   }
 }
 
-#' Get Wiki Page from API
+#' Get MediaWiki Page from API
 #'
-#' Supports both wiki page urls and their equivalent API calls.
+#' Supports both static page urls and their equivalent API calls.
 #'
+#' @param url (character) MediaWiki page url.
+#' @param ... Arguments passed to \code{\link{build_wiki_url}} if \code{url} is a static page url.
 #' @export
-#' @family Wiki functions
+#' @family MediaWiki functions
 #' @examples
 #' str(get_wiki_page("https://en.wikipedia.org/wiki/Malus_domestica"))
 get_wiki_page <- function(url, ...) {
   if (!grepl("/w/api.php?", url)) {
-    url <- build_wiki_url(parse_wiki_url(url), ..., api = TRUE)
+    url <- build_wiki_url(parse_wiki_url(url), api = TRUE, ...)
   }
   return(httr::GET(url))
 }
 
-#' Parse Wiki Page
+#' Parse MediaWiki Page
 #'
-#' Parses common properties from Wikimedia API page results.
+#' Parses common properties from the result of a MediaWiki API page call.
 #'
-#' NOTE: Currently not parsed:
-#' title, displaytitle, pageid, revid, redirects[], text[1], categories[], links[], templates[], images[], sections[], properties[]
+#' Available properties currently not parsed:
+#' title, displaytitle, pageid, revid, redirects[], text[1], categories[], links[], templates[], images[], sections[], properties[], ...
 #'
-#' @family Wiki functions
+#' @param page (\code{\link[httr]{response}}) Result of \code{\link{get_wiki_page}}.
+#' @param types (character) List of properties to parse.
 #' @export
+#' @family MediaWiki functions
 #' @examples
 #' pg <- get_wiki_page("https://en.wikipedia.org/wiki/Malus_domestica")
 #' str(parse_wiki_page(pg))
@@ -104,6 +122,10 @@ parse_wiki_page <- function(page, types = c("langlinks", "iwlinks", "externallin
 
 #' Parse Wikipedia Page
 #'
+#' Parses properties from the result of a Wikipedia API page call.
+#'
+#' @param page (\code{\link[httr]{response}}) Result of \code{\link{get_wiki_page}}.
+#' @param types (character) List of properties to parse.
 #' @family Wikipedia functions
 #' @export
 #' @examples
@@ -133,11 +155,15 @@ parse_wikipedia_page <- function(page, types = c("langlinks", "iwlinks", "extern
   return(result)
 }
 
-# Wikimedia ----------------
+# Wikicommons ----------------
 
 #' Parse Wikimedia Commons Page
 #'
-#' @family Wiki functions
+#' Parses properties from the result of a Wikimedia Commons API page call.
+#'
+#' @param page (\code{\link[httr]{response}}) Result of \code{\link{get_wiki_page}}.
+#' @param types (character) List of properties to parse.
+#' @family Wikicommons functions
 #' @export
 #' @examples
 #' pg <- get_wiki_page("https://commons.wikimedia.org/wiki/Malus_domestica")
@@ -176,9 +202,15 @@ parse_wikicommons_page = function(page, types = c("langlinks", "iwlinks", "exter
   return(result)
 }
 
-#' Parse Wikispecies Page
+# Wikispecies ----------------
+
+#' Parse Wikimedia Species Page
 #'
-#' @family Wiki functions
+#' Parses properties from the result of a Wikimedia Species API page call.
+#'
+#' @param page (\code{\link[httr]{response}}) Result of \code{\link{get_wiki_page}}.
+#' @param types (character) List of properties to parse.
+#' @family Wikispecies functions
 #' @export
 #' @examples
 #' pg <- get_wiki_page("https://species.wikimedia.org/wiki/Malus_domestica")
