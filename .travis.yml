@@ -1,10 +1,14 @@
 language: r
 sudo: false
 cache: packages
+
 r:
-- oldrel
-- release
-- devel
+  - oldrel
+  - release
+  - devel
+
+r_check_args: "--as-cran --run-dontrun"
+
 notifications:
   email:
     on_success: never
