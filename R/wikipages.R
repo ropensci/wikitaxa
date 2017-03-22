@@ -146,7 +146,7 @@ parse_wikipedia_page <- function(page, types = c("langlinks", "iwlinks", "extern
       regular_bolds = xml2::xml_find_all(xml, xpath = "/html/body/p[count(preceding::div[contains(@id, 'toc') or contains(@class, 'toc')]) = 0 and count(preceding::h1) = 0 and count(preceding::h2) = 0 and count(preceding::h3) = 0]//b[not(parent::*[self::i]) and not(i)]"),
       regular_biotabox_header = xml2::xml_find_all(xml, xpath = "(//table[contains(@class, 'infobox biota') or contains(@class, 'infobox_v2 biota')]//th)[1]/b[not(parent::*[self::i]) and not(i)]")
     )
-    regular_title <- na.omit(stringr::str_match(json$parse$displaytitle, "^([^<]*)$")[, 2]) # NOTE: Often unreliable.
+    regular_title <- stats::na.omit(stringr::str_match(json$parse$displaytitle, "^([^<]*)$")[, 2]) # NOTE: Often unreliable.
     common_names <- unique(c(unlist(sapply(names_xml, xml2::xml_text)), regular_title))
     language <- stringr::str_match(page$url, 'http[s]*://([^\\.]*)\\.')[, 2]
     result$common_names <- lapply(common_names, function(name) {list(name = name, language = language)})

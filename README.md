@@ -33,6 +33,7 @@ res$descriptions
 #> 4       bg                       вид растение
 #> 5       nl plantensoort uit de grassenfamilie
 #> 6       ar                    نوع من النباتات
+#> 7       hy                     բույսերի տեսակ
 ```
 
 ## wikipedia
@@ -103,27 +104,13 @@ pg <- get_wiki_page("https://species.wikimedia.org/wiki/Malus_domestica")
 res <- parse_wikispecies_page(pg)
 res$common_names[1:3]
 #> [[1]]
-#> [[1]]$name
-#> [1] "Ябълка"
-#> 
-#> [[1]]$language
-#> [1] "български"
-#> 
+#> NULL
 #> 
 #> [[2]]
-#> [[2]]$name
-#> [1] "Poma, pomera"
-#> 
-#> [[2]]$language
-#> [1] "català"
-#> 
+#> NULL
 #> 
 #> [[3]]
-#> [[3]]$name
-#> [1] "Apfel"
-#> 
-#> [[3]]$language
-#> [1] "Deutsch"
+#> NULL
 ```
 
 
@@ -139,4 +126,4 @@ res$common_names[1:3]
 * Get citation information for `wikitaxa` in R doing `citation(package = 'wikitaxa')`
 * Please note that this project is released with a [Contributor Code of Conduct](CONDUCT.md). By participating in this project you agree to abide by its terms.
 
-[![ropensci](http://ropensci.org/public_images/github_footer.png)](http://ropensci.org)
+[![ropensci](https://ropensci.org/public_images/github_footer.png)](https://ropensci.org)
