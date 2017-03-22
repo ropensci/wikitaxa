@@ -26,4 +26,3 @@ str(parse_wiki_page(pg))
 Other MediaWiki functions: \code{\link{build_wiki_url}},
   \code{\link{get_wiki_page}}, \code{\link{parse_wiki_url}}
 }
-

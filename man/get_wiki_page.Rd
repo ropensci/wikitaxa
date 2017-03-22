@@ -22,4 +22,3 @@ Other MediaWiki functions: \code{\link{build_wiki_url}},
   \code{\link{parse_wiki_page}},
   \code{\link{parse_wiki_url}}
 }
-

@@ -21,4 +21,3 @@ str(parse_wikicommons_page(pg))
 pg <- get_wiki_page("https://commons.wikimedia.org/wiki/Abelmoschus")
 str(parse_wikicommons_page(pg))
 }
-

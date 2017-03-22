@@ -42,4 +42,3 @@ Other MediaWiki functions: \code{\link{get_wiki_page}},
   \code{\link{parse_wiki_page}},
   \code{\link{parse_wiki_url}}
 }
-

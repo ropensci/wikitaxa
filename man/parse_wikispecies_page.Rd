@@ -21,4 +21,3 @@ str(parse_wikispecies_page(pg))
 pg <- get_wiki_page("https://species.wikimedia.org/wiki/Abelmoschus")
 str(parse_wikispecies_page(pg))
 }
-

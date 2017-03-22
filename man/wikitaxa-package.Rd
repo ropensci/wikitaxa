@@ -2,8 +2,8 @@
 % Please edit documentation in R/wikitaxa-package.R
 \docType{package}
 \name{wikitaxa-package}
-\alias{wikitaxa}
 \alias{wikitaxa-package}
+\alias{wikitaxa}
 \title{Taxonomic Information from Wikipedia}
 \description{
 Taxonomic Information from Wikipedia
@@ -12,4 +12,3 @@ Taxonomic Information from Wikipedia
 Scott Chamberlain \email{myrmecocystus@gmail.com}
 }
 \keyword{package}
-

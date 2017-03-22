@@ -21,4 +21,3 @@ str(parse_wikipedia_page(pg))
 pg <- get_wiki_page("https://en.wikipedia.org/wiki/Abelmoschus")
 str(parse_wikipedia_page(pg)) # no common names
 }
-
