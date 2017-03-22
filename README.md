@@ -3,7 +3,7 @@ wikitaxa
 
 
 
-[![Build Status](https://api.travis-ci.org/ropenscilabs/wikitaxa.svg?branch=master)](https://travis-ci.org/ropenscilabs/wikitaxa)
+[![Build Status](https://api.travis-ci.org/ropensci/wikitaxa.svg?branch=master)](https://travis-ci.org/ropensci/wikitaxa)
 
 `wikitaxa` - taxonomy data from Wikipedia/Wikidata/Wikispecies
 
@@ -12,7 +12,7 @@ wikitaxa
 
 ```r
 install.packages("devtools")
-devtools::install_github("ropenscilabs/wikitaxa")
+devtools::install_github("ropensci/wikitaxa")
 ```
 
 
@@ -45,22 +45,22 @@ res <- parse_wiki_page(pg)
 res$iwlinks
 #> [[1]]
 #> [1] "https://en.wiktionary.org/wiki/apple"
-#> 
+#>
 #> [[2]]
 #> [1] "https://commons.wikimedia.org/wiki/Special:Search/Apple"
-#> 
+#>
 #> [[3]]
 #> [1] "https://en.wikiquote.org/wiki/Apples"
-#> 
+#>
 #> [[4]]
 #> [1] "https://en.wikisource.org/wiki/1911_Encyclop%C3%A6dia_Britannica/Apple"
-#> 
+#>
 #> [[5]]
 #> [1] "https://en.wikibooks.org/wiki/Apples"
-#> 
+#>
 #> [[6]]
 #> [1] "https://species.wikimedia.org/wiki/Malus_domestica"
-#> 
+#>
 #> [[7]]
 #> [1] "https://commons.wikimedia.org/wiki/Category:Apple_cultivars"
 ```
@@ -75,23 +75,23 @@ res$common_names[1:3]
 #> [[1]]
 #> [[1]]$name
 #> [1] "okra"
-#> 
+#>
 #> [[1]]$language
 #> [1] "en"
-#> 
-#> 
+#>
+#>
 #> [[2]]
 #> [[2]]$name
 #> [1] "مسكي"
-#> 
+#>
 #> [[2]]$language
 #> [1] "ar"
-#> 
-#> 
+#>
+#>
 #> [[3]]
 #> [[3]]$name
 #> [1] "Abelmoş"
-#> 
+#>
 #> [[3]]$language
 #> [1] "az"
 ```
@@ -105,10 +105,10 @@ res <- parse_wikispecies_page(pg)
 res$common_names[1:3]
 #> [[1]]
 #> NULL
-#> 
+#>
 #> [[2]]
 #> NULL
-#> 
+#>
 #> [[3]]
 #> NULL
 ```
@@ -121,7 +121,7 @@ res$common_names[1:3]
 
 ## Meta
 
-* Please [report any issues or bugs](https://github.com/ropenscilabs/wikitaxa/issues).
+* Please [report any issues or bugs](https://github.com/ropensci/wikitaxa/issues).
 * License: MIT
 * Get citation information for `wikitaxa` in R doing `citation(package = 'wikitaxa')`
 * Please note that this project is released with a [Contributor Code of Conduct](CONDUCT.md). By participating in this project you agree to abide by its terms.

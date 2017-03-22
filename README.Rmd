@@ -10,7 +10,7 @@ knitr::opts_chunk$set(
 )
 ```
 
-[![Build Status](https://api.travis-ci.org/ropenscilabs/wikitaxa.svg?branch=master)](https://travis-ci.org/ropenscilabs/wikitaxa)
+[![Build Status](https://api.travis-ci.org/ropensci/wikitaxa.svg?branch=master)](https://travis-ci.org/ropensci/wikitaxa)
 
 `wikitaxa` - taxonomy data from Wikipedia/Wikidata/Wikispecies
 
@@ -18,7 +18,7 @@ knitr::opts_chunk$set(
 
 ```{r eval=FALSE}
 install.packages("devtools")
-devtools::install_github("ropenscilabs/wikitaxa")
+devtools::install_github("ropensci/wikitaxa")
 ```
 
 ```{r}
@@ -64,7 +64,7 @@ res$common_names[1:3]
 
 ## Meta
 
-* Please [report any issues or bugs](https://github.com/ropenscilabs/wikitaxa/issues).
+* Please [report any issues or bugs](https://github.com/ropensci/wikitaxa/issues).
 * License: MIT
 * Get citation information for `wikitaxa` in R doing `citation(package = 'wikitaxa')`
 * Please note that this project is released with a [Contributor Code of Conduct](CONDUCT.md). By participating in this project you agree to abide by its terms.
