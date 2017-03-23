@@ -100,7 +100,7 @@ wt_wikipedia_parse <- function(page, types = c("langlinks", "iwlinks",
       xml2::xml_find_all(txt, "//table[@class=\"infobox biota\"]//td")
     syn_node <-
       xml2::xml_find_first(html, "//th/a[contains(text(), \"Synonyms\")]")
-    if (length(na.omit(xml2::xml_text(syn_node))) > 0) {
+    if (length(stats::na.omit(xml2::xml_text(syn_node))) > 0) {
       syn <- strsplit(xml2::xml_text(html[length(html)]), "\n")[[1]]
       syns <- syn[nzchar(syn)]
     }

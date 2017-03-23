@@ -20,7 +20,7 @@ Parses common properties from the result of a MediaWiki API page call.
 }
 \details{
 Available properties currently not parsed:
-title, displaytitle, pageid, revid, redirects[], text\link{1}, categories[],
+title, displaytitle, pageid, revid, redirects[], text[], categories[],
 links[], templates[], images[], sections[], properties[], ...
 }
 \examples{

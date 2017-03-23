@@ -124,7 +124,7 @@ wt_wiki_page <- function(url, ...) {
 #' Parses common properties from the result of a MediaWiki API page call.
 #'
 #' Available properties currently not parsed:
-#' title, displaytitle, pageid, revid, redirects[], text[1], categories[],
+#' title, displaytitle, pageid, revid, redirects[], text[], categories[],
 #' links[], templates[], images[], sections[], properties[], ...
 #'
 #' @export

@@ -87,7 +87,7 @@ wt_wikicommons_parse <- function(page, types = c("langlinks", "iwlinks",
     ))
     labels <- gsub(
       "^\\s+|\\s$|\\(|\\)", "",
-      gsub("^:\\s+|^\\s+•\\s+", "", labels)
+      gsub("^:\\s+|^\\s+\\u2022\\s+", "", labels)
     )
     values <- xml2::xml_text(xml2::xml_find_all(html, ".//b"))[-1]
     values <- gsub("^:\\s+|^.+:\\s?", "", values)
