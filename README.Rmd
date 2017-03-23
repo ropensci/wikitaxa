@@ -10,7 +10,10 @@ knitr::opts_chunk$set(
 )
 ```
 
+[![Project Status: WIP - Initial development is in progress, but there has not yet been a stable, usable release suitable for the public.](http://www.repostatus.org/badges/latest/wip.svg)](http://www.repostatus.org/#wip)
 [![Build Status](https://api.travis-ci.org/ropensci/wikitaxa.svg?branch=master)](https://travis-ci.org/ropensci/wikitaxa)
+[![codecov](https://codecov.io/gh/ropensci/wikitaxa/branch/master/graph/badge.svg)](https://codecov.io/gh/ropensci/wikitaxa)
+[![rstudio mirror downloads](https://cranlogs.r-pkg.org/badges/wikitaxa)](https://github.com/metacran/cranlogs.app)
 
 `wikitaxa` - taxonomy data from Wikipedia/Wikidata/Wikispecies
 
@@ -86,7 +89,7 @@ lower level
 
 ```{r}
 pg <- wt_wiki_page("https://commons.wikimedia.org/wiki/Abelmoschus")
-res <- wt_wikicommons(pg)
+res <- wt_wikicommons_parse(pg)
 res$common_names[1:3]
 ```
 

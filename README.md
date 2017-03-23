@@ -3,7 +3,10 @@ wikitaxa
 
 
 
+[![Project Status: WIP - Initial development is in progress, but there has not yet been a stable, usable release suitable for the public.](http://www.repostatus.org/badges/latest/wip.svg)](http://www.repostatus.org/#wip)
 [![Build Status](https://api.travis-ci.org/ropensci/wikitaxa.svg?branch=master)](https://travis-ci.org/ropensci/wikitaxa)
+[![codecov](https://codecov.io/gh/ropensci/wikitaxa/branch/master/graph/badge.svg)](https://codecov.io/gh/ropensci/wikitaxa)
+[![rstudio mirror downloads](https://cranlogs.r-pkg.org/badges/wikitaxa)](https://github.com/metacran/cranlogs.app)
 
 `wikitaxa` - taxonomy data from Wikipedia/Wikidata/Wikispecies
 
@@ -131,12 +134,30 @@ lower level
 
 ```r
 pg <- wt_wiki_page("https://commons.wikimedia.org/wiki/Abelmoschus")
-res <- wt_wikicommons(pg)
-#> Error: lexical error: invalid char in json text.
-#>                                        <!DOCTYPE HTML PUBLIC "-//IETF/
-#>                      (right here) ------^
+res <- wt_wikicommons_parse(pg)
 res$common_names[1:3]
-#> Error in `[.data.frame`(res$common_names, 1:3): undefined columns selected
+#> [[1]]
+#> [[1]]$name
+#> [1] "okra"
+#> 
+#> [[1]]$language
+#> [1] "en"
+#> 
+#> 
+#> [[2]]
+#> [[2]]$name
+#> [1] "مسكي"
+#> 
+#> [[2]]$language
+#> [1] "ar"
+#> 
+#> 
+#> [[3]]
+#> [[3]]$name
+#> [1] "Abelmoş"
+#> 
+#> [[3]]$language
+#> [1] "az"
 ```
 
 higher level
@@ -145,22 +166,22 @@ higher level
 ```r
 res <- wt_wikicommons("Abelmoschus")
 res$classification
-#>          rank           name
-#> 1      Domain      Eukaryota
-#> 2    unranked Archaeplastida
-#> 3      Regnum        Plantae
-#> 4      Cladus    angiosperms
-#> 5      Cladus       eudicots
-#> 6      Cladus  core eudicots
-#> 7      Cladus    superrosids
-#> 8      Cladus         rosids
-#> 9      Cladus    eurosids II
-#> 10       Ordo       Malvales
-#> 11    Familia      Malvaceae
-#> 12 Subfamilia     Malvoideae
-#> 13     Tribus      Hibisceae
-#> 14               Abelmoschus
-#> 15             Medik. (1787)
+#>            rank           name
+#> 1        Domain      Eukaryota
+#> 2    • unranked Archaeplastida
+#> 3      • Regnum        Plantae
+#> 4      • Cladus    angiosperms
+#> 5      • Cladus       eudicots
+#> 6      • Cladus  core eudicots
+#> 7      • Cladus    superrosids
+#> 8      • Cladus         rosids
+#> 9      • Cladus    eurosids II
+#> 10       • Ordo       Malvales
+#> 11    • Familia      Malvaceae
+#> 12 • Subfamilia     Malvoideae
+#> 13     • Tribus      Hibisceae
+#> 14            •    Abelmoschus
+#> 15               Medik. (1787)
 res$common_names
 #>             name language
 #> 1           okra       en
