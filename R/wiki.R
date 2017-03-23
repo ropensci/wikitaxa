@@ -5,15 +5,29 @@
 #' @export
 #' @param x (character) a taxonomic name
 #' @param property (character) a property id, e.g., P486
-#' @param ... curl options passed on to \code{\link[httr]{GET}}
+#' @param ... curl options passed on to [httr::GET()]
 #' @param language (character) two letter language code
 #' @param limit (integer) records to return. Default: 10
+#' @return `wt_data` searches Wikidata, and returns a list with elements:
+#' \itemize{
+#'  \item labels
+#'  \item descriptions
+#'  \item aliases
+#'  \item sitelinks
+#'  \item claims
+#' }
+#'
+#' `wt_data_id` gets the Wikidata ID for the searched term, and
+#' returns the ID as character
 #' @examples \dontrun{
 #' wt_data("Poa annua")
 #' wt_data("Mimulus alsinoides")
 #' wt_data("Mimulus foliatus")
 #' wt_data("Mimulus foliatus", property = "P846")
 #' wt_data("Mimulus foliatus", property = c("P846", "P815"))
+#'
+#' # get a taxonomic identifier
+#' wt_data_id("Mimulus foliatus")
 #'
 #' wt_data(wt_data_id("Mimulus foliatus"))
 #' }
@@ -86,47 +100,3 @@ create_claims <- function(x) {
     )
   })
 }
-
-# alldat$labels
-# alldat$descriptions
-# alldat$aliases
-# alldat$sitelinks
-# alldat$claims
-
-# ## Wikipedia taxonomy - trying to incorporate
-# library(WikipediR)
-# library(xml2)
-# library(dplyr)
-#
-# foo("Helianthus")
-# foo(name = "Helianthus annuus")
-# foo(name = "Quercus lobata")
-# foo(name = "Poa annua")
-#
-# foo <- function(name) {
-#   bb <- WikipediR::page_content("en", domain = "species.wikimedia.org",
-#      page_name = name)
-#   html <- xml2::read_html(bb$parse$text$`*`)
-#   xx <- rvest::html_table(
-#     xml2::xml_find_first(html,
-#        '//table[@class="wikitable mw-collapsible mw-collapsed"]')
-#   )
-#   setNames(
-#     dplyr::bind_rows(
-#       lapply(strsplit(xx[[1]], "\n")[[1]], function(z) {
-#         tmp <- gsub("^\\s+|\\s+$", "", strsplit(z, ":")[[1]])
-#         dplyr::as_data_frame(t(tmp))
-#       })
-#     ), c('rank', 'name')
-#   )
-# }
-#
-#
-#
-# bb <- WikipediR::page_content("en", domain = "commons.wikimedia.org",
-#    page_name = name)
-# html <- xml2::read_html(bb$parse$text$`*`)
-# xx <- rvest::html_table(
-#   xml2::xml_find_first(html,
-#      '//table[@class="wikitable mw-collapsible mw-collapsed"]')
-# )

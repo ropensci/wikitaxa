@@ -12,8 +12,7 @@ wt_wiki_url_build(wiki, type = NULL, page = NULL, api = FALSE,
 }
 \arguments{
 \item{wiki}{(character | list) Either the wiki name or a list with
-\code{$wiki}, \code{$type}, and \code{$page} (the output of
-\code{\link{wt_wiki_url_parse}}).}
+\code{$wiki}, \code{$type}, and \code{$page} (the output of \code{\link[=wt_wiki_url_parse]{wt_wiki_url_parse()}}).}
 
 \item{type}{(character) Wiki type.}
 

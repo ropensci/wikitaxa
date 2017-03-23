@@ -43,24 +43,23 @@ wt_wiki_url_parse <- function(url) {
 #'
 #' @export
 #' @param wiki (character | list) Either the wiki name or a list with
-#' \code{$wiki}, \code{$type}, and \code{$page} (the output of
-#' \code{\link{wt_wiki_url_parse}}).
+#' `$wiki`, `$type`, and `$page` (the output of [wt_wiki_url_parse()]).
 #' @param type (character) Wiki type.
 #' @param page (character) Wiki page title.
 #' @param api (boolean) Whether to return an API call or a static page url
-#' (default). If \code{FALSE}, all following (API-only) arguments are ignored.
-#' @param action (character) See \url{https://en.wikipedia.org/w/api.php}
+#' (default). If `FALSE`, all following (API-only) arguments are ignored.
+#' @param action (character) See <https://en.wikipedia.org/w/api.php>
 #' for supported actions. This function currently only supports "parse".
 #' @param redirects (boolean) If the requested page is set to a redirect,
 #' resolve it.
-#' @param format (character) See \url{https://en.wikipedia.org/w/api.php}
+#' @param format (character) See <https://en.wikipedia.org/w/api.php>
 #' for supported output formats.
-#' @param utf8 (boolean) If \code{TRUE}, encodes most (but not all) non-ASCII
+#' @param utf8 (boolean) If `TRUE`, encodes most (but not all) non-ASCII
 #' characters as UTF-8 instead of replacing them with hexadecimal escape
 #' sequences.
 #' @param prop (character) Properties to retrieve, either as a character vector
 #' or pipe-delimited string. See
-#' \url{https://en.wikipedia.org/w/api.php?action=help&modules=parse} for
+#' <https://en.wikipedia.org/w/api.php?action=help&modules=parse> for
 #' supported properties.
 #' @family MediaWiki functions
 #' @return a URL (character)
@@ -106,7 +105,7 @@ wt_wiki_url_build <- function(wiki, type = NULL, page = NULL, api = FALSE,
 #'
 #' @export
 #' @param url (character) MediaWiki page url.
-#' @param ... Arguments passed to \code{\link{wt_wiki_url_build}} if \code{url}
+#' @param ... Arguments passed to [wt_wiki_url_build()] if `url`
 #' is a static page url.
 #' @family MediaWiki functions
 #' @return an \pkg{httr} response
@@ -128,8 +127,7 @@ wt_wiki_page <- function(url, ...) {
 #' links[], templates[], images[], sections[], properties[], ...
 #'
 #' @export
-#' @param page (\code{\link[httr]{response}}) Result of
-#' \code{\link{wt_wiki_page}}.
+#' @param page ([httr::response()]) Result of [wt_wiki_page()]
 #' @param types (character) List of properties to parse.
 #' @family MediaWiki functions
 #' @return a list

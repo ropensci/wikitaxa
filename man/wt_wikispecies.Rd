@@ -17,8 +17,8 @@ wt_wikispecies_parse(page, types = c("langlinks", "iwlinks", "externallinks",
 characters as UTF-8 instead of replacing them with hexadecimal escape
 sequences.}
 
-\item{page}{(\code{\link[httr]{response}}) Result of
-\code{\link{wt_wiki_page}}.}
+\item{page}{(\code{\link[httr:response]{httr::response()}}) Result of
+\code{\link[=wt_wiki_page]{wt_wiki_page()}}.}
 
 \item{types}{(character) List of properties to parse}
 }

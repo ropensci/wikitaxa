@@ -7,8 +7,7 @@
 wt_wiki_page_parse(page, types = c("langlinks", "iwlinks", "externallinks"))
 }
 \arguments{
-\item{page}{(\code{\link[httr]{response}}) Result of
-\code{\link{wt_wiki_page}}.}
+\item{page}{(\code{\link[httr:response]{httr::response()}}) Result of \code{\link[=wt_wiki_page]{wt_wiki_page()}}}
 
 \item{types}{(character) List of properties to parse.}
 }

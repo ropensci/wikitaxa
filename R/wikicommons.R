@@ -4,11 +4,10 @@
 #'
 #' @export
 #' @param name (character) Wiki name - as a page title
-#' @param utf8 (boolean) If \code{TRUE}, encodes most (but not all) non-ASCII
+#' @param utf8 (boolean) If `TRUE`, encodes most (but not all) non-ASCII
 #' characters as UTF-8 instead of replacing them with hexadecimal escape
 #' sequences.
-#' @param page (\code{\link[httr]{response}}) Result of
-#' \code{\link{wt_wiki_page}}.
+#' @param page ([httr::response()]) Result of [wt_wiki_page()].
 #' @param types (character) List of properties to parse
 #' @family Wikicommons functions
 #' @return `wt_wikicommons` returns a list, with slots:

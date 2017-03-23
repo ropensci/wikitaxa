@@ -9,7 +9,7 @@ wt_wiki_page(url, ...)
 \arguments{
 \item{url}{(character) MediaWiki page url.}
 
-\item{...}{Arguments passed to \code{\link{wt_wiki_url_build}} if \code{url}
+\item{...}{Arguments passed to \code{\link[=wt_wiki_url_build]{wt_wiki_url_build()}} if \code{url}
 is a static page url.}
 }
 \value{

@@ -14,11 +14,24 @@ wt_data_id(x, language = "en", limit = 10, ...)
 
 \item{property}{(character) a property id, e.g., P486}
 
-\item{...}{curl options passed on to \code{\link[httr]{GET}}}
+\item{...}{curl options passed on to \code{\link[httr:GET]{httr::GET()}}}
 
 \item{language}{(character) two letter language code}
 
 \item{limit}{(integer) records to return. Default: 10}
+}
+\value{
+\code{wt_data} searches Wikidata, and returns a list with elements:
+\itemize{
+\item labels
+\item descriptions
+\item aliases
+\item sitelinks
+\item claims
+}
+
+\code{wt_data_id} gets the Wikidata ID for the searched term, and
+returns the ID as character
 }
 \description{
 Wikidata taxonomy data
@@ -30,6 +43,9 @@ wt_data("Mimulus alsinoides")
 wt_data("Mimulus foliatus")
 wt_data("Mimulus foliatus", property = "P846")
 wt_data("Mimulus foliatus", property = c("P846", "P815"))
+
+# get a taxonomic identifier
+wt_data_id("Mimulus foliatus")
 
 wt_data(wt_data_id("Mimulus foliatus"))
 }
