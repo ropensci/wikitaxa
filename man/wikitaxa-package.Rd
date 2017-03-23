@@ -10,5 +10,7 @@ Taxonomic Information from Wikipedia
 }
 \author{
 Scott Chamberlain \email{myrmecocystus@gmail.com}
+
+Ethan Welty
 }
 \keyword{package}

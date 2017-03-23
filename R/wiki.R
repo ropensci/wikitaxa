@@ -9,34 +9,35 @@
 #' @param language (character) two letter language code
 #' @param limit (integer) records to return. Default: 10
 #' @examples \dontrun{
-#' wiki_data("Poa annua")
-#' wiki_data("Mimulus alsinoides")
-#' wiki_data("Mimulus foliatus")
-#' wiki_data("Mimulus foliatus", property = "P846")
-#' wiki_data("Mimulus foliatus", property = c("P846", "P815"))
+#' wt_data("Poa annua")
+#' wt_data("Mimulus alsinoides")
+#' wt_data("Mimulus foliatus")
+#' wt_data("Mimulus foliatus", property = "P846")
+#' wt_data("Mimulus foliatus", property = c("P846", "P815"))
 #'
-#' wiki_data(get_wiki_id("Mimulus foliatus"))
+#' wt_data(wt_data_id("Mimulus foliatus"))
 #' }
-wiki_data <- function(x, property = NULL, ...) {
-  UseMethod("wiki_data")
+wt_data <- function(x, property = NULL, ...) {
+  UseMethod("wt_data")
 }
 
 #' @export
-wiki_data.wiki_id <- function(x, property = NULL, ...) {
+wt_data.wiki_id <- function(x, property = NULL, ...) {
   data_wiki(x, property = property, ...)
 }
 
 #' @export
-wiki_data.default <- function(x, property = NULL, ...) {
+wt_data.default <- function(x, property = NULL, ...) {
   x <- WikidataR::find_item(search_term = x, ...)
   if (length(x) == 0) stop("no results found", call. = FALSE)
   data_wiki(x[[1]]$id, property = property, ...)
 }
 
 #' @export
-#' @rdname wiki_data
-get_wiki_id <- function(x, language = "en", limit = 10, ...) {
-  x <- WikidataR::find_item(search_term = x, language = language, limit = limit, ...)
+#' @rdname wt_data
+wt_data_id <- function(x, language = "en", limit = 10, ...) {
+  x <- WikidataR::find_item(search_term = x, language = language,
+                            limit = limit, ...)
   x <- if (length(x) == 0) NA else x[[1]]$id
   structure(x, class = "wiki_id")
 }
@@ -56,13 +57,10 @@ data_wiki <- function(x, property = NULL, ...) {
     labels = dt_df(xx$labels),
     descriptions = dt_df(xx$descriptions),
     aliases = dt_df(xx$aliases),
-    sitelinks = dt_df(lapply(xx$sitelinks, function(x) x[names(x) %in% c('site', 'title')])),
+    sitelinks = dt_df(lapply(xx$sitelinks, function(x)
+      x[names(x) %in% c('site', 'title')])),
     claims = dt_df(claims)
   )
-}
-
-dt_df <- function(x) {
-  (ffff <- data.table::setDF(data.table::rbindlist(x, fill = TRUE, use.names = TRUE)))
 }
 
 fetch_property <- function(x) {
@@ -106,10 +104,12 @@ create_claims <- function(x) {
 # foo(name = "Poa annua")
 #
 # foo <- function(name) {
-#   bb <- WikipediR::page_content("en", domain = "species.wikimedia.org", page_name = name)
+#   bb <- WikipediR::page_content("en", domain = "species.wikimedia.org",
+#      page_name = name)
 #   html <- xml2::read_html(bb$parse$text$`*`)
 #   xx <- rvest::html_table(
-#     xml2::xml_find_first(html, '//table[@class="wikitable mw-collapsible mw-collapsed"]')
+#     xml2::xml_find_first(html,
+#        '//table[@class="wikitable mw-collapsible mw-collapsed"]')
 #   )
 #   setNames(
 #     dplyr::bind_rows(
@@ -123,8 +123,10 @@ create_claims <- function(x) {
 #
 #
 #
-# bb <- WikipediR::page_content("en", domain = "commons.wikimedia.org", page_name = name)
+# bb <- WikipediR::page_content("en", domain = "commons.wikimedia.org",
+#    page_name = name)
 # html <- xml2::read_html(bb$parse$text$`*`)
 # xx <- rvest::html_table(
-#   xml2::xml_find_first(html, '//table[@class="wikitable mw-collapsible mw-collapsed"]')
+#   xml2::xml_find_first(html,
+#      '//table[@class="wikitable mw-collapsible mw-collapsed"]')
 # )

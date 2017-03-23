@@ -14,6 +14,30 @@ knitr::opts_chunk$set(
 
 `wikitaxa` - taxonomy data from Wikipedia/Wikidata/Wikispecies
 
+
+### Low level API
+
+The low level API is meant for power users and gives you more control,
+but requires more knowledge.
+
+* `wt_wiki_page()`
+* `wt_wiki_page_parse()`
+* `wt_wiki_url_build()`
+* `wt_wiki_url_parse()`
+* `wt_wikispecies_parse()`
+* `wt_wikicommons_parse()`
+* `wt_wikipedia_parse()`
+
+### High level API
+
+The high level API is meant to be easier and faster to use.
+
+* `wt_data()`
+* `wt_data_id()`
+* `wt_wikispecies()`
+* `wt_wikicommons()`
+* `wt_wikipedia()`
+
 ## Installation
 
 ```{r eval=FALSE}
@@ -28,34 +52,69 @@ library('wikitaxa')
 ## wiki data
 
 ```{r}
-res <- wiki_data("Poa annua")
+res <- wt_data("Poa annua")
 res$descriptions
+```
+
+Get a Wikidata ID
+
+```{r}
+wt_data_id("Mimulus foliatus")
 ```
 
 ## wikipedia
 
+lower level
+
 ```{r}
-pg <- get_wiki_page("https://en.wikipedia.org/wiki/Malus_domestica")
-res <- parse_wiki_page(pg)
+pg <- wt_wiki_page("https://en.wikipedia.org/wiki/Malus_domestica")
+res <- wt_wiki_page_parse(pg)
 res$iwlinks
+```
+
+higher level
+
+```{r}
+res <- wt_wikipedia("Malus domestica")
+res$common_names
+res$classification
 ```
 
 ## wikicommons
 
+lower level
+
 ```{r}
-pg <- get_wiki_page("https://commons.wikimedia.org/wiki/Abelmoschus")
-res <- parse_wikicommons_page(pg)
+pg <- wt_wiki_page("https://commons.wikimedia.org/wiki/Abelmoschus")
+res <- wt_wikicommons(pg)
 res$common_names[1:3]
+```
+
+higher level
+
+```{r}
+res <- wt_wikicommons("Abelmoschus")
+res$classification
+res$common_names
 ```
 
 ## wikispecies
 
+lower level
+
 ```{r}
-pg <- get_wiki_page("https://species.wikimedia.org/wiki/Malus_domestica")
-res <- parse_wikispecies_page(pg)
+pg <- wt_wiki_page("https://species.wikimedia.org/wiki/Malus_domestica")
+res <- wt_wikispecies_parse(pg, types = "common_names")
 res$common_names[1:3]
 ```
 
+higher level
+
+```{r}
+res <- wt_wikispecies("Malus domestica")
+res$classification
+res$common_names
+```
 
 ## Contributors
 
