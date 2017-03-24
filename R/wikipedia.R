@@ -18,7 +18,7 @@
 #'  \item common_names - a data.frame with `name` and `language` columns
 #' }
 #'
-#' But returns an empty list on no results found
+#' But returns an empty list when no results found
 #'
 #' `wt_wikipedia_parse` returns a list
 #' @examples
@@ -30,9 +30,19 @@
 #' # low level
 #' pg <- wt_wiki_page("https://en.wikipedia.org/wiki/Malus_domestica")
 #' wt_wikipedia_parse(pg)
+#' wt_wikipedia_parse(pg, tidy = TRUE)
 #' ## no common names
 #' pg <- wt_wiki_page("https://en.wikipedia.org/wiki/Abelmoschus")
 #' wt_wikipedia_parse(pg)
+#'
+#' # search wikipedia
+#' wt_wikipedia_search(query = "Pinus")
+#' wt_wikipedia_search(query = "pine tree", limit = 3)
+#' wt_wikipedia_search(query = "pine tree", limit = 3, offset = 3)
+#'
+#' ## use search results to dig into pages
+#' res <- wt_wikipedia_search(query = "Pinus")
+#' lapply(res$query$search$title[1:3], wt_wikipedia)
 wt_wikipedia <- function(name, utf8 = TRUE) {
   prop <- c("langlinks", "externallinks", "common_names", "classification",
             "synonyms")
@@ -41,21 +51,18 @@ wt_wikipedia <- function(name, utf8 = TRUE) {
     utf8 = utf8,
     prop = prop)
   pg <- wt_wiki_page(res)
-  tmp <- wt_wikipedia_parse(pg, prop)
-  if (length(tmp$common_names)) tmp$common_names <- dt_df(tmp$common_names)
-  if (length(tmp$classification)) tmp$classification <-
-    dt_df(tmp$classification)
-  return(tmp)
+  wt_wikipedia_parse(page = pg, types = prop, tidy = TRUE)
 }
 
 #' @export
 #' @rdname wt_wikipedia
 wt_wikipedia_parse <- function(page, types = c("langlinks", "iwlinks",
                                          "externallinks", "common_names",
-                                         "classification")) {
+                                         "classification"),
+                               tidy = FALSE) {
 
-  result <- wt_wiki_page_parse(page, types = types)
-  json <- jsonlite::fromJSON(rawToChar(page$content), simplifyVector = FALSE)
+  result <- wt_wiki_page_parse(page, types = types, tidy = tidy)
+  json <- jsonlite::fromJSON(rawToChar(page$content), simplifyVector = TRUE)
   if (is.null(json$parse)) {
     return(result)
   }
@@ -77,9 +84,10 @@ wt_wikipedia_parse <- function(page, types = c("langlinks", "iwlinks",
     common_names <- unique(c(unlist(sapply(names_xml, xml2::xml_text)),
                              regular_title))
     language <- stringr::str_match(page$url, 'http[s]*://([^\\.]*)\\.')[, 2]
-    result$common_names <- lapply(common_names, function(name) {
+    cnms <- lapply(common_names, function(name) {
       list(name = name, language = language)
     })
+    result$common_names <- if (tidy) atbl(dt_df(cnms)) else cnms
   }
   ## classification
   if ("classification" %in% types) {
@@ -89,8 +97,9 @@ wt_wikipedia_parse <- function(page, types = c("langlinks", "iwlinks",
     labels <- xml2::xml_attr(html, "class")
     labels <- gsub("^\\s+|\\s$|\\(|\\)", "", labels)
     values <- gsub("^\\s+|\\s$", "", xml2::xml_text(html))
-    result$classification <- mapply(list, rank = labels, name = values,
-                                    SIMPLIFY = FALSE, USE.NAMES = FALSE)
+    clz <- mapply(list, rank = labels, name = values,
+                  SIMPLIFY = FALSE, USE.NAMES = FALSE)
+    result$classification <- if (tidy) atbl(dt_df(clz)) else clz
   }
   ## synonyms
   if ("synonyms" %in% types) {
@@ -109,3 +118,23 @@ wt_wikipedia_parse <- function(page, types = c("langlinks", "iwlinks",
 
   return(result)
 }
+
+#' @export
+#' @rdname wt_wikipedia
+wt_wikipedia_search <- function(query, limit = 10, offset = 0, utf8 = TRUE,
+                                  ...) {
+
+  args <- tc(list(
+    action = "query", list = "search", srsearch = query,
+    utf8 = if (utf8) "" else NULL, format = "json",
+    srprop = "size|wordcount|timestamp|snippet",
+    srlimit = limit, sroffset = offset
+  ))
+  res <- httr::GET(search_base("en", "wikipedia"), query = args, ...)
+  httr::stop_for_status(res)
+  txt <- httr::content(res, "text", "UTF-8")
+  tmp <- jsonlite::fromJSON(txt)
+  tmp$query$search <- atbl(tmp$query$search)
+  return(tmp)
+}
+

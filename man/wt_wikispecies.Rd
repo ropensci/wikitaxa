@@ -3,12 +3,15 @@
 \name{wt_wikispecies}
 \alias{wt_wikispecies}
 \alias{wt_wikispecies_parse}
+\alias{wt_wikispecies_search}
 \title{WikiSpecies}
 \usage{
 wt_wikispecies(name, utf8 = TRUE)
 
 wt_wikispecies_parse(page, types = c("langlinks", "iwlinks", "externallinks",
-  "common_names", "classification"))
+  "common_names", "classification"), tidy = FALSE)
+
+wt_wikispecies_search(query, limit = 10, offset = 0, utf8 = TRUE, ...)
 }
 \arguments{
 \item{name}{(character) Wiki name - as a page title}
@@ -21,6 +24,16 @@ sequences.}
 \code{\link[=wt_wiki_page]{wt_wiki_page()}}.}
 
 \item{types}{(character) List of properties to parse}
+
+\item{query}{(character) query terms}
+
+\item{limit}{(integer) number of results to return. Default: 10}
+
+\item{offset}{(integer) record to start at. Default: 0}
+
+\item{...}{curl options, passed on to \code{\link[httr:GET]{httr::GET()}}}
+
+\item{utf8}{(logical) use utf-8. Default: \code{TRUE}}
 }
 \value{
 \code{wt_wikispecies} returns a list, with slots:
@@ -43,7 +56,16 @@ wt_wikispecies(name = "Quercus")
 
 # low level
 pg <- wt_wiki_page("https://species.wikimedia.org/wiki/Malus_domestica")
-str(wt_wikispecies_parse(pg))
+wt_wikispecies_parse(pg)
 pg <- wt_wiki_page("https://species.wikimedia.org/wiki/Abelmoschus")
-str(wt_wikispecies_parse(pg))
+wt_wikispecies_parse(pg)
+
+# search wikispecies
+wt_wikispecies_search(query = "pine tree")
+wt_wikispecies_search(query = "pine tree", limit = 3)
+wt_wikispecies_search(query = "pine tree", limit = 3, offset = 3)
+
+## use search results to dig into pages
+res <- wt_wikispecies_search(query = "pine tree")
+lapply(res$query$search$title[1:3], wt_wikispecies)
 }

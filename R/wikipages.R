@@ -86,7 +86,8 @@ wt_wiki_url_build <- function(wiki, type = NULL, page = NULL, api = FALSE,
     base_url <- httr::parse_url(paste0("https://", wiki, ".", type,
                                        ".org/w/api.php"))
     if (!utf8) {
-      utf8 <- "" # To ensure it is removed
+      # To ensure it is removed
+      utf8 <- ""
     }
     prop <- paste(prop, collapse = "|")
     query <- c(page = page, mget(c("action", "redirects", "format", "utf8",
@@ -123,8 +124,8 @@ wt_wiki_page <- function(url, ...) {
 #' Parses common properties from the result of a MediaWiki API page call.
 #'
 #' Available properties currently not parsed:
-#' title, displaytitle, pageid, revid, redirects[], text[], categories[],
-#' links[], templates[], images[], sections[], properties[], ...
+#' title, displaytitle, pageid, revid, redirects, text, categories,
+#' links, templates, images, sections, properties, ...
 #'
 #' @export
 #' @param page ([httr::response()]) Result of [wt_wiki_page()]
@@ -135,19 +136,28 @@ wt_wiki_page <- function(url, ...) {
 #' pg <- wt_wiki_page("https://en.wikipedia.org/wiki/Malus_domestica")
 #' str(wt_wiki_page_parse(pg))
 wt_wiki_page_parse <- function(page, types = c("langlinks", "iwlinks",
-                                            "externallinks")) {
+                                            "externallinks"),
+                               tidy = FALSE) {
   result <- list()
-  json <- jsonlite::fromJSON(rawToChar(page$content), simplifyVector = FALSE)
+  json <- jsonlite::fromJSON(rawToChar(page$content), tidy)
   if (is.null(json$parse)) {
     return(result)
   }
   ## Links to equivalent page in other languages
   if ("langlinks" %in% types) {
-    result$langlinks <- unname(sapply(json$parse$langlinks, "[", "url"))
+    result$langlinks <- if (tidy) {
+      atbl(json$parse$langlinks)
+    } else {
+      vapply(json$parse$langlinks, "[[", "", "url")
+    }
   }
   ## Other wiki links
   if ("iwlinks" %in% types) {
-    result$iwlinks <- unname(sapply(json$parse$iwlinks, "[", "url"))
+    result$iwlinks <- if (tidy) {
+      atbl(json$parse$iwlinks$url)
+    } else {
+      vapply(json$parse$iwlinks, "[[", "", "url")
+    }
   }
   ## Links to external resources
   if ("externallinks" %in% types) {

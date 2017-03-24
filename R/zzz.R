@@ -13,3 +13,9 @@ dt_df <- function(x) {
   (ffff <- data.table::setDF(data.table::rbindlist(x, fill = TRUE,
                                                    use.names = TRUE)))
 }
+
+search_base <- function(x, y = "wikimedia") {
+  sprintf("https://%s.%s.org/w/api.php", x, y)
+}
+
+atbl <- function(x) tibble::as_tibble(x)

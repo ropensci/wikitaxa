@@ -29,6 +29,15 @@
 #' wt_wikicommons_parse(pg)
 #' pg <- wt_wiki_page("https://commons.wikimedia.org/wiki/Abelmoschus")
 #' wt_wikicommons_parse(pg)
+#'
+#' # search wikicommons
+#' wt_wikicommons_search(query = "Pinus")
+#' wt_wikicommons_search(query = "pine tree", limit = 3)
+#' wt_wikicommons_search(query = "pine tree", limit = 3, offset = 3)
+#'
+#' ## use search results to dig into pages
+#' res <- wt_wikicommons_search(query = "Pinus")
+#' lapply(res$query$search$title[1:3], wt_wikicommons)
 wt_wikicommons <- function(name, utf8 = TRUE) {
   prop <- c("langlinks", "externallinks", "common_names", "classification")
   res <- wt_wiki_url_build(
@@ -36,19 +45,17 @@ wt_wikicommons <- function(name, utf8 = TRUE) {
     utf8 = utf8,
     prop = prop)
   pg <- wt_wiki_page(res)
-  tmp <- wt_wikicommons_parse(pg, prop)
-  tmp$common_names <- dt_df(tmp$common_names)
-  tmp$classification <- dt_df(tmp$classification)
-  return(tmp)
+  wt_wikicommons_parse(pg, prop, tidy = TRUE)
 }
 
 #' @export
 #' @rdname wt_wikicommons
 wt_wikicommons_parse <- function(page, types = c("langlinks", "iwlinks",
                                           "externallinks", "common_names",
-                                          "classification")) {
+                                          "classification"),
+                                 tidy = FALSE) {
 
-  result <- wt_wiki_page_parse(page, types = types)
+  result <- wt_wiki_page_parse(page, types = types, tidy = tidy)
   json <- jsonlite::fromJSON(rawToChar(page$content), simplifyVector = FALSE)
   if (is.null(json$parse)) {
     return(result)
@@ -65,7 +72,7 @@ wt_wikicommons_parse <- function(page, types = c("langlinks", "iwlinks",
     # name1 / name2
     # name1, name2
     # name (category)
-    common_names <- lapply(vernacular_html, function(x) {
+    cnms <- lapply(vernacular_html, function(x) {
       attributes <- xml2::xml_attrs(x)
       language <- attributes[["lang"]]
       name <- trimws(gsub("[ ]*\\(.*\\)", "", xml2::xml_text(x)))
@@ -74,7 +81,7 @@ wt_wikicommons_parse <- function(page, types = c("langlinks", "iwlinks",
         language = language
       )
     })
-    result$common_names <- common_names
+    result$common_names <- if (tidy) atbl(dt_df(cnms)) else cnms
   }
   ## classification
   if ("classification" %in% types) {
@@ -90,8 +97,28 @@ wt_wikicommons_parse <- function(page, types = c("langlinks", "iwlinks",
     )
     values <- xml2::xml_text(xml2::xml_find_all(html, ".//b"))[-1]
     values <- gsub("^:\\s+|^.+:\\s?", "", values)
-    result$classification <- mapply(list, rank = labels, name = values,
-                                   SIMPLIFY = FALSE, USE.NAMES = FALSE)
+    clz <- mapply(list, rank = labels, name = values,
+                  SIMPLIFY = FALSE, USE.NAMES = FALSE)
+    result$classification <- if (tidy) atbl(dt_df(clz)) else clz
   }
   return(result)
+}
+
+#' @export
+#' @rdname wt_wikicommons
+wt_wikicommons_search <- function(query, limit = 10, offset = 0, utf8 = TRUE,
+                                  ...) {
+
+  args <- tc(list(
+    action = "query", list = "search", srsearch = query,
+    utf8 = if (utf8) "" else NULL, format = "json",
+    srprop = "size|wordcount|timestamp|snippet",
+    srlimit = limit, sroffset = offset
+  ))
+  res <- httr::GET(search_base("commons"), query = args, ...)
+  httr::stop_for_status(res)
+  txt <- httr::content(res, "text", encoding = "UTF-8")
+  tmp <- jsonlite::fromJSON(txt)
+  tmp$query$search <- atbl(tmp$query$search)
+  return(tmp)
 }

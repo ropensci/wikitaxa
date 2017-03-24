@@ -3,12 +3,15 @@
 \name{wt_wikipedia}
 \alias{wt_wikipedia}
 \alias{wt_wikipedia_parse}
+\alias{wt_wikipedia_search}
 \title{Wikipedia}
 \usage{
 wt_wikipedia(name, utf8 = TRUE)
 
 wt_wikipedia_parse(page, types = c("langlinks", "iwlinks", "externallinks",
-  "common_names", "classification"))
+  "common_names", "classification"), tidy = FALSE)
+
+wt_wikipedia_search(query, limit = 10, offset = 0, utf8 = TRUE, ...)
 }
 \arguments{
 \item{name}{(character) Wiki name - as a page title}
@@ -30,7 +33,7 @@ sequences.}
 \item common_names - a data.frame with \code{name} and \code{language} columns
 }
 
-But returns an empty list on no results found
+But returns an empty list when no results found
 
 \code{wt_wikipedia_parse} returns a list
 }
@@ -46,7 +49,17 @@ wt_wikipedia(name = "Quercus")
 # low level
 pg <- wt_wiki_page("https://en.wikipedia.org/wiki/Malus_domestica")
 wt_wikipedia_parse(pg)
+wt_wikipedia_parse(pg, tidy = TRUE)
 ## no common names
 pg <- wt_wiki_page("https://en.wikipedia.org/wiki/Abelmoschus")
 wt_wikipedia_parse(pg)
+
+# search wikipedia
+wt_wikipedia_search(query = "Pinus")
+wt_wikipedia_search(query = "pine tree", limit = 3)
+wt_wikipedia_search(query = "pine tree", limit = 3, offset = 3)
+
+## use search results to dig into pages
+res <- wt_wikipedia_search(query = "Pinus")
+lapply(res$query$search$title[1:3], wt_wikipedia)
 }

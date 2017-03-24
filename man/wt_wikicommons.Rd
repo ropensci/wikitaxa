@@ -3,12 +3,15 @@
 \name{wt_wikicommons}
 \alias{wt_wikicommons}
 \alias{wt_wikicommons_parse}
+\alias{wt_wikicommons_search}
 \title{WikiCommons}
 \usage{
 wt_wikicommons(name, utf8 = TRUE)
 
 wt_wikicommons_parse(page, types = c("langlinks", "iwlinks", "externallinks",
-  "common_names", "classification"))
+  "common_names", "classification"), tidy = FALSE)
+
+wt_wikicommons_search(query, limit = 10, offset = 0, utf8 = TRUE, ...)
 }
 \arguments{
 \item{name}{(character) Wiki name - as a page title}
@@ -45,4 +48,13 @@ pg <- wt_wiki_page("https://commons.wikimedia.org/wiki/Malus_domestica")
 wt_wikicommons_parse(pg)
 pg <- wt_wiki_page("https://commons.wikimedia.org/wiki/Abelmoschus")
 wt_wikicommons_parse(pg)
+
+# search wikicommons
+wt_wikicommons_search(query = "Pinus")
+wt_wikicommons_search(query = "pine tree", limit = 3)
+wt_wikicommons_search(query = "pine tree", limit = 3, offset = 3)
+
+## use search results to dig into pages
+res <- wt_wikicommons_search(query = "Pinus")
+lapply(res$query$search$title[1:3], wt_wikicommons)
 }

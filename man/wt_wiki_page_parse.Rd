@@ -4,7 +4,8 @@
 \alias{wt_wiki_page_parse}
 \title{Parse MediaWiki Page}
 \usage{
-wt_wiki_page_parse(page, types = c("langlinks", "iwlinks", "externallinks"))
+wt_wiki_page_parse(page, types = c("langlinks", "iwlinks", "externallinks"),
+  tidy = FALSE)
 }
 \arguments{
 \item{page}{(\code{\link[httr:response]{httr::response()}}) Result of \code{\link[=wt_wiki_page]{wt_wiki_page()}}}
@@ -19,8 +20,8 @@ Parses common properties from the result of a MediaWiki API page call.
 }
 \details{
 Available properties currently not parsed:
-title, displaytitle, pageid, revid, redirects[], text[], categories[],
-links[], templates[], images[], sections[], properties[], ...
+title, displaytitle, pageid, revid, redirects, text, categories,
+links, templates, images, sections, properties, ...
 }
 \examples{
 pg <- wt_wiki_page("https://en.wikipedia.org/wiki/Malus_domestica")
