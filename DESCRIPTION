@@ -31,4 +31,5 @@ Suggests:
     knitr,
     rmarkdown,
     covr
+Remotes: crul
 RoxygenNote: 6.0.1
