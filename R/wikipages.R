@@ -64,7 +64,7 @@ wt_wiki_url_parse <- function(url) {
 #' @family MediaWiki functions
 #' @return a URL (character)
 #' @examples
-#' wt_wiki_url_build("en", "wikipedia", "Malus domestica")
+#' wt_wiki_url_build(wiki = "en", type = "wikipedia", page = "Malus domestica")
 #' wt_wiki_url_build(
 #'   wt_wiki_url_parse("https://en.wikipedia.org/wiki/Malus_domestica"))
 #' wt_wiki_url_build("en", "wikipedia", "Malus domestica", api = TRUE)
@@ -83,17 +83,14 @@ wt_wiki_url_build <- function(wiki, type = NULL, page = NULL, api = FALSE,
   }
   page <- gsub(" ", "_", page)
   if (api) {
-    base_url <- httr::parse_url(paste0("https://", wiki, ".", type,
-                                       ".org/w/api.php"))
-    if (!utf8) {
-      # To ensure it is removed
-      utf8 <- ""
-    }
+    base_url <- paste0("https://", wiki, ".", type, ".org/w/api.php")
+    # To ensure it is removed
+    if (!utf8) utf8 <- ""
     prop <- paste(prop, collapse = "|")
     query <- c(page = page, mget(c("action", "redirects", "format", "utf8",
                                    "prop")))
-    query <- query[sapply(query, "!=", "")]
-    url <- httr::modify_url(base_url, query = query)
+    query <- query[vapply(query, "!=", logical(1), "")]
+    url <- crul::url_build(base_url, query = query)
     return(url)
   } else {
     return(paste0("https://", wiki, ".", type, ".org/wiki/", page))
@@ -109,35 +106,44 @@ wt_wiki_url_build <- function(wiki, type = NULL, page = NULL, api = FALSE,
 #' @param ... Arguments passed to [wt_wiki_url_build()] if `url`
 #' is a static page url.
 #' @family MediaWiki functions
-#' @return an \pkg{httr} response
+#' @return an `HttpResponse` response object from \pkg{crul}
+#' @details If the URL given is for a human readable html page,
+#' we convert it to equivalent API call - if URL is already an API call,
+#' we just use that.
 #' @examples
-#' str(wt_wiki_page("https://en.wikipedia.org/wiki/Malus_domestica"))
+#' wt_wiki_page("https://en.wikipedia.org/wiki/Malus_domestica")
 wt_wiki_page <- function(url, ...) {
+  stopifnot(inherits(url, "character"))
   if (!grepl("/w/api.php?", url)) {
     url <- wt_wiki_url_build(wt_wiki_url_parse(url), api = TRUE, ...)
   }
-  return(httr::GET(url))
+  cli <- crul::HttpClient$new(url = url)
+  res <- cli$get(...)
+  res$raise_for_status()
+  return(res)
 }
 
 #' Parse MediaWiki Page
 #'
 #' Parses common properties from the result of a MediaWiki API page call.
 #'
-#' Available properties currently not parsed:
-#' title, displaytitle, pageid, revid, redirects, text, categories,
-#' links, templates, images, sections, properties, ...
-#'
 #' @export
-#' @param page ([httr::response()]) Result of [wt_wiki_page()]
+#' @param page ([crul::HttpResponse]) Result of [wt_wiki_page()]
 #' @param types (character) List of properties to parse.
+#' @param tidy (logical). tidy output to data.frames when possible.
+#' Default: `FALSE`
 #' @family MediaWiki functions
 #' @return a list
+#' @details Available properties currently not parsed:
+#' title, displaytitle, pageid, revid, redirects, text, categories,
+#' links, templates, images, sections, properties, ...
 #' @examples
 #' pg <- wt_wiki_page("https://en.wikipedia.org/wiki/Malus_domestica")
-#' str(wt_wiki_page_parse(pg))
+#' wt_wiki_page_parse(pg)
 wt_wiki_page_parse <- function(page, types = c("langlinks", "iwlinks",
                                             "externallinks"),
                                tidy = FALSE) {
+  stopifnot(inherits(page, "HttpResponse"))
   result <- list()
   json <- jsonlite::fromJSON(rawToChar(page$content), tidy)
   if (is.null(json$parse)) {

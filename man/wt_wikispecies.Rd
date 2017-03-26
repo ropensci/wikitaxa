@@ -16,14 +16,16 @@ wt_wikispecies_search(query, limit = 10, offset = 0, utf8 = TRUE, ...)
 \arguments{
 \item{name}{(character) Wiki name - as a page title}
 
-\item{utf8}{(boolean) If \code{TRUE}, encodes most (but not all) non-ASCII
+\item{utf8}{(logical) If `TRUE`, encodes most (but not all) non-ASCII
 characters as UTF-8 instead of replacing them with hexadecimal escape
-sequences.}
+sequences. Default: `TRUE`}
 
-\item{page}{(\code{\link[httr:response]{httr::response()}}) Result of
-\code{\link[=wt_wiki_page]{wt_wiki_page()}}.}
+\item{page}{([httr::response()]) Result of [wt_wiki_page()]}
 
 \item{types}{(character) List of properties to parse}
+
+\item{tidy}{(logical). tidy output to data.frame's if possible.
+Default: `FALSE`}
 
 \item{query}{(character) query terms}
 
@@ -31,9 +33,7 @@ sequences.}
 
 \item{offset}{(integer) record to start at. Default: 0}
 
-\item{...}{curl options, passed on to \code{\link[httr:GET]{httr::GET()}}}
-
-\item{utf8}{(logical) use utf-8. Default: \code{TRUE}}
+\item{...}{curl options, passed on to [httr::GET()]}
 }
 \value{
 \code{wt_wikispecies} returns a list, with slots:
@@ -41,9 +41,14 @@ sequences.}
 \item langlinks - language page links
 \item externallinks - external links
 \item common_names - a data.frame with \code{name} and \code{language} columns
+\item classification - a data.frame with \code{rank} and \code{name} columns
 }
 
 \code{wt_wikispecies_parse} returns a list
+
+\code{wt_wikispecies_search} returns a list with slots for \code{continue} and
+\code{query}, where \code{query} holds the results, with \code{query$search} slot with
+the search results
 }
 \description{
 WikiSpecies
@@ -68,4 +73,7 @@ wt_wikispecies_search(query = "pine tree", limit = 3, offset = 3)
 ## use search results to dig into pages
 res <- wt_wikispecies_search(query = "pine tree")
 lapply(res$query$search$title[1:3], wt_wikispecies)
+}
+\references{
+\url{https://www.mediawiki.org/wiki/API:Search} for help on search
 }

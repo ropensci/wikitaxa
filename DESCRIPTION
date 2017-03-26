@@ -19,9 +19,9 @@ Depends:
 Imports:
     WikidataR,
     data.table,
-    httr,
     stringr,
     curl,
+    crul (>= 0.3.2.9414),
     tibble,
     jsonlite,
     xml2

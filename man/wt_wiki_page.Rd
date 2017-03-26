@@ -13,13 +13,18 @@ wt_wiki_page(url, ...)
 is a static page url.}
 }
 \value{
-an \pkg{httr} response
+an \code{HttpResponse} response object from \pkg{crul}
 }
 \description{
 Supports both static page urls and their equivalent API calls.
 }
+\details{
+If the URL given is for a human readable html page,
+we convert it to equivalent API call - if URL is already an API call,
+we just use that.
+}
 \examples{
-str(wt_wiki_page("https://en.wikipedia.org/wiki/Malus_domestica"))
+wt_wiki_page("https://en.wikipedia.org/wiki/Malus_domestica")
 }
 \seealso{
 Other MediaWiki functions: \code{\link{wt_wiki_page_parse}},

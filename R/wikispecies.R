@@ -1,29 +1,22 @@
-# Wikispecies ----------------
-
 #' WikiSpecies
 #'
 #' @export
-#' @param name (character) Wiki name - as a page title
-#' @param utf8 (boolean) If `TRUE`, encodes most (but not all) non-ASCII
-#' characters as UTF-8 instead of replacing them with hexadecimal escape
-#' sequences.
-#' @param page ([httr::response()]) Result of
-#' [wt_wiki_page()].
-#' @param types (character) List of properties to parse
-#' @param query (character) query terms
-#' @param limit (integer) number of results to return. Default: 10
-#' @param offset (integer) record to start at. Default: 0
-#' @param utf8 (logical) use utf-8. Default: `TRUE`
-#' @param ... curl options, passed on to [httr::GET()]
+#' @template args
 #' @family Wikispecies functions
 #' @return `wt_wikispecies` returns a list, with slots:
 #' \itemize{
 #'  \item langlinks - language page links
 #'  \item externallinks - external links
 #'  \item common_names - a data.frame with `name` and `language` columns
+#'  \item classification - a data.frame with `rank` and `name` columns
 #' }
 #'
 #' `wt_wikispecies_parse` returns a list
+#'
+#' `wt_wikispecies_search` returns a list with slots for `continue` and
+#' `query`, where `query` holds the results, with `query$search` slot with
+#' the search results
+#' @references <https://www.mediawiki.org/wiki/API:Search> for help on search
 #' @examples
 #' # high level
 #' wt_wikispecies(name = "Malus domestica")
@@ -45,6 +38,7 @@
 #' res <- wt_wikispecies_search(query = "pine tree")
 #' lapply(res$query$search$title[1:3], wt_wikispecies)
 wt_wikispecies <- function(name, utf8 = TRUE) {
+  assert(name, "character")
   prop <- c("langlinks", "externallinks", "common_names", "classification")
   res <- wt_wiki_url_build(
     wiki = "species", type = "wikimedia", page = name,
@@ -110,17 +104,7 @@ wt_wikispecies_parse <- function(page, types = c("langlinks", "iwlinks",
 #' @rdname wt_wikispecies
 wt_wikispecies_search <- function(query, limit = 10, offset = 0, utf8 = TRUE,
                                   ...) {
-
-  args <- tc(list(
-    action = "query", list = "search", srsearch = query,
-    utf8 = if (utf8) "" else NULL, format = "json",
-    srprop = "size|wordcount|timestamp|snippet",
-    srlimit = limit, sroffset = offset
-  ))
-  res <- httr::GET(search_base("species"), query = args, ...)
-  httr::stop_for_status(res)
-  txt <- httr::content(res, "text", "UTF-8")
-  tmp <- jsonlite::fromJSON(txt)
+  tmp <- g_et(search_base("species"), sh(query, limit, offset, utf8), ...)
   tmp$query$search <- atbl(tmp$query$search)
   return(tmp)
 }

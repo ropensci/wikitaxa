@@ -1,23 +1,22 @@
-# Wikicommons ----------------
-
 #' WikiCommons
 #'
 #' @export
-#' @param name (character) Wiki name - as a page title
-#' @param utf8 (boolean) If `TRUE`, encodes most (but not all) non-ASCII
-#' characters as UTF-8 instead of replacing them with hexadecimal escape
-#' sequences.
-#' @param page ([httr::response()]) Result of [wt_wiki_page()].
-#' @param types (character) List of properties to parse
+#' @template args
 #' @family Wikicommons functions
 #' @return `wt_wikicommons` returns a list, with slots:
 #' \itemize{
 #'  \item langlinks - language page links
 #'  \item externallinks - external links
 #'  \item common_names - a data.frame with `name` and `language` columns
+#'  \item classification - a data.frame with `rank` and `name` columns
 #' }
 #'
 #' `wt_wikicommons_parse` returns a list
+#'
+#' `wt_wikicommons_search` returns a list with slots for `continue` and
+#' `query`, where `query` holds the results, with `query$search` slot with
+#' the search results
+#' @references <https://www.mediawiki.org/wiki/API:Search> for help on search
 #' @examples
 #' # high level
 #' wt_wikicommons(name = "Malus domestica")
@@ -31,7 +30,7 @@
 #' wt_wikicommons_parse(pg)
 #'
 #' # search wikicommons
-#' wt_wikicommons_search(query = "Pinus")
+#' wt_wikicommons_search(query = "Pinus", verbose=TRUE)
 #' wt_wikicommons_search(query = "pine tree", limit = 3)
 #' wt_wikicommons_search(query = "pine tree", limit = 3, offset = 3)
 #'
@@ -39,6 +38,7 @@
 #' res <- wt_wikicommons_search(query = "Pinus")
 #' lapply(res$query$search$title[1:3], wt_wikicommons)
 wt_wikicommons <- function(name, utf8 = TRUE) {
+  assert(name, "character")
   prop <- c("langlinks", "externallinks", "common_names", "classification")
   res <- wt_wiki_url_build(
     wiki = "commons", type = "wikimedia", page = name,
@@ -108,17 +108,7 @@ wt_wikicommons_parse <- function(page, types = c("langlinks", "iwlinks",
 #' @rdname wt_wikicommons
 wt_wikicommons_search <- function(query, limit = 10, offset = 0, utf8 = TRUE,
                                   ...) {
-
-  args <- tc(list(
-    action = "query", list = "search", srsearch = query,
-    utf8 = if (utf8) "" else NULL, format = "json",
-    srprop = "size|wordcount|timestamp|snippet",
-    srlimit = limit, sroffset = offset
-  ))
-  res <- httr::GET(search_base("commons"), query = args, ...)
-  httr::stop_for_status(res)
-  txt <- httr::content(res, "text", encoding = "UTF-8")
-  tmp <- jsonlite::fromJSON(txt)
+  tmp <- g_et(search_base("commons"), sh(query, limit, offset, utf8), ...)
   tmp$query$search <- atbl(tmp$query$search)
   return(tmp)
 }

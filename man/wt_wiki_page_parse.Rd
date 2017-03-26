@@ -8,9 +8,12 @@ wt_wiki_page_parse(page, types = c("langlinks", "iwlinks", "externallinks"),
   tidy = FALSE)
 }
 \arguments{
-\item{page}{(\code{\link[httr:response]{httr::response()}}) Result of \code{\link[=wt_wiki_page]{wt_wiki_page()}}}
+\item{page}{(\link[crul:HttpResponse]{crul::HttpResponse}) Result of \code{\link[=wt_wiki_page]{wt_wiki_page()}}}
 
 \item{types}{(character) List of properties to parse.}
+
+\item{tidy}{(logical). tidy output to data.frames when possible.
+Default: \code{FALSE}}
 }
 \value{
 a list
@@ -25,7 +28,7 @@ links, templates, images, sections, properties, ...
 }
 \examples{
 pg <- wt_wiki_page("https://en.wikipedia.org/wiki/Malus_domestica")
-str(wt_wiki_page_parse(pg))
+wt_wiki_page_parse(pg)
 }
 \seealso{
 Other MediaWiki functions: \code{\link{wt_wiki_page}},

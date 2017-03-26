@@ -16,14 +16,24 @@ wt_wikipedia_search(query, limit = 10, offset = 0, utf8 = TRUE, ...)
 \arguments{
 \item{name}{(character) Wiki name - as a page title}
 
-\item{utf8}{(boolean) If \code{TRUE}, encodes most (but not all) non-ASCII
+\item{utf8}{(logical) If `TRUE`, encodes most (but not all) non-ASCII
 characters as UTF-8 instead of replacing them with hexadecimal escape
-sequences.}
+sequences. Default: `TRUE`}
 
-\item{page}{(\code{\link[httr]{response}}) Result of
-\code{\link{wt_wiki_page}}.}
+\item{page}{([httr::response()]) Result of [wt_wiki_page()]}
 
 \item{types}{(character) List of properties to parse}
+
+\item{tidy}{(logical). tidy output to data.frame's if possible.
+Default: `FALSE`}
+
+\item{query}{(character) query terms}
+
+\item{limit}{(integer) number of results to return. Default: 10}
+
+\item{offset}{(integer) record to start at. Default: 0}
+
+\item{...}{curl options, passed on to [httr::GET()]}
 }
 \value{
 \code{wt_wikipedia} returns a list, with slots:
@@ -31,11 +41,16 @@ sequences.}
 \item langlinks - language page links
 \item externallinks - external links
 \item common_names - a data.frame with \code{name} and \code{language} columns
+\item classification - a data.frame with \code{rank} and \code{name} columns
+\item synonyms - a character vector with taxonomic names
 }
 
-But returns an empty list when no results found
+\code{wt_wikipedia_parse} returns a list with same slots determined by
+the \code{types} parmeter
 
-\code{wt_wikipedia_parse} returns a list
+\code{wt_wikipedia_search} returns a list with slots for \code{continue} and
+\code{query}, where \code{query} holds the results, with \code{query$search} slot with
+the search results
 }
 \description{
 Wikipedia
@@ -59,7 +74,13 @@ wt_wikipedia_search(query = "Pinus")
 wt_wikipedia_search(query = "pine tree", limit = 3)
 wt_wikipedia_search(query = "pine tree", limit = 3, offset = 3)
 
+## curl options
+wt_wikipedia_search(query = "Pinus", verbose = TRUE)
+
 ## use search results to dig into pages
 res <- wt_wikipedia_search(query = "Pinus")
 lapply(res$query$search$title[1:3], wt_wikipedia)
+}
+\references{
+\url{https://www.mediawiki.org/wiki/API:Search} for help on search
 }

@@ -1,26 +1,24 @@
-# Wikipedia ----------------
-
 #' Wikipedia
 #'
 #' @export
-#' @param name (character) Wiki name - as a page title
-#' @param utf8 (boolean) If \code{TRUE}, encodes most (but not all) non-ASCII
-#' characters as UTF-8 instead of replacing them with hexadecimal escape
-#' sequences.
-#' @param page (\code{\link[httr]{response}}) Result of
-#' \code{\link{wt_wiki_page}}.
-#' @param types (character) List of properties to parse
+#' @template args
 #' @family Wikipedia functions
 #' @return `wt_wikipedia` returns a list, with slots:
 #' \itemize{
 #'  \item langlinks - language page links
 #'  \item externallinks - external links
 #'  \item common_names - a data.frame with `name` and `language` columns
+#'  \item classification - a data.frame with `rank` and `name` columns
+#'  \item synonyms - a character vector with taxonomic names
 #' }
 #'
-#' But returns an empty list when no results found
+#' `wt_wikipedia_parse` returns a list with same slots determined by
+#' the `types` parmeter
 #'
-#' `wt_wikipedia_parse` returns a list
+#' `wt_wikipedia_search` returns a list with slots for `continue` and
+#' `query`, where `query` holds the results, with `query$search` slot with
+#' the search results
+#' @references <https://www.mediawiki.org/wiki/API:Search> for help on search
 #' @examples
 #' # high level
 #' wt_wikipedia(name = "Malus domestica")
@@ -40,10 +38,14 @@
 #' wt_wikipedia_search(query = "pine tree", limit = 3)
 #' wt_wikipedia_search(query = "pine tree", limit = 3, offset = 3)
 #'
+#' ## curl options
+#' wt_wikipedia_search(query = "Pinus", verbose = TRUE)
+#'
 #' ## use search results to dig into pages
 #' res <- wt_wikipedia_search(query = "Pinus")
 #' lapply(res$query$search$title[1:3], wt_wikipedia)
 wt_wikipedia <- function(name, utf8 = TRUE) {
+  assert(name, "character")
   prop <- c("langlinks", "externallinks", "common_names", "classification",
             "synonyms")
   res <- wt_wiki_url_build(
@@ -123,18 +125,7 @@ wt_wikipedia_parse <- function(page, types = c("langlinks", "iwlinks",
 #' @rdname wt_wikipedia
 wt_wikipedia_search <- function(query, limit = 10, offset = 0, utf8 = TRUE,
                                   ...) {
-
-  args <- tc(list(
-    action = "query", list = "search", srsearch = query,
-    utf8 = if (utf8) "" else NULL, format = "json",
-    srprop = "size|wordcount|timestamp|snippet",
-    srlimit = limit, sroffset = offset
-  ))
-  res <- httr::GET(search_base("en", "wikipedia"), query = args, ...)
-  httr::stop_for_status(res)
-  txt <- httr::content(res, "text", "UTF-8")
-  tmp <- jsonlite::fromJSON(txt)
+  tmp <- g_et(search_base("en", "wikipedia"), sh(query, limit, offset, utf8), ...)
   tmp$query$search <- atbl(tmp$query$search)
   return(tmp)
 }
-
