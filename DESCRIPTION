@@ -21,7 +21,7 @@ Imports:
     data.table,
     stringr,
     curl,
-    crul (>= 0.3.2.9414),
+    crul (>= 0.3.4),
     tibble,
     jsonlite,
     xml2
