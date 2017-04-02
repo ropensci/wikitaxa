@@ -37,14 +37,14 @@
 #' ## use search results to dig into pages
 #' res <- wt_wikispecies_search(query = "pine tree")
 #' lapply(res$query$search$title[1:3], wt_wikispecies)
-wt_wikispecies <- function(name, utf8 = TRUE) {
+wt_wikispecies <- function(name, utf8 = TRUE, ...) {
   assert(name, "character")
   prop <- c("langlinks", "externallinks", "common_names", "classification")
   res <- wt_wiki_url_build(
     wiki = "species", type = "wikimedia", page = name,
     utf8 = utf8,
     prop = prop)
-  pg <- wt_wiki_page(res)
+  pg <- wt_wiki_page(res, ...)
   wt_wikispecies_parse(pg, prop, tidy = TRUE)
 }
 

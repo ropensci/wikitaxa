@@ -37,14 +37,14 @@
 #' ## use search results to dig into pages
 #' res <- wt_wikicommons_search(query = "Pinus")
 #' lapply(res$query$search$title[1:3], wt_wikicommons)
-wt_wikicommons <- function(name, utf8 = TRUE) {
+wt_wikicommons <- function(name, utf8 = TRUE, ...) {
   assert(name, "character")
   prop <- c("langlinks", "externallinks", "common_names", "classification")
   res <- wt_wiki_url_build(
     wiki = "commons", type = "wikimedia", page = name,
     utf8 = utf8,
     prop = prop)
-  pg <- wt_wiki_page(res)
+  pg <- wt_wiki_page(res, ...)
   wt_wikicommons_parse(pg, prop, tidy = TRUE)
 }
 

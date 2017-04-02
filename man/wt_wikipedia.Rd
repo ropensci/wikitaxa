@@ -6,7 +6,7 @@
 \alias{wt_wikipedia_search}
 \title{Wikipedia}
 \usage{
-wt_wikipedia(name, utf8 = TRUE)
+wt_wikipedia(name, utf8 = TRUE, ...)
 
 wt_wikipedia_parse(page, types = c("langlinks", "iwlinks", "externallinks",
   "common_names", "classification"), tidy = FALSE)
@@ -20,6 +20,8 @@ wt_wikipedia_search(query, limit = 10, offset = 0, utf8 = TRUE, ...)
 characters as UTF-8 instead of replacing them with hexadecimal escape
 sequences. Default: `TRUE`}
 
+\item{...}{curl options, passed on to [httr::GET()]}
+
 \item{page}{([httr::response()]) Result of [wt_wiki_page()]}
 
 \item{types}{(character) List of properties to parse}
@@ -32,8 +34,6 @@ Default: `FALSE`}
 \item{limit}{(integer) number of results to return. Default: 10}
 
 \item{offset}{(integer) record to start at. Default: 0}
-
-\item{...}{curl options, passed on to [httr::GET()]}
 }
 \value{
 \code{wt_wikipedia} returns a list, with slots:

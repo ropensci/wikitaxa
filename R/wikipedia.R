@@ -44,7 +44,7 @@
 #' ## use search results to dig into pages
 #' res <- wt_wikipedia_search(query = "Pinus")
 #' lapply(res$query$search$title[1:3], wt_wikipedia)
-wt_wikipedia <- function(name, utf8 = TRUE) {
+wt_wikipedia <- function(name, utf8 = TRUE, ...) {
   assert(name, "character")
   prop <- c("langlinks", "externallinks", "common_names", "classification",
             "synonyms")
@@ -52,7 +52,7 @@ wt_wikipedia <- function(name, utf8 = TRUE) {
     wiki = "en", type = "wikipedia", page = name,
     utf8 = utf8,
     prop = prop)
-  pg <- wt_wiki_page(res)
+  pg <- wt_wiki_page(res, ...)
   wt_wikipedia_parse(page = pg, types = prop, tidy = TRUE)
 }
 
