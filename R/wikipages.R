@@ -16,23 +16,27 @@
 #'  \item page - page name
 #' }
 #' @examples
-#' wt_wiki_url_parse("https://en.wikipedia.org/wiki/Malus_domestica")
+#' wt_wiki_url_parse(url="https://en.wikipedia.org/wiki/Malus_domestica")
 #' wt_wiki_url_parse("https://en.wikipedia.org/w/api.php?page=Malus_domestica")
 wt_wiki_url_parse <- function(url) {
   url <- curl::curl_unescape(url)
   if (grepl("/w/api.php?", url)) {
     matches <-
-      stringr::str_match(
+      match_(
         url, "//([^\\.]+).([^\\.]+).[^/]*/w/api\\.php\\?.*page=([^&]+).*$")
   } else {
-    matches <- stringr::str_match(url,
-                                  "//([^\\.]+).([^\\.]+).[^/]*/wiki/([^\\?]+)")
+    matches <- match_(url, "//([^\\.]+).([^\\.]+).[^/]*/wiki/([^\\?]+)")
   }
   return(list(
     wiki = matches[2],
     type = matches[3],
     page = matches[4]
   ))
+}
+
+match_ <- function(string, pattern) {
+  pos <- regexec(pattern, string)
+  regmatches(string, pos)[[1]]
 }
 
 #' Build MediaWiki Page URL

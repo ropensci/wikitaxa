@@ -80,12 +80,12 @@ wt_wikipedia_parse <- function(page, types = c("langlinks", "iwlinks",
           xml,
           xpath = "(//table[contains(@class, 'infobox biota') or contains(@class, 'infobox_v2 biota')]//th)[1]/b[not(parent::*[self::i]) and not(i)]")
     )
+    # NOTE: Often unreliable.
     regular_title <- stats::na.omit(
-      stringr::str_match(json$parse$displaytitle,
-                         "^([^<]*)$")[, 2]) # NOTE: Often unreliable.
+      match_(json$parse$displaytitle, "^([^<]*)$")[2])
     common_names <- unique(c(unlist(sapply(names_xml, xml2::xml_text)),
                              regular_title))
-    language <- stringr::str_match(page$url, 'http[s]*://([^\\.]*)\\.')[, 2]
+    language <- match_(page$url, 'http[s]*://([^\\.]*)\\.')[2]
     cnms <- lapply(common_names, function(name) {
       list(name = name, language = language)
     })

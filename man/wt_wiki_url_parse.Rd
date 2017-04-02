@@ -23,7 +23,7 @@ and page title). Supports both static page urls and their equivalent API
 calls.
 }
 \examples{
-wt_wiki_url_parse("https://en.wikipedia.org/wiki/Malus_domestica")
+wt_wiki_url_parse(url="https://en.wikipedia.org/wiki/Malus_domestica")
 wt_wiki_url_parse("https://en.wikipedia.org/w/api.php?page=Malus_domestica")
 }
 \seealso{
