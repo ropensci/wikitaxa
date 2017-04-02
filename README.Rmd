@@ -51,7 +51,7 @@ Search functions:
 
 CRAN version
 
-```{r}
+```{r eval=FALSE}
 install.packages("wikitaxa")
 ```
 
@@ -68,9 +68,8 @@ library('wikitaxa')
 
 ## wiki data
 
-```{r}
-res <- wt_data("Poa annua")
-res$descriptions
+```{r eval=FALSE}
+wt_data("Poa annua")
 ```
 
 Get a Wikidata ID

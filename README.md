@@ -47,8 +47,6 @@ CRAN version
 
 ```r
 install.packages("wikitaxa")
-#> Warning in install.packages :
-#>   package 'wikitaxa' is not available (for R version 3.3.3 Patched)
 ```
 
 Dev version
@@ -99,12 +97,12 @@ lower level
 pg <- wt_wiki_page("https://en.wikipedia.org/wiki/Malus_domestica")
 res <- wt_wiki_page_parse(pg)
 res$iwlinks
-#> [1] "https://en.wiktionary.org/wiki/apple"                                  
-#> [2] "https://commons.wikimedia.org/wiki/Special:Search/Apple"               
-#> [3] "https://en.wikiquote.org/wiki/Apples"                                  
+#> [1] "https://en.wiktionary.org/wiki/apple"
+#> [2] "https://commons.wikimedia.org/wiki/Special:Search/Apple"
+#> [3] "https://en.wikiquote.org/wiki/Apples"
 #> [4] "https://en.wikisource.org/wiki/1911_Encyclop%C3%A6dia_Britannica/Apple"
-#> [5] "https://en.wikibooks.org/wiki/Apples"                                  
-#> [6] "https://species.wikimedia.org/wiki/Malus_domestica"                    
+#> [5] "https://en.wikibooks.org/wiki/Apples"
+#> [6] "https://species.wikimedia.org/wiki/Malus_domestica"
 #> [7] "https://commons.wikimedia.org/wiki/Category:Apple_cultivars"
 ```
 
@@ -147,23 +145,23 @@ res$common_names[1:3]
 #> [[1]]
 #> [[1]]$name
 #> [1] "okra"
-#> 
+#>
 #> [[1]]$language
 #> [1] "en"
-#> 
-#> 
+#>
+#>
 #> [[2]]
 #> [[2]]$name
 #> [1] "مسكي"
-#> 
+#>
 #> [[2]]$language
 #> [1] "ar"
-#> 
-#> 
+#>
+#>
 #> [[3]]
 #> [[3]]$name
 #> [1] "Abelmoş"
-#> 
+#>
 #> [[3]]$language
 #> [1] "az"
 ```
@@ -228,23 +226,23 @@ res$common_names[1:3]
 #> [[1]]
 #> [[1]]$name
 #> [1] "Ябълка"
-#> 
+#>
 #> [[1]]$language
 #> [1] "български"
-#> 
-#> 
+#>
+#>
 #> [[2]]
 #> [[2]]$name
 #> [1] "Poma, pomera"
-#> 
+#>
 #> [[2]]$language
 #> [1] "català"
-#> 
-#> 
+#>
+#>
 #> [[3]]
 #> [[3]]$name
 #> [1] "Apfel"
-#> 
+#>
 #> [[3]]$language
 #> [1] "Deutsch"
 ```
