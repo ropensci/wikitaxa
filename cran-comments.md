@@ -1,12 +1,7 @@
-## Release Summary
-
-This submission fixes a number of bugs, clarifies location of
-defunct functions in a new package.
-
 ## Test environments
 
-* local OS X install, R 3.3.0
-* ubuntu 12.04 (on travis-ci), R 3.3.0
+* local OS X install, R 3.3.3 patched
+* ubuntu 12.04 (on travis-ci), R 3.3.3
 * win-builder (devel and release)
 
 ## R CMD check results
@@ -17,13 +12,17 @@ defunct functions in a new package.
 License components with restrictions and base license permitting such:
   MIT + file LICENSE
 File 'LICENSE':
-  YEAR: 2016
+  YEAR: 2017
   COPYRIGHT HOLDER: Scott Chamberlain
 
 ## Reverse dependencies
 
-* I have run R CMD check on the 16 downstream dependencies (https://github.com/ropensci/taxize/blob/master/revdep/README.md).
-There are no problems related to taxize as far as I can tell.
+This is a new package, so there are no reverse dependencies.
+
+---
+
+This is a new release. I have read and agree to the the CRAN
+policies at https://cran.r-project.org/web/packages/policies.html
 
 Thanks!
 Scott Chamberlain
