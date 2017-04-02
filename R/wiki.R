@@ -20,16 +20,16 @@
 #' `wt_data_id` gets the Wikidata ID for the searched term, and
 #' returns the ID as character
 #' @examples \dontrun{
-#' wt_data("Poa annua")
+#' # search by taxon name
 #' wt_data("Mimulus alsinoides")
-#' wt_data("Mimulus foliatus")
-#' wt_data("Mimulus foliatus", property = "P846")
+#'
+#' # choose which properties to return
 #' wt_data("Mimulus foliatus", property = c("P846", "P815"))
 #'
 #' # get a taxonomic identifier
 #' wt_data_id("Mimulus foliatus")
-#'
-#' wt_data(wt_data_id("Mimulus foliatus"))
+#' # the id can be passed directly to wt_data()
+#' # wt_data(wt_data_id("Mimulus foliatus"))
 #' }
 wt_data <- function(x, property = NULL, ...) {
   UseMethod("wt_data")

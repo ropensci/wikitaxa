@@ -34,11 +34,6 @@ wt_wiki_url_parse <- function(url) {
   ))
 }
 
-match_ <- function(string, pattern) {
-  pos <- regexec(pattern, string)
-  regmatches(string, pos)[[1]]
-}
-
 #' Build MediaWiki Page URL
 #'
 #' Builds a MediaWiki page url from its component parts (wiki name, wiki type,

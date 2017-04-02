@@ -89,7 +89,7 @@ wt_wikicommons_parse <- function(page, types = c("langlinks", "iwlinks",
     html <- xml2::xml_find_all(txt, "//div[contains(., \"APG IV\")]")
     labels <- xml2::xml_text(xml2::xml_find_all(
       html,
-      "b[not(following-sibling::*[1][self::a])]/following-sibling::text()[1] | b/following-sibling::*[1][self::a]/text()"
+      "b[not(following-sibling::*[1][self::a])]/following-sibling::text()[1] | b/following-sibling::*[1][self::a]/text()" #nolint
     ))
     labels <- gsub(
       "^\\s+|\\s$|\\(|\\)", "",

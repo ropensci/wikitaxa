@@ -74,16 +74,16 @@ wt_wikipedia_parse <- function(page, types = c("langlinks", "iwlinks",
     names_xml <- list(
       regular_bolds = xml2::xml_find_all(
         xml,
-        xpath = "/html/body/p[count(preceding::div[contains(@id, 'toc') or contains(@class, 'toc')]) = 0 and count(preceding::h1) = 0 and count(preceding::h2) = 0 and count(preceding::h3) = 0]//b[not(parent::*[self::i]) and not(i)]"),
+        xpath = "/html/body/p[count(preceding::div[contains(@id, 'toc') or contains(@class, 'toc')]) = 0 and count(preceding::h1) = 0 and count(preceding::h2) = 0 and count(preceding::h3) = 0]//b[not(parent::*[self::i]) and not(i)]"), #nolint
       regular_biotabox_header =
         xml2::xml_find_all(
           xml,
-          xpath = "(//table[contains(@class, 'infobox biota') or contains(@class, 'infobox_v2 biota')]//th)[1]/b[not(parent::*[self::i]) and not(i)]")
+          xpath = "(//table[contains(@class, 'infobox biota') or contains(@class, 'infobox_v2 biota')]//th)[1]/b[not(parent::*[self::i]) and not(i)]") #nolint
     )
     # NOTE: Often unreliable.
     regular_title <- stats::na.omit(
       match_(json$parse$displaytitle, "^([^<]*)$")[2])
-    common_names <- unique(c(unlist(sapply(names_xml, xml2::xml_text)),
+    common_names <- unique(c(unlist(lapply(names_xml, xml2::xml_text)),
                              regular_title))
     language <- match_(page$url, 'http[s]*://([^\\.]*)\\.')[2]
     cnms <- lapply(common_names, function(name) {
@@ -125,7 +125,8 @@ wt_wikipedia_parse <- function(page, types = c("langlinks", "iwlinks",
 #' @rdname wt_wikipedia
 wt_wikipedia_search <- function(query, limit = 10, offset = 0, utf8 = TRUE,
                                   ...) {
-  tmp <- g_et(search_base("en", "wikipedia"), sh(query, limit, offset, utf8), ...)
+  tmp <- g_et(search_base("en", "wikipedia"), sh(query, limit, offset, utf8),
+              ...)
   tmp$query$search <- atbl(tmp$query$search)
   return(tmp)
 }

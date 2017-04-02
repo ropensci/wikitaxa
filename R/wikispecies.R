@@ -67,17 +67,19 @@ wt_wikispecies_parse <- function(page, types = c("langlinks", "iwlinks",
     # <b>language:</b>&nbsp;[name|<a>name</a>]
     # Name formats:
     # name1, name2
-    vernacular_html <-
-      xml2::xml_find_all(
-        xml,
-        "(//h2/span[contains(@id, 'Vernacular')]/parent::*/following-sibling::div)[1]")
+    vernacular_html <- xml2::xml_find_all(
+      xml,
+      "(//h2/span[contains(@id, 'Vernacular')]/parent::*/following-sibling::div)[1]" #nolint
+    )
     languages_html <- xml2::xml_find_all(vernacular_html, xpath = "b")
-    languages <- gsub("\\s*:\\s*", "", sapply(languages_html, xml2::xml_text))
+    languages <- gsub("\\s*:\\s*", "",
+                      unlist(lapply(languages_html, xml2::xml_text)))
     names_html <-
       xml2::xml_find_all(
         vernacular_html,
-        "b[not(following-sibling::*[1][self::a])]/following-sibling::text()[1] | b/following-sibling::*[1][self::a]/text()")
-    common_names <- gsub("^\\s*", "", sapply(names_html, xml2::xml_text))
+    "b[not(following-sibling::*[1][self::a])]/following-sibling::text()[1] | b/following-sibling::*[1][self::a]/text()") #nolint
+    common_names <- gsub("^\\s*", "",
+                         unlist(lapply(names_html, xml2::xml_text)))
     cnms <-
       mapply(list, name = common_names,
              language = languages, SIMPLIFY = FALSE, USE.NAMES = FALSE)
@@ -86,7 +88,8 @@ wt_wikispecies_parse <- function(page, types = c("langlinks", "iwlinks",
   ## classification
   if ("classification" %in% types) {
     txt <- xml2::read_html(json$parse$text[[1]])
-    html <- xml2::xml_text(xml2::xml_find_first(txt, "//table[contains(@class, \"wikitable\")]//p"))
+    html <- xml2::xml_text(
+      xml2::xml_find_first(txt, "//table[contains(@class, \"wikitable\")]//p"))
     html <- strsplit(html, "\n")[[1]]
     labels <-
       vapply(html, function(z) strsplit(z, ":")[[1]][1], "", USE.NAMES = FALSE)
