@@ -1,7 +1,9 @@
 Package: wikitaxa
 Title: Taxonomic Information from 'Wikipedia'
-Description: 'Taxonomic' information from 'Wikipedia', 'Wikidata', and
-    'Wikispecies'.
+Description: 'Taxonomic' information from 'Wikipedia', 'Wikicommons',
+    'Wikispecies', and 'Wikidata'. Functions included for getting
+    taxonomic information from each of the sources just listed, as
+    well performing taxonomic search.
 Version: 0.1.0
 License: MIT + file LICENSE
 URL: https://github.com/ropensci/wikitaxa
