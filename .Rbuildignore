@@ -18,3 +18,5 @@ vignettes/cache/
 ^revdep$
 .github
 man-roxygen
+docs
+

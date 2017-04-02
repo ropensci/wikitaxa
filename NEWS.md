@@ -1,6 +1,6 @@
-wikitaxa 0.0.1.9000
-===================
+wikitaxa 0.1.0
+==============
 
 ## NEW FEATURES
 
-* in development ...
+* Released to CRAN
