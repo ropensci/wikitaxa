@@ -19,4 +19,4 @@ vignettes/cache/
 .github
 man-roxygen
 docs
-
+appveyor.yml
