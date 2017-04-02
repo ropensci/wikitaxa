@@ -1,4 +1,4 @@
-#' @param name (character) Wiki name - as a page title
+#' @param name (character) Wiki name - as a page title, must be length 1
 #' @param utf8 (logical) If `TRUE`, encodes most (but not all) non-ASCII
 #' characters as UTF-8 instead of replacing them with hexadecimal escape
 #' sequences. Default: `TRUE`

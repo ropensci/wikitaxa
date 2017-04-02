@@ -14,7 +14,7 @@ wt_wikipedia_parse(page, types = c("langlinks", "iwlinks", "externallinks",
 wt_wikipedia_search(query, limit = 10, offset = 0, utf8 = TRUE, ...)
 }
 \arguments{
-\item{name}{(character) Wiki name - as a page title}
+\item{name}{(character) Wiki name - as a page title, must be length 1}
 
 \item{utf8}{(logical) If `TRUE`, encodes most (but not all) non-ASCII
 characters as UTF-8 instead of replacing them with hexadecimal escape

@@ -75,6 +75,7 @@ wt_wiki_url_build <- function(wiki, type = NULL, page = NULL, api = FALSE,
                                     "externallinks", "sections", "revid",
                                     "displaytitle", "iwlinks", "properties")) {
 
+  assert(utf8, "logical")
   if (is.null(type) && is.null(page)) {
     type <- wiki$type
     page <- wiki$page

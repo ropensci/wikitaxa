@@ -33,6 +33,7 @@
 #' lapply(res$query$search$title[1:3], wt_wikicommons)
 wt_wikicommons <- function(name, utf8 = TRUE, ...) {
   assert(name, "character")
+  stopifnot(length(name) == 1)
   prop <- c("langlinks", "externallinks", "common_names", "classification")
   res <- wt_wiki_url_build(
     wiki = "commons", type = "wikimedia", page = name,

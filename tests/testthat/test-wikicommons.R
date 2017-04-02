@@ -31,6 +31,18 @@ test_that("wt_wikicommons fails well", {
             "argument \"name\" is missing")
   expect_error(wt_wikicommons(5),
                "name must be of class character")
+
+  # "name" must be length 1
+  expect_error(
+    wt_wikicommons(c("Pinus", "asdfadsf")),
+    "length\\(name\\) == 1 is not TRUE"
+  )
+
+  # "utf8" must be logical
+  expect_error(
+    wt_wikicommons("Pinus", "asdf"),
+    "utf8 must be of class logical"
+  )
 })
 
 context("wt_wikicommons_parse")
