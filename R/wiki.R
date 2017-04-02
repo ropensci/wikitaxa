@@ -21,7 +21,7 @@
 #' returns the ID as character
 #' @examples \dontrun{
 #' # search by taxon name
-#' wt_data("Mimulus alsinoides")
+#' # wt_data("Mimulus alsinoides")
 #'
 #' # choose which properties to return
 #' wt_data("Mimulus foliatus", property = c("P846", "P815"))

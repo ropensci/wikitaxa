@@ -56,19 +56,13 @@ WikiSpecies
 \examples{
 # high level
 wt_wikispecies(name = "Malus domestica")
-wt_wikispecies(name = "Poa annua")
-wt_wikispecies(name = "Quercus")
 
 # low level
-pg <- wt_wiki_page("https://species.wikimedia.org/wiki/Malus_domestica")
-wt_wikispecies_parse(pg)
 pg <- wt_wiki_page("https://species.wikimedia.org/wiki/Abelmoschus")
 wt_wikispecies_parse(pg)
 
 # search wikispecies
 wt_wikispecies_search(query = "pine tree")
-wt_wikispecies_search(query = "pine tree", limit = 3)
-wt_wikispecies_search(query = "pine tree", limit = 3, offset = 3)
 
 ## use search results to dig into pages
 res <- wt_wikispecies_search(query = "pine tree")

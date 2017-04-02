@@ -22,24 +22,17 @@
 #' @examples
 #' # high level
 #' wt_wikipedia(name = "Malus domestica")
-#' wt_wikipedia(name = "Poa annua")
-#' wt_wikipedia(name = "Quercus")
 #'
 #' # low level
 #' pg <- wt_wiki_page("https://en.wikipedia.org/wiki/Malus_domestica")
 #' wt_wikipedia_parse(pg)
 #' wt_wikipedia_parse(pg, tidy = TRUE)
-#' ## no common names
-#' pg <- wt_wiki_page("https://en.wikipedia.org/wiki/Abelmoschus")
-#' wt_wikipedia_parse(pg)
 #'
 #' # search wikipedia
 #' wt_wikipedia_search(query = "Pinus")
-#' wt_wikipedia_search(query = "pine tree", limit = 3)
-#' wt_wikipedia_search(query = "pine tree", limit = 3, offset = 3)
 #'
 #' ## curl options
-#' wt_wikipedia_search(query = "Pinus", verbose = TRUE)
+#' # wt_wikipedia_search(query = "Pinus", verbose = TRUE)
 #'
 #' ## use search results to dig into pages
 #' res <- wt_wikipedia_search(query = "Pinus")

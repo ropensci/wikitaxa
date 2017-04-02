@@ -27,8 +27,10 @@ title, displaytitle, pageid, revid, redirects, text, categories,
 links, templates, images, sections, properties, ...
 }
 \examples{
+\dontrun{
 pg <- wt_wiki_page("https://en.wikipedia.org/wiki/Malus_domestica")
 wt_wiki_page_parse(pg)
+}
 }
 \seealso{
 Other MediaWiki functions: \code{\link{wt_wiki_page}},

@@ -24,7 +24,9 @@ we convert it to equivalent API call - if URL is already an API call,
 we just use that.
 }
 \examples{
+\dontrun{
 wt_wiki_page("https://en.wikipedia.org/wiki/Malus_domestica")
+}
 }
 \seealso{
 Other MediaWiki functions: \code{\link{wt_wiki_page_parse}},

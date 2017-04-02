@@ -56,19 +56,13 @@ WikiCommons
 \examples{
 # high level
 wt_wikicommons(name = "Malus domestica")
-wt_wikicommons(name = "Poa annua")
-wt_wikicommons(name = "Quercus")
 
 # low level
 pg <- wt_wiki_page("https://commons.wikimedia.org/wiki/Malus_domestica")
 wt_wikicommons_parse(pg)
-pg <- wt_wiki_page("https://commons.wikimedia.org/wiki/Abelmoschus")
-wt_wikicommons_parse(pg)
 
 # search wikicommons
-wt_wikicommons_search(query = "Pinus", verbose=TRUE)
-wt_wikicommons_search(query = "pine tree", limit = 3)
-wt_wikicommons_search(query = "pine tree", limit = 3, offset = 3)
+wt_wikicommons_search(query = "Pinus")
 
 ## use search results to dig into pages
 res <- wt_wikicommons_search(query = "Pinus")

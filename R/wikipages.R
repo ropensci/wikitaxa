@@ -109,8 +109,9 @@ wt_wiki_url_build <- function(wiki, type = NULL, page = NULL, api = FALSE,
 #' @details If the URL given is for a human readable html page,
 #' we convert it to equivalent API call - if URL is already an API call,
 #' we just use that.
-#' @examples
+#' @examples \dontrun{
 #' wt_wiki_page("https://en.wikipedia.org/wiki/Malus_domestica")
+#' }
 wt_wiki_page <- function(url, ...) {
   stopifnot(inherits(url, "character"))
   if (!grepl("/w/api.php?", url)) {
@@ -136,9 +137,10 @@ wt_wiki_page <- function(url, ...) {
 #' @details Available properties currently not parsed:
 #' title, displaytitle, pageid, revid, redirects, text, categories,
 #' links, templates, images, sections, properties, ...
-#' @examples
+#' @examples \dontrun{
 #' pg <- wt_wiki_page("https://en.wikipedia.org/wiki/Malus_domestica")
 #' wt_wiki_page_parse(pg)
+#' }
 wt_wiki_page_parse <- function(page, types = c("langlinks", "iwlinks",
                                             "externallinks"),
                                tidy = FALSE) {
