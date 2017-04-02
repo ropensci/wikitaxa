@@ -34,7 +34,24 @@ The high level API is meant to be easier and faster to use.
 * `wt_wikicommons()`
 * `wt_wikipedia()`
 
+Search functions:
+
+* `wt_wikicommons_search()`
+* `wt_wikispecies_search()`
+* `wt_wikipedia_search()`
+
 ## Installation
+
+CRAN version
+
+
+```r
+install.packages("wikitaxa")
+#> Warning in install.packages :
+#>   package 'wikitaxa' is not available (for R version 3.3.3 Patched)
+```
+
+Dev version
 
 
 ```r
@@ -82,26 +99,13 @@ lower level
 pg <- wt_wiki_page("https://en.wikipedia.org/wiki/Malus_domestica")
 res <- wt_wiki_page_parse(pg)
 res$iwlinks
-#> [[1]]
-#> [1] "https://en.wiktionary.org/wiki/apple"
-#> 
-#> [[2]]
-#> [1] "https://commons.wikimedia.org/wiki/Special:Search/Apple"
-#> 
-#> [[3]]
-#> [1] "https://en.wikiquote.org/wiki/Apples"
-#> 
-#> [[4]]
-#> [1] "https://en.wikisource.org/wiki/1911_Encyclop%C3%A6dia_Britannica/Apple"
-#> 
-#> [[5]]
-#> [1] "https://en.wikibooks.org/wiki/Apples"
-#> 
-#> [[6]]
-#> [1] "https://species.wikimedia.org/wiki/Malus_domestica"
-#> 
-#> [[7]]
-#> [1] "https://commons.wikimedia.org/wiki/Category:Apple_cultivars"
+#> [1] "https://en.wiktionary.org/wiki/apple"                                  
+#> [2] "https://commons.wikimedia.org/wiki/Special:Search/Apple"               
+#> [3] "https://en.wikiquote.org/wiki/Apples"                                  
+#> [4] "https://en.wikisource.org/wiki/1911_Encyclop%C3%A6dia_Britannica/Apple"
+#> [5] "https://en.wikibooks.org/wiki/Apples"                                  
+#> [6] "https://species.wikimedia.org/wiki/Malus_domestica"                    
+#> [7] "https://commons.wikimedia.org/wiki/Category:Apple_cultivars"
 ```
 
 higher level
@@ -110,12 +114,16 @@ higher level
 ```r
 res <- wt_wikipedia("Malus domestica")
 res$common_names
+#> # A tibble: 3 × 2
 #>         name language
+#>        <chr>    <chr>
 #> 1 apple tree       en
 #> 2      apple       en
 #> 3      Apple       en
 res$classification
+#> # A tibble: 9 × 2
 #>       rank         name
+#>      <chr>        <chr>
 #> 1  kingdom      Plantae
 #> 2 unranked  Angiosperms
 #> 3 unranked     Eudicots
@@ -166,7 +174,9 @@ higher level
 ```r
 res <- wt_wikicommons("Abelmoschus")
 res$classification
+#> # A tibble: 15 × 2
 #>            rank           name
+#>           <chr>          <chr>
 #> 1        Domain      Eukaryota
 #> 2    • unranked Archaeplastida
 #> 3      • Regnum        Plantae
@@ -183,7 +193,9 @@ res$classification
 #> 14            •    Abelmoschus
 #> 15               Medik. (1787)
 res$common_names
+#> # A tibble: 18 × 2
 #>             name language
+#>            <chr>    <chr>
 #> 1           okra       en
 #> 2           مسكي       ar
 #> 3        Abelmoş       az
@@ -243,7 +255,9 @@ higher level
 ```r
 res <- wt_wikispecies("Malus domestica")
 res$classification
+#> # A tibble: 8 × 2
 #>          rank          name
+#>         <chr>         <chr>
 #> 1 Superregnum     Eukaryota
 #> 2      Regnum       Plantae
 #> 3      Cladus   Angiosperms
@@ -253,7 +267,9 @@ res$classification
 #> 7      Cladus    Eurosids I
 #> 8        Ordo       Rosales
 res$common_names
+#> # A tibble: 19 × 2
 #>               name   language
+#>              <chr>      <chr>
 #> 1           Ябълка  български
 #> 2     Poma, pomera     català
 #> 3            Apfel    Deutsch

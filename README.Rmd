@@ -41,7 +41,21 @@ The high level API is meant to be easier and faster to use.
 * `wt_wikicommons()`
 * `wt_wikipedia()`
 
+Search functions:
+
+* `wt_wikicommons_search()`
+* `wt_wikispecies_search()`
+* `wt_wikipedia_search()`
+
 ## Installation
+
+CRAN version
+
+```{r}
+install.packages("wikitaxa")
+```
+
+Dev version
 
 ```{r eval=FALSE}
 install.packages("devtools")
