@@ -1,5 +1,3 @@
-# Wikidata ----------------
-
 #' Wikidata taxonomy data
 #'
 #' @export
@@ -10,15 +8,22 @@
 #' @param limit (integer) records to return. Default: 10
 #' @return `wt_data` searches Wikidata, and returns a list with elements:
 #' \itemize{
-#'  \item labels
-#'  \item descriptions
-#'  \item aliases
-#'  \item sitelinks
-#'  \item claims
+#'  \item labels - data.frame with columns: language, value
+#'  \item descriptions - data.frame with columns: language, value
+#'  \item aliases - data.frame with columns: language, value
+#'  \item sitelinks - data.frame with columns: site, title
+#'  \item claims - data.frame with columns: claims, property_value,
+#'  property_description, value (comma separted values in string)
 #' }
 #'
 #' `wt_data_id` gets the Wikidata ID for the searched term, and
 #' returns the ID as character
+#'
+#' @details Note that `wt_data` can take a while to run since when fetching
+#' claims it has to do so one at a time for each claim
+#'
+#' You can search things other than taxonomic names with `wt_data` if you
+#' like
 #' @examples \dontrun{
 #' # search by taxon name
 #' # wt_data("Mimulus alsinoides")
@@ -88,13 +93,13 @@ fetch_property <- function(x) {
 create_claims <- function(x) {
   lapply(x, function(z) {
     c(
-      property = paste0(z$mainsnak$property, collapse = ","),
-      fetch_property(z$mainsnak$property),
+      property = paste0(unique(z$mainsnak$property), collapse = ","),
+      fetch_property(unique(z$mainsnak$property)),
       value = {
         if (inherits(z$mainsnak$datavalue$value, "data.frame")) {
-          z$mainsnak$datavalue$value$`numeric-id`
+          paste0(z$mainsnak$datavalue$value$`numeric-id`, collapse = ",")
         } else {
-          z$mainsnak$datavalue$value
+          paste0(z$mainsnak$datavalue$value, collapse = ",")
         }
       }
     )

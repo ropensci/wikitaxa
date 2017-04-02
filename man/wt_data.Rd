@@ -23,11 +23,12 @@ wt_data_id(x, language = "en", limit = 10, ...)
 \value{
 \code{wt_data} searches Wikidata, and returns a list with elements:
 \itemize{
-\item labels
-\item descriptions
-\item aliases
-\item sitelinks
-\item claims
+\item labels - data.frame with columns: language, value
+\item descriptions - data.frame with columns: language, value
+\item aliases - data.frame with columns: language, value
+\item sitelinks - data.frame with columns: site, title
+\item claims - data.frame with columns: claims, property_value,
+property_description, value (comma separted values in string)
 }
 
 \code{wt_data_id} gets the Wikidata ID for the searched term, and
@@ -35,6 +36,13 @@ returns the ID as character
 }
 \description{
 Wikidata taxonomy data
+}
+\details{
+Note that \code{wt_data} can take a while to run since when fetching
+claims it has to do so one at a time for each claim
+
+You can search things other than taxonomic names with \code{wt_data} if you
+like
 }
 \examples{
 \dontrun{
