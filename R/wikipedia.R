@@ -47,7 +47,6 @@ wt_wikipedia <- function(name, wiki = "en", utf8 = TRUE, ...) {
   assert(name, "character")
   assert(wiki, "character")
   stopifnot(length(name) == 1)
-  stopifnot(wiki %in% wikipedias$wiki)
   prop <- c("langlinks", "externallinks", "common_names", "classification",
             "synonyms")
   res <- wt_wiki_url_build(
@@ -129,7 +128,6 @@ wt_wikipedia_search <- function(query, wiki = "en", limit = 10, offset = 0,
                                 utf8 = TRUE, ...) {
 
   assert(wiki, "character")
-  stopifnot(wiki %in% wikipedias$wiki)
   tmp <- g_et(search_base(wiki, "wikipedia"), sh(query, limit, offset, utf8),
               ...)
   tmp$query$search <- atbl(tmp$query$search)

@@ -38,12 +38,6 @@ test_that("wt_wikipedia fails well", {
     "length\\(name\\) == 1 is not TRUE"
   )
 
-  # "wiki" must exist in right set
-  expect_error(
-    wt_wikipedia("Pinus", "asdf"),
-    "wikipedias\\$wiki is not TRUE"
-  )
-
   # "wiki" must be character
   expect_error(
     wt_wikipedia("Pinus", 5),
