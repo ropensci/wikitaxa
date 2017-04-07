@@ -13,7 +13,9 @@ Authors@R: c(
       email = "myrmecocystus+r@gmail.com"),
     person("Ethan", "Welty", role = "aut")
   )
+LazyLoad: yes
 LazyData: yes
+Encoding: UTF-8
 VignetteBuilder: knitr
 Roxygen: list(markdown = TRUE)
 Depends:

@@ -38,9 +38,21 @@ test_that("wt_wikipedia fails well", {
     "length\\(name\\) == 1 is not TRUE"
   )
 
-  # "utf8" must be logical
+  # "wiki" must exist in right set
   expect_error(
     wt_wikipedia("Pinus", "asdf"),
+    "wikipedias\\$wiki is not TRUE"
+  )
+
+  # "wiki" must be character
+  expect_error(
+    wt_wikipedia("Pinus", 5),
+    "wiki must be of class character"
+  )
+
+  # "utf8" must be logical
+  expect_error(
+    wt_wikipedia("Pinus", utf8 = "asdf"),
     "utf8 must be of class logical"
   )
 })
