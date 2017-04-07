@@ -103,6 +103,30 @@ res$common_names
 res$classification
 ```
 
+choose a wikipedia language
+
+```{r eval=FALSE}
+# French
+wt_wikipedia(name = "Malus domestica", wiki = "fr")
+# Slovak
+wt_wikipedia(name = "Malus domestica", wiki = "sk")
+# Vietnamese
+wt_wikipedia(name = "Malus domestica", wiki = "vi")
+```
+
+search
+
+```{r}
+wt_wikipedia_search(query = "Pinus")
+```
+
+search supports languages
+
+```{r eval=FALSE}
+wt_wikipedia_search(query = "Pinus", wiki = "fr")
+```
+
+
 ## wikicommons
 
 lower level
@@ -121,6 +145,13 @@ res$classification
 res$common_names
 ```
 
+search
+
+```{r}
+wt_wikicommons_search(query = "Pinus")
+```
+
+
 ## wikispecies
 
 lower level
@@ -137,4 +168,10 @@ higher level
 res <- wt_wikispecies("Malus domestica")
 res$classification
 res$common_names
+```
+
+search
+
+```{r}
+wt_wikispecies_search(query = "Pinus")
 ```

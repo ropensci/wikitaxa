@@ -2,6 +2,8 @@
 #'
 #' @export
 #' @template args
+#' @param wiki (character) wiki language. default: en. See [wikipedias] for
+#' language codes.
 #' @family Wikipedia functions
 #' @return `wt_wikipedia` returns a list, with slots:
 #' \itemize{
@@ -22,6 +24,8 @@
 #' @examples
 #' # high level
 #' wt_wikipedia(name = "Malus domestica")
+#' wt_wikipedia(name = "Malus domestica", wiki = "fr")
+#' wt_wikipedia(name = "Malus domestica", wiki = "da")
 #'
 #' # low level
 #' pg <- wt_wiki_page("https://en.wikipedia.org/wiki/Malus_domestica")
@@ -30,6 +34,8 @@
 #'
 #' # search wikipedia
 #' wt_wikipedia_search(query = "Pinus")
+#' wt_wikipedia_search(query = "Pinus", wiki = "fr")
+#' wt_wikipedia_search(query = "Pinus", wiki = "br")
 #'
 #' ## curl options
 #' # wt_wikipedia_search(query = "Pinus", verbose = TRUE)
@@ -37,13 +43,13 @@
 #' ## use search results to dig into pages
 #' res <- wt_wikipedia_search(query = "Pinus")
 #' lapply(res$query$search$title[1:3], wt_wikipedia)
-wt_wikipedia <- function(name, utf8 = TRUE, ...) {
+wt_wikipedia <- function(name, wiki = "en", utf8 = TRUE, ...) {
   assert(name, "character")
   stopifnot(length(name) == 1)
   prop <- c("langlinks", "externallinks", "common_names", "classification",
             "synonyms")
   res <- wt_wiki_url_build(
-    wiki = "en", type = "wikipedia", page = name,
+    wiki = wiki, type = "wikipedia", page = name,
     utf8 = utf8,
     prop = prop)
   pg <- wt_wiki_page(res, ...)
@@ -117,9 +123,10 @@ wt_wikipedia_parse <- function(page, types = c("langlinks", "iwlinks",
 
 #' @export
 #' @rdname wt_wikipedia
-wt_wikipedia_search <- function(query, limit = 10, offset = 0, utf8 = TRUE,
-                                  ...) {
-  tmp <- g_et(search_base("en", "wikipedia"), sh(query, limit, offset, utf8),
+wt_wikipedia_search <- function(query, wiki = "en", limit = 10, offset = 0,
+                                utf8 = TRUE, ...) {
+
+  tmp <- g_et(search_base(wiki, "wikipedia"), sh(query, limit, offset, utf8),
               ...)
   tmp$query$search <- atbl(tmp$query$search)
   return(tmp)

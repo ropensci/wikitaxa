@@ -6,15 +6,19 @@
 \alias{wt_wikipedia_search}
 \title{Wikipedia}
 \usage{
-wt_wikipedia(name, utf8 = TRUE, ...)
+wt_wikipedia(name, wiki = "en", utf8 = TRUE, ...)
 
 wt_wikipedia_parse(page, types = c("langlinks", "iwlinks", "externallinks",
   "common_names", "classification"), tidy = FALSE)
 
-wt_wikipedia_search(query, limit = 10, offset = 0, utf8 = TRUE, ...)
+wt_wikipedia_search(query, wiki = "en", limit = 10, offset = 0,
+  utf8 = TRUE, ...)
 }
 \arguments{
 \item{name}{(character) Wiki name - as a page title, must be length 1}
+
+\item{wiki}{(character) wiki language. default: en. See \link{wikipedias} for
+language codes.}
 
 \item{utf8}{(logical) If `TRUE`, encodes most (but not all) non-ASCII
 characters as UTF-8 instead of replacing them with hexadecimal escape
@@ -58,6 +62,8 @@ Wikipedia
 \examples{
 # high level
 wt_wikipedia(name = "Malus domestica")
+wt_wikipedia(name = "Malus domestica", wiki = "fr")
+wt_wikipedia(name = "Malus domestica", wiki = "da")
 
 # low level
 pg <- wt_wiki_page("https://en.wikipedia.org/wiki/Malus_domestica")
@@ -66,6 +72,8 @@ wt_wikipedia_parse(pg, tidy = TRUE)
 
 # search wikipedia
 wt_wikipedia_search(query = "Pinus")
+wt_wikipedia_search(query = "Pinus", wiki = "fr")
+wt_wikipedia_search(query = "Pinus", wiki = "br")
 
 ## curl options
 # wt_wikipedia_search(query = "Pinus", verbose = TRUE)

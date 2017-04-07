@@ -97,6 +97,18 @@ res$common_names
 res$classification
 ```
 
+choose a wikipedia language
+
+```{r eval=FALSE}
+# French
+wt_wikipedia(name = "Malus domestica", wiki = "fr")
+# Slovak
+wt_wikipedia(name = "Malus domestica", wiki = "sk")
+# Vietnamese
+wt_wikipedia(name = "Malus domestica", wiki = "vi")
+```
+
+
 ## wikicommons
 
 lower level
