@@ -60,6 +60,7 @@ the search results
 Wikipedia
 }
 \examples{
+\dontrun{
 # high level
 wt_wikipedia(name = "Malus domestica")
 wt_wikipedia(name = "Malus domestica", wiki = "fr")
@@ -81,6 +82,7 @@ wt_wikipedia_search(query = "Pinus", wiki = "br")
 ## use search results to dig into pages
 res <- wt_wikipedia_search(query = "Pinus")
 lapply(res$query$search$title[1:3], wt_wikipedia)
+}
 }
 \references{
 \url{https://www.mediawiki.org/wiki/API:Search} for help on search

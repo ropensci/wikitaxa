@@ -17,7 +17,7 @@
 #' `query`, where `query` holds the results, with `query$search` slot with
 #' the search results
 #' @references <https://www.mediawiki.org/wiki/API:Search> for help on search
-#' @examples
+#' @examples \dontrun{
 #' # high level
 #' wt_wikicommons(name = "Malus domestica")
 #'
@@ -31,6 +31,7 @@
 #' ## use search results to dig into pages
 #' res <- wt_wikicommons_search(query = "Pinus")
 #' lapply(res$query$search$title[1:3], wt_wikicommons)
+#' }
 wt_wikicommons <- function(name, utf8 = TRUE, ...) {
   assert(name, "character")
   stopifnot(length(name) == 1)

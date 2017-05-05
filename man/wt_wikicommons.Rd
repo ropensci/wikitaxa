@@ -54,6 +54,7 @@ the search results
 WikiCommons
 }
 \examples{
+\dontrun{
 # high level
 wt_wikicommons(name = "Malus domestica")
 
@@ -67,6 +68,7 @@ wt_wikicommons_search(query = "Pinus")
 ## use search results to dig into pages
 res <- wt_wikicommons_search(query = "Pinus")
 lapply(res$query$search$title[1:3], wt_wikicommons)
+}
 }
 \references{
 \url{https://www.mediawiki.org/wiki/API:Search} for help on search
