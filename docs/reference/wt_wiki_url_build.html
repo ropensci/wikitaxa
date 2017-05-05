@@ -25,12 +25,14 @@
 <script src="../pkgdown.js"></script>
 
 <!-- mathjax -->
-<script src='https://cdn.mathjax.org/mathjax/latest/MathJax.js?config=TeX-AMS-MML_HTMLorMML'></script>
+<script src='https://mathjax.rstudio.com/latest/MathJax.js?config=TeX-AMS-MML_HTMLorMML'></script>
 
 <!--[if lt IE 9]>
 <script src="https://oss.maxcdn.com/html5shiv/3.7.3/html5shiv.min.js"></script>
 <script src="https://oss.maxcdn.com/respond/1.4.2/respond.min.js"></script>
 <![endif]-->
+
+
   </head>
 
   <body>
@@ -86,43 +88,62 @@ and page title). Supports both static page urls and their equivalent API
 calls.</p>
     
 
-    <pre><span class='fu'>wt_wiki_url_build</span>(<span class='no'>wiki</span>, <span class='kw'>type</span> <span class='kw'>=</span> <span class='kw'>NULL</span>, <span class='kw'>page</span> <span class='kw'>=</span> <span class='kw'>NULL</span>, <span class='kw'>api</span> <span class='kw'>=</span> <span class='fl'>FALSE</span>,
+    <pre class="usage"><span class='fu'>wt_wiki_url_build</span>(<span class='no'>wiki</span>, <span class='kw'>type</span> <span class='kw'>=</span> <span class='kw'>NULL</span>, <span class='kw'>page</span> <span class='kw'>=</span> <span class='kw'>NULL</span>, <span class='kw'>api</span> <span class='kw'>=</span> <span class='fl'>FALSE</span>,
   <span class='kw'>action</span> <span class='kw'>=</span> <span class='st'>"parse"</span>, <span class='kw'>redirects</span> <span class='kw'>=</span> <span class='fl'>TRUE</span>, <span class='kw'>format</span> <span class='kw'>=</span> <span class='st'>"json"</span>, <span class='kw'>utf8</span> <span class='kw'>=</span> <span class='fl'>TRUE</span>,
   <span class='kw'>prop</span> <span class='kw'>=</span> <span class='fu'>c</span>(<span class='st'>"text"</span>, <span class='st'>"langlinks"</span>, <span class='st'>"categories"</span>, <span class='st'>"links"</span>, <span class='st'>"templates"</span>, <span class='st'>"images"</span>,
   <span class='st'>"externallinks"</span>, <span class='st'>"sections"</span>, <span class='st'>"revid"</span>, <span class='st'>"displaytitle"</span>, <span class='st'>"iwlinks"</span>,
   <span class='st'>"properties"</span>))</pre>
     
     <h2 class="hasAnchor" id="arguments"><a class="anchor" href="#arguments"></a> Arguments</h2>
-    <dl class="dl-horizontal">
-      <dt>wiki</dt>
-      <dd>(character | list) Either the wiki name or a list with
-<code>$wiki</code>, <code>$type</code>, and <code>$page</code> (the output of <code><a href='wt_wiki_url_parse.html'>wt_wiki_url_parse()</a></code>).</dd>
-      <dt>type</dt>
-      <dd>(character) Wiki type.</dd>
-      <dt>page</dt>
-      <dd>(character) Wiki page title.</dd>
-      <dt>api</dt>
-      <dd>(boolean) Whether to return an API call or a static page url
-(default). If <code>FALSE</code>, all following (API-only) arguments are ignored.</dd>
-      <dt>action</dt>
-      <dd>(character) See <a href = 'https://en.wikipedia.org/w/api.php'>https://en.wikipedia.org/w/api.php</a>
-for supported actions. This function currently only supports &quot;parse&quot;.</dd>
-      <dt>redirects</dt>
-      <dd>(boolean) If the requested page is set to a redirect,
-resolve it.</dd>
-      <dt>format</dt>
-      <dd>(character) See <a href = 'https://en.wikipedia.org/w/api.php'>https://en.wikipedia.org/w/api.php</a>
-for supported output formats.</dd>
-      <dt>utf8</dt>
-      <dd>(boolean) If <code>TRUE</code>, encodes most (but not all) non-ASCII
+    <table class="ref-arguments">
+    <colgroup><col class="name" /><col class="desc" /></colgroup>
+    <tr>
+      <th>wiki</th>
+      <td><p>(character | list) Either the wiki name or a list with
+<code>$wiki</code>, <code>$type</code>, and <code>$page</code> (the output of <code><a href='wt_wiki_url_parse.html'>wt_wiki_url_parse()</a></code>).</p></td>
+    </tr>
+    <tr>
+      <th>type</th>
+      <td><p>(character) Wiki type.</p></td>
+    </tr>
+    <tr>
+      <th>page</th>
+      <td><p>(character) Wiki page title.</p></td>
+    </tr>
+    <tr>
+      <th>api</th>
+      <td><p>(boolean) Whether to return an API call or a static page url
+(default). If <code>FALSE</code>, all following (API-only) arguments are ignored.</p></td>
+    </tr>
+    <tr>
+      <th>action</th>
+      <td><p>(character) See <a href = 'https://en.wikipedia.org/w/api.php'>https://en.wikipedia.org/w/api.php</a>
+for supported actions. This function currently only supports "parse".</p></td>
+    </tr>
+    <tr>
+      <th>redirects</th>
+      <td><p>(boolean) If the requested page is set to a redirect,
+resolve it.</p></td>
+    </tr>
+    <tr>
+      <th>format</th>
+      <td><p>(character) See <a href = 'https://en.wikipedia.org/w/api.php'>https://en.wikipedia.org/w/api.php</a>
+for supported output formats.</p></td>
+    </tr>
+    <tr>
+      <th>utf8</th>
+      <td><p>(boolean) If <code>TRUE</code>, encodes most (but not all) non-ASCII
 characters as UTF-8 instead of replacing them with hexadecimal escape
-sequences.</dd>
-      <dt>prop</dt>
-      <dd>(character) Properties to retrieve, either as a character vector
+sequences.</p></td>
+    </tr>
+    <tr>
+      <th>prop</th>
+      <td><p>(character) Properties to retrieve, either as a character vector
 or pipe-delimited string. See
 <a href = 'https://en.wikipedia.org/w/api.php?action=help&amp;modules=parse'>https://en.wikipedia.org/w/api.php?action=help&amp;modules=parse</a> for
-supported properties.</dd>
-    </dl>
+supported properties.</p></td>
+    </tr>
+    </table>
     
     <h2 class="hasAnchor" id="value"><a class="anchor" href="#value"></a>Value</h2>
 
@@ -136,8 +157,8 @@ supported properties.</dd>
     
 
     <h2 class="hasAnchor" id="examples"><a class="anchor" href="#examples"></a>Examples</h2>
-    <pre class="examples"><div class='input'><span class='fu'>wt_wiki_url_build</span>(<span class='kw'>wiki</span> <span class='kw'>=</span> <span class='st'>"en"</span>, <span class='kw'>type</span> <span class='kw'>=</span> <span class='st'>"wikipedia"</span>, <span class='kw'>page</span> <span class='kw'>=</span> <span class='st'>"Malus domestica"</span>)</div><div class='output co'>#&gt; [1] &quot;https://en.wikipedia.org/wiki/Malus_domestica&quot;</div><div class='input'><span class='fu'>wt_wiki_url_build</span>(
-  <span class='fu'><a href='wt_wiki_url_parse.html'>wt_wiki_url_parse</a></span>(<span class='st'>"https://en.wikipedia.org/wiki/Malus_domestica"</span>))</div><div class='output co'>#&gt; [1] &quot;https://en.wikipedia.org/wiki/Malus_domestica&quot;</div><div class='input'><span class='fu'>wt_wiki_url_build</span>(<span class='st'>"en"</span>, <span class='st'>"wikipedia"</span>, <span class='st'>"Malus domestica"</span>, <span class='kw'>api</span> <span class='kw'>=</span> <span class='fl'>TRUE</span>)</div><div class='output co'>#&gt; [1] &quot;https://en.wikipedia.org/w/api.php?page=Malus_domestica&amp;action=parse&amp;redirects=TRUE&amp;format=json&amp;utf8=TRUE&amp;prop=text%7clanglinks%7ccategories%7clinks%7ctemplates%7cimages%7cexternallinks%7csections%7crevid%7cdisplaytitle%7ciwlinks%7cproperties&quot;</div></pre>
+    <pre class="examples"><div class='input'><span class='fu'>wt_wiki_url_build</span>(<span class='kw'>wiki</span> <span class='kw'>=</span> <span class='st'>"en"</span>, <span class='kw'>type</span> <span class='kw'>=</span> <span class='st'>"wikipedia"</span>, <span class='kw'>page</span> <span class='kw'>=</span> <span class='st'>"Malus domestica"</span>)</div><div class='output co'>#&gt; [1] "https://en.wikipedia.org/wiki/Malus_domestica"</div><div class='input'><span class='fu'>wt_wiki_url_build</span>(
+  <span class='fu'><a href='wt_wiki_url_parse.html'>wt_wiki_url_parse</a></span>(<span class='st'>"https://en.wikipedia.org/wiki/Malus_domestica"</span>))</div><div class='output co'>#&gt; [1] "https://en.wikipedia.org/wiki/Malus_domestica"</div><div class='input'><span class='fu'>wt_wiki_url_build</span>(<span class='st'>"en"</span>, <span class='st'>"wikipedia"</span>, <span class='st'>"Malus domestica"</span>, <span class='kw'>api</span> <span class='kw'>=</span> <span class='fl'>TRUE</span>)</div><div class='output co'>#&gt; [1] "https://en.wikipedia.org/w/api.php?page=Malus_domestica&amp;action=parse&amp;redirects=TRUE&amp;format=json&amp;utf8=TRUE&amp;prop=text%7clanglinks%7ccategories%7clinks%7ctemplates%7cimages%7cexternallinks%7csections%7crevid%7cdisplaytitle%7ciwlinks%7cproperties"</div></pre>
   </div>
   <div class="col-md-3 hidden-xs hidden-sm" id="sidebar">
     <h2>Contents</h2>

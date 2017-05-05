@@ -25,12 +25,14 @@
 <script src="../pkgdown.js"></script>
 
 <!-- mathjax -->
-<script src='https://cdn.mathjax.org/mathjax/latest/MathJax.js?config=TeX-AMS-MML_HTMLorMML'></script>
+<script src='https://mathjax.rstudio.com/latest/MathJax.js?config=TeX-AMS-MML_HTMLorMML'></script>
 
 <!--[if lt IE 9]>
 <script src="https://oss.maxcdn.com/html5shiv/3.7.3/html5shiv.min.js"></script>
 <script src="https://oss.maxcdn.com/respond/1.4.2/respond.min.js"></script>
 <![endif]-->
+
+
   </head>
 
   <body>
@@ -84,64 +86,68 @@
     <p>Wikidata taxonomy data</p>
     
 
-    <pre><span class='fu'>wt_data</span>(<span class='no'>x</span>, <span class='kw'>property</span> <span class='kw'>=</span> <span class='kw'>NULL</span>, <span class='no'>...</span>)
+    <pre class="usage"><span class='fu'>wt_data</span>(<span class='no'>x</span>, <span class='kw'>property</span> <span class='kw'>=</span> <span class='kw'>NULL</span>, <span class='no'>...</span>)
 
 <span class='fu'>wt_data_id</span>(<span class='no'>x</span>, <span class='kw'>language</span> <span class='kw'>=</span> <span class='st'>"en"</span>, <span class='kw'>limit</span> <span class='kw'>=</span> <span class='fl'>10</span>, <span class='no'>...</span>)</pre>
     
     <h2 class="hasAnchor" id="arguments"><a class="anchor" href="#arguments"></a> Arguments</h2>
-    <dl class="dl-horizontal">
-      <dt>x</dt>
-      <dd>(character) a taxonomic name</dd>
-      <dt>property</dt>
-      <dd>(character) a property id, e.g., P486</dd>
-      <dt>...</dt>
-      <dd>curl options passed on to <code><a href='http://www.rdocumentation.org/packages/httr/topics/GET'>httr::GET()</a></code></dd>
-      <dt>language</dt>
-      <dd>(character) two letter language code</dd>
-      <dt>limit</dt>
-      <dd>(integer) records to return. Default: 10</dd>
-    </dl>
+    <table class="ref-arguments">
+    <colgroup><col class="name" /><col class="desc" /></colgroup>
+    <tr>
+      <th>x</th>
+      <td><p>(character) a taxonomic name</p></td>
+    </tr>
+    <tr>
+      <th>property</th>
+      <td><p>(character) a property id, e.g., P486</p></td>
+    </tr>
+    <tr>
+      <th>...</th>
+      <td><p>curl options passed on to <code><a href='http://www.rdocumentation.org/packages/httr/topics/GET'>httr::GET()</a></code></p></td>
+    </tr>
+    <tr>
+      <th>language</th>
+      <td><p>(character) two letter language code</p></td>
+    </tr>
+    <tr>
+      <th>limit</th>
+      <td><p>(integer) records to return. Default: 10</p></td>
+    </tr>
+    </table>
     
     <h2 class="hasAnchor" id="value"><a class="anchor" href="#value"></a>Value</h2>
 
-    <p><code>wt_data</code> searches Wikidata, and returns a list with elements:
-<ul>
-<li> labels - data.frame with columns: language, value
-</li>
-<li> descriptions - data.frame with columns: language, value
-</li>
-<li> aliases - data.frame with columns: language, value
-</li>
-<li> sitelinks - data.frame with columns: site, title
-</li>
-<li> claims - data.frame with columns: claims, property_value,
-property_description, value (comma separted values in string)
-</li>
-</ul></p>
-    <p><code>wt_data_id</code> gets the Wikidata ID for the searched term, and
+    <p><code>wt_data</code> searches Wikidata, and returns a list with elements:</p><ul>
+<li><p>labels - data.frame with columns: language, value</p></li>
+<li><p>descriptions - data.frame with columns: language, value</p></li>
+<li><p>aliases - data.frame with columns: language, value</p></li>
+<li><p>sitelinks - data.frame with columns: site, title</p></li>
+<li><p>claims - data.frame with columns: claims, property_value,
+property_description, value (comma separted values in string)</p></li>
+</ul><p><code>wt_data_id</code> gets the Wikidata ID for the searched term, and
 returns the ID as character</p>
     
     <h2 class="hasAnchor" id="details"><a class="anchor" href="#details"></a>Details</h2>
 
     <p>Note that <code>wt_data</code> can take a while to run since when fetching
 claims it has to do so one at a time for each claim</p>
-    <p>You can search things other than taxonomic names with <code>wt_data</code> if you
+<p>You can search things other than taxonomic names with <code>wt_data</code> if you
 like</p>
     
 
     <h2 class="hasAnchor" id="examples"><a class="anchor" href="#examples"></a>Examples</h2>
-    <pre class="examples"><div class='input'><span class='co'>## Not run: ------------------------------------</span>
-<span class='co'># # search by taxon name</span>
-<span class='co'># # wt_data("Mimulus alsinoides")</span>
-<span class='co'># </span>
-<span class='co'># # choose which properties to return</span>
-<span class='co'># wt_data("Mimulus foliatus", property = c("P846", "P815"))</span>
-<span class='co'># </span>
-<span class='co'># # get a taxonomic identifier</span>
-<span class='co'># wt_data_id("Mimulus foliatus")</span>
-<span class='co'># # the id can be passed directly to wt_data()</span>
-<span class='co'># # wt_data(wt_data_id("Mimulus foliatus"))</span>
-<span class='co'>## ---------------------------------------------</span></div></pre>
+    <pre class="examples"><div class='input'><span class='fu'>not_run</span>({
+  <span class='co'># search by taxon name</span>
+  <span class='co'># wt_data("Mimulus alsinoides")</span>
+
+  <span class='co'># choose which properties to return</span>
+  <span class='fu'>wt_data</span>(<span class='st'>"Mimulus foliatus"</span>, <span class='kw'>property</span> <span class='kw'>=</span> <span class='fu'>c</span>(<span class='st'>"P846"</span>, <span class='st'>"P815"</span>))
+
+  <span class='co'># get a taxonomic identifier</span>
+  <span class='fu'>wt_data_id</span>(<span class='st'>"Mimulus foliatus"</span>)
+  <span class='co'># the id can be passed directly to wt_data()</span>
+  <span class='co'># wt_data(wt_data_id("Mimulus foliatus"))</span>
+})</div></pre>
   </div>
   <div class="col-md-3 hidden-xs hidden-sm" id="sidebar">
     <h2>Contents</h2>

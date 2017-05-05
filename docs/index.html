@@ -9,7 +9,7 @@
 <!-- jquery --><script src="https://code.jquery.com/jquery-3.1.0.min.js" integrity="sha384-nrOSfDHtoPMzJHjVTdCopGqIqeYETSXhZDFyniQ8ZHcVy08QesyHcnOUpMpqnmWq" crossorigin="anonymous"></script><!-- Bootstrap --><link href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-BVYiiSIFeK1dGmJRAkycuHAHRg32OmUcww7on3RYdg4Va+PmSTsz/K68vbdEjh4u" crossorigin="anonymous">
 <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js" integrity="sha384-Tc5IQib027qvyjSMfHjOMaLkfuWVxZxUPnCJA7l2mCWNIpG9mGCD8wGNIcPD7Txa" crossorigin="anonymous"></script><!-- Font Awesome icons --><link href="https://maxcdn.bootstrapcdn.com/font-awesome/4.6.3/css/font-awesome.min.css" rel="stylesheet" integrity="sha384-T8Gy5hrqNKT+hzMclPo118YTQO6cYprQmhrYwIiQ/3axmI1hQomh7Ud2hPOy8SP1" crossorigin="anonymous">
 <!-- pkgdown --><link href="pkgdown.css" rel="stylesheet">
-<script src="jquery.sticky-kit.min.js"></script><script src="pkgdown.js"></script><!-- mathjax --><script src="https://cdn.mathjax.org/mathjax/latest/MathJax.js?config=TeX-AMS-MML_HTMLorMML"></script><!--[if lt IE 9]>
+<script src="jquery.sticky-kit.min.js"></script><script src="pkgdown.js"></script><!-- mathjax --><script src="https://mathjax.rstudio.com/latest/MathJax.js?config=TeX-AMS-MML_HTMLorMML"></script><!--[if lt IE 9]>
 <script src="https://oss.maxcdn.com/html5shiv/3.7.3/html5shiv.min.js"></script>
 <script src="https://oss.maxcdn.com/respond/1.4.2/respond.min.js"></script>
 <![endif]-->
@@ -63,12 +63,12 @@
 <div class="contents">
 <div id="wikitaxa" class="section level1">
 <div class="page-header"><h1 class="hasAnchor">
-<a href="#wikitaxa" class="anchor"> </a>wikitaxa</h1></div>
+<a href="#wikitaxa" class="anchor"></a>wikitaxa</h1></div>
 
 <p><code>wikitaxa</code> - taxonomy data from Wikipedia/Wikidata/Wikispecies</p>
 <div id="low-level-api" class="section level3">
 <h3 class="hasAnchor">
-<a href="#low-level-api" class="anchor"> </a>Low level API</h3>
+<a href="#low-level-api" class="anchor"></a>Low level API</h3>
 <p>The low level API is meant for power users and gives you more control, but requires more knowledge.</p>
 <ul>
 <li><code><a href="reference/wt_wiki_page.html">wt_wiki_page()</a></code></li>
@@ -82,7 +82,7 @@
 </div>
 <div id="high-level-api" class="section level3">
 <h3 class="hasAnchor">
-<a href="#high-level-api" class="anchor"> </a>High level API</h3>
+<a href="#high-level-api" class="anchor"></a>High level API</h3>
 <p>The high level API is meant to be easier and faster to use.</p>
 <ul>
 <li><code><a href="reference/wt_data.html">wt_data()</a></code></li>
@@ -100,17 +100,17 @@
 </div>
 <div id="installation" class="section level2">
 <h2 class="hasAnchor">
-<a href="#installation" class="anchor"> </a>Installation</h2>
+<a href="#installation" class="anchor"></a>Installation</h2>
 <p>CRAN version</p>
 <div class="sourceCode"><pre class="sourceCode r"><code class="sourceCode r"><span class="kw">install.packages</span>(<span class="st">"wikitaxa"</span>)</code></pre></div>
 <p>Dev version</p>
 <div class="sourceCode"><pre class="sourceCode r"><code class="sourceCode r"><span class="kw">install.packages</span>(<span class="st">"devtools"</span>)
-devtools::<span class="kw">install_github</span>(<span class="st">"ropensci/wikitaxa"</span>)</code></pre></div>
+devtools<span class="op">::</span><span class="kw">install_github</span>(<span class="st">"ropensci/wikitaxa"</span>)</code></pre></div>
 <div class="sourceCode"><pre class="sourceCode r"><code class="sourceCode r"><span class="kw">library</span>(<span class="st">'wikitaxa'</span>)</code></pre></div>
 </div>
 <div id="wiki-data" class="section level2">
 <h2 class="hasAnchor">
-<a href="#wiki-data" class="anchor"> </a>wiki data</h2>
+<a href="#wiki-data" class="anchor"></a>wiki data</h2>
 <div class="sourceCode"><pre class="sourceCode r"><code class="sourceCode r"><span class="kw"><a href="reference/wt_data.html">wt_data</a></span>(<span class="st">"Poa annua"</span>)</code></pre></div>
 <p>Get a Wikidata ID</p>
 <div class="sourceCode"><pre class="sourceCode r"><code class="sourceCode r"><span class="kw"><a href="reference/wt_data.html">wt_data_id</a></span>(<span class="st">"Mimulus foliatus"</span>)
@@ -120,11 +120,11 @@ devtools::<span class="kw">install_github</span>(<span class="st">"ropensci/wiki
 </div>
 <div id="wikipedia" class="section level2">
 <h2 class="hasAnchor">
-<a href="#wikipedia" class="anchor"> </a>wikipedia</h2>
+<a href="#wikipedia" class="anchor"></a>wikipedia</h2>
 <p>lower level</p>
 <div class="sourceCode"><pre class="sourceCode r"><code class="sourceCode r">pg &lt;-<span class="st"> </span><span class="kw"><a href="reference/wt_wiki_page.html">wt_wiki_page</a></span>(<span class="st">"https://en.wikipedia.org/wiki/Malus_domestica"</span>)
 res &lt;-<span class="st"> </span><span class="kw"><a href="reference/wt_wiki_page_parse.html">wt_wiki_page_parse</a></span>(pg)
-res$iwlinks
+res<span class="op">$</span>iwlinks
 <span class="co">#&gt; [1] "https://en.wiktionary.org/wiki/apple"                                  </span>
 <span class="co">#&gt; [2] "https://commons.wikimedia.org/wiki/Special:Search/Apple"               </span>
 <span class="co">#&gt; [3] "https://en.wikiquote.org/wiki/Apples"                                  </span>
@@ -134,14 +134,14 @@ res$iwlinks
 <span class="co">#&gt; [7] "https://commons.wikimedia.org/wiki/Category:Apple_cultivars"</span></code></pre></div>
 <p>higher level</p>
 <div class="sourceCode"><pre class="sourceCode r"><code class="sourceCode r">res &lt;-<span class="st"> </span><span class="kw"><a href="reference/wt_wikipedia.html">wt_wikipedia</a></span>(<span class="st">"Malus domestica"</span>)
-res$common_names
+res<span class="op">$</span>common_names
 <span class="co">#&gt; # A tibble: 3 × 2</span>
 <span class="co">#&gt;         name language</span>
 <span class="co">#&gt;        &lt;chr&gt;    &lt;chr&gt;</span>
 <span class="co">#&gt; 1 apple tree       en</span>
 <span class="co">#&gt; 2      apple       en</span>
 <span class="co">#&gt; 3      Apple       en</span>
-res$classification
+res<span class="op">$</span>classification
 <span class="co">#&gt; # A tibble: 9 × 2</span>
 <span class="co">#&gt;       rank         name</span>
 <span class="co">#&gt;      &lt;chr&gt;        &lt;chr&gt;</span>
@@ -154,14 +154,21 @@ res$classification
 <span class="co">#&gt; 7    genus        Malus</span>
 <span class="co">#&gt; 8  species    M. pumila</span>
 <span class="co">#&gt; 9 binomial Malus pumila</span></code></pre></div>
+<p>choose a wikipedia language</p>
+<div class="sourceCode"><pre class="sourceCode r"><code class="sourceCode r"><span class="co"># French</span>
+<span class="kw"><a href="reference/wt_wikipedia.html">wt_wikipedia</a></span>(<span class="dt">name =</span> <span class="st">"Malus domestica"</span>, <span class="dt">wiki =</span> <span class="st">"fr"</span>)
+<span class="co"># Slovak</span>
+<span class="kw"><a href="reference/wt_wikipedia.html">wt_wikipedia</a></span>(<span class="dt">name =</span> <span class="st">"Malus domestica"</span>, <span class="dt">wiki =</span> <span class="st">"sk"</span>)
+<span class="co"># Vietnamese</span>
+<span class="kw"><a href="reference/wt_wikipedia.html">wt_wikipedia</a></span>(<span class="dt">name =</span> <span class="st">"Malus domestica"</span>, <span class="dt">wiki =</span> <span class="st">"vi"</span>)</code></pre></div>
 </div>
 <div id="wikicommons" class="section level2">
 <h2 class="hasAnchor">
-<a href="#wikicommons" class="anchor"> </a>wikicommons</h2>
+<a href="#wikicommons" class="anchor"></a>wikicommons</h2>
 <p>lower level</p>
 <div class="sourceCode"><pre class="sourceCode r"><code class="sourceCode r">pg &lt;-<span class="st"> </span><span class="kw"><a href="reference/wt_wiki_page.html">wt_wiki_page</a></span>(<span class="st">"https://commons.wikimedia.org/wiki/Abelmoschus"</span>)
 res &lt;-<span class="st"> </span><span class="kw"><a href="reference/wt_wikicommons.html">wt_wikicommons_parse</a></span>(pg)
-res$common_names[<span class="dv">1</span>:<span class="dv">3</span>]
+res<span class="op">$</span>common_names[<span class="dv">1</span><span class="op">:</span><span class="dv">3</span>]
 <span class="co">#&gt; [[1]]</span>
 <span class="co">#&gt; [[1]]$name</span>
 <span class="co">#&gt; [1] "okra"</span>
@@ -186,7 +193,7 @@ res$common_names[<span class="dv">1</span>:<span class="dv">3</span>]
 <span class="co">#&gt; [1] "az"</span></code></pre></div>
 <p>higher level</p>
 <div class="sourceCode"><pre class="sourceCode r"><code class="sourceCode r">res &lt;-<span class="st"> </span><span class="kw"><a href="reference/wt_wikicommons.html">wt_wikicommons</a></span>(<span class="st">"Abelmoschus"</span>)
-res$classification
+res<span class="op">$</span>classification
 <span class="co">#&gt; # A tibble: 15 × 2</span>
 <span class="co">#&gt;            rank           name</span>
 <span class="co">#&gt;           &lt;chr&gt;          &lt;chr&gt;</span>
@@ -205,7 +212,7 @@ res$classification
 <span class="co">#&gt; 13     • Tribus      Hibisceae</span>
 <span class="co">#&gt; 14            •    Abelmoschus</span>
 <span class="co">#&gt; 15               Medik. (1787)</span>
-res$common_names
+res<span class="op">$</span>common_names
 <span class="co">#&gt; # A tibble: 18 × 2</span>
 <span class="co">#&gt;             name language</span>
 <span class="co">#&gt;            &lt;chr&gt;    &lt;chr&gt;</span>
@@ -230,11 +237,11 @@ res$common_names
 </div>
 <div id="wikispecies" class="section level2">
 <h2 class="hasAnchor">
-<a href="#wikispecies" class="anchor"> </a>wikispecies</h2>
+<a href="#wikispecies" class="anchor"></a>wikispecies</h2>
 <p>lower level</p>
 <div class="sourceCode"><pre class="sourceCode r"><code class="sourceCode r">pg &lt;-<span class="st"> </span><span class="kw"><a href="reference/wt_wiki_page.html">wt_wiki_page</a></span>(<span class="st">"https://species.wikimedia.org/wiki/Malus_domestica"</span>)
 res &lt;-<span class="st"> </span><span class="kw"><a href="reference/wt_wikispecies.html">wt_wikispecies_parse</a></span>(pg, <span class="dt">types =</span> <span class="st">"common_names"</span>)
-res$common_names[<span class="dv">1</span>:<span class="dv">3</span>]
+res<span class="op">$</span>common_names[<span class="dv">1</span><span class="op">:</span><span class="dv">3</span>]
 <span class="co">#&gt; [[1]]</span>
 <span class="co">#&gt; [[1]]$name</span>
 <span class="co">#&gt; [1] "Ябълка"</span>
@@ -259,7 +266,7 @@ res$common_names[<span class="dv">1</span>:<span class="dv">3</span>]
 <span class="co">#&gt; [1] "Deutsch"</span></code></pre></div>
 <p>higher level</p>
 <div class="sourceCode"><pre class="sourceCode r"><code class="sourceCode r">res &lt;-<span class="st"> </span><span class="kw"><a href="reference/wt_wikispecies.html">wt_wikispecies</a></span>(<span class="st">"Malus domestica"</span>)
-res$classification
+res<span class="op">$</span>classification
 <span class="co">#&gt; # A tibble: 8 × 2</span>
 <span class="co">#&gt;          rank          name</span>
 <span class="co">#&gt;         &lt;chr&gt;         &lt;chr&gt;</span>
@@ -271,7 +278,7 @@ res$classification
 <span class="co">#&gt; 6      Cladus        Rosids</span>
 <span class="co">#&gt; 7      Cladus    Eurosids I</span>
 <span class="co">#&gt; 8        Ordo       Rosales</span>
-res$common_names
+res<span class="op">$</span>common_names
 <span class="co">#&gt; # A tibble: 19 × 2</span>
 <span class="co">#&gt;               name   language</span>
 <span class="co">#&gt;              &lt;chr&gt;      &lt;chr&gt;</span>
@@ -297,7 +304,7 @@ res$common_names
 </div>
 <div id="contributors" class="section level2">
 <h2 class="hasAnchor">
-<a href="#contributors" class="anchor"> </a>Contributors</h2>
+<a href="#contributors" class="anchor"></a>Contributors</h2>
 <ul>
 <li><a href="https://github.com/ezwelty">Ethan Welty</a></li>
 <li><a href="https://github.com/sckott">Scott Chamberlain</a></li>
@@ -305,7 +312,7 @@ res$common_names
 </div>
 <div id="meta" class="section level2">
 <h2 class="hasAnchor">
-<a href="#meta" class="anchor"> </a>Meta</h2>
+<a href="#meta" class="anchor"></a>Meta</h2>
 <ul>
 <li>Please <a href="https://github.com/ropensci/wikitaxa/issues">report any issues or bugs</a>.</li>
 <li>License: MIT</li>
@@ -322,6 +329,8 @@ res$common_names
   <div class="col-md-3 hidden-xs hidden-sm" id="sidebar">
     <h2>Links</h2>
 <ul class="list-unstyled">
+<li>Download from CRAN at <br><a href="https://cran.r-project.org/package=wikitaxa">https://​cran.r-project.org/​package=wikitaxa</a>
+</li>
 <li>Browse source code at <br><a href="https://github.com/ropensci/wikitaxa">https://​github.com/​ropensci/​wikitaxa</a>
 </li>
 <li>Report a bug at <br><a href="https://github.com/ropensci/wikitaxa/issues">https://​github.com/​ropensci/​wikitaxa/​issues</a>
@@ -334,15 +343,14 @@ res$common_names
 <li>Scott Chamberlain <br><small class="roles"> Author, maintainer </small> </li>
 <li>Ethan Welty <br><small class="roles"> Author </small> </li>
 </ul>
-<html><body>
 <h2>Dev status</h2>
 <ul class="list-unstyled">
 <li><a href="http://www.repostatus.org/#wip"><img src="http://www.repostatus.org/badges/latest/wip.svg" alt="Project Status: WIP - Initial development is in progress, but there has not yet been a stable, usable release suitable for the public."></a></li>
 <li><a href="https://travis-ci.org/ropensci/wikitaxa"><img src="https://api.travis-ci.org/ropensci/wikitaxa.svg?branch=master" alt="Build Status"></a></li>
 <li><a href="https://codecov.io/gh/ropensci/wikitaxa"><img src="https://codecov.io/gh/ropensci/wikitaxa/branch/master/graph/badge.svg" alt="codecov"></a></li>
 <li><a href="https://github.com/metacran/cranlogs.app"><img src="https://cranlogs.r-pkg.org/badges/wikitaxa" alt="rstudio mirror downloads"></a></li>
+<li><a href="https://cran.r-project.org/package=wikitaxa"><img src="https://www.r-pkg.org/badges/version/wikitaxa" alt="cran version"></a></li>
 </ul>
-</body></html>
 </div>
 
 </div>

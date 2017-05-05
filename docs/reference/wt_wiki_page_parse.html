@@ -25,12 +25,14 @@
 <script src="../pkgdown.js"></script>
 
 <!-- mathjax -->
-<script src='https://cdn.mathjax.org/mathjax/latest/MathJax.js?config=TeX-AMS-MML_HTMLorMML'></script>
+<script src='https://mathjax.rstudio.com/latest/MathJax.js?config=TeX-AMS-MML_HTMLorMML'></script>
 
 <!--[if lt IE 9]>
 <script src="https://oss.maxcdn.com/html5shiv/3.7.3/html5shiv.min.js"></script>
 <script src="https://oss.maxcdn.com/respond/1.4.2/respond.min.js"></script>
 <![endif]-->
+
+
   </head>
 
   <body>
@@ -84,19 +86,26 @@
     <p>Parses common properties from the result of a MediaWiki API page call.</p>
     
 
-    <pre><span class='fu'>wt_wiki_page_parse</span>(<span class='no'>page</span>, <span class='kw'>types</span> <span class='kw'>=</span> <span class='fu'>c</span>(<span class='st'>"langlinks"</span>, <span class='st'>"iwlinks"</span>, <span class='st'>"externallinks"</span>),
+    <pre class="usage"><span class='fu'>wt_wiki_page_parse</span>(<span class='no'>page</span>, <span class='kw'>types</span> <span class='kw'>=</span> <span class='fu'>c</span>(<span class='st'>"langlinks"</span>, <span class='st'>"iwlinks"</span>, <span class='st'>"externallinks"</span>),
   <span class='kw'>tidy</span> <span class='kw'>=</span> <span class='fl'>FALSE</span>)</pre>
     
     <h2 class="hasAnchor" id="arguments"><a class="anchor" href="#arguments"></a> Arguments</h2>
-    <dl class="dl-horizontal">
-      <dt>page</dt>
-      <dd>(<a href='http://www.rdocumentation.org/packages/crul/topics/HttpResponse'>crul::HttpResponse</a>) Result of <code><a href='wt_wiki_page.html'>wt_wiki_page()</a></code></dd>
-      <dt>types</dt>
-      <dd>(character) List of properties to parse.</dd>
-      <dt>tidy</dt>
-      <dd>(logical). tidy output to data.frames when possible.
-Default: <code>FALSE</code></dd>
-    </dl>
+    <table class="ref-arguments">
+    <colgroup><col class="name" /><col class="desc" /></colgroup>
+    <tr>
+      <th>page</th>
+      <td><p>(<a href='http://www.rdocumentation.org/packages/crul/topics/HttpResponse'>crul::HttpResponse</a>) Result of <code><a href='wt_wiki_page.html'>wt_wiki_page()</a></code></p></td>
+    </tr>
+    <tr>
+      <th>types</th>
+      <td><p>(character) List of properties to parse.</p></td>
+    </tr>
+    <tr>
+      <th>tidy</th>
+      <td><p>(logical). tidy output to data.frames when possible.
+Default: <code>FALSE</code></p></td>
+    </tr>
+    </table>
     
     <h2 class="hasAnchor" id="value"><a class="anchor" href="#value"></a>Value</h2>
 
@@ -116,10 +125,10 @@ links, templates, images, sections, properties, ...</p>
     
 
     <h2 class="hasAnchor" id="examples"><a class="anchor" href="#examples"></a>Examples</h2>
-    <pre class="examples"><div class='input'><span class='co'>## Not run: ------------------------------------</span>
-<span class='co'># pg &lt;- wt_wiki_page("https://en.wikipedia.org/wiki/Malus_domestica")</span>
-<span class='co'># wt_wiki_page_parse(pg)</span>
-<span class='co'>## ---------------------------------------------</span></div></pre>
+    <pre class="examples"><div class='input'><span class='fu'>not_run</span>({
+  <span class='no'>pg</span> <span class='kw'>&lt;-</span> <span class='fu'><a href='wt_wiki_page.html'>wt_wiki_page</a></span>(<span class='st'>"https://en.wikipedia.org/wiki/Malus_domestica"</span>)
+  <span class='fu'>wt_wiki_page_parse</span>(<span class='no'>pg</span>)
+})</div></pre>
   </div>
   <div class="col-md-3 hidden-xs hidden-sm" id="sidebar">
     <h2>Contents</h2>

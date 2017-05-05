@@ -25,12 +25,14 @@
 <script src="../pkgdown.js"></script>
 
 <!-- mathjax -->
-<script src='https://cdn.mathjax.org/mathjax/latest/MathJax.js?config=TeX-AMS-MML_HTMLorMML'></script>
+<script src='https://mathjax.rstudio.com/latest/MathJax.js?config=TeX-AMS-MML_HTMLorMML'></script>
 
 <!--[if lt IE 9]>
 <script src="https://oss.maxcdn.com/html5shiv/3.7.3/html5shiv.min.js"></script>
 <script src="https://oss.maxcdn.com/respond/1.4.2/respond.min.js"></script>
 <![endif]-->
+
+
   </head>
 
   <body>
@@ -84,7 +86,7 @@
     <p>WikiSpecies</p>
     
 
-    <pre><span class='fu'>wt_wikispecies</span>(<span class='no'>name</span>, <span class='kw'>utf8</span> <span class='kw'>=</span> <span class='fl'>TRUE</span>, <span class='no'>...</span>)
+    <pre class="usage"><span class='fu'>wt_wikispecies</span>(<span class='no'>name</span>, <span class='kw'>utf8</span> <span class='kw'>=</span> <span class='fl'>TRUE</span>, <span class='no'>...</span>)
 
 <span class='fu'>wt_wikispecies_parse</span>(<span class='no'>page</span>, <span class='kw'>types</span> <span class='kw'>=</span> <span class='fu'>c</span>(<span class='st'>"langlinks"</span>, <span class='st'>"iwlinks"</span>, <span class='st'>"externallinks"</span>,
   <span class='st'>"common_names"</span>, <span class='st'>"classification"</span>), <span class='kw'>tidy</span> <span class='kw'>=</span> <span class='fl'>FALSE</span>)
@@ -92,45 +94,59 @@
 <span class='fu'>wt_wikispecies_search</span>(<span class='no'>query</span>, <span class='kw'>limit</span> <span class='kw'>=</span> <span class='fl'>10</span>, <span class='kw'>offset</span> <span class='kw'>=</span> <span class='fl'>0</span>, <span class='kw'>utf8</span> <span class='kw'>=</span> <span class='fl'>TRUE</span>, <span class='no'>...</span>)</pre>
     
     <h2 class="hasAnchor" id="arguments"><a class="anchor" href="#arguments"></a> Arguments</h2>
-    <dl class="dl-horizontal">
-      <dt>name</dt>
-      <dd>(character) Wiki name - as a page title, must be length 1</dd>
-      <dt>utf8</dt>
-      <dd>(logical) If `TRUE`, encodes most (but not all) non-ASCII
+    <table class="ref-arguments">
+    <colgroup><col class="name" /><col class="desc" /></colgroup>
+    <tr>
+      <th>name</th>
+      <td><p>(character) Wiki name - as a page title, must be length 1</p></td>
+    </tr>
+    <tr>
+      <th>utf8</th>
+      <td><p>(logical) If `TRUE`, encodes most (but not all) non-ASCII
 characters as UTF-8 instead of replacing them with hexadecimal escape
-sequences. Default: `TRUE`</dd>
-      <dt>...</dt>
-      <dd>curl options, passed on to [httr::GET()]</dd>
-      <dt>page</dt>
-      <dd>([httr::response()]) Result of [wt_wiki_page()]</dd>
-      <dt>types</dt>
-      <dd>(character) List of properties to parse</dd>
-      <dt>tidy</dt>
-      <dd>(logical). tidy output to data.frame&#39;s if possible.
-Default: `FALSE`</dd>
-      <dt>query</dt>
-      <dd>(character) query terms</dd>
-      <dt>limit</dt>
-      <dd>(integer) number of results to return. Default: 10</dd>
-      <dt>offset</dt>
-      <dd>(integer) record to start at. Default: 0</dd>
-    </dl>
+sequences. Default: `TRUE`</p></td>
+    </tr>
+    <tr>
+      <th>...</th>
+      <td><p>curl options, passed on to [httr::GET()]</p></td>
+    </tr>
+    <tr>
+      <th>page</th>
+      <td><p>([httr::response()]) Result of [wt_wiki_page()]</p></td>
+    </tr>
+    <tr>
+      <th>types</th>
+      <td><p>(character) List of properties to parse</p></td>
+    </tr>
+    <tr>
+      <th>tidy</th>
+      <td><p>(logical). tidy output to data.frame's if possible.
+Default: `FALSE`</p></td>
+    </tr>
+    <tr>
+      <th>query</th>
+      <td><p>(character) query terms</p></td>
+    </tr>
+    <tr>
+      <th>limit</th>
+      <td><p>(integer) number of results to return. Default: 10</p></td>
+    </tr>
+    <tr>
+      <th>offset</th>
+      <td><p>(integer) record to start at. Default: 0</p></td>
+    </tr>
+    </table>
     
     <h2 class="hasAnchor" id="value"><a class="anchor" href="#value"></a>Value</h2>
 
-    <p><code>wt_wikispecies</code> returns a list, with slots:
-<ul>
-<li> langlinks - language page links
-</li>
-<li> externallinks - external links
-</li>
-<li> common_names - a data.frame with <code>name</code> and <code>language</code> columns
-</li>
-<li> classification - a data.frame with <code>rank</code> and <code>name</code> columns
-</li>
-</ul></p>
-    <p><code>wt_wikispecies_parse</code> returns a list</p>
-    <p><code>wt_wikispecies_search</code> returns a list with slots for <code>continue</code> and
+    <p><code>wt_wikispecies</code> returns a list, with slots:</p><ul>
+<li><p>langlinks - language page links</p></li>
+<li><p>externallinks - external links</p></li>
+<li><p>common_names - a data.frame with <code>name</code> and <code>language</code> columns</p></li>
+<li><p>classification - a data.frame with <code>rank</code> and <code>name</code> columns</p></li>
+</ul><p><code>wt_wikispecies_parse</code> returns a list
+
+<code>wt_wikispecies_search</code> returns a list with slots for <code>continue</code> and
 <code>query</code>, where <code>query</code> holds the results, with <code>query$search</code> slot with
 the search results</p>
     
@@ -140,357 +156,21 @@ the search results</p>
     
 
     <h2 class="hasAnchor" id="examples"><a class="anchor" href="#examples"></a>Examples</h2>
-    <pre class="examples"><div class='input'><span class='co'># high level</span>
-<span class='fu'>wt_wikispecies</span>(<span class='kw'>name</span> <span class='kw'>=</span> <span class='st'>"Malus domestica"</span>)</div><div class='output co'>#&gt; $langlinks
-#&gt; # A tibble: 1 × 5
-#&gt;    lang                                           url    langname     autonym
-#&gt; * &lt;chr&gt;                                         &lt;chr&gt;       &lt;chr&gt;       &lt;chr&gt;
-#&gt; 1    ia https://ia.wikipedia.org/wiki/Malus_domestica Interlingua interlingua
-#&gt; # ... with 1 more variables: `*` &lt;chr&gt;
-#&gt; 
-#&gt; $externallinks
-#&gt; [1] &quot;http://www.ars-grin.gov/cgi-bin/npgs/html/taxon.pl?104681&quot;
-#&gt; 
-#&gt; $common_names
-#&gt; # A tibble: 19 × 2
-#&gt;               name   language
-#&gt;              &lt;chr&gt;      &lt;chr&gt;
-#&gt; 1           Ябълка  български
-#&gt; 2     Poma, pomera     català
-#&gt; 3            Apfel    Deutsch
-#&gt; 4      Aed-õunapuu      eesti
-#&gt; 5            Μηλιά   Ελληνικά
-#&gt; 6            Apple    English
-#&gt; 7          Manzano    español
-#&gt; 8            Pomme   français
-#&gt; 9            Melâr     furlan
-#&gt; 10        사과나무     한국어
-#&gt; 11          ‘Āpala    Hawaiʻi
-#&gt; 12            Melo   italiano
-#&gt; 13           Aapel Nordfriisk
-#&gt; 14  Maçã, Macieira  português
-#&gt; 15 Яблоня домашняя    русский
-#&gt; 16   Tarhaomenapuu      suomi
-#&gt; 17            Elma     Türkçe
-#&gt; 18  Яблуня домашня українська
-#&gt; 19          Pomaro     vèneto
-#&gt; 
-#&gt; $classification
-#&gt; # A tibble: 8 × 2
-#&gt;          rank          name
-#&gt;         &lt;chr&gt;         &lt;chr&gt;
-#&gt; 1 Superregnum     Eukaryota
-#&gt; 2      Regnum       Plantae
-#&gt; 3      Cladus   Angiosperms
-#&gt; 4      Cladus      Eudicots
-#&gt; 5      Cladus Core eudicots
-#&gt; 6      Cladus        Rosids
-#&gt; 7      Cladus    Eurosids I
-#&gt; 8        Ordo       Rosales
-#&gt; </div><div class='input'>
-<span class='co'># low level</span>
-<span class='no'>pg</span> <span class='kw'>&lt;-</span> <span class='fu'><a href='wt_wiki_page.html'>wt_wiki_page</a></span>(<span class='st'>"https://species.wikimedia.org/wiki/Abelmoschus"</span>)
-<span class='fu'>wt_wikispecies_parse</span>(<span class='no'>pg</span>)</div><div class='output co'>#&gt; $langlinks
-#&gt;  [1] &quot;https://ar.wikipedia.org/wiki/%D9%85%D8%B3%D9%83%D9%8A&quot;                                                                           
-#&gt;  [2] &quot;https://az.wikipedia.org/wiki/Abelmo%C5%9F&quot;                                                                                       
-#&gt;  [3] &quot;https://ca.wikipedia.org/wiki/Abelmoschus&quot;                                                                                        
-#&gt;  [4] &quot;https://ceb.wikipedia.org/wiki/Abelmoschus&quot;                                                                                       
-#&gt;  [5] &quot;https://cs.wikipedia.org/wiki/Ibi%C5%A1kovec&quot;                                                                                     
-#&gt;  [6] &quot;https://de.wikipedia.org/wiki/Bisameibisch&quot;                                                                                       
-#&gt;  [7] &quot;https://en.wikipedia.org/wiki/Abelmoschus&quot;                                                                                        
-#&gt;  [8] &quot;https://eo.wikipedia.org/wiki/Abelmoschus&quot;                                                                                        
-#&gt;  [9] &quot;https://es.wikipedia.org/wiki/Abelmoschus&quot;                                                                                        
-#&gt; [10] &quot;https://fi.wikipedia.org/wiki/Okrat&quot;                                                                                              
-#&gt; [11] &quot;https://fr.wikipedia.org/wiki/Abelmoschus&quot;                                                                                        
-#&gt; [12] &quot;https://ga.wikipedia.org/wiki/Abelmoschus&quot;                                                                                        
-#&gt; [13] &quot;https://gl.wikipedia.org/wiki/Abelmosco&quot;                                                                                          
-#&gt; [14] &quot;https://hr.wikipedia.org/wiki/Abelmo%C5%A1us&quot;                                                                                     
-#&gt; [15] &quot;https://ia.wikipedia.org/wiki/Abelmoschus&quot;                                                                                        
-#&gt; [16] &quot;https://lt.wikipedia.org/wiki/Ybi%C5%A1k%C4%97&quot;                                                                                   
-#&gt; [17] &quot;https://ml.wikipedia.org/wiki/%E0%B4%85%E0%B4%AC%E0%B5%86%E0%B5%BD%E0%B4%AE%E0%B5%8B%E0%B4%B8%E0%B5%8D%E0%B4%95%E0%B4%B8%E0%B5%8D&quot;
-#&gt; [18] &quot;https://mrj.wikipedia.org/wiki/%D0%90%D0%B1%D0%B5%D0%BB%D1%8C%D0%BC%D0%BE%D1%88&quot;                                                  
-#&gt; [19] &quot;https://nl.wikipedia.org/wiki/Abelmoschus&quot;                                                                                        
-#&gt; [20] &quot;https://pl.wikipedia.org/wiki/Pi%C5%BCmian&quot;                                                                                       
-#&gt; [21] &quot;https://pt.wikipedia.org/wiki/Abelmoschus&quot;                                                                                        
-#&gt; [22] &quot;https://ru.wikipedia.org/wiki/%D0%90%D0%B1%D0%B5%D0%BB%D1%8C%D0%BC%D0%BE%D1%88&quot;                                                   
-#&gt; [23] &quot;https://sd.wikipedia.org/wiki/%D9%85%D9%88%D8%B1%D9%8A&quot;                                                                           
-#&gt; [24] &quot;https://sv.wikipedia.org/wiki/Okrasl%C3%A4ktet&quot;                                                                                   
-#&gt; [25] &quot;https://udm.wikipedia.org/wiki/%D0%90%D0%B1%D0%B5%D0%BB%D1%8C%D0%BC%D0%BE%D1%88&quot;                                                  
-#&gt; [26] &quot;https://vi.wikipedia.org/wiki/Chi_V%C3%B4ng_vang&quot;                                                                                 
-#&gt; [27] &quot;https://war.wikipedia.org/wiki/Abelmoschus&quot;                                                                                       
-#&gt; [28] &quot;https://zh.wikipedia.org/wiki/%E9%BB%84%E8%91%B5%E5%B1%9E&quot;                                                                        
-#&gt; 
-#&gt; $iwlinks
-#&gt; [1] &quot;https://en.wikipedia.org/wiki/Type_species&quot;             
-#&gt; [2] &quot;https://commons.wikimedia.org/wiki/Category:Abelmoschus&quot;
-#&gt; [3] &quot;https://commons.wikimedia.org/wiki/&quot;                    
-#&gt; 
-#&gt; $externallinks
-#&gt; $externallinks[[1]]
-#&gt; [1] &quot;http://www.malvaceae.info/Genera/Abelmoschus/Abelmoschus.php&quot;
-#&gt; 
-#&gt; $externallinks[[2]]
-#&gt; [1] &quot;http://mansfeld.ipk-gatersleben.de/pls/htmldb_pgrc/f?p=185:3:0::NO&quot;
-#&gt; 
-#&gt; 
-#&gt; $common_names
-#&gt; $common_names[[1]]
-#&gt; $common_names[[1]]$name
-#&gt; [1] &quot;Okrat&quot;
-#&gt; 
-#&gt; $common_names[[1]]$language
-#&gt; [1] &quot;suomi&quot;
-#&gt; 
-#&gt; 
-#&gt; 
-#&gt; $classification
-#&gt; $classification[[1]]
-#&gt; $classification[[1]]$rank
-#&gt; [1] &quot;Superregnum&quot;
-#&gt; 
-#&gt; $classification[[1]]$name
-#&gt; [1] &quot;Eukaryota&quot;
-#&gt; 
-#&gt; 
-#&gt; $classification[[2]]
-#&gt; $classification[[2]]$rank
-#&gt; [1] &quot;Regnum&quot;
-#&gt; 
-#&gt; $classification[[2]]$name
-#&gt; [1] &quot;Plantae&quot;
-#&gt; 
-#&gt; 
-#&gt; $classification[[3]]
-#&gt; $classification[[3]]$rank
-#&gt; [1] &quot;Cladus&quot;
-#&gt; 
-#&gt; $classification[[3]]$name
-#&gt; [1] &quot;Angiosperms&quot;
-#&gt; 
-#&gt; 
-#&gt; $classification[[4]]
-#&gt; $classification[[4]]$rank
-#&gt; [1] &quot;Cladus&quot;
-#&gt; 
-#&gt; $classification[[4]]$name
-#&gt; [1] &quot;Eudicots&quot;
-#&gt; 
-#&gt; 
-#&gt; $classification[[5]]
-#&gt; $classification[[5]]$rank
-#&gt; [1] &quot;Cladus&quot;
-#&gt; 
-#&gt; $classification[[5]]$name
-#&gt; [1] &quot;Core eudicots&quot;
-#&gt; 
-#&gt; 
-#&gt; $classification[[6]]
-#&gt; $classification[[6]]$rank
-#&gt; [1] &quot;Cladus&quot;
-#&gt; 
-#&gt; $classification[[6]]$name
-#&gt; [1] &quot;Rosids&quot;
-#&gt; 
-#&gt; 
-#&gt; $classification[[7]]
-#&gt; $classification[[7]]$rank
-#&gt; [1] &quot;Cladus&quot;
-#&gt; 
-#&gt; $classification[[7]]$name
-#&gt; [1] &quot;Eurosids II&quot;
-#&gt; 
-#&gt; 
-#&gt; $classification[[8]]
-#&gt; $classification[[8]]$rank
-#&gt; [1] &quot;Ordo&quot;
-#&gt; 
-#&gt; $classification[[8]]$name
-#&gt; [1] &quot;Malvales&quot;
-#&gt; 
-#&gt; 
-#&gt; </div><div class='input'>
-<span class='co'># search wikispecies</span>
-<span class='fu'>wt_wikispecies_search</span>(<span class='kw'>query</span> <span class='kw'>=</span> <span class='st'>"pine tree"</span>)</div><div class='output co'>#&gt; $batchcomplete
-#&gt; [1] &quot;&quot;
-#&gt; 
-#&gt; $continue
-#&gt; $continue$sroffset
-#&gt; [1] 10
-#&gt; 
-#&gt; $continue$continue
-#&gt; [1] &quot;-||&quot;
-#&gt; 
-#&gt; 
-#&gt; $query
-#&gt; $query$searchinfo
-#&gt; $query$searchinfo$totalhits
-#&gt; [1] 37
-#&gt; 
-#&gt; $query$searchinfo$suggestion
-#&gt; [1] &quot;ping true&quot;
-#&gt; 
-#&gt; $query$searchinfo$suggestionsnippet
-#&gt; [1] &quot;&lt;em&gt;ping true&lt;/em&gt;&quot;
-#&gt; 
-#&gt; 
-#&gt; $query$search
-#&gt; # A tibble: 10 × 6
-#&gt;       ns                    title  size wordcount
-#&gt; *  &lt;int&gt;                    &lt;chr&gt; &lt;int&gt;     &lt;int&gt;
-#&gt; 1      0           Oecanthus pini   215        20
-#&gt; 2      0   Melanoplus punctulatus   689        63
-#&gt; 3      0         Dendrolimus pini   615        61
-#&gt; 4      0            Pineus laevis   940        86
-#&gt; 5      0 Brachytydeus danielssoni   733       164
-#&gt; 6      0  Casuarina equisetifolia   897       104
-#&gt; 7      0                   Pineus  2143       225
-#&gt; 8      0        Newnhamia petiola  2073       222
-#&gt; 9      0        Bennelongia pinpi  2191       243
-#&gt; 10     0       Nazeris spiculatus   595       107
-#&gt; # ... with 2 more variables: snippet &lt;chr&gt;, timestamp &lt;chr&gt;
-#&gt; 
-#&gt; </div><div class='input'>
-<span class='co'>## use search results to dig into pages</span>
-<span class='no'>res</span> <span class='kw'>&lt;-</span> <span class='fu'>wt_wikispecies_search</span>(<span class='kw'>query</span> <span class='kw'>=</span> <span class='st'>"pine tree"</span>)
-<span class='fu'>lapply</span>(<span class='no'>res</span>$<span class='no'>query</span>$<span class='no'>search</span>$<span class='no'>title</span>[<span class='fl'>1</span>:<span class='fl'>3</span>], <span class='no'>wt_wikispecies</span>)</div><div class='output co'>#&gt; [[1]]
-#&gt; [[1]]$langlinks
-#&gt; # A tibble: 4 × 5
-#&gt;    lang                                           url langname    autonym
-#&gt; * &lt;chr&gt;                                         &lt;chr&gt;    &lt;chr&gt;      &lt;chr&gt;
-#&gt; 1   ceb https://ceb.wikipedia.org/wiki/Oecanthus_pini  Cebuano    Cebuano
-#&gt; 2    nl  https://nl.wikipedia.org/wiki/Oecanthus_pini    Dutch Nederlands
-#&gt; 3    sv  https://sv.wikipedia.org/wiki/Oecanthus_pini  Swedish    svenska
-#&gt; 4   war https://war.wikipedia.org/wiki/Oecanthus_pini    Waray    Winaray
-#&gt; # ... with 1 more variables: `*` &lt;chr&gt;
-#&gt; 
-#&gt; [[1]]$externallinks
-#&gt; [1] &quot;http://data.gbif.org/species/14194484&quot;
-#&gt; 
-#&gt; [[1]]$common_names
-#&gt; # A tibble: 1 × 2
-#&gt;                name language
-#&gt;               &lt;chr&gt;    &lt;chr&gt;
-#&gt; 1 Pine Tree Cricket  English
-#&gt; 
-#&gt; [[1]]$classification
-#&gt; # A tibble: 16 × 2
-#&gt;            rank          name
-#&gt;           &lt;chr&gt;         &lt;chr&gt;
-#&gt; 1   Superregnum     Eukaryota
-#&gt; 2        Regnum      Animalia
-#&gt; 3     Subregnum     Eumetazoa
-#&gt; 4        Cladus     Bilateria
-#&gt; 5        Cladus     Nephrozoa
-#&gt; 6        Cladus   Protostomia
-#&gt; 7        Cladus     Ecdysozoa
-#&gt; 8        Cladus Panarthropoda
-#&gt; 9        Phylum    Arthropoda
-#&gt; 10    Subphylum      Hexapoda
-#&gt; 11      Classis       Insecta
-#&gt; 12       Cladus    Dicondylia
-#&gt; 13   Subclassis     Pterygota
-#&gt; 14         Ordo    Orthoptera
-#&gt; 15      Subordo      Ensifera
-#&gt; 16 Superfamilia    Grylloidea
-#&gt; 
-#&gt; 
-#&gt; [[2]]
-#&gt; [[2]]$langlinks
-#&gt; # A tibble: 4 × 5
-#&gt;    lang                                                   url langname
-#&gt; * &lt;chr&gt;                                                 &lt;chr&gt;    &lt;chr&gt;
-#&gt; 1   ceb https://ceb.wikipedia.org/wiki/Melanoplus_punctulatus  Cebuano
-#&gt; 2    nl  https://nl.wikipedia.org/wiki/Melanoplus_punctulatus    Dutch
-#&gt; 3    sv  https://sv.wikipedia.org/wiki/Melanoplus_punctulatus  Swedish
-#&gt; 4   war https://war.wikipedia.org/wiki/Melanoplus_punctulatus    Waray
-#&gt; # ... with 2 more variables: autonym &lt;chr&gt;, `*` &lt;chr&gt;
-#&gt; 
-#&gt; [[2]]$externallinks
-#&gt; list()
-#&gt; 
-#&gt; [[2]]$common_names
-#&gt; # A tibble: 1 × 2
-#&gt;                                name language
-#&gt;                               &lt;chr&gt;    &lt;chr&gt;
-#&gt; 1 Pine Tree Spur-throat Grasshopper  English
-#&gt; 
-#&gt; [[2]]$classification
-#&gt; # A tibble: 17 × 2
-#&gt;            rank          name
-#&gt;           &lt;chr&gt;         &lt;chr&gt;
-#&gt; 1   Superregnum     Eukaryota
-#&gt; 2        Regnum      Animalia
-#&gt; 3     Subregnum     Eumetazoa
-#&gt; 4        Cladus     Bilateria
-#&gt; 5        Cladus     Nephrozoa
-#&gt; 6        Cladus   Protostomia
-#&gt; 7        Cladus     Ecdysozoa
-#&gt; 8        Cladus Panarthropoda
-#&gt; 9        Phylum    Arthropoda
-#&gt; 10    Subphylum      Hexapoda
-#&gt; 11      Classis       Insecta
-#&gt; 12       Cladus    Dicondylia
-#&gt; 13   Subclassis     Pterygota
-#&gt; 14         Ordo    Orthoptera
-#&gt; 15      Subordo     Caelifera
-#&gt; 16    Infraordo     Acrididea
-#&gt; 17 Superfamilia    Acridoidea
-#&gt; 
-#&gt; 
-#&gt; [[3]]
-#&gt; [[3]]$langlinks
-#&gt; # A tibble: 19 × 5
-#&gt;     lang
-#&gt; *  &lt;chr&gt;
-#&gt; 1     be
-#&gt; 2     ca
-#&gt; 3     cs
-#&gt; 4     cy
-#&gt; 5     de
-#&gt; 6     en
-#&gt; 7     fi
-#&gt; 8     fr
-#&gt; 9     ka
-#&gt; 10    lv
-#&gt; 11    nl
-#&gt; 12    no
-#&gt; 13    pl
-#&gt; 14   pms
-#&gt; 15    pt
-#&gt; 16    ru
-#&gt; 17    sv
-#&gt; 18    uk
-#&gt; 19    vi
-#&gt; # ... with 4 more variables: url &lt;chr&gt;, langname &lt;chr&gt;, autonym &lt;chr&gt;,
-#&gt; #   `*` &lt;chr&gt;
-#&gt; 
-#&gt; [[3]]$externallinks
-#&gt; list()
-#&gt; 
-#&gt; [[3]]$common_names
-#&gt; # A tibble: 2 × 2
-#&gt;               name language
-#&gt;              &lt;chr&gt;    &lt;chr&gt;
-#&gt; 1 Pine-tree Lappet  English
-#&gt; 2    Bombyx du pin français
-#&gt; 
-#&gt; [[3]]$classification
-#&gt; # A tibble: 29 × 2
-#&gt;           rank          name
-#&gt;          &lt;chr&gt;         &lt;chr&gt;
-#&gt; 1  Superregnum     Eukaryota
-#&gt; 2       Regnum      Animalia
-#&gt; 3    Subregnum     Eumetazoa
-#&gt; 4       Cladus     Bilateria
-#&gt; 5       Cladus     Nephrozoa
-#&gt; 6       Cladus   Protostomia
-#&gt; 7       Cladus     Ecdysozoa
-#&gt; 8       Cladus Panarthropoda
-#&gt; 9       Phylum    Arthropoda
-#&gt; 10   Subphylum      Hexapoda
-#&gt; # ... with 19 more rows
-#&gt; 
-#&gt; </div></pre>
+    <pre class="examples"><div class='input'><span class='fu'>not_run</span>({
+  <span class='co'># high level</span>
+  <span class='fu'>wt_wikispecies</span>(<span class='kw'>name</span> <span class='kw'>=</span> <span class='st'>"Malus domestica"</span>)
+
+  <span class='co'># low level</span>
+  <span class='no'>pg</span> <span class='kw'>&lt;-</span> <span class='fu'><a href='wt_wiki_page.html'>wt_wiki_page</a></span>(<span class='st'>"https://species.wikimedia.org/wiki/Abelmoschus"</span>)
+  <span class='fu'>wt_wikispecies_parse</span>(<span class='no'>pg</span>)
+
+  <span class='co'># search wikispecies</span>
+  <span class='fu'>wt_wikispecies_search</span>(<span class='kw'>query</span> <span class='kw'>=</span> <span class='st'>"pine tree"</span>)
+
+  <span class='co'>## use search results to dig into pages</span>
+  <span class='no'>res</span> <span class='kw'>&lt;-</span> <span class='fu'>wt_wikispecies_search</span>(<span class='kw'>query</span> <span class='kw'>=</span> <span class='st'>"pine tree"</span>)
+  <span class='fu'>lapply</span>(<span class='no'>res</span>$<span class='no'>query</span>$<span class='no'>search</span>$<span class='no'>title</span>[<span class='fl'>1</span>:<span class='fl'>3</span>], <span class='no'>wt_wikispecies</span>)
+})</div></pre>
   </div>
   <div class="col-md-3 hidden-xs hidden-sm" id="sidebar">
     <h2>Contents</h2>
