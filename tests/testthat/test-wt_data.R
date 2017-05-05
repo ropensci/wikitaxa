@@ -1,6 +1,8 @@
 context("wt_data")
 
 test_that("wt_data returns the correct class", {
+  skip_on_cran()
+
   prop <- "P846"
   aa <- wt_data("Mimulus foliatus", property = prop)
 

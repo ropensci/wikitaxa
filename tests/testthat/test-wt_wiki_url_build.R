@@ -1,12 +1,16 @@
 context("wt_wiki_url_build")
 
 test_that("wt_wiki_url_build correctly builds static page url", {
+  skip_on_cran()
+
   url <- "https://en.wikipedia.org/wiki/Malus_domestica"
   result <- wt_wiki_url_build("en", "wikipedia", "Malus domestica")
   expect_equal(result, url)
 })
 
 test_that("wt_wiki_url_build correctly builds API page url", {
+  skip_on_cran()
+
   url <- gsub("\n|\\s+", "", "https://en.wikipedia.org/w/api.php?page=
               Malus_domestica&action=parse&redirects=TRUE&format=json&
               utf8=TRUE&prop=text")

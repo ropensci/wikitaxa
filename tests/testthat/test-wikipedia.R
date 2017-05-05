@@ -1,6 +1,8 @@
 context("wt_wikipedia")
 
 test_that("wt_wikipedia returns non-empty results", {
+  skip_on_cran()
+
   aa <- wt_wikipedia(name = "Malus domestica")
 
   expect_is(aa, "list")
@@ -27,6 +29,8 @@ test_that("wt_wikipedia returns non-empty results", {
 })
 
 test_that("wt_wikipedia fails well", {
+  skip_on_cran()
+
   expect_error(wt_wikipedia(),
             "argument \"name\" is missing")
   expect_error(wt_wikipedia(5),
@@ -54,6 +58,8 @@ test_that("wt_wikipedia fails well", {
 context("wt_wikipedia_parse")
 
 test_that("wt_wikipedia_parse returns non-empty results", {
+  skip_on_cran()
+
   url <- "https://species.wikimedia.org/wiki/Malus_domestica"
   pg <- wt_wiki_page(url)
   types <- c("common_names")
@@ -68,6 +74,8 @@ test_that("wt_wikipedia_parse returns non-empty results", {
 context("wt_wikipedia_search")
 
 test_that("wt_wikipedia_search works", {
+  skip_on_cran()
+
   aa <- wt_wikipedia_search(query = "Pinus")
 
   expect_is(aa, "list")
@@ -83,6 +91,8 @@ test_that("wt_wikipedia_search works", {
 })
 
 test_that("wt_wikipedia_search fails well", {
+  skip_on_cran()
+
   expect_error(
     wt_wikipedia_search(),
     "argument \"query\" is missing"

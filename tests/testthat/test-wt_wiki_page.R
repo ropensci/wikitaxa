@@ -1,12 +1,16 @@
 context("wt_wiki_page/wt_wiki_page_parse")
 
 test_that("wt_wiki_page returns a response object", {
+  skip_on_cran()
+
   url <- "https://en.wikipedia.org/wiki/Malus_domestica"
   result <- wt_wiki_page(url)
   expect_is(result, "HttpResponse")
 })
 
 test_that("wt_wiki_page_parse returns non-empty results", {
+  skip_on_cran()
+
   url <- "https://en.wikipedia.org/wiki/Malus_domestica"
   pg <- wt_wiki_page(url)
   types <- c("langlinks", "iwlinks", "externallinks")
@@ -19,6 +23,8 @@ test_that("wt_wiki_page_parse returns non-empty results", {
 })
 
 test_that("wt_wiki_page_parse returns non-empty results", {
+  skip_on_cran()
+
   url <- "https://en.wikipedia.org/wiki/Malus_domestica"
   pg <- wt_wiki_page(url)
   types <- c("common_names")

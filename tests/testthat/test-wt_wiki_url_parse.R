@@ -1,6 +1,8 @@
 context("wt_wiki_url_parse")
 
 test_that("wt_wiki_url_parse correctly parses static page url", {
+  skip_on_cran()
+
   url <- "https://en.wikipedia.org/wiki/Malus_domestica"
   result <- wt_wiki_url_parse(url)
   expect_is(result, "list")
@@ -10,6 +12,8 @@ test_that("wt_wiki_url_parse correctly parses static page url", {
 })
 
 test_that("wt_wiki_url_parse correctly parses API page url", {
+  skip_on_cran()
+
   url <- "https://en.wikipedia.org/w/api.php?page=Malus_domestica"
   result <- wt_wiki_url_parse(url)
   expect_is(result, "list")
