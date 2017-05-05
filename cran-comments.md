@@ -1,7 +1,7 @@
 ## Test environments
 
-* local OS X install, R 3.3.3 patched
-* ubuntu 12.04 (on travis-ci), R 3.3.3
+* local OS X install, R 3.4.0 patched
+* ubuntu 12.04 (on travis-ci), R 3.4.0
 * win-builder (devel and release)
 
 ## R CMD check results
@@ -17,12 +17,12 @@ File 'LICENSE':
 
 ## Reverse dependencies
 
-This is a new package, so there are no reverse dependencies.
+There are no reverse dependencies.
 
 ---
 
-This is a new release. I have read and agree to the the CRAN
-policies at https://cran.r-project.org/web/packages/policies.html
+This version includes fixes for tests failing on CRAN checks, and 
+a function gains a parameter to specify Wikipedia site language.
 
 Thanks!
 Scott Chamberlain
