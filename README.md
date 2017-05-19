@@ -104,14 +104,14 @@ higher level
 ```r
 res <- wt_wikipedia("Malus domestica")
 res$common_names
-#> # A tibble: 3 × 2
+#> # A tibble: 3 x 2
 #>         name language
 #>        <chr>    <chr>
 #> 1 apple tree       en
 #> 2      apple       en
 #> 3      Apple       en
 res$classification
-#> # A tibble: 9 × 2
+#> # A tibble: 9 x 2
 #>       rank         name
 #>      <chr>        <chr>
 #> 1  kingdom      Plantae
@@ -177,18 +177,18 @@ higher level
 ```r
 res <- wt_wikicommons("Abelmoschus")
 res$classification
-#> # A tibble: 15 × 2
+#> # A tibble: 15 x 2
 #>            rank           name
 #>           <chr>          <chr>
-#> 1        Domain      Eukaryota
-#> 2    • unranked Archaeplastida
-#> 3      • Regnum        Plantae
-#> 4      • Cladus    angiosperms
-#> 5      • Cladus       eudicots
-#> 6      • Cladus  core eudicots
-#> 7      • Cladus    superrosids
-#> 8      • Cladus         rosids
-#> 9      • Cladus    eurosids II
+#>  1       Domain      Eukaryota
+#>  2   • unranked Archaeplastida
+#>  3     • Regnum        Plantae
+#>  4     • Cladus    angiosperms
+#>  5     • Cladus       eudicots
+#>  6     • Cladus  core eudicots
+#>  7     • Cladus    superrosids
+#>  8     • Cladus         rosids
+#>  9     • Cladus    eurosids II
 #> 10       • Ordo       Malvales
 #> 11    • Familia      Malvaceae
 #> 12 • Subfamilia     Malvoideae
@@ -196,27 +196,27 @@ res$classification
 #> 14            •    Abelmoschus
 #> 15               Medik. (1787)
 res$common_names
-#> # A tibble: 18 × 2
-#>             name language
-#>            <chr>    <chr>
-#> 1           okra       en
-#> 2           مسكي       ar
-#> 3        Abelmoş       az
-#> 4      Ibiškovec       cs
-#> 5   Bisameibisch       de
-#> 6          Okrat       fi
-#> 7      Abelmosco       gl
-#> 8      Abelmošus       hr
-#> 9         Ybiškė       lt
-#> 10  അബെ\u0d7dമോസ്കസ്       ml
-#> 11      Абельмош      mrj
-#> 12       Piżmian       pl
-#> 13      Абельмош       ru
-#> 14          موري       sd
-#> 15   Okrasläktet       sv
-#> 16      Абельмош      udm
-#> 17 Chi Vông vang       vi
-#> 18        黄葵属       zh
+#> # A tibble: 18 x 2
+#>              name language
+#>             <chr>    <chr>
+#>  1           okra       en
+#>  2           مسكي       ar
+#>  3        Abelmoş       az
+#>  4      Ibiškovec       cs
+#>  5   Bisameibisch       de
+#>  6          Okrat       fi
+#>  7      Abelmosco       gl
+#>  8      Abelmošus       hr
+#>  9         Ybiškė       lt
+#> 10 "അബെ\u0d7dമോസ്കസ്"       ml
+#> 11       Абельмош      mrj
+#> 12        Piżmian       pl
+#> 13       Абельмош       ru
+#> 14           موري       sd
+#> 15    Okrasläktet       sv
+#> 16       Абельмош      udm
+#> 17  Chi Vông vang       vi
+#> 18         黄葵属       zh
 ```
 
 ## wikispecies
@@ -258,7 +258,7 @@ higher level
 ```r
 res <- wt_wikispecies("Malus domestica")
 res$classification
-#> # A tibble: 8 × 2
+#> # A tibble: 8 x 2
 #>          rank          name
 #>         <chr>         <chr>
 #> 1 Superregnum     Eukaryota
@@ -270,18 +270,18 @@ res$classification
 #> 7      Cladus    Eurosids I
 #> 8        Ordo       Rosales
 res$common_names
-#> # A tibble: 19 × 2
+#> # A tibble: 19 x 2
 #>               name   language
 #>              <chr>      <chr>
-#> 1           Ябълка  български
-#> 2     Poma, pomera     català
-#> 3            Apfel    Deutsch
-#> 4      Aed-õunapuu      eesti
-#> 5            Μηλιά   Ελληνικά
-#> 6            Apple    English
-#> 7          Manzano    español
-#> 8            Pomme   français
-#> 9            Melâr     furlan
+#>  1          Ябълка  български
+#>  2    Poma, pomera     català
+#>  3           Apfel    Deutsch
+#>  4     Aed-õunapuu      eesti
+#>  5           Μηλιά   Ελληνικά
+#>  6           Apple    English
+#>  7         Manzano    español
+#>  8           Pomme   français
+#>  9           Melâr     furlan
 #> 10        사과나무     한국어
 #> 11          ‘Āpala    Hawaiʻi
 #> 12            Melo   italiano

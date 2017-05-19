@@ -50,7 +50,7 @@ like
 # wt_data("Mimulus alsinoides")
 
 # choose which properties to return
-wt_data("Mimulus foliatus", property = c("P846", "P815"))
+wt_data(x="Mimulus foliatus", property = c("P846", "P815"))
 
 # get a taxonomic identifier
 wt_data_id("Mimulus foliatus")

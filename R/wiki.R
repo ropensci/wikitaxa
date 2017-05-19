@@ -29,7 +29,7 @@
 #' # wt_data("Mimulus alsinoides")
 #'
 #' # choose which properties to return
-#' wt_data("Mimulus foliatus", property = c("P846", "P815"))
+#' wt_data(x="Mimulus foliatus", property = c("P846", "P815"))
 #'
 #' # get a taxonomic identifier
 #' wt_data_id("Mimulus foliatus")
@@ -65,18 +65,18 @@ data_wiki <- function(x, property = NULL, ...) {
   xx <- WikidataR::get_item(x, ...)
 
   if (is.null(property)) {
-    claims <- create_claims(xx$claims)
+    claims <- create_claims(xx[[1]]$claims)
   } else{
-    cl <- Filter(function(x) x$mainsnak$property %in% property, xx$claims)
+    cl <- Filter(function(x) x$mainsnak$property %in% property, xx[[1]]$claims)
     if (length(cl) == 0) stop("No matching properties", call. = FALSE)
     claims <- create_claims(cl)
   }
 
   list(
-    labels = dt_df(xx$labels),
-    descriptions = dt_df(xx$descriptions),
-    aliases = dt_df(xx$aliases),
-    sitelinks = dt_df(lapply(xx$sitelinks, function(x)
+    labels = dt_df(xx[[1]]$labels),
+    descriptions = dt_df(xx[[1]]$descriptions),
+    aliases = dt_df(xx[[1]]$aliases),
+    sitelinks = dt_df(lapply(xx[[1]]$sitelinks, function(x)
       x[names(x) %in% c('site', 'title')])),
     claims = dt_df(claims)
   )
@@ -85,14 +85,14 @@ data_wiki <- function(x, property = NULL, ...) {
 fetch_property <- function(x) {
   tmp <- WikidataR::get_property(x)
   list(
-    property_value = tmp$labels$en$value,
-    property_description = tmp$descriptions$en$value
+    property_value = tmp[[1]]$labels$en$value,
+    property_description = tmp[[1]]$descriptions$en$value
   )
 }
 
 create_claims <- function(x) {
   lapply(x, function(z) {
-    c(
+    ff <- c(
       property = paste0(unique(z$mainsnak$property), collapse = ","),
       fetch_property(unique(z$mainsnak$property)),
       value = {
@@ -103,5 +103,7 @@ create_claims <- function(x) {
         }
       }
     )
+    ff[vapply(ff, is.null, logical(1))] <- NA
+    ff
   })
 }
