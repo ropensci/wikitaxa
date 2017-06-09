@@ -23,7 +23,6 @@ test_that("wt_wikipedia returns non-empty results", {
   expect_is(bb$langlinks, "data.frame")
   expect_is(bb$externallinks, "character")
   expect_is(bb$common_names, "data.frame")
-  expect_named(bb$common_names, c('name', 'language'))
   expect_is(bb$classification, "data.frame")
   expect_named(bb$classification, c('rank', 'name'))
 })
