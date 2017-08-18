@@ -82,7 +82,7 @@ test_that("wt_wikipedia_search works", {
   expect_is(aa$query, "list")
   expect_is(aa$query$searchinfo, "list")
   expect_is(aa$query$search, "data.frame")
-  expect_named(aa$query$search, c('ns', 'title', 'size', 'wordcount',
+  expect_named(aa$query$search, c('ns', 'title', 'pageid', 'size', 'wordcount',
                                   'snippet', 'timestamp'))
 
   # no results when not found
