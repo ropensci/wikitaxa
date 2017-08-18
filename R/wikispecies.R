@@ -20,6 +20,9 @@
 #' @examples \dontrun{
 #' # high level
 #' wt_wikispecies(name = "Malus domestica")
+#' wt_wikispecies(name = "Pinus contorta")
+#' wt_wikispecies(name = "Ursus americanus")
+#' wt_wikispecies(name = "Balaenoptera musculus")
 #'
 #' # low level
 #' pg <- wt_wiki_page("https://species.wikimedia.org/wiki/Abelmoschus")

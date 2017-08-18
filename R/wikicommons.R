@@ -20,6 +20,9 @@
 #' @examples \dontrun{
 #' # high level
 #' wt_wikicommons(name = "Malus domestica")
+#' wt_wikicommons(name = "Pinus contorta")
+#' wt_wikicommons(name = "Ursus americanus")
+#' wt_wikicommons(name = "Balaenoptera musculus")
 #'
 #' # low level
 #' pg <- wt_wiki_page("https://commons.wikimedia.org/wiki/Malus_domestica")
@@ -82,16 +85,19 @@ wt_wikicommons_parse <- function(page, types = c("langlinks", "iwlinks",
   ## classification
   if ("classification" %in% types) {
     txt <- xml2::read_html(json$parse$text[[1]])
-    html <- xml2::xml_find_all(txt, "//div[contains(., \"APG IV\")]")
-    labels <- xml2::xml_text(xml2::xml_find_all(
-      html,
-      "b[not(following-sibling::*[1][self::a])]/following-sibling::text()[1] | b/following-sibling::*[1][self::a]/text()" #nolint
-    ))
-    labels <- gsub(
-      "^\\s+|\\s$|\\(|\\)", "",
-      gsub("^:\\s+|^\\s+\\u2022\\s+", "", labels)
-    )
-    values <- xml2::xml_text(xml2::xml_find_all(html, ".//b"))[-1]
+    #html <- xml2::xml_find_all(txt, "//div[contains(., \"APG IV\")]")
+    html <- xml2::xml_find_all(txt, "//div[contains(., \"Domain\") or contains(., \"Phylum\")]")[[2]]
+    labels <- c(gsub(":", "", strex(xml_text(html), "[A-Za-z]+:")[[1]]), "Authority")
+    # labels <- xml2::xml_text(xml2::xml_find_all(
+    #   html,
+    #   "b[not(following-sibling::*[1][self::a])]/following-sibling::text()[1] | b/following-sibling::*[1][self::a]/text()" #nolint
+    # ))
+    # labels <- gsub(
+    #   "^\\s+|\\s$|\\(|\\)", "",
+    #   gsub("^:\\s+|^\\s+\u2022\\s+?|\u2022", "", labels)
+    # )
+    values <- xml2::xml_text(
+      xml2::xml_find_all(if (inherits(html, "xml_nodes")) html[[2]] else html, ".//b"))
     values <- gsub("^:\\s+|^.+:\\s?", "", values)
     clz <- mapply(list, rank = labels, name = values,
                   SIMPLIFY = FALSE, USE.NAMES = FALSE)

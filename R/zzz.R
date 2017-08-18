@@ -43,3 +43,7 @@ match_ <- function(string, pattern) {
   pos <- regexec(pattern, string)
   regmatches(string, pos)[[1]]
 }
+
+strex <- function(string, pattern) {
+  regmatches(string, gregexpr(pattern, string))
+}
