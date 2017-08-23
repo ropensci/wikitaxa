@@ -87,7 +87,7 @@ wt_wikicommons_parse <- function(page, types = c("langlinks", "iwlinks",
     txt <- xml2::read_html(json$parse$text[[1]])
     #html <- xml2::xml_find_all(txt, "//div[contains(., \"APG IV\")]")
     html <- xml2::xml_find_all(txt, "//div[contains(., \"Domain\") or contains(., \"Phylum\")]")[[2]]
-    labels <- c(gsub(":", "", strex(xml_text(html), "[A-Za-z]+:")[[1]]), "Authority")
+    labels <- c(gsub(":", "", strex(xml2::xml_text(html), "[A-Za-z]+:")[[1]]), "Authority")
     # labels <- xml2::xml_text(xml2::xml_find_all(
     #   html,
     #   "b[not(following-sibling::*[1][self::a])]/following-sibling::text()[1] | b/following-sibling::*[1][self::a]/text()" #nolint
