@@ -47,6 +47,12 @@ test_that("wt_wikicommons fails well", {
     wt_wikicommons("Pinus", "asdf"),
     "utf8 must be of class logical"
   )
+
+  # when on page found, returns list()
+  expect_equal(
+    wt_wikicommons("Category:Ursus"),
+    list()
+  )
 })
 
 context("wt_wikicommons_parse")

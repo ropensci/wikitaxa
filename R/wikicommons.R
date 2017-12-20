@@ -23,6 +23,9 @@
 #' wt_wikicommons(name = "Pinus contorta")
 #' wt_wikicommons(name = "Ursus americanus")
 #' wt_wikicommons(name = "Balaenoptera musculus")
+#' 
+#' wt_wikicommons(name = "Category:Poeae")
+#' wt_wikicommons(name = "Category:Pinaceae")
 #'
 #' # low level
 #' pg <- wt_wiki_page("https://commons.wikimedia.org/wiki/Malus_domestica")
@@ -56,12 +59,19 @@ wt_wikicommons_parse <- function(page, types = c("langlinks", "iwlinks",
 
   result <- wt_wiki_page_parse(page, types = types, tidy = tidy)
   json <- jsonlite::fromJSON(rawToChar(page$content), simplifyVector = FALSE)
+  # if output is NULL
   if (is.null(json$parse)) {
     return(result)
   }
+  # if page not found
+  txt <- xml2::read_html(json$parse$text[[1]])
+  html <- tryCatch(
+      xml2::xml_find_all(txt, 
+        "//div[contains(., \"Domain\") or contains(., \"Phylum\")]")[[2]], 
+      error = function(e) e)
+    if (inherits(html, "error")) return(list())
   ## Common names
   if ("common_names" %in% types) {
-    txt <- xml2::read_html(json$parse$text[[1]])
     vernacular_html <- xml2::xml_find_all(txt,
                                           xpath = "//bdi[@class='vernacular']")
     # XML formats:
@@ -84,21 +94,22 @@ wt_wikicommons_parse <- function(page, types = c("langlinks", "iwlinks",
   }
   ## classification
   if ("classification" %in% types) {
-    txt <- xml2::read_html(json$parse$text[[1]])
-    #html <- xml2::xml_find_all(txt, "//div[contains(., \"APG IV\")]")
-    html <- xml2::xml_find_all(txt, "//div[contains(., \"Domain\") or contains(., \"Phylum\")]")[[2]]
-    labels <- c(gsub(":", "", strex(xml2::xml_text(html), "[A-Za-z]+:")[[1]]), "Authority")
-    # labels <- xml2::xml_text(xml2::xml_find_all(
-    #   html,
-    #   "b[not(following-sibling::*[1][self::a])]/following-sibling::text()[1] | b/following-sibling::*[1][self::a]/text()" #nolint
-    # ))
-    # labels <- gsub(
-    #   "^\\s+|\\s$|\\(|\\)", "",
-    #   gsub("^:\\s+|^\\s+\u2022\\s+?|\u2022", "", labels)
-    # )
+    html <- tryCatch(
+      xml2::xml_find_all(txt, 
+        "//div[contains(., \"Domain\") or contains(., \"Phylum\")]")[[2]], 
+      error = function(e) e)
+
+    # labels
+    labels <- c(gsub(":", "", strex(xml2::xml_text(html), "[A-Za-z]+\\)?:")[[1]]), "Authority")
+    labels <- gsub("\\(|\\)", "", labels)
+    labels <- labels[-1]
+
+    # values    
     values <- xml2::xml_text(
       xml2::xml_find_all(if (inherits(html, "xml_nodes")) html[[2]] else html, ".//b"))
     values <- gsub("^:\\s+|^.+:\\s?", "", values)
+    values <- values[-1]
+
     clz <- mapply(list, rank = labels, name = values,
                   SIMPLIFY = FALSE, USE.NAMES = FALSE)
     result$classification <- if (tidy) atbl(dt_df(clz)) else clz

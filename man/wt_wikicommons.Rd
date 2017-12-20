@@ -61,6 +61,9 @@ wt_wikicommons(name = "Pinus contorta")
 wt_wikicommons(name = "Ursus americanus")
 wt_wikicommons(name = "Balaenoptera musculus")
 
+wt_wikicommons(name = "Category:Poeae")
+wt_wikicommons(name = "Category:Pinaceae")
+
 # low level
 pg <- wt_wiki_page("https://commons.wikimedia.org/wiki/Malus_domestica")
 wt_wikicommons_parse(pg)
