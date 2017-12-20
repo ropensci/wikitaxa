@@ -104,25 +104,17 @@ higher level
 ```r
 res <- wt_wikipedia("Malus domestica")
 res$common_names
-#> # A tibble: 3 x 2
-#>         name language
-#>        <chr>    <chr>
-#> 1 apple tree       en
-#> 2      apple       en
-#> 3      Apple       en
+#> # A tibble: 1 x 2
+#>    name language
+#>   <chr>    <chr>
+#> 1 Apple       en
 res$classification
-#> # A tibble: 9 x 2
-#>       rank         name
-#>      <chr>        <chr>
-#> 1  kingdom      Plantae
-#> 2 unranked  Angiosperms
-#> 3 unranked     Eudicots
-#> 4 unranked       Rosids
-#> 5    order      Rosales
-#> 6   family     Rosaceae
-#> 7    genus        Malus
-#> 8  species    M. pumila
-#> 9 binomial Malus pumila
+#> # A tibble: 3 x 2
+#>         rank         name
+#>        <chr>        <chr>
+#> 1 plainlinks             
+#> 2    species    M. pumila
+#> 3   binomial Malus pumila
 ```
 
 choose a wikipedia language
@@ -178,45 +170,46 @@ higher level
 res <- wt_wikicommons("Abelmoschus")
 res$classification
 #> # A tibble: 15 x 2
-#>            rank           name
-#>           <chr>          <chr>
-#>  1       Domain      Eukaryota
-#>  2   • unranked Archaeplastida
-#>  3     • Regnum        Plantae
-#>  4     • Cladus    angiosperms
-#>  5     • Cladus       eudicots
-#>  6     • Cladus  core eudicots
-#>  7     • Cladus    superrosids
-#>  8     • Cladus         rosids
-#>  9     • Cladus    eurosids II
-#> 10       • Ordo       Malvales
-#> 11    • Familia      Malvaceae
-#> 12 • Subfamilia     Malvoideae
-#> 13     • Tribus      Hibisceae
-#> 14            •    Abelmoschus
-#> 15               Medik. (1787)
+#>          rank           name
+#>         <chr>          <chr>
+#>  1     Domain      Eukaryota
+#>  2   unranked Archaeplastida
+#>  3     Regnum        Plantae
+#>  4     Cladus    angiosperms
+#>  5     Cladus       eudicots
+#>  6     Cladus  core eudicots
+#>  7     Cladus    superrosids
+#>  8     Cladus         rosids
+#>  9     Cladus    eurosids II
+#> 10       Ordo       Malvales
+#> 11    Familia      Malvaceae
+#> 12 Subfamilia     Malvoideae
+#> 13     Tribus      Hibisceae
+#> 14      Genus    Abelmoschus
+#> 15  Authority  Medik. (1787)
 res$common_names
-#> # A tibble: 18 x 2
-#>              name language
-#>             <chr>    <chr>
-#>  1           okra       en
-#>  2           مسكي       ar
-#>  3        Abelmoş       az
-#>  4      Ibiškovec       cs
-#>  5   Bisameibisch       de
-#>  6          Okrat       fi
-#>  7      Abelmosco       gl
-#>  8      Abelmošus       hr
-#>  9         Ybiškė       lt
-#> 10 "അബെ\u0d7dമോസ്കസ്"       ml
-#> 11       Абельмош      mrj
-#> 12        Piżmian       pl
-#> 13       Абельмош       ru
-#> 14           موري       sd
-#> 15    Okrasläktet       sv
-#> 16       Абельмош      udm
-#> 17  Chi Vông vang       vi
-#> 18         黄葵属       zh
+#> # A tibble: 19 x 2
+#>                name language
+#>               <chr>    <chr>
+#>  1             okra       en
+#>  2             مسكي       ar
+#>  3          Abelmoş       az
+#>  4        Ibiškovec       cs
+#>  5     Bisameibisch       de
+#>  6            Okrat       fi
+#>  7        Abelmosco       gl
+#>  8        Abelmošus       hr
+#>  9           Ybiškė       lt
+#> 10   "അബെ\u0d7dമോസ്കസ്"       ml
+#> 11         Абельмош      mrj
+#> 12 Abelmoskusslekta       nn
+#> 13          Piżmian       pl
+#> 14         Абельмош       ru
+#> 15             موري       sd
+#> 16      Okrasläktet       sv
+#> 17         Абельмош      udm
+#> 18    Chi Vông vang       vi
+#> 19           黄葵属       zh
 ```
 
 ## wikispecies

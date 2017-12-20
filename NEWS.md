@@ -1,7 +1,7 @@
 wikitaxa 0.1.4
 ==============
 
-## NEW FEATURES
+### NEW FEATURES
 
 * `wt_wikipedia()` and `wt_wikipedia_search()` gain parameter `wiki`
 to give the wiki language, which defaults to `en` (#9)
@@ -14,6 +14,6 @@ to give the wiki language, which defaults to `en` (#9)
 wikitaxa 0.1.0
 ==============
 
-## NEW FEATURES
+### NEW FEATURES
 
 * Released to CRAN
