@@ -1,7 +1,7 @@
 ## Test environments
 
-* local OS X install, R 3.4.0 patched
-* ubuntu 12.04 (on travis-ci), R 3.4.0
+* local OS X install, R 3.4.3 patched
+* ubuntu 12.04 (on travis-ci), R 3.4.3
 * win-builder (devel and release)
 
 ## R CMD check results
@@ -17,12 +17,11 @@ File 'LICENSE':
 
 ## Reverse dependencies
 
-There are no reverse dependencies.
+There is 1 reverse dependency, and there was no problems when testing with it.
 
 ---
 
-This version includes fixes for tests failing on CRAN checks, and 
-a function gains a parameter to specify Wikipedia site language.
+This version includes three bug fixes to improve usability.
 
 Thanks!
 Scott Chamberlain
