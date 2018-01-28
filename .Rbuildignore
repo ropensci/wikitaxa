@@ -17,6 +17,6 @@ vignettes/cache/
 ^cran-comments\.md$
 ^revdep$
 .github
-man-roxygen
 docs
 appveyor.yml
+^codemeta\.json$

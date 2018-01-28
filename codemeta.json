@@ -1,0 +1,180 @@
+{
+  "@context": ["http://purl.org/codemeta/2.0", "http://schema.org"],
+  "@type": "SoftwareSourceCode",
+  "identifier": "wikitaxa",
+  "description": "'Taxonomic' information from 'Wikipedia', 'Wikicommons',\n    'Wikispecies', and 'Wikidata'. Functions included for getting\n    taxonomic information from each of the sources just listed, as\n    well performing taxonomic search.",
+  "name": "wikitaxa: Taxonomic Information from 'Wikipedia'",
+  "codeRepository": "https://github.com/ropensci/wikitaxa",
+  "issueTracker": "https://github.com/ropensci/wikitaxa/issues",
+  "license": "https://spdx.org/licenses/MIT",
+  "version": "0.2.0.9100",
+  "programmingLanguage": {
+    "@type": "ComputerLanguage",
+    "name": "R",
+    "version": "3.4.3",
+    "url": "https://r-project.org"
+  },
+  "runtimePlatform": "R version 3.4.3 Patched (2018-01-01 r74017)",
+  "provider": {
+    "@id": "https://cran.r-project.org",
+    "@type": "Organization",
+    "name": "Central R Archive Network (CRAN)",
+    "url": "https://cran.r-project.org"
+  },
+  "author": [
+    {
+      "@type": "Person",
+      "givenName": "Scott",
+      "familyName": "Chamberlain",
+      "email": "myrmecocystus+r@gmail.com"
+    },
+    {
+      "@type": "Person",
+      "givenName": "Ethan",
+      "familyName": "Welty"
+    }
+  ],
+  "maintainer": {
+    "@type": "Person",
+    "givenName": "Scott",
+    "familyName": "Chamberlain",
+    "email": "myrmecocystus+r@gmail.com"
+  },
+  "softwareSuggestions": [
+    {
+      "@type": "SoftwareApplication",
+      "identifier": "roxygen2",
+      "name": "roxygen2",
+      "version": "6.0.1",
+      "provider": {
+        "@id": "https://cran.r-project.org",
+        "@type": "Organization",
+        "name": "Central R Archive Network (CRAN)",
+        "url": "https://cran.r-project.org"
+      }
+    },
+    {
+      "@type": "SoftwareApplication",
+      "identifier": "testthat",
+      "name": "testthat",
+      "provider": {
+        "@id": "https://cran.r-project.org",
+        "@type": "Organization",
+        "name": "Central R Archive Network (CRAN)",
+        "url": "https://cran.r-project.org"
+      }
+    },
+    {
+      "@type": "SoftwareApplication",
+      "identifier": "knitr",
+      "name": "knitr",
+      "provider": {
+        "@id": "https://cran.r-project.org",
+        "@type": "Organization",
+        "name": "Central R Archive Network (CRAN)",
+        "url": "https://cran.r-project.org"
+      }
+    },
+    {
+      "@type": "SoftwareApplication",
+      "identifier": "rmarkdown",
+      "name": "rmarkdown",
+      "provider": {
+        "@id": "https://cran.r-project.org",
+        "@type": "Organization",
+        "name": "Central R Archive Network (CRAN)",
+        "url": "https://cran.r-project.org"
+      }
+    }
+  ],
+  "softwareRequirements": [
+    {
+      "@type": "SoftwareApplication",
+      "identifier": "WikidataR",
+      "name": "WikidataR",
+      "provider": {
+        "@id": "https://cran.r-project.org",
+        "@type": "Organization",
+        "name": "Central R Archive Network (CRAN)",
+        "url": "https://cran.r-project.org"
+      }
+    },
+    {
+      "@type": "SoftwareApplication",
+      "identifier": "data.table",
+      "name": "data.table",
+      "provider": {
+        "@id": "https://cran.r-project.org",
+        "@type": "Organization",
+        "name": "Central R Archive Network (CRAN)",
+        "url": "https://cran.r-project.org"
+      }
+    },
+    {
+      "@type": "SoftwareApplication",
+      "identifier": "curl",
+      "name": "curl",
+      "provider": {
+        "@id": "https://cran.r-project.org",
+        "@type": "Organization",
+        "name": "Central R Archive Network (CRAN)",
+        "url": "https://cran.r-project.org"
+      }
+    },
+    {
+      "@type": "SoftwareApplication",
+      "identifier": "crul",
+      "name": "crul",
+      "version": "0.3.4",
+      "provider": {
+        "@id": "https://cran.r-project.org",
+        "@type": "Organization",
+        "name": "Central R Archive Network (CRAN)",
+        "url": "https://cran.r-project.org"
+      }
+    },
+    {
+      "@type": "SoftwareApplication",
+      "identifier": "tibble",
+      "name": "tibble",
+      "provider": {
+        "@id": "https://cran.r-project.org",
+        "@type": "Organization",
+        "name": "Central R Archive Network (CRAN)",
+        "url": "https://cran.r-project.org"
+      }
+    },
+    {
+      "@type": "SoftwareApplication",
+      "identifier": "jsonlite",
+      "name": "jsonlite",
+      "provider": {
+        "@id": "https://cran.r-project.org",
+        "@type": "Organization",
+        "name": "Central R Archive Network (CRAN)",
+        "url": "https://cran.r-project.org"
+      }
+    },
+    {
+      "@type": "SoftwareApplication",
+      "identifier": "xml2",
+      "name": "xml2",
+      "provider": {
+        "@id": "https://cran.r-project.org",
+        "@type": "Organization",
+        "name": "Central R Archive Network (CRAN)",
+        "url": "https://cran.r-project.org"
+      }
+    },
+    {
+      "@type": "SoftwareApplication",
+      "identifier": "R(>=3.2.1)",
+      "name": "R(>=3.2.1)"
+    }
+  ],
+  "contIntegration": "https://travis-ci.org/ropensci/wikitaxa",
+  "developmentStatus": "wip",
+  "releaseNotes": "https://github.com/ropensci/wikitaxa/blob/master/NEWS.md",
+  "readme": "https://github.com/ropensci/wikitaxa/blob/master/README.md",
+  "fileSize": "23.648KB"
+}
