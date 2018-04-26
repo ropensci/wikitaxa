@@ -1,0 +1,665 @@
+http_interactions:
+- request:
+    method: get
+    uri: https://commons.wikimedia.org/w/api.php?page=Malus_domestica&action=parse&redirects=TRUE&format=json&utf8=TRUE&prop=text%7Clanglinks%7Ccategories%7Clinks%7Ctemplates%7Cimages%7Cexternallinks%7Csections%7Crevid%7Cdisplaytitle%7Ciwlinks%7Cproperties
+    body:
+      encoding: ''
+      string: ''
+    headers:
+      User-Agent: libcurl/7.54.0 r-curl/3.2 crul/0.5.2
+      Accept-Encoding: gzip, deflate
+      Accept: application/json, text/xml, application/xml, */*
+  response:
+    status:
+      status_code: '200'
+      message: OK
+      explanation: Request fulfilled, document follows
+    headers:
+      status: HTTP/1.1 200 OK
+      date: Thu, 26 Apr 2018 04:56:15 GMT
+      content-type: application/json; charset=utf-8
+      transfer-encoding: chunked
+      connection: keep-alive
+      server: mw1221.eqiad.wmnet
+      x-powered-by: HHVM/3.18.6-dev
+      p3p: CP="This is not a P3P policy! See https://commons.wikimedia.org/wiki/Special:CentralAutoLogin/P3P
+        for more info."
+      cache-control: private, must-revalidate, max-age=0
+      vary: Accept-Encoding,Treat-as-Untrusted,X-Forwarded-Proto,Cookie,Authorization
+      content-disposition: inline; filename=api-result.json
+      x-content-type-options: nosniff
+      x-frame-options: DENY
+      backend-timing: D=76941 t=1524718575067378
+      content-encoding: gzip
+      x-varnish: 141228212, 169495008, 402467607, 1016200707
+      via: 1.1 varnish (Varnish/5.1), 1.1 varnish (Varnish/5.1), 1.1 varnish (Varnish/5.1),
+        1.1 varnish (Varnish/5.1)
+      accept-ranges: bytes
+      age: '0'
+      x-cache: cp1065 pass, cp2007 pass, cp4027 pass, cp4027 pass
+      x-cache-status: pass
+      strict-transport-security: max-age=106384710; includeSubDomains; preload
+      x-analytics: ns=-1;special=Badtitle;WMF-Last-Access=26-Apr-2018;https=1
+      x-client-ip: 24.21.229.59
+    body:
+      encoding: UTF-8
+      string: '{"parse":{"title":"Malus domestica","pageid":9161,"revid":281940175,"redirects":[],"text":{"*":"<div
+        class=\"mw-parser-output\"><div style=\"float:left; margin:2px auto; border-top:1px
+        solid #ccc; border-bottom:1px solid #aaa; font-size:97%\"><b><a href=\"/wiki/APG_IV\"
+        class=\"mw-redirect\" title=\"APG IV\">APG IV Classification</a></b>:&#160;Domain<b>:&#160;<a
+        href=\"/wiki/Eukaryota\" class=\"mw-redirect\" title=\"Eukaryota\"><span style=\"color:#005896\">Eukaryota</span></a></b>&#160;•
+        (unranked)<b>:&#160;<a href=\"/wiki/Category:Archaeplastida\" title=\"Category:Archaeplastida\">Archaeplastida</a></b>&#160;•
+        Regnum<b>:&#160;<a href=\"/wiki/Plantae\" class=\"mw-redirect\" title=\"Plantae\"><span
+        style=\"color:#005896\">Plantae</span></a></b>&#160;• Cladus<b>:&#160;<a href=\"/wiki/Angiosperms\"
+        title=\"Angiosperms\"><span style=\"color:#005896\">angiosperms</span></a></b>&#160;•
+        Cladus<b>:&#160;<a href=\"/wiki/Category:Eudicots\" title=\"Category:Eudicots\">eudicots</a></b>&#160;•
+        Cladus<b>:&#160;<a href=\"/wiki/Category:Core_eudicots\" title=\"Category:Core
+        eudicots\">core&#160;eudicots</a></b>&#160;• Cladus<b>:&#160;<a href=\"/wiki/Category:Superrosids\"
+        title=\"Category:Superrosids\">superrosids</a></b>&#160;• Cladus<b>:&#160;<a
+        href=\"/wiki/Rosids\" class=\"mw-redirect\" title=\"Rosids\"><span style=\"color:#005896\">rosids</span></a></b>&#160;•
+        Cladus<b>:&#160;<a href=\"/wiki/Category:Eurosids_I\" title=\"Category:Eurosids
+        I\">eurosids&#160;I</a></b>&#160;• Ordo<b>:&#160;<a href=\"/wiki/Rosales\"
+        class=\"mw-redirect\" title=\"Rosales\"><span style=\"color:#005896\">Rosales</span></a></b>&#160;•
+        Familia<b>:&#160;<a href=\"/wiki/Rosaceae\" class=\"mw-redirect\" title=\"Rosaceae\"><span
+        style=\"color:#005896\">Rosaceae</span></a></b>&#160;• Subfamilia<b>:&#160;<a
+        href=\"/wiki/Category:Amygdaloideae\" title=\"Category:Amygdaloideae\">Amygdaloideae</a></b>&#160;•
+        Tribus<b>:&#160;<a href=\"/wiki/Category:Maleae\" title=\"Category:Maleae\">Maleae</a></b>&#160;•
+        Genus<b>:&#160;<i><a href=\"/wiki/Malus\" title=\"Malus\"><span style=\"color:#005896\">Malus</span></a></i></b>&#160;•
+        <b>Species:&#160;<i><a href=\"/wiki/Category:Malus_domestica\" title=\"Category:Malus
+        domestica\">Malus&#160;domestica</a></i></b> <span style=\"white-space:nowrap;
+        font-size:80%\"><b>Borkh. (1803)</b></span></div>\n<div style=\"clear:both\"></div>\n<div
+        class=\"infobox sisterproject\">\n<div class=\"floatleft\"><img alt=\"Wikispecies-logo.svg\"
+        src=\"https://upload.wikimedia.org/wikipedia/commons/thumb/d/df/Wikispecies-logo.svg/50px-Wikispecies-logo.svg.png\"
+        width=\"50\" height=\"59\" srcset=\"https://upload.wikimedia.org/wikipedia/commons/thumb/d/df/Wikispecies-logo.svg/75px-Wikispecies-logo.svg.png
+        1.5x, https://upload.wikimedia.org/wikipedia/commons/thumb/d/df/Wikispecies-logo.svg/100px-Wikispecies-logo.svg.png
+        2x\" data-file-width=\"941\" data-file-height=\"1103\" /></div>\n<div style=\"margin-left:60px\"><a
+        href=\"https://en.wikipedia.org/wiki/Wikispecies\" class=\"extiw\" title=\"en:Wikispecies\">Wikispecies</a>
+        has an entry on:\n<div style=\"margin-left:10px\"><i><b><a href=\"https://species.wikimedia.org/wiki/Malus_domestica\"
+        class=\"extiw\" title=\"species:Malus domestica\">Malus domestica</a></b></i></div>\n</div>\n</div>\n<div
+        style=\"margin:2px auto; border:1px solid #ccc;\" class=\"biota\">\n<div style=\"background:#f1fcf1;\">&#160;<b><a
+        href=\"https://en.wikipedia.org/wiki/Common_name\" class=\"extiw\" title=\"en:Common
+        name\">Vernacular names</a></b>&#160;<small>[<a href=\"https://www.wikidata.org/wiki/Q18674606\"
+        class=\"extiw\" title=\"wikidata:Q18674606\">edit wikidata ''Malus domestica''</a>]</small>
+        <a href=\"https://www.wikidata.org/wiki/Q18674606\" title=\"Wikidata ''Malus
+        domestica'' linked to current gallery\"><img alt=\"Wikidata ''Malus domestica''
+        linked to current gallery\" src=\"https://upload.wikimedia.org/wikipedia/commons/thumb/d/d2/Wikidata-logo-without-paddings.svg/20px-Wikidata-logo-without-paddings.svg.png\"
+        width=\"20\" height=\"12\" srcset=\"https://upload.wikimedia.org/wikipedia/commons/thumb/d/d2/Wikidata-logo-without-paddings.svg/30px-Wikidata-logo-without-paddings.svg.png
+        1.5x, https://upload.wikimedia.org/wikipedia/commons/thumb/d/d2/Wikidata-logo-without-paddings.svg/40px-Wikidata-logo-without-paddings.svg.png
+        2x\" data-file-width=\"512\" data-file-height=\"316\" /></a></div>\n<div style=\"padding:0
+        4px; background:#fdfdfd; font-size:95%\" class=\"hlist\">\n<ul>\n<li><b><bdi
+        lang=\"en\">English</bdi>:&#160;<bdi class=\"vernacular\" lang=\"en\">Apple</bdi></b></li>\n<li><b><bdi
+        lang=\"als\">Alemannisch</bdi>:</b>&#160;<bdi class=\"vernacular\" lang=\"als\"><a
+        href=\"https://als.wikipedia.org/wiki/Kulturapfel\" class=\"extiw\" title=\"als:Kulturapfel\">Kulturapfel</a></bdi></li>\n<li><b><bdi
+        lang=\"am\">አማርኛ</bdi>:</b>&#160;<bdi class=\"vernacular\" lang=\"am\"><a
+        href=\"https://am.wikipedia.org/wiki/%E1%89%B1%E1%8D%8B%E1%88%95\" class=\"extiw\"
+        title=\"am:ቱፋሕ\">ቱፋሕ</a></bdi></li>\n<li><b><bdi lang=\"an\">aragonés</bdi>:</b>&#160;<bdi
+        class=\"vernacular\" lang=\"an\">Mazana</bdi></li>\n<li><b><bdi lang=\"ar\">العربية</bdi>:</b>&#160;<bdi
+        class=\"vernacular\" lang=\"ar\">تفاح</bdi></li>\n<li><b><bdi lang=\"arz\">مصرى</bdi>:</b>&#160;<bdi
+        class=\"vernacular\" lang=\"arz\">تفاح</bdi></li>\n<li><b><bdi lang=\"as\">অসমীয়া</bdi>:</b>&#160;<bdi
+        class=\"vernacular\" lang=\"as\">আপেল</bdi></li>\n<li><b><bdi lang=\"ast\">asturianu</bdi>:</b>&#160;<bdi
+        class=\"vernacular\" lang=\"ast\"><a href=\"https://ast.wikipedia.org/wiki/Malus_domestica\"
+        class=\"extiw\" title=\"ast:Malus domestica\">Malus adoma</a>, Mazana</bdi></li>\n<li><b><bdi
+        lang=\"az\">azərbaycanca</bdi>:</b>&#160;<bdi class=\"vernacular\" lang=\"az\"><a
+        href=\"https://az.wikipedia.org/wiki/M%C9%99d%C9%99ni_alma_a%C4%9Fac%C4%B1\"
+        class=\"extiw\" title=\"az:Mədəni alma ağacı\">Mədəni alma ağacı</a></bdi></li>\n<li><b><bdi
+        lang=\"bat-smg\">žemaitėška</bdi>:</b>&#160;<bdi class=\"vernacular\" lang=\"bat-smg\">Vuobelis</bdi></li>\n<li><b><bdi
+        lang=\"be\">беларуская</bdi>:</b>&#160;<bdi class=\"vernacular\" lang=\"be\">Яблык</bdi></li>\n<li><b><bdi
+        lang=\"be-x-old\">беларуская (тарашкевіца)‎</bdi>:</b>&#160;<bdi class=\"vernacular\"
+        lang=\"be-x-old\">Яблык</bdi></li>\n<li><b><bdi lang=\"bg\">български</bdi>:</b>&#160;<bdi
+        class=\"vernacular\" lang=\"bg\">Ябълка</bdi></li>\n<li><b><bdi lang=\"bh\">भोजपुरी</bdi>:</b>&#160;<bdi
+        class=\"vernacular\" lang=\"bh\">सेव</bdi></li>\n<li><b><bdi lang=\"bn\">বাংলা</bdi>:</b>&#160;<bdi
+        class=\"vernacular\" lang=\"bn\">আপেল</bdi></li>\n<li><b><bdi lang=\"bo\">བོད་ཡིག</bdi>:</b>&#160;<bdi
+        class=\"vernacular\" lang=\"bo\"><a href=\"https://bo.wikipedia.org/wiki/%E0%BD%80%E0%BD%B4%E0%BC%8B%E0%BD%A4%E0%BD%B4%E0%BC%8D\"
+        class=\"extiw\" title=\"bo:ཀུ་ཤུ།\">ཀུ་ཤུ།</a></bdi></li>\n<li><b><bdi lang=\"bpy\">বিষ্ণুপ্রিয়া
+        মণিপুরী</bdi>:</b>&#160;<bdi class=\"vernacular\" lang=\"bpy\"><a href=\"https://bpy.wikipedia.org/wiki/%E0%A6%86%E0%A6%AA%E0%A7%87%E0%A6%B2\"
+        class=\"extiw\" title=\"bpy:আপেল\">আপেল</a></bdi></li>\n<li><b><bdi lang=\"br\">brezhoneg</bdi>:</b>&#160;<bdi
+        class=\"vernacular\" lang=\"br\">Aval</bdi></li>\n<li><b><bdi lang=\"bs\">bosanski</bdi>:</b>&#160;<bdi
+        class=\"vernacular\" lang=\"bs\">Jabuka</bdi></li>\n<li><b><bdi lang=\"ca\">català</bdi>:</b>&#160;<bdi
+        class=\"vernacular\" lang=\"ca\"><a href=\"https://ca.wikipedia.org/wiki/Pomera_comuna\"
+        class=\"extiw\" title=\"ca:Pomera comuna\">Pomera comuna</a>, Poma</bdi></li>\n<li><b><bdi
+        lang=\"cdo\">Mìng-dĕ̤ng-ngṳ̄</bdi>:</b>&#160;<bdi class=\"vernacular\" lang=\"cdo\"><a
+        href=\"https://cdo.wikipedia.org/wiki/B%C3%ACng-gu%C5%8D\" class=\"extiw\"
+        title=\"cdo:Bìng-guō\">Bìng-guō</a></bdi></li>\n<li><b><bdi lang=\"ckb\">کوردی</bdi>:</b>&#160;<bdi
+        class=\"vernacular\" lang=\"ckb\">سێو</bdi></li>\n<li><b><bdi lang=\"cs\">čeština</bdi>:</b>&#160;<bdi
+        class=\"vernacular\" lang=\"cs\"><a href=\"https://cs.wikipedia.org/wiki/Jablo%C5%88_dom%C3%A1c%C3%AD\"
+        class=\"extiw\" title=\"cs:Jabloň domácí\">Jabloň domácí</a></bdi></li>\n<li><b><bdi
+        lang=\"csb\">kaszëbsczi</bdi>:</b>&#160;<bdi class=\"vernacular\" lang=\"csb\"><a
+        href=\"https://csb.wikipedia.org/wiki/Dom%C3%B4c%C3%B4_jab%C5%82%C3%B3nka\"
+        class=\"extiw\" title=\"csb:Domôcô jabłónka\">Domôcô jabłónka</a></bdi></li>\n<li><b><bdi
+        lang=\"cv\">Чӑвашла</bdi>:</b>&#160;<bdi class=\"vernacular\" lang=\"cv\">Панулми</bdi></li>\n<li><b><bdi
+        lang=\"cy\">Cymraeg</bdi>:</b>&#160;<bdi class=\"vernacular\" lang=\"cy\">Afal</bdi></li>\n<li><b><bdi
+        lang=\"da\">dansk</bdi>:</b>&#160;<bdi class=\"vernacular\" lang=\"da\"><a
+        href=\"https://da.wikipedia.org/wiki/Almindelig_%C3%A6ble\" class=\"extiw\"
+        title=\"da:Almindelig æble\">Almindelig æble</a>, Æble</bdi></li>\n<li><b><bdi
+        lang=\"de\">Deutsch</bdi>:</b>&#160;<bdi class=\"vernacular\" lang=\"de\"><a
+        href=\"https://de.wikipedia.org/wiki/Kulturapfel\" class=\"extiw\" title=\"de:Kulturapfel\">Kulturapfel</a></bdi></li>\n<li><b><bdi
+        lang=\"dsb\">dolnoserbski</bdi>:</b>&#160;<bdi class=\"vernacular\" lang=\"dsb\"><a
+        href=\"https://dsb.wikipedia.org/wiki/Zagrodna_jab%C5%82u%C5%A1cyna\" class=\"extiw\"
+        title=\"dsb:Zagrodna jabłušcyna\">Zagrodna jabłušcyna</a>, Jabłuko</bdi></li>\n<li><b><bdi
+        lang=\"dv\">ދިވެހިބަސް</bdi>:</b>&#160;<bdi class=\"vernacular\" lang=\"dv\">އާފަލް</bdi></li>\n<li><b><bdi
+        lang=\"el\">Ελληνικά</bdi>:</b>&#160;<bdi class=\"vernacular\" lang=\"el\">Μήλο</bdi></li>\n<li><b><bdi
+        lang=\"eml\">emiliàn e rumagnòl</bdi>:</b>&#160;<bdi class=\"vernacular\"
+        lang=\"eml\">Pàm</bdi></li>\n<li><b><bdi lang=\"eo\">Esperanto</bdi>:</b>&#160;<bdi
+        class=\"vernacular\" lang=\"eo\"><a href=\"https://eo.wikipedia.org/wiki/Kulturpomo\"
+        class=\"extiw\" title=\"eo:Kulturpomo\">Kulturpomo</a></bdi></li>\n<li><b><bdi
+        lang=\"es\">español</bdi>:</b>&#160;<bdi class=\"vernacular\" lang=\"es\"><a
+        href=\"https://es.wikipedia.org/wiki/Malus_domestica\" class=\"extiw\" title=\"es:Malus
+        domestica\">Manzana</a></bdi></li>\n<li><b><bdi lang=\"et\">eesti</bdi>:</b>&#160;<bdi
+        class=\"vernacular\" lang=\"et\"><a href=\"https://et.wikipedia.org/wiki/%C3%95unapuu\"
+        class=\"extiw\" title=\"et:Õunapuu\">Õunapuu</a></bdi></li>\n<li><b><bdi lang=\"eu\">euskara</bdi>:</b>&#160;<bdi
+        class=\"vernacular\" lang=\"eu\"><a href=\"https://eu.wikipedia.org/wiki/Sagarrondo\"
+        class=\"extiw\" title=\"eu:Sagarrondo\">Sagarrondo</a></bdi></li>\n<li><b><bdi
+        lang=\"fa\">فارسی</bdi>:</b>&#160;<bdi class=\"vernacular\" lang=\"fa\">سیب</bdi></li>\n<li><b><bdi
+        lang=\"fi\">suomi</bdi>:</b>&#160;<bdi class=\"vernacular\" lang=\"fi\"><a
+        href=\"https://fi.wikipedia.org/wiki/Tarhaomenapuu\" class=\"extiw\" title=\"fi:Tarhaomenapuu\">Tarhaomenapuu</a></bdi></li>\n<li><b><bdi
+        lang=\"fj\">Na Vosa Vakaviti</bdi>:</b>&#160;<bdi class=\"vernacular\" lang=\"fj\">Yapolo</bdi></li>\n<li><b><bdi
+        lang=\"fr\">français</bdi>:</b>&#160;<bdi class=\"vernacular\" lang=\"fr\"><a
+        href=\"https://fr.wikipedia.org/wiki/Pommier_domestique\" class=\"extiw\"
+        title=\"fr:Pommier domestique\">Pommier domestique</a>, Pomme</bdi></li>\n<li><b><bdi
+        lang=\"frr\">Nordfriisk</bdi>:</b>&#160;<bdi class=\"vernacular\" lang=\"frr\"><a
+        href=\"https://frr.wikipedia.org/wiki/Aapelbuum\" class=\"extiw\" title=\"frr:Aapelbuum\">Aapelbuum</a></bdi></li>\n<li><b><bdi
+        lang=\"fur\">furlan</bdi>:</b>&#160;<bdi class=\"vernacular\" lang=\"fur\">Miluçâr</bdi></li>\n<li><b><bdi
+        lang=\"ga\">Gaeilge</bdi>:</b>&#160;<bdi class=\"vernacular\" lang=\"ga\">Úll</bdi></li>\n<li><b><bdi
+        lang=\"gan\">贛語</bdi>:</b>&#160;<bdi class=\"vernacular\" lang=\"gan\">蘋果</bdi></li>\n<li><b><bdi
+        lang=\"gd\">Gàidhlig</bdi>:</b>&#160;<bdi class=\"vernacular\" lang=\"gd\">Ubhal</bdi></li>\n<li><b><bdi
+        lang=\"gl\">galego</bdi>:</b>&#160;<bdi class=\"vernacular\" lang=\"gl\"><a
+        href=\"https://gl.wikipedia.org/wiki/Maceira\" class=\"extiw\" title=\"gl:Maceira\">Maceira</a></bdi></li>\n<li><b><bdi
+        lang=\"gu\">ગુજરાતી</bdi>:</b>&#160;<bdi class=\"vernacular\" lang=\"gu\">સફરજન</bdi></li>\n<li><b><bdi
+        lang=\"gv\">Gaelg</bdi>:</b>&#160;<bdi class=\"vernacular\" lang=\"gv\"><a
+        href=\"https://gv.wikipedia.org/wiki/Ooyl\" class=\"extiw\" title=\"gv:Ooyl\">Ooyl</a></bdi></li>\n<li><b><bdi
+        lang=\"hak\">客家語/Hak-kâ-ngî</bdi>:</b>&#160;<bdi class=\"vernacular\" lang=\"hak\">Phìn-kó</bdi></li>\n<li><b><bdi
+        lang=\"he\">עברית</bdi>:</b>&#160;<bdi class=\"vernacular\" lang=\"he\">תפוח</bdi></li>\n<li><b><bdi
+        lang=\"hi\">हिन्दी</bdi>:</b>&#160;<bdi class=\"vernacular\" lang=\"hi\">सेब</bdi></li>\n<li><b><bdi
+        lang=\"hif\">Fiji Hindi</bdi>:</b>&#160;<bdi class=\"vernacular\" lang=\"hif\">Aapul</bdi></li>\n<li><b><bdi
+        lang=\"hr\">hrvatski</bdi>:</b>&#160;<bdi class=\"vernacular\" lang=\"hr\">Jabuka</bdi></li>\n<li><b><bdi
+        lang=\"hsb\">hornjoserbsce</bdi>:</b>&#160;<bdi class=\"vernacular\" lang=\"hsb\"><a
+        href=\"https://hsb.wikipedia.org/wiki/Zahrodna_jab%C5%82u%C4%8Dina\" class=\"extiw\"
+        title=\"hsb:Zahrodna jabłučina\">Zahrodna jabłučina</a>, Jabłuko</bdi></li>\n<li><b><bdi
+        lang=\"ht\">Kreyòl ayisyen</bdi>:</b>&#160;<bdi class=\"vernacular\" lang=\"ht\">Pòm</bdi></li>\n<li><b><bdi
+        lang=\"hu\">magyar</bdi>:</b>&#160;<bdi class=\"vernacular\" lang=\"hu\"><a
+        href=\"https://hu.wikipedia.org/wiki/Nemes_alma\" class=\"extiw\" title=\"hu:Nemes
+        alma\">Nemes alma</a></bdi></li>\n<li><b><bdi lang=\"ia\">interlingua</bdi>:</b>&#160;<bdi
+        class=\"vernacular\" lang=\"ia\"><a href=\"https://ia.wikipedia.org/wiki/Malus_domestica\"
+        class=\"extiw\" title=\"ia:Malus domestica\">Pomo</a></bdi></li>\n<li><b><bdi
+        lang=\"id\">Bahasa Indonesia</bdi>:</b>&#160;<bdi class=\"vernacular\" lang=\"id\">Apel</bdi></li>\n<li><b><bdi
+        lang=\"is\">íslenska</bdi>:</b>&#160;<bdi class=\"vernacular\" lang=\"is\">Epli</bdi></li>\n<li><b><bdi
+        lang=\"it\">italiano</bdi>:</b>&#160;<bdi class=\"vernacular\" lang=\"it\"><a
+        href=\"https://it.wikipedia.org/wiki/Malus_domestica\" class=\"extiw\" title=\"it:Malus
+        domestica\">Mela</a></bdi></li>\n<li><b><bdi lang=\"iu\">ᐃᓄᒃᑎᑐᑦ/inuktitut</bdi>:</b>&#160;<bdi
+        class=\"vernacular\" lang=\"iu\">ᑭᒻᒥᓇᐅᔭᖅ/kimminaujaq</bdi></li>\n<li><b><bdi
+        lang=\"ja\">日本語</bdi>:</b>&#160;<bdi class=\"vernacular\" lang=\"ja\">リンゴ</bdi></li>\n<li><b><bdi
+        lang=\"jbo\">la .lojban.</bdi>:</b>&#160;<bdi class=\"vernacular\" lang=\"jbo\">plise</bdi></li>\n<li><b><bdi
+        lang=\"jv\">Basa Jawa</bdi>:</b>&#160;<bdi class=\"vernacular\" lang=\"jv\"><a
+        href=\"https://jv.wikipedia.org/wiki/Apel\" class=\"extiw\" title=\"jv:Apel\">Apel</a></bdi></li>\n<li><b><bdi
+        lang=\"kaa\">Qaraqalpaqsha</bdi>:</b>&#160;<bdi class=\"vernacular\" lang=\"kaa\">Alma</bdi></li>\n<li><b><bdi
+        lang=\"kk\">қазақша</bdi>:</b>&#160;<bdi class=\"vernacular\" lang=\"kk\">Алма</bdi></li>\n<li><b><bdi
+        lang=\"kn\">ಕನ್ನಡ</bdi>:</b>&#160;<bdi class=\"vernacular\" lang=\"kn\">ಸೇಬು</bdi></li>\n<li><b><bdi
+        lang=\"ko\">한국어</bdi>:</b>&#160;<bdi class=\"vernacular\" lang=\"ko\">사과</bdi></li>\n<li><b><bdi
+        lang=\"krc\">къарачай-малкъар</bdi>:</b>&#160;<bdi class=\"vernacular\" lang=\"krc\">Алма</bdi></li>\n<li><b><bdi
+        lang=\"ksh\">Ripoarisch</bdi>:</b>&#160;<bdi class=\"vernacular\" lang=\"ksh\">Appel</bdi></li>\n<li><b><bdi
+        lang=\"ku\">kurdî</bdi>:</b>&#160;<bdi class=\"vernacular\" lang=\"ku\"><a
+        href=\"https://ku.wikipedia.org/wiki/S%C3%AAv\" class=\"extiw\" title=\"ku:Sêv\">Sêv</a></bdi></li>\n<li><b><bdi
+        lang=\"kw\">kernowek</bdi>:</b>&#160;<bdi class=\"vernacular\" lang=\"kw\"><a
+        href=\"https://kw.wikipedia.org/wiki/Aval\" class=\"extiw\" title=\"kw:Aval\">Aval</a></bdi></li>\n<li><b><bdi
+        lang=\"la\">Latina</bdi>:</b>&#160;<bdi class=\"vernacular\" lang=\"la\">Malum</bdi></li>\n<li><b><bdi
+        lang=\"lb\">Lëtzebuergesch</bdi>:</b>&#160;<bdi class=\"vernacular\" lang=\"lb\">Apel</bdi></li>\n<li><b><bdi
+        lang=\"li\">Limburgs</bdi>:</b>&#160;<bdi class=\"vernacular\" lang=\"li\"><a
+        href=\"https://li.wikipedia.org/wiki/Appel\" class=\"extiw\" title=\"li:Appel\">Appel</a></bdi></li>\n<li><b><bdi
+        lang=\"lt\">lietuvių</bdi>:</b>&#160;<bdi class=\"vernacular\" lang=\"lt\">Obuolys</bdi></li>\n<li><b><bdi
+        lang=\"lv\">latviešu</bdi>:</b>&#160;<bdi class=\"vernacular\" lang=\"lv\"><a
+        href=\"https://lv.wikipedia.org/wiki/%C4%80bele\" class=\"extiw\" title=\"lv:Ābele\">Ābele</a>,
+        Ābols</bdi></li>\n<li><b><bdi lang=\"map-bms\">Basa Banyumasan</bdi>:</b>&#160;<bdi
+        class=\"vernacular\" lang=\"map-bms\">Apel</bdi></li>\n<li><b><bdi lang=\"mg\">Malagasy</bdi>:</b>&#160;<bdi
+        class=\"vernacular\" lang=\"mg\">Paoma</bdi></li>\n<li><b><bdi lang=\"mk\">македонски</bdi>:</b>&#160;<bdi
+        class=\"vernacular\" lang=\"mk\">Јаболко</bdi></li>\n<li><b><bdi lang=\"ml\">മലയാളം</bdi>:</b>&#160;<bdi
+        class=\"vernacular\" lang=\"ml\">ആപ്പിൾ</bdi></li>\n<li><b><bdi lang=\"mn\">монгол</bdi>:</b>&#160;<bdi
+        class=\"vernacular\" lang=\"mn\"><a href=\"https://mn.wikipedia.org/wiki/%D0%90%D0%BB%D0%B8%D0%BC\"
+        class=\"extiw\" title=\"mn:Алим\">Алим</a></bdi></li>\n<li><b><bdi lang=\"mr\">मराठी</bdi>:</b>&#160;<bdi
+        class=\"vernacular\" lang=\"mr\">सफरचंद</bdi></li>\n<li><b><bdi lang=\"ms\">Bahasa
+        Melayu</bdi>:</b>&#160;<bdi class=\"vernacular\" lang=\"ms\">Epal</bdi></li>\n<li><b><bdi
+        lang=\"nah\">Nāhuatl</bdi>:</b>&#160;<bdi class=\"vernacular\" lang=\"nah\"><a
+        href=\"https://nah.wikipedia.org/wiki/Manzanacuahuitl\" class=\"extiw\" title=\"nah:Manzanacuahuitl\">Manzanacuahuitl</a></bdi></li>\n<li><b><bdi
+        lang=\"nap\">Napulitano</bdi>:</b>&#160;<bdi class=\"vernacular\" lang=\"nap\"><a
+        href=\"https://nap.wikipedia.org/wiki/Mir\" class=\"extiw\" title=\"nap:Mir\">Mir</a></bdi></li>\n<li><b><bdi
+        lang=\"nds\">Plattdüütsch</bdi>:</b>&#160;<bdi class=\"vernacular\" lang=\"nds\"><a
+        href=\"https://nds.wikipedia.org/wiki/Huusappel\" class=\"extiw\" title=\"nds:Huusappel\">Huusappel</a></bdi></li>\n<li><b><bdi
+        lang=\"nds-nl\">Nedersaksies</bdi>:</b>&#160;<bdi class=\"vernacular\" lang=\"nds-nl\">Appel</bdi></li>\n<li><b><bdi
+        lang=\"ne\">नेपाली</bdi>:</b>&#160;<bdi class=\"vernacular\" lang=\"ne\"><a
+        href=\"https://ne.wikipedia.org/wiki/%E0%A4%B8%E0%A5%8D%E0%A4%AF%E0%A4%BE%E0%A4%89\"
+        class=\"extiw\" title=\"ne:स्याउ\">स्याउ</a></bdi></li>\n<li><b><bdi lang=\"new\">नेपाल
+        भाषा</bdi>:</b>&#160;<bdi class=\"vernacular\" lang=\"new\">स्याउ</bdi></li>\n<li><b><bdi
+        lang=\"nl\">Nederlands</bdi>:</b>&#160;<bdi class=\"vernacular\" lang=\"nl\"><a
+        href=\"https://nl.wikipedia.org/wiki/Appel_(plant)\" class=\"extiw\" title=\"nl:Appel
+        (plant)\">Appel</a></bdi></li>\n<li><b><bdi lang=\"nn\">norsk nynorsk</bdi>:</b>&#160;<bdi
+        class=\"vernacular\" lang=\"nn\"><a href=\"https://nn.wikipedia.org/wiki/Eple\"
+        class=\"extiw\" title=\"nn:Eple\">Eple</a></bdi></li>\n<li><b><bdi lang=\"no\">norsk</bdi>:</b>&#160;<bdi
+        class=\"vernacular\" lang=\"no\">Epleslekten</bdi></li>\n<li><b><bdi lang=\"nv\">Diné
+        bizaad</bdi>:</b>&#160;<bdi class=\"vernacular\" lang=\"nv\">Bilasáana</bdi></li>\n<li><b><bdi
+        lang=\"oc\">occitan</bdi>:</b>&#160;<bdi class=\"vernacular\" lang=\"oc\"><a
+        href=\"https://oc.wikipedia.org/wiki/Pomi%C3%A8r\" class=\"extiw\" title=\"oc:Pomièr\">Pomièr</a>,
+        Poma</bdi></li>\n<li><b><bdi lang=\"os\">Ирон</bdi>:</b>&#160;<bdi class=\"vernacular\"
+        lang=\"os\"><a href=\"https://os.wikipedia.org/wiki/%D0%A5%C3%A6%D0%B4%D0%B7%D0%B0%D1%80%D0%BE%D0%BD_%D1%84%C3%A6%D1%82%D0%BA%D1%8A%D1%83%D1%8B\"
+        class=\"extiw\" title=\"os:Хæдзарон фæткъуы\">Хæдзарон фæткъуы</a>, Фæткъуы</bdi></li>\n<li><b><bdi
+        lang=\"pam\">Kapampangan</bdi>:</b>&#160;<bdi class=\"vernacular\" lang=\"pam\"><a
+        href=\"https://pam.wikipedia.org/wiki/Mansanas\" class=\"extiw\" title=\"pam:Mansanas\">Mansanas</a></bdi></li>\n<li><b><bdi
+        lang=\"pl\">polski</bdi>:</b>&#160;<bdi class=\"vernacular\" lang=\"pl\"><a
+        href=\"https://pl.wikipedia.org/wiki/Jab%C5%82o%C5%84_domowa\" class=\"extiw\"
+        title=\"pl:Jabłoń domowa\">Jabłoń domowa</a>, Jabłko</bdi></li>\n<li><b><bdi
+        lang=\"pnb\">پنجابی</bdi>:</b>&#160;<bdi class=\"vernacular\" lang=\"pnb\">سیب</bdi></li>\n<li><b><bdi
+        lang=\"ps\">پښتو</bdi>:</b>&#160;<bdi class=\"vernacular\" lang=\"ps\"><a
+        href=\"https://ps.wikipedia.org/wiki/%D9%85%DA%BC%D9%87\" class=\"extiw\"
+        title=\"ps:مڼه\">مڼه</a></bdi></li>\n<li><b><bdi lang=\"pt\">português</bdi>:</b>&#160;<bdi
+        class=\"vernacular\" lang=\"pt\"><a href=\"https://pt.wikipedia.org/wiki/Malus_domestica\"
+        class=\"extiw\" title=\"pt:Malus domestica\">Maçã</a></bdi></li>\n<li><b><bdi
+        lang=\"qu\">Runa Simi</bdi>:</b>&#160;<bdi class=\"vernacular\" lang=\"qu\"><a
+        href=\"https://qu.wikipedia.org/wiki/Mansana\" class=\"extiw\" title=\"qu:Mansana\">Mansana</a></bdi></li>\n<li><b><bdi
+        lang=\"ro\">română</bdi>:</b>&#160;<bdi class=\"vernacular\" lang=\"ro\"><a
+        href=\"https://ro.wikipedia.org/wiki/M%C4%83r\" class=\"extiw\" title=\"ro:Măr\">Măr</a></bdi></li>\n<li><b><bdi
+        lang=\"ru\">русский</bdi>:</b>&#160;<bdi class=\"vernacular\" lang=\"ru\"><a
+        href=\"https://ru.wikipedia.org/wiki/%D0%AF%D0%B1%D0%BB%D0%BE%D0%BD%D1%8F_%D0%B4%D0%BE%D0%BC%D0%B0%D1%88%D0%BD%D1%8F%D1%8F\"
+        class=\"extiw\" title=\"ru:Яблоня домашняя\">Яблоня домашняя</a>, Яблоко</bdi></li>\n<li><b><bdi
+        lang=\"rw\">Kinyarwanda</bdi>:</b>&#160;<bdi class=\"vernacular\" lang=\"rw\">Pome</bdi></li>\n<li><b><bdi
+        lang=\"sc\">sardu</bdi>:</b>&#160;<bdi class=\"vernacular\" lang=\"sc\">Mela</bdi></li>\n<li><b><bdi
+        lang=\"scn\">sicilianu</bdi>:</b>&#160;<bdi class=\"vernacular\" lang=\"scn\">Pumu</bdi></li>\n<li><b><bdi
+        lang=\"sco\">Scots</bdi>:</b>&#160;<bdi class=\"vernacular\" lang=\"sco\">Aiple</bdi></li>\n<li><b><bdi
+        lang=\"sd\">سنڌي</bdi>:</b>&#160;<bdi class=\"vernacular\" lang=\"sd\">اَنبِڙِي</bdi></li>\n<li><b><bdi
+        lang=\"sh\">srpskohrvatski / српскохрватски</bdi>:</b>&#160;<bdi class=\"vernacular\"
+        lang=\"sh\"><a href=\"https://sh.wikipedia.org/wiki/Jabuka\" class=\"extiw\"
+        title=\"sh:Jabuka\">Jabuka</a></bdi></li>\n<li><b><bdi lang=\"si\">සිංහල</bdi>:</b>&#160;<bdi
+        class=\"vernacular\" lang=\"si\"><a href=\"https://si.wikipedia.org/wiki/%E0%B6%87%E0%B6%B4%E0%B6%BD%E0%B7%8A\"
+        class=\"extiw\" title=\"si:ඇපල්\">ඇපල්</a></bdi></li>\n<li><b><bdi lang=\"sk\">slovenčina</bdi>:</b>&#160;<bdi
+        class=\"vernacular\" lang=\"sk\"><a href=\"https://sk.wikipedia.org/wiki/Jablo%C5%88_dom%C3%A1ca\"
+        class=\"extiw\" title=\"sk:Jabloň domáca\">Jabloň domáca</a>, Jablko</bdi></li>\n<li><b><bdi
+        lang=\"sl\">slovenščina</bdi>:</b>&#160;<bdi class=\"vernacular\" lang=\"sl\"><a
+        href=\"https://sl.wikipedia.org/wiki/Jablana\" class=\"extiw\" title=\"sl:Jablana\">Jablana</a></bdi></li>\n<li><b><bdi
+        lang=\"sq\">shqip</bdi>:</b>&#160;<bdi class=\"vernacular\" lang=\"sq\">Molla</bdi></li>\n<li><b><bdi
+        lang=\"sr\">српски / srpski</bdi>:</b>&#160;<bdi class=\"vernacular\" lang=\"sr\"><a
+        href=\"https://sr.wikipedia.org/wiki/%D0%94%D0%BE%D0%BC%D0%B0%D1%9B%D0%B0_%D1%98%D0%B0%D0%B1%D1%83%D0%BA%D0%B0\"
+        class=\"extiw\" title=\"sr:Домаћа јабука\">Домаћа јабука</a>, Јабука</bdi></li>\n<li><b><bdi
+        lang=\"sv\">svenska</bdi>:</b>&#160;<bdi class=\"vernacular\" lang=\"sv\"><a
+        href=\"https://sv.wikipedia.org/wiki/%C3%84ppeltr%C3%A4d\" class=\"extiw\"
+        title=\"sv:Äppelträd\">Äppelträd</a>, Äpple</bdi></li>\n<li><b><bdi lang=\"sw\">Kiswahili</bdi>:</b>&#160;<bdi
+        class=\"vernacular\" lang=\"sw\">Tofaa</bdi></li>\n<li><b><bdi lang=\"ta\">தமிழ்</bdi>:</b>&#160;<bdi
+        class=\"vernacular\" lang=\"ta\">ஆப்பிள்</bdi></li>\n<li><b><bdi lang=\"te\">తెలుగు</bdi>:</b>&#160;<bdi
+        class=\"vernacular\" lang=\"te\"><a href=\"https://te.wikipedia.org/wiki/%E0%B0%86%E0%B0%AA%E0%B0%BF%E0%B0%B2%E0%B1%8D\"
+        class=\"extiw\" title=\"te:ఆపిల్\">ఆపిల్</a></bdi></li>\n<li><b><bdi lang=\"tg\">тоҷикӣ</bdi>:</b>&#160;<bdi
+        class=\"vernacular\" lang=\"tg\">Себ</bdi></li>\n<li><b><bdi lang=\"th\">ไทย</bdi>:</b>&#160;<bdi
+        class=\"vernacular\" lang=\"th\">แอปเปิล</bdi></li>\n<li><b><bdi lang=\"tl\">Tagalog</bdi>:</b>&#160;<bdi
+        class=\"vernacular\" lang=\"tl\">Mansanas</bdi></li>\n<li><b><bdi lang=\"tr\">Türkçe</bdi>:</b>&#160;<bdi
+        class=\"vernacular\" lang=\"tr\">Elma</bdi></li>\n<li><b><bdi lang=\"tt\">татарча/tatarça</bdi>:</b>&#160;<bdi
+        class=\"vernacular\" lang=\"tt\">Алма</bdi></li>\n<li><b><bdi lang=\"udm\">удмурт</bdi>:</b>&#160;<bdi
+        class=\"vernacular\" lang=\"udm\">Улмопу</bdi></li>\n<li><b><bdi lang=\"ug\">ئۇيغۇرچە
+        / Uyghurche</bdi>:</b>&#160;<bdi class=\"vernacular\" lang=\"ug\">ئالما</bdi></li>\n<li><b><bdi
+        lang=\"uk\">українська</bdi>:</b>&#160;<bdi class=\"vernacular\" lang=\"uk\"><a
+        href=\"https://uk.wikipedia.org/wiki/%D0%AF%D0%B1%D0%BB%D1%83%D0%BD%D1%8F_%D0%B4%D0%BE%D0%BC%D0%B0%D1%88%D0%BD%D1%8F\"
+        class=\"extiw\" title=\"uk:Яблуня домашня\">Яблуня домашня</a>, Яблуко</bdi></li>\n<li><b><bdi
+        lang=\"ur\">اردو</bdi>:</b>&#160;<bdi class=\"vernacular\" lang=\"ur\">سیب</bdi></li>\n<li><b><bdi
+        lang=\"uz\">oʻzbekcha/ўзбекча</bdi>:</b>&#160;<bdi class=\"vernacular\" lang=\"uz\"><a
+        href=\"https://uz.wikipedia.org/wiki/Olma\" class=\"extiw\" title=\"uz:Olma\">Olma</a></bdi></li>\n<li><b><bdi
+        lang=\"ve\">Tshivenda</bdi>:</b>&#160;<bdi class=\"vernacular\" lang=\"ve\">Apula</bdi></li>\n<li><b><bdi
+        lang=\"vec\">vèneto</bdi>:</b>&#160;<bdi class=\"vernacular\" lang=\"vec\"><a
+        href=\"https://vec.wikipedia.org/wiki/Pomaro\" class=\"extiw\" title=\"vec:Pomaro\">Pomaro</a></bdi></li>\n<li><b><bdi
+        lang=\"vi\">Tiếng Việt</bdi>:</b>&#160;<bdi class=\"vernacular\" lang=\"vi\"><a
+        href=\"https://vi.wikipedia.org/wiki/Malus_domestica\" class=\"extiw\" title=\"vi:Malus
+        domestica\">Táo tây</a></bdi></li>\n<li><b><bdi lang=\"wa\">walon</bdi>:</b>&#160;<bdi
+        class=\"vernacular\" lang=\"wa\">Pemî</bdi></li>\n<li><b><bdi lang=\"war\">Winaray</bdi>:</b>&#160;<bdi
+        class=\"vernacular\" lang=\"war\">Mansanas</bdi></li>\n<li><b><bdi lang=\"yi\">ייִדיש</bdi>:</b>&#160;<bdi
+        class=\"vernacular\" lang=\"yi\">עפל</bdi></li>\n<li><b><bdi lang=\"zh\">中文</bdi>:</b>&#160;<bdi
+        class=\"vernacular\" lang=\"zh\"><a href=\"https://zh.wikipedia.org/wiki/%E8%98%8B%E6%9E%9C%E6%A8%B9\"
+        class=\"extiw\" title=\"zh:蘋果樹\">蘋果樹</a>, 苹果</bdi></li>\n<li><b><bdi lang=\"zh-min-nan\">Bân-lâm-gú</bdi>:</b>&#160;<bdi
+        class=\"vernacular\" lang=\"zh-min-nan\">Phōng-kó</bdi></li>\n<li><b><bdi
+        lang=\"zh-yue\">粵語</bdi>:</b>&#160;<bdi class=\"vernacular\" lang=\"zh-yue\">蘋果</bdi></li>\n</ul>\n</div>\n</div>\n<h2><span
+        class=\"mw-headline\" id=\"Malus_domestica\">Malus domestica</span><span class=\"mw-editsection\"><span
+        class=\"mw-editsection-bracket\">[</span><a href=\"/w/index.php?title=Malus_domestica&amp;action=edit&amp;section=1\"
+        title=\"Edit section: Malus domestica\">edit</a><span class=\"mw-editsection-bracket\">]</span></span></h2>\n<ul
+        class=\"gallery mw-gallery-traditional\">\n<li class=\"gallerybox\" style=\"width:
+        155px\">\n<div style=\"width: 155px\">\n<div class=\"thumb\" style=\"width:
+        150px;\">\n<div style=\"margin:31.5px auto;\"><a href=\"/wiki/File:Apples_on_tree_2011_G1.jpg\"
+        class=\"image\"><img alt=\"\" src=\"https://upload.wikimedia.org/wikipedia/commons/thumb/6/61/Apples_on_tree_2011_G1.jpg/120px-Apples_on_tree_2011_G1.jpg\"
+        width=\"120\" height=\"87\" srcset=\"https://upload.wikimedia.org/wikipedia/commons/thumb/6/61/Apples_on_tree_2011_G1.jpg/180px-Apples_on_tree_2011_G1.jpg
+        1.5x, https://upload.wikimedia.org/wikipedia/commons/thumb/6/61/Apples_on_tree_2011_G1.jpg/240px-Apples_on_tree_2011_G1.jpg
+        2x\" data-file-width=\"4700\" data-file-height=\"3400\" /></a></div>\n</div>\n<div
+        class=\"gallerytext\">\n<p><a href=\"/wiki/Commons:QI\" title=\"QI seal\"><img
+        alt=\"QI seal\" src=\"https://upload.wikimedia.org/wikipedia/commons/thumb/8/8c/Quality_images_logo.svg/20px-Quality_images_logo.svg.png\"
+        width=\"20\" height=\"17\" srcset=\"https://upload.wikimedia.org/wikipedia/commons/thumb/8/8c/Quality_images_logo.svg/30px-Quality_images_logo.svg.png
+        1.5x, https://upload.wikimedia.org/wikipedia/commons/thumb/8/8c/Quality_images_logo.svg/40px-Quality_images_logo.svg.png
+        2x\" data-file-width=\"164\" data-file-height=\"142\" /></a>&#160;</p>\n</div>\n</div>\n</li>\n<li
+        class=\"gallerybox\" style=\"width: 155px\">\n<div style=\"width: 155px\">\n<div
+        class=\"thumb\" style=\"width: 150px;\">\n<div style=\"margin:15px auto;\"><a
+        href=\"/wiki/File:Trierer_Weinapfel.JPG\" class=\"image\"><img alt=\"\" src=\"https://upload.wikimedia.org/wikipedia/commons/thumb/9/9d/Trierer_Weinapfel.JPG/90px-Trierer_Weinapfel.JPG\"
+        width=\"90\" height=\"120\" srcset=\"https://upload.wikimedia.org/wikipedia/commons/thumb/9/9d/Trierer_Weinapfel.JPG/135px-Trierer_Weinapfel.JPG
+        1.5x, https://upload.wikimedia.org/wikipedia/commons/thumb/9/9d/Trierer_Weinapfel.JPG/180px-Trierer_Weinapfel.JPG
+        2x\" data-file-width=\"2592\" data-file-height=\"3456\" /></a></div>\n</div>\n<div
+        class=\"gallerytext\">\n<p>Roter Trierer Weinapfel</p>\n</div>\n</div>\n</li>\n<li
+        class=\"gallerybox\" style=\"width: 155px\">\n<div style=\"width: 155px\">\n<div
+        class=\"thumb\" style=\"width: 150px;\">\n<div style=\"margin:30.5px auto;\"><a
+        href=\"/wiki/File:Malus_domestica_LC0122.jpg\" class=\"image\"><img alt=\"Malus
+        domestica LC0122.jpg\" src=\"https://upload.wikimedia.org/wikipedia/commons/thumb/4/4e/Malus_domestica_LC0122.jpg/120px-Malus_domestica_LC0122.jpg\"
+        width=\"120\" height=\"89\" srcset=\"https://upload.wikimedia.org/wikipedia/commons/thumb/4/4e/Malus_domestica_LC0122.jpg/180px-Malus_domestica_LC0122.jpg
+        1.5x, https://upload.wikimedia.org/wikipedia/commons/thumb/4/4e/Malus_domestica_LC0122.jpg/240px-Malus_domestica_LC0122.jpg
+        2x\" data-file-width=\"2026\" data-file-height=\"1500\" /></a></div>\n</div>\n<div
+        class=\"gallerytext\"></div>\n</div>\n</li>\n<li class=\"gallerybox\" style=\"width:
+        155px\">\n<div style=\"width: 155px\">\n<div class=\"thumb\" style=\"width:
+        150px;\">\n<div style=\"margin:30px auto;\"><a href=\"/wiki/File:Malus_domestica_a1.jpg\"
+        class=\"image\"><img alt=\"Malus domestica a1.jpg\" src=\"https://upload.wikimedia.org/wikipedia/commons/thumb/2/22/Malus_domestica_a1.jpg/120px-Malus_domestica_a1.jpg\"
+        width=\"120\" height=\"90\" srcset=\"https://upload.wikimedia.org/wikipedia/commons/thumb/2/22/Malus_domestica_a1.jpg/180px-Malus_domestica_a1.jpg
+        1.5x, https://upload.wikimedia.org/wikipedia/commons/thumb/2/22/Malus_domestica_a1.jpg/240px-Malus_domestica_a1.jpg
+        2x\" data-file-width=\"1280\" data-file-height=\"956\" /></a></div>\n</div>\n<div
+        class=\"gallerytext\"></div>\n</div>\n</li>\n<li class=\"gallerybox\" style=\"width:
+        155px\">\n<div style=\"width: 155px\">\n<div class=\"thumb\" style=\"width:
+        150px;\">\n<div style=\"margin:15px auto;\"><a href=\"/wiki/File:Cleaned-Illustration_Malus_domestica.jpg\"
+        class=\"image\"><img alt=\"Cleaned-Illustration Malus domestica.jpg\" src=\"https://upload.wikimedia.org/wikipedia/commons/thumb/2/20/Cleaned-Illustration_Malus_domestica.jpg/75px-Cleaned-Illustration_Malus_domestica.jpg\"
+        width=\"75\" height=\"120\" srcset=\"https://upload.wikimedia.org/wikipedia/commons/thumb/2/20/Cleaned-Illustration_Malus_domestica.jpg/112px-Cleaned-Illustration_Malus_domestica.jpg
+        1.5x, https://upload.wikimedia.org/wikipedia/commons/thumb/2/20/Cleaned-Illustration_Malus_domestica.jpg/150px-Cleaned-Illustration_Malus_domestica.jpg
+        2x\" data-file-width=\"1490\" data-file-height=\"2387\" /></a></div>\n</div>\n<div
+        class=\"gallerytext\"></div>\n</div>\n</li>\n<li class=\"gallerybox\" style=\"width:
+        155px\">\n<div style=\"width: 155px\">\n<div class=\"thumb\" style=\"width:
+        150px;\">\n<div style=\"margin:15px auto;\"><a href=\"/wiki/File:Malus-domestica-blomstring.JPG\"
+        class=\"image\"><img alt=\"Malus-domestica-blomstring.JPG\" src=\"https://upload.wikimedia.org/wikipedia/commons/thumb/4/4f/Malus-domestica-blomstring.JPG/92px-Malus-domestica-blomstring.JPG\"
+        width=\"92\" height=\"120\" srcset=\"https://upload.wikimedia.org/wikipedia/commons/thumb/4/4f/Malus-domestica-blomstring.JPG/138px-Malus-domestica-blomstring.JPG
+        1.5x, https://upload.wikimedia.org/wikipedia/commons/thumb/4/4f/Malus-domestica-blomstring.JPG/184px-Malus-domestica-blomstring.JPG
+        2x\" data-file-width=\"480\" data-file-height=\"624\" /></a></div>\n</div>\n<div
+        class=\"gallerytext\"></div>\n</div>\n</li>\n<li class=\"gallerybox\" style=\"width:
+        155px\">\n<div style=\"width: 155px\">\n<div class=\"thumb\" style=\"width:
+        150px;\">\n<div style=\"margin:30px auto;\"><a href=\"/wiki/File:Appletree_bloom_l.jpg\"
+        class=\"image\"><img alt=\"Appletree bloom l.jpg\" src=\"https://upload.wikimedia.org/wikipedia/commons/thumb/f/f9/Appletree_bloom_l.jpg/120px-Appletree_bloom_l.jpg\"
+        width=\"120\" height=\"90\" srcset=\"https://upload.wikimedia.org/wikipedia/commons/thumb/f/f9/Appletree_bloom_l.jpg/180px-Appletree_bloom_l.jpg
+        1.5x, https://upload.wikimedia.org/wikipedia/commons/thumb/f/f9/Appletree_bloom_l.jpg/240px-Appletree_bloom_l.jpg
+        2x\" data-file-width=\"800\" data-file-height=\"600\" /></a></div>\n</div>\n<div
+        class=\"gallerytext\"></div>\n</div>\n</li>\n<li class=\"gallerybox\" style=\"width:
+        155px\">\n<div style=\"width: 155px\">\n<div class=\"thumb\" style=\"width:
+        150px;\">\n<div style=\"margin:30px auto;\"><a href=\"/wiki/File:Malus_domestica_a2.jpg\"
+        class=\"image\"><img alt=\"Malus domestica a2.jpg\" src=\"https://upload.wikimedia.org/wikipedia/commons/thumb/2/23/Malus_domestica_a2.jpg/120px-Malus_domestica_a2.jpg\"
+        width=\"120\" height=\"90\" srcset=\"https://upload.wikimedia.org/wikipedia/commons/thumb/2/23/Malus_domestica_a2.jpg/180px-Malus_domestica_a2.jpg
+        1.5x, https://upload.wikimedia.org/wikipedia/commons/thumb/2/23/Malus_domestica_a2.jpg/240px-Malus_domestica_a2.jpg
+        2x\" data-file-width=\"1593\" data-file-height=\"1200\" /></a></div>\n</div>\n<div
+        class=\"gallerytext\"></div>\n</div>\n</li>\n<li class=\"gallerybox\" style=\"width:
+        155px\">\n<div style=\"width: 155px\">\n<div class=\"thumb\" style=\"width:
+        150px;\">\n<div style=\"margin:15px auto;\"><a href=\"/wiki/File:Rosaceae_Malus_pumila_Malus_pumila_Var_domestica_Apples_Fuji.jpg\"
+        class=\"image\"><img alt=\"Rosaceae Malus pumila Malus pumila Var domestica
+        Apples Fuji.jpg\" src=\"https://upload.wikimedia.org/wikipedia/commons/thumb/c/c0/Rosaceae_Malus_pumila_Malus_pumila_Var_domestica_Apples_Fuji.jpg/90px-Rosaceae_Malus_pumila_Malus_pumila_Var_domestica_Apples_Fuji.jpg\"
+        width=\"90\" height=\"120\" srcset=\"https://upload.wikimedia.org/wikipedia/commons/thumb/c/c0/Rosaceae_Malus_pumila_Malus_pumila_Var_domestica_Apples_Fuji.jpg/135px-Rosaceae_Malus_pumila_Malus_pumila_Var_domestica_Apples_Fuji.jpg
+        1.5x, https://upload.wikimedia.org/wikipedia/commons/thumb/c/c0/Rosaceae_Malus_pumila_Malus_pumila_Var_domestica_Apples_Fuji.jpg/180px-Rosaceae_Malus_pumila_Malus_pumila_Var_domestica_Apples_Fuji.jpg
+        2x\" data-file-width=\"1944\" data-file-height=\"2592\" /></a></div>\n</div>\n<div
+        class=\"gallerytext\"></div>\n</div>\n</li>\n<li class=\"gallerybox\" style=\"width:
+        155px\">\n<div style=\"width: 155px\">\n<div class=\"thumb\" style=\"width:
+        150px;\">\n<div style=\"margin:15.5px auto;\"><a href=\"/wiki/File:Sterappel_dwarsdrsn.jpg\"
+        class=\"image\"><img alt=\"\" src=\"https://upload.wikimedia.org/wikipedia/commons/thumb/1/11/Sterappel_dwarsdrsn.jpg/120px-Sterappel_dwarsdrsn.jpg\"
+        width=\"120\" height=\"119\" srcset=\"https://upload.wikimedia.org/wikipedia/commons/thumb/1/11/Sterappel_dwarsdrsn.jpg/180px-Sterappel_dwarsdrsn.jpg
+        1.5x, https://upload.wikimedia.org/wikipedia/commons/thumb/1/11/Sterappel_dwarsdrsn.jpg/240px-Sterappel_dwarsdrsn.jpg
+        2x\" data-file-width=\"875\" data-file-height=\"868\" /></a></div>\n</div>\n<div
+        class=\"gallerytext\">\n<p>Apple cut through centre (''Sterappel'')</p>\n</div>\n</div>\n</li>\n<li
+        class=\"gallerybox\" style=\"width: 155px\">\n<div style=\"width: 155px\">\n<div
+        class=\"thumb\" style=\"width: 150px;\">\n<div style=\"margin:15px auto;\"><a
+        href=\"/wiki/File:Manzanas_-_Apples.jpg\" class=\"image\"><img alt=\"Manzanas
+        - Apples.jpg\" src=\"https://upload.wikimedia.org/wikipedia/commons/thumb/c/ca/Manzanas_-_Apples.jpg/90px-Manzanas_-_Apples.jpg\"
+        width=\"90\" height=\"120\" srcset=\"https://upload.wikimedia.org/wikipedia/commons/thumb/c/ca/Manzanas_-_Apples.jpg/135px-Manzanas_-_Apples.jpg
+        1.5x, https://upload.wikimedia.org/wikipedia/commons/thumb/c/ca/Manzanas_-_Apples.jpg/180px-Manzanas_-_Apples.jpg
+        2x\" data-file-width=\"960\" data-file-height=\"1280\" /></a></div>\n</div>\n<div
+        class=\"gallerytext\"></div>\n</div>\n</li>\n<li class=\"gallerybox\" style=\"width:
+        155px\">\n<div style=\"width: 155px\">\n<div class=\"thumb\" style=\"width:
+        150px;\">\n<div style=\"margin:34.5px auto;\"><a href=\"/wiki/File:Knoppar_p%C3%A5_Raud_Torstein,_bl%C3%B8ming_seint_i_mai_2005_i_Oslo..jpg\"
+        class=\"image\"><img alt=\"\" src=\"https://upload.wikimedia.org/wikipedia/commons/thumb/1/1f/Knoppar_p%C3%A5_Raud_Torstein%2C_bl%C3%B8ming_seint_i_mai_2005_i_Oslo..jpg/120px-Knoppar_p%C3%A5_Raud_Torstein%2C_bl%C3%B8ming_seint_i_mai_2005_i_Oslo..jpg\"
+        width=\"120\" height=\"81\" srcset=\"https://upload.wikimedia.org/wikipedia/commons/thumb/1/1f/Knoppar_p%C3%A5_Raud_Torstein%2C_bl%C3%B8ming_seint_i_mai_2005_i_Oslo..jpg/180px-Knoppar_p%C3%A5_Raud_Torstein%2C_bl%C3%B8ming_seint_i_mai_2005_i_Oslo..jpg
+        1.5x, https://upload.wikimedia.org/wikipedia/commons/thumb/1/1f/Knoppar_p%C3%A5_Raud_Torstein%2C_bl%C3%B8ming_seint_i_mai_2005_i_Oslo..jpg/240px-Knoppar_p%C3%A5_Raud_Torstein%2C_bl%C3%B8ming_seint_i_mai_2005_i_Oslo..jpg
+        2x\" data-file-width=\"1925\" data-file-height=\"1297\" /></a></div>\n</div>\n<div
+        class=\"gallerytext\">\n<p>Buds on a Red Torstein tree</p>\n</div>\n</div>\n</li>\n<li
+        class=\"gallerybox\" style=\"width: 155px\">\n<div style=\"width: 155px\">\n<div
+        class=\"thumb\" style=\"width: 150px;\">\n<div style=\"margin:37px auto;\"><a
+        href=\"/wiki/File:Malus_domestica_sl1.jpg\" class=\"image\"><img alt=\"\"
+        src=\"https://upload.wikimedia.org/wikipedia/commons/thumb/f/f4/Malus_domestica_sl1.jpg/120px-Malus_domestica_sl1.jpg\"
+        width=\"120\" height=\"76\" srcset=\"https://upload.wikimedia.org/wikipedia/commons/thumb/f/f4/Malus_domestica_sl1.jpg/180px-Malus_domestica_sl1.jpg
+        1.5x, https://upload.wikimedia.org/wikipedia/commons/thumb/f/f4/Malus_domestica_sl1.jpg/240px-Malus_domestica_sl1.jpg
+        2x\" data-file-width=\"5384\" data-file-height=\"3416\" /></a></div>\n</div>\n<div
+        class=\"gallerytext\">\n<p>Short shoot with bud</p>\n</div>\n</div>\n</li>\n<li
+        class=\"gallerybox\" style=\"width: 155px\">\n<div style=\"width: 155px\">\n<div
+        class=\"thumb\" style=\"width: 150px;\">\n<div style=\"margin:35px auto;\"><a
+        href=\"/wiki/File:Malus_domestica_sl2.jpg\" class=\"image\"><img alt=\"\"
+        src=\"https://upload.wikimedia.org/wikipedia/commons/thumb/8/83/Malus_domestica_sl2.jpg/120px-Malus_domestica_sl2.jpg\"
+        width=\"120\" height=\"80\" srcset=\"https://upload.wikimedia.org/wikipedia/commons/thumb/8/83/Malus_domestica_sl2.jpg/180px-Malus_domestica_sl2.jpg
+        1.5x, https://upload.wikimedia.org/wikipedia/commons/thumb/8/83/Malus_domestica_sl2.jpg/240px-Malus_domestica_sl2.jpg
+        2x\" data-file-width=\"5050\" data-file-height=\"3361\" /></a></div>\n</div>\n<div
+        class=\"gallerytext\">\n<p>Short shoot with bud</p>\n</div>\n</div>\n</li>\n<li
+        class=\"gallerybox\" style=\"width: 155px\">\n<div style=\"width: 155px\">\n<div
+        class=\"thumb\" style=\"width: 150px;\">\n<div style=\"margin:58px auto;\"><a
+        href=\"/wiki/File:Malus_domestica_sl3.jpg\" class=\"image\"><img alt=\"\"
+        src=\"https://upload.wikimedia.org/wikipedia/commons/thumb/9/92/Malus_domestica_sl3.jpg/120px-Malus_domestica_sl3.jpg\"
+        width=\"120\" height=\"34\" srcset=\"https://upload.wikimedia.org/wikipedia/commons/thumb/9/92/Malus_domestica_sl3.jpg/180px-Malus_domestica_sl3.jpg
+        1.5x, https://upload.wikimedia.org/wikipedia/commons/thumb/9/92/Malus_domestica_sl3.jpg/240px-Malus_domestica_sl3.jpg
+        2x\" data-file-width=\"10340\" data-file-height=\"2936\" /></a></div>\n</div>\n<div
+        class=\"gallerytext\">\n<p>Short shoot with bud</p>\n</div>\n</div>\n</li>\n<li
+        class=\"gallerybox\" style=\"width: 155px\">\n<div style=\"width: 155px\">\n<div
+        class=\"thumb\" style=\"width: 150px;\">\n<div style=\"margin:15px auto;\"><a
+        href=\"/wiki/File:Malus_domestica_sl4.jpg\" class=\"image\"><img alt=\"\"
+        src=\"https://upload.wikimedia.org/wikipedia/commons/thumb/2/23/Malus_domestica_sl4.jpg/59px-Malus_domestica_sl4.jpg\"
+        width=\"59\" height=\"120\" srcset=\"https://upload.wikimedia.org/wikipedia/commons/thumb/2/23/Malus_domestica_sl4.jpg/89px-Malus_domestica_sl4.jpg
+        1.5x, https://upload.wikimedia.org/wikipedia/commons/thumb/2/23/Malus_domestica_sl4.jpg/118px-Malus_domestica_sl4.jpg
+        2x\" data-file-width=\"1468\" data-file-height=\"2976\" /></a></div>\n</div>\n<div
+        class=\"gallerytext\">\n<p>Long shoot with buds</p>\n</div>\n</div>\n</li>\n<li
+        class=\"gallerybox\" style=\"width: 155px\">\n<div style=\"width: 155px\">\n<div
+        class=\"thumb\" style=\"width: 150px;\">\n<div style=\"margin:24.5px auto;\"><a
+        href=\"/wiki/File:Malus_domestica_sl5.jpg\" class=\"image\"><img alt=\"\"
+        src=\"https://upload.wikimedia.org/wikipedia/commons/thumb/f/f4/Malus_domestica_sl5.jpg/120px-Malus_domestica_sl5.jpg\"
+        width=\"120\" height=\"101\" srcset=\"https://upload.wikimedia.org/wikipedia/commons/thumb/f/f4/Malus_domestica_sl5.jpg/180px-Malus_domestica_sl5.jpg
+        1.5x, https://upload.wikimedia.org/wikipedia/commons/thumb/f/f4/Malus_domestica_sl5.jpg/240px-Malus_domestica_sl5.jpg
+        2x\" data-file-width=\"3628\" data-file-height=\"3068\" /></a></div>\n</div>\n<div
+        class=\"gallerytext\">\n<p>Long shoot with bud</p>\n</div>\n</div>\n</li>\n<li
+        class=\"gallerybox\" style=\"width: 155px\">\n<div style=\"width: 155px\">\n<div
+        class=\"thumb\" style=\"width: 150px;\">\n<div style=\"margin:15px auto;\"><a
+        href=\"/wiki/File:Malus_domestica_sl6.jpg\" class=\"image\"><img alt=\"\"
+        src=\"https://upload.wikimedia.org/wikipedia/commons/thumb/6/64/Malus_domestica_sl6.jpg/65px-Malus_domestica_sl6.jpg\"
+        width=\"65\" height=\"120\" srcset=\"https://upload.wikimedia.org/wikipedia/commons/thumb/6/64/Malus_domestica_sl6.jpg/98px-Malus_domestica_sl6.jpg
+        1.5x, https://upload.wikimedia.org/wikipedia/commons/thumb/6/64/Malus_domestica_sl6.jpg/130px-Malus_domestica_sl6.jpg
+        2x\" data-file-width=\"1668\" data-file-height=\"3064\" /></a></div>\n</div>\n<div
+        class=\"gallerytext\">\n<p>Leaf scar (long shoot)</p>\n</div>\n</div>\n</li>\n<li
+        class=\"gallerybox\" style=\"width: 155px\">\n<div style=\"width: 155px\">\n<div
+        class=\"thumb\" style=\"width: 150px;\">\n<div style=\"margin:15px auto;\"><a
+        href=\"/wiki/File:Malus_domestica_sl7.jpg\" class=\"image\"><img alt=\"\"
+        src=\"https://upload.wikimedia.org/wikipedia/commons/thumb/7/7a/Malus_domestica_sl7.jpg/95px-Malus_domestica_sl7.jpg\"
+        width=\"95\" height=\"120\" srcset=\"https://upload.wikimedia.org/wikipedia/commons/thumb/7/7a/Malus_domestica_sl7.jpg/143px-Malus_domestica_sl7.jpg
+        1.5x, https://upload.wikimedia.org/wikipedia/commons/thumb/7/7a/Malus_domestica_sl7.jpg/190px-Malus_domestica_sl7.jpg
+        2x\" data-file-width=\"2745\" data-file-height=\"3460\" /></a></div>\n</div>\n<div
+        class=\"gallerytext\">\n<p>Leaf scar (short shoot)</p>\n</div>\n</div>\n</li>\n<li
+        class=\"gallerybox\" style=\"width: 155px\">\n<div style=\"width: 155px\">\n<div
+        class=\"thumb\" style=\"width: 150px;\">\n<div style=\"margin:15px auto;\"><a
+        href=\"/wiki/File:Malus_domestica_sl8.jpg\" class=\"image\"><img alt=\"\"
+        src=\"https://upload.wikimedia.org/wikipedia/commons/thumb/6/64/Malus_domestica_sl8.jpg/74px-Malus_domestica_sl8.jpg\"
+        width=\"74\" height=\"120\" srcset=\"https://upload.wikimedia.org/wikipedia/commons/thumb/6/64/Malus_domestica_sl8.jpg/111px-Malus_domestica_sl8.jpg
+        1.5x, https://upload.wikimedia.org/wikipedia/commons/thumb/6/64/Malus_domestica_sl8.jpg/149px-Malus_domestica_sl8.jpg
+        2x\" data-file-width=\"2134\" data-file-height=\"3443\" /></a></div>\n</div>\n<div
+        class=\"gallerytext\">\n<p>Annual long shoot with lenticels</p>\n</div>\n</div>\n</li>\n</ul>\n<h3><span
+        class=\"mw-headline\" id=\"Pests_and_diseases\">Pests and diseases</span><span
+        class=\"mw-editsection\"><span class=\"mw-editsection-bracket\">[</span><a
+        href=\"/w/index.php?title=Malus_domestica&amp;action=edit&amp;section=2\"
+        title=\"Edit section: Pests and diseases\">edit</a><span class=\"mw-editsection-bracket\">]</span></span></h3>\n<div
+        class=\"description mw-content-ltr de\" dir=\"ltr\" lang=\"de\" style=\"\"><span
+        class=\"language de\" title=\"Deutsch\"><b>Deutsch:</b></span> Schädlinge
+        und Krankheiten</div>\n<ul class=\"gallery mw-gallery-traditional\">\n<li
+        class=\"gallerybox\" style=\"width: 155px\">\n<div style=\"width: 155px\">\n<div
+        class=\"thumb\" style=\"width: 150px;\">\n<div style=\"margin:20px auto;\"><a
+        href=\"/wiki/File:Apfelschorf.jpg\" class=\"image\"><img alt=\"\" src=\"https://upload.wikimedia.org/wikipedia/commons/thumb/3/36/Apfelschorf.jpg/120px-Apfelschorf.jpg\"
+        width=\"120\" height=\"110\" srcset=\"https://upload.wikimedia.org/wikipedia/commons/thumb/3/36/Apfelschorf.jpg/180px-Apfelschorf.jpg
+        1.5x, https://upload.wikimedia.org/wikipedia/commons/thumb/3/36/Apfelschorf.jpg/240px-Apfelschorf.jpg
+        2x\" data-file-width=\"960\" data-file-height=\"877\" /></a></div>\n</div>\n<div
+        class=\"gallerytext\">\n<p>(nl:schurft) Venturia inaequalis</p>\n</div>\n</div>\n</li>\n<li
+        class=\"gallerybox\" style=\"width: 155px\">\n<div style=\"width: 155px\">\n<div
+        class=\"thumb\" style=\"width: 150px;\">\n<div style=\"margin:44px auto;\"><a
+        href=\"/wiki/File:Schurft_bij_appel_(Venturia_inaequalis_on_Malus_domestica_%27Schone_van_Boskoop%27.jpg\"
+        class=\"image\"><img alt=\"\" src=\"https://upload.wikimedia.org/wikipedia/commons/thumb/9/98/Schurft_bij_appel_%28Venturia_inaequalis_on_Malus_domestica_%27Schone_van_Boskoop%27.jpg/120px-Schurft_bij_appel_%28Venturia_inaequalis_on_Malus_domestica_%27Schone_van_Boskoop%27.jpg\"
+        width=\"120\" height=\"62\" srcset=\"https://upload.wikimedia.org/wikipedia/commons/thumb/9/98/Schurft_bij_appel_%28Venturia_inaequalis_on_Malus_domestica_%27Schone_van_Boskoop%27.jpg/180px-Schurft_bij_appel_%28Venturia_inaequalis_on_Malus_domestica_%27Schone_van_Boskoop%27.jpg
+        1.5x, https://upload.wikimedia.org/wikipedia/commons/thumb/9/98/Schurft_bij_appel_%28Venturia_inaequalis_on_Malus_domestica_%27Schone_van_Boskoop%27.jpg/240px-Schurft_bij_appel_%28Venturia_inaequalis_on_Malus_domestica_%27Schone_van_Boskoop%27.jpg
+        2x\" data-file-width=\"1729\" data-file-height=\"893\" /></a></div>\n</div>\n<div
+        class=\"gallerytext\">\n<p>Venturia inaequalis on Malus domestica ''Schone
+        van Boskoop''</p>\n</div>\n</div>\n</li>\n<li class=\"gallerybox\" style=\"width:
+        155px\">\n<div style=\"width: 155px\">\n<div class=\"thumb\" style=\"width:
+        150px;\">\n<div style=\"margin:30.5px auto;\"><a href=\"/wiki/File:Madige-Apfel-Frucht.jpg\"
+        class=\"image\"><img alt=\"\" src=\"https://upload.wikimedia.org/wikipedia/commons/thumb/c/c6/Madige-Apfel-Frucht.jpg/120px-Madige-Apfel-Frucht.jpg\"
+        width=\"120\" height=\"89\" srcset=\"https://upload.wikimedia.org/wikipedia/commons/thumb/c/c6/Madige-Apfel-Frucht.jpg/180px-Madige-Apfel-Frucht.jpg
+        1.5x, https://upload.wikimedia.org/wikipedia/commons/thumb/c/c6/Madige-Apfel-Frucht.jpg/240px-Madige-Apfel-Frucht.jpg
+        2x\" data-file-width=\"500\" data-file-height=\"372\" /></a></div>\n</div>\n<div
+        class=\"gallerytext\">\n<p>Apple with caterpillar of Codling moth</p>\n</div>\n</div>\n</li>\n<li
+        class=\"gallerybox\" style=\"width: 155px\">\n<div style=\"width: 155px\">\n<div
+        class=\"thumb\" style=\"width: 150px;\">\n<div style=\"margin:20px auto;\"><a
+        href=\"/wiki/File:Monilia_sp._on_apple.jpg\" class=\"image\"><img alt=\"\"
+        src=\"https://upload.wikimedia.org/wikipedia/commons/thumb/6/6e/Monilia_sp._on_apple.jpg/120px-Monilia_sp._on_apple.jpg\"
+        width=\"120\" height=\"110\" srcset=\"https://upload.wikimedia.org/wikipedia/commons/thumb/6/6e/Monilia_sp._on_apple.jpg/180px-Monilia_sp._on_apple.jpg
+        1.5x, https://upload.wikimedia.org/wikipedia/commons/thumb/6/6e/Monilia_sp._on_apple.jpg/240px-Monilia_sp._on_apple.jpg
+        2x\" data-file-width=\"1690\" data-file-height=\"1552\" /></a></div>\n</div>\n<div
+        class=\"gallerytext\">\n<p>Monilia</p>\n</div>\n</div>\n</li>\n<li class=\"gallerybox\"
+        style=\"width: 155px\">\n<div style=\"width: 155px\">\n<div class=\"thumb\"
+        style=\"width: 150px;\">\n<div style=\"margin:18.5px auto;\"><a href=\"/wiki/File:Alkmene_apple_Moniliarot.jpg\"
+        class=\"image\"><img alt=\"\" src=\"https://upload.wikimedia.org/wikipedia/commons/thumb/d/df/Alkmene_apple_Moniliarot.jpg/120px-Alkmene_apple_Moniliarot.jpg\"
+        width=\"120\" height=\"113\" srcset=\"https://upload.wikimedia.org/wikipedia/commons/thumb/d/df/Alkmene_apple_Moniliarot.jpg/180px-Alkmene_apple_Moniliarot.jpg
+        1.5x, https://upload.wikimedia.org/wikipedia/commons/thumb/d/df/Alkmene_apple_Moniliarot.jpg/240px-Alkmene_apple_Moniliarot.jpg
+        2x\" data-file-width=\"1535\" data-file-height=\"1445\" /></a></div>\n</div>\n<div
+        class=\"gallerytext\">\n<p>Monilia</p>\n</div>\n</div>\n</li>\n<li class=\"gallerybox\"
+        style=\"width: 155px\">\n<div style=\"width: 155px\">\n<div class=\"thumb\"
+        style=\"width: 150px;\">\n<div style=\"margin:18px auto;\"><a href=\"/wiki/File:Botrytis-rot_op_appel_Goudreinet_(Botryotinia_fuckeliana).jpg\"
+        class=\"image\"><img alt=\"\" src=\"https://upload.wikimedia.org/wikipedia/commons/thumb/d/d7/Botrytis-rot_op_appel_Goudreinet_%28Botryotinia_fuckeliana%29.jpg/120px-Botrytis-rot_op_appel_Goudreinet_%28Botryotinia_fuckeliana%29.jpg\"
+        width=\"120\" height=\"114\" srcset=\"https://upload.wikimedia.org/wikipedia/commons/thumb/d/d7/Botrytis-rot_op_appel_Goudreinet_%28Botryotinia_fuckeliana%29.jpg/180px-Botrytis-rot_op_appel_Goudreinet_%28Botryotinia_fuckeliana%29.jpg
+        1.5x, https://upload.wikimedia.org/wikipedia/commons/thumb/d/d7/Botrytis-rot_op_appel_Goudreinet_%28Botryotinia_fuckeliana%29.jpg/240px-Botrytis-rot_op_appel_Goudreinet_%28Botryotinia_fuckeliana%29.jpg
+        2x\" data-file-width=\"1136\" data-file-height=\"1081\" /></a></div>\n</div>\n<div
+        class=\"gallerytext\">\n<p>Botrytis</p>\n</div>\n</div>\n</li>\n<li class=\"gallerybox\"
+        style=\"width: 155px\">\n<div style=\"width: 155px\">\n<div class=\"thumb\"
+        style=\"width: 150px;\">\n<div style=\"margin:20px auto;\"><a href=\"/wiki/File:Gravenstein_apples_with_codling_moth.JPG\"
+        class=\"image\"><img alt=\"\" src=\"https://upload.wikimedia.org/wikipedia/commons/thumb/5/5c/Gravenstein_apples_with_codling_moth.JPG/120px-Gravenstein_apples_with_codling_moth.JPG\"
+        width=\"120\" height=\"110\" srcset=\"https://upload.wikimedia.org/wikipedia/commons/thumb/5/5c/Gravenstein_apples_with_codling_moth.JPG/180px-Gravenstein_apples_with_codling_moth.JPG
+        1.5x, https://upload.wikimedia.org/wikipedia/commons/thumb/5/5c/Gravenstein_apples_with_codling_moth.JPG/240px-Gravenstein_apples_with_codling_moth.JPG
+        2x\" data-file-width=\"1089\" data-file-height=\"995\" /></a></div>\n</div>\n<div
+        class=\"gallerytext\">\n<p>Codling moth</p>\n</div>\n</div>\n</li>\n<li class=\"gallerybox\"
+        style=\"width: 155px\">\n<div style=\"width: 155px\">\n<div class=\"thumb\"
+        style=\"width: 150px;\">\n<div style=\"margin:30px auto;\"><a href=\"/wiki/File:Flutrinne_008.jpg\"
+        class=\"image\"><img alt=\"\" src=\"https://upload.wikimedia.org/wikipedia/commons/thumb/2/2f/Flutrinne_008.jpg/120px-Flutrinne_008.jpg\"
+        width=\"120\" height=\"90\" srcset=\"https://upload.wikimedia.org/wikipedia/commons/thumb/2/2f/Flutrinne_008.jpg/180px-Flutrinne_008.jpg
+        1.5x, https://upload.wikimedia.org/wikipedia/commons/thumb/2/2f/Flutrinne_008.jpg/240px-Flutrinne_008.jpg
+        2x\" data-file-width=\"1600\" data-file-height=\"1200\" /></a></div>\n</div>\n<div
+        class=\"gallerytext\">\n<p>German wasps eating a fallen apple</p>\n</div>\n</div>\n</li>\n<li
+        class=\"gallerybox\" style=\"width: 155px\">\n<div style=\"width: 155px\">\n<div
+        class=\"thumb\" style=\"width: 150px;\">\n<div style=\"margin:24.5px auto;\"><a
+        href=\"/wiki/File:Wasp_eating_apple.jpg\" class=\"image\"><img alt=\"\" src=\"https://upload.wikimedia.org/wikipedia/commons/thumb/3/38/Wasp_eating_apple.jpg/120px-Wasp_eating_apple.jpg\"
+        width=\"120\" height=\"101\" srcset=\"https://upload.wikimedia.org/wikipedia/commons/thumb/3/38/Wasp_eating_apple.jpg/180px-Wasp_eating_apple.jpg
+        1.5x, https://upload.wikimedia.org/wikipedia/commons/thumb/3/38/Wasp_eating_apple.jpg/240px-Wasp_eating_apple.jpg
+        2x\" data-file-width=\"1293\" data-file-height=\"1090\" /></a></div>\n</div>\n<div
+        class=\"gallerytext\">\n<p>German wasp eating an apple</p>\n</div>\n</div>\n</li>\n<li
+        class=\"gallerybox\" style=\"width: 155px\">\n<div style=\"width: 155px\">\n<div
+        class=\"thumb\" style=\"width: 150px;\">\n<div style=\"margin:22px auto;\"><a
+        href=\"/wiki/File:Apfelbaumk%C3%A4fer_ugglan.jpg\" class=\"image\"><img alt=\"\"
+        src=\"https://upload.wikimedia.org/wikipedia/commons/thumb/1/15/Apfelbaumk%C3%A4fer_ugglan.jpg/120px-Apfelbaumk%C3%A4fer_ugglan.jpg\"
+        width=\"120\" height=\"106\" srcset=\"https://upload.wikimedia.org/wikipedia/commons/thumb/1/15/Apfelbaumk%C3%A4fer_ugglan.jpg/180px-Apfelbaumk%C3%A4fer_ugglan.jpg
+        1.5x, https://upload.wikimedia.org/wikipedia/commons/thumb/1/15/Apfelbaumk%C3%A4fer_ugglan.jpg/240px-Apfelbaumk%C3%A4fer_ugglan.jpg
+        2x\" data-file-width=\"574\" data-file-height=\"508\" /></a></div>\n</div>\n<div
+        class=\"gallerytext\">\n<p>Beetle diagram</p>\n</div>\n</div>\n</li>\n<li
+        class=\"gallerybox\" style=\"width: 155px\">\n<div style=\"width: 155px\">\n<div
+        class=\"thumb\" style=\"width: 150px;\">\n<div style=\"margin:30px auto;\"><a
+        href=\"/wiki/File:Viscum_album_230208a.jpg\" class=\"image\"><img alt=\"\"
+        src=\"https://upload.wikimedia.org/wikipedia/commons/thumb/2/26/Viscum_album_230208a.jpg/120px-Viscum_album_230208a.jpg\"
+        width=\"120\" height=\"90\" srcset=\"https://upload.wikimedia.org/wikipedia/commons/thumb/2/26/Viscum_album_230208a.jpg/180px-Viscum_album_230208a.jpg
+        1.5x, https://upload.wikimedia.org/wikipedia/commons/thumb/2/26/Viscum_album_230208a.jpg/240px-Viscum_album_230208a.jpg
+        2x\" data-file-width=\"2500\" data-file-height=\"1873\" /></a></div>\n</div>\n<div
+        class=\"gallerytext\">\n<p><i><a href=\"/wiki/Viscum_album\" title=\"Viscum
+        album\">Viscum album</a></i> growing on <i>Malus domestica</i></p>\n</div>\n</div>\n</li>\n</ul>\n<h2><span
+        class=\"mw-headline\" id=\"Apple_cultivars\">Apple cultivars</span><span class=\"mw-editsection\"><span
+        class=\"mw-editsection-bracket\">[</span><a href=\"/w/index.php?title=Malus_domestica&amp;action=edit&amp;section=3\"
+        title=\"Edit section: Apple cultivars\">edit</a><span class=\"mw-editsection-bracket\">]</span></span></h2>\n<dl>\n<dd><i>Main
+        gallery: <a href=\"/wiki/Apple_cultivars\" title=\"Apple cultivars\">Apple
+        cultivars</a>.</i></dd>\n</dl>\n<div class=\"description mw-content-ltr de\"
+        dir=\"ltr\" lang=\"de\" style=\"\"><span class=\"language de\" title=\"Deutsch\"><b>Deutsch:</b></span>
+        Gängige Apfelsorten - Früchte</div>\n<ul class=\"gallery mw-gallery-traditional\">\n<li
+        class=\"gallerybox\" style=\"width: 155px\">\n<div style=\"width: 155px\">\n<div
+        class=\"thumb\" style=\"width: 150px;\">\n<div style=\"margin:15px auto;\"><a
+        href=\"/wiki/File:Apples.jpg\" class=\"image\"><img alt=\"\" src=\"https://upload.wikimedia.org/wikipedia/commons/thumb/e/ee/Apples.jpg/80px-Apples.jpg\"
+        width=\"80\" height=\"120\" srcset=\"https://upload.wikimedia.org/wikipedia/commons/thumb/e/ee/Apples.jpg/120px-Apples.jpg
+        1.5x, https://upload.wikimedia.org/wikipedia/commons/thumb/e/ee/Apples.jpg/160px-Apples.jpg
+        2x\" data-file-width=\"1800\" data-file-height=\"2700\" /></a></div>\n</div>\n<div
+        class=\"gallerytext\">\n<p>different apple cultivars</p>\n</div>\n</div>\n</li>\n</ul>\n\n\n<!--
+        \nNewPP limit report\nParsed by mw1301\nCached time: 20180408090941\nCache
+        expiry: 1900800\nDynamic content: false\nCPU time usage: 0.252 seconds\nReal
+        time usage: 0.331 seconds\nPreprocessor visited node count: 1208/1000000\nPreprocessor
+        generated node count: 0/1500000\nPost‐expand include size: 41015/2097152 bytes\nTemplate
+        argument size: 449/2097152 bytes\nHighest expansion depth: 16/40\nExpensive
+        parser function count: 17/500\nUnstrip recursion depth: 0/20\nUnstrip post‐expand
+        size: 26176/5000000 bytes\nLua time usage: 0.089/10.000 seconds\nLua memory
+        usage: 2.63 MB/50 MB\n-->\n<!--\nTransclusion expansion time report (%,ms,calls,template)\n100.00%  263.476      1
+        -total\n 33.56%   88.435      1 Template:VN\n 24.39%   64.272      1 Template:Taxonavigation\n
+        21.43%   56.475      1 Template:Rosaceae_(APG)\n 20.65%   54.409      1 Template:TaxonavigationIncluded2\n
+        11.40%   30.038      1 Template:Angiosperms\n 10.34%   27.240      1 Template:TaxonavigationIncluded\n  4.31%   11.354      4
+        Template:LangSwitch\n  4.26%   11.221      1 Template:Main\n  3.78%    9.961      1
+        Template:Wikispecies\n-->\n</div>\n<!-- Saved in parser cache with key commonswiki:pcache:idhash:9161-0!canonical
+        and timestamp 20180408090941 and revision id 281940175\n -->\n"},"langlinks":[{"lang":"als","url":"https://als.wikipedia.org/wiki/Kulturapfel","langname":"Alemannisch","autonym":"Alemannisch","*":"Kulturapfel"},{"lang":"am","url":"https://am.wikipedia.org/wiki/%E1%89%B1%E1%8D%8B%E1%88%95","langname":"Amharic","autonym":"አማርኛ","*":"ቱፋሕ"},{"lang":"an","url":"https://an.wikipedia.org/wiki/Mazana","langname":"Aragonese","autonym":"aragonés","*":"Mazana"},{"lang":"as","url":"https://as.wikipedia.org/wiki/%E0%A6%86%E0%A6%AA%E0%A7%87%E0%A6%B2","langname":"Assamese","autonym":"অসমীয়া","*":"আপেল"},{"lang":"ast","url":"https://ast.wikipedia.org/wiki/Mazana","langname":"Asturian","autonym":"asturianu","*":"Mazana"},{"lang":"az","url":"https://az.wikipedia.org/wiki/Alma_(meyv%C9%99)","langname":"Azerbaijani","autonym":"azərbaycanca","*":"Alma
+        (meyvə)"},{"lang":"bat-smg","url":"https://bat-smg.wikipedia.org/wiki/Vuobel%C4%97s","langname":"Samogitian","autonym":"žemaitėška","*":"Vuobelės"},{"lang":"be","url":"https://be.wikipedia.org/wiki/%D0%AF%D0%B1%D0%BB%D1%8B%D0%BA","langname":"Belarusian","autonym":"беларуская","*":"Яблык"},{"lang":"be-x-old","url":"https://be-x-old.wikipedia.org/wiki/%D0%AF%D0%B1%D0%BB%D1%8B%D0%BA","langname":"Belarusian
+        (Taraškievica orthography)","autonym":"беларуская (тарашкевіца)‎","*":"Яблык"},{"lang":"bh","url":"https://bh.wikipedia.org/wiki/%E0%A4%B8%E0%A5%87%E0%A4%B5","langname":"Bhojpuri","autonym":"भोजपुरी","*":"सेव"},{"lang":"bo","url":"https://bo.wikipedia.org/wiki/%E0%BD%80%E0%BD%B4%E0%BC%8B%E0%BD%A4%E0%BD%B4%E0%BC%8D","langname":"Tibetan","autonym":"བོད་ཡིག","*":"ཀུ་ཤུ།"},{"lang":"bpy","url":"https://bpy.wikipedia.org/wiki/%E0%A6%86%E0%A6%AA%E0%A7%87%E0%A6%B2","langname":"Bishnupriya","autonym":"বিষ্ণুপ্রিয়া
+        মণিপুরী","*":"আপেল"},{"lang":"br","url":"https://br.wikipedia.org/wiki/Aval","langname":"Breton","autonym":"brezhoneg","*":"Aval"},{"lang":"ca","url":"https://ca.wikipedia.org/wiki/Poma","langname":"Catalan","autonym":"català","*":"Poma"},{"lang":"cdo","url":"https://cdo.wikipedia.org/wiki/B%C3%ACng-gu%C5%8D","langname":"Min
+        Dong Chinese","autonym":"Mìng-dĕ̤ng-ngṳ̄","*":"Bìng-guō"},{"lang":"ckb","url":"https://ckb.wikipedia.org/wiki/%D8%B3%DB%8E%D9%88","langname":"Central
+        Kurdish","autonym":"کوردی","*":"سێو"},{"lang":"cs","url":"https://cs.wikipedia.org/wiki/Jablko","langname":"Czech","autonym":"čeština","*":"Jablko"},{"lang":"csb","url":"https://csb.wikipedia.org/wiki/Dom%C3%B4c%C3%B4_jab%C5%82%C3%B3nka","langname":"Kashubian","autonym":"kaszëbsczi","*":"Domôcô
+        jabłónka"},{"lang":"cv","url":"https://cv.wikipedia.org/wiki/%D0%9F%D0%B0%D0%BD%D1%83%D0%BB%D0%BC%D0%B8","langname":"Chuvash","autonym":"Чӑвашла","*":"Панулми"},{"lang":"da","url":"https://da.wikipedia.org/wiki/%C3%86ble","langname":"Danish","autonym":"dansk","*":"Æble"},{"lang":"de","url":"https://de.wikipedia.org/wiki/Kulturapfel#Fr.C3.BCchte","langname":"German","autonym":"Deutsch","*":"Kulturapfel#Fr.C3.BCchte"},{"lang":"dsb","url":"https://dsb.wikipedia.org/wiki/Jab%C5%82uko","langname":"Lower
+        Sorbian","autonym":"dolnoserbski","*":"Jabłuko"},{"lang":"dv","url":"https://dv.wikipedia.org/wiki/%DE%87%DE%A7%DE%8A%DE%A6%DE%8D%DE%B0","langname":"Divehi","autonym":"ދިވެހިބަސް","*":"އާފަލް"},{"lang":"eo","url":"https://eo.wikipedia.org/wiki/Pomo","langname":"Esperanto","autonym":"Esperanto","*":"Pomo"},{"lang":"es","url":"https://es.wikipedia.org/wiki/Manzana","langname":"Spanish","autonym":"español","*":"Manzana"},{"lang":"et","url":"https://et.wikipedia.org/wiki/%C3%95un","langname":"Estonian","autonym":"eesti","*":"Õun"},{"lang":"eu","url":"https://eu.wikipedia.org/wiki/Sagar","langname":"Basque","autonym":"euskara","*":"Sagar"},{"lang":"fi","url":"https://fi.wikipedia.org/wiki/Tarhaomenapuu","langname":"Finnish","autonym":"suomi","*":"Tarhaomenapuu"},{"lang":"fiu-vro","url":"https://fiu-vro.wikipedia.org/wiki/Uibu","langname":"Võro","autonym":"Võro","*":"Uibu"},{"lang":"fj","url":"https://fj.wikipedia.org/wiki/Yapolo","langname":"Fijian","autonym":"Na
+        Vosa Vakaviti","*":"Yapolo"},{"lang":"fr","url":"https://fr.wikipedia.org/wiki/Pomme","langname":"French","autonym":"français","*":"Pomme"},{"lang":"frr","url":"https://frr.wikipedia.org/wiki/Aapelbuum","langname":"Northern
+        Frisian","autonym":"Nordfriisk","*":"Aapelbuum"},{"lang":"fur","url":"https://fur.wikipedia.org/wiki/Milu%C3%A7%C3%A2r","langname":"Friulian","autonym":"furlan","*":"Miluçâr"},{"lang":"ga","url":"https://ga.wikipedia.org/wiki/%C3%9All","langname":"Irish","autonym":"Gaeilge","*":"Úll"},{"lang":"gan","url":"https://gan.wikipedia.org/wiki/%E8%98%8B%E6%9E%9C","langname":"Gan
+        Chinese","autonym":"贛語","*":"蘋果"},{"lang":"gd","url":"https://gd.wikipedia.org/wiki/Ubhal","langname":"Scottish
+        Gaelic","autonym":"Gàidhlig","*":"Ubhal"},{"lang":"gl","url":"https://gl.wikipedia.org/wiki/Maceira","langname":"Galician","autonym":"galego","*":"Maceira"},{"lang":"gu","url":"https://gu.wikipedia.org/wiki/%E0%AA%B8%E0%AA%AB%E0%AA%B0%E0%AA%9C%E0%AA%A8","langname":"Gujarati","autonym":"ગુજરાતી","*":"સફરજન"},{"lang":"gv","url":"https://gv.wikipedia.org/wiki/Ooyl","langname":"Manx","autonym":"Gaelg","*":"Ooyl"},{"lang":"hak","url":"https://hak.wikipedia.org/wiki/Ph%C3%ACn-k%C3%B3","langname":"Hakka
+        Chinese","autonym":"客家語/Hak-kâ-ngî","*":"Phìn-kó"},{"lang":"he","url":"https://he.wikipedia.org/wiki/%D7%AA%D7%A4%D7%95%D7%97","langname":"Hebrew","autonym":"עברית","*":"תפוח"},{"lang":"hi","url":"https://hi.wikipedia.org/wiki/%E0%A4%B8%E0%A5%87%E0%A4%AC","langname":"Hindi","autonym":"हिन्दी","*":"सेब"},{"lang":"hif","url":"https://hif.wikipedia.org/wiki/Aapul","langname":"Fiji
+        Hindi","autonym":"Fiji Hindi","*":"Aapul"},{"lang":"hsb","url":"https://hsb.wikipedia.org/wiki/Jab%C5%82uko","langname":"Upper
+        Sorbian","autonym":"hornjoserbsce","*":"Jabłuko"},{"lang":"ht","url":"https://ht.wikipedia.org/wiki/P%C3%B2m","langname":"Haitian
+        Creole","autonym":"Kreyòl ayisyen","*":"Pòm"},{"lang":"hu","url":"https://hu.wikipedia.org/wiki/Alma","langname":"Hungarian","autonym":"magyar","*":"Alma"},{"lang":"ia","url":"https://ia.wikipedia.org/wiki/Pomo","langname":"Interlingua","autonym":"interlingua","*":"Pomo"},{"lang":"it","url":"https://it.wikipedia.org/wiki/Mela","langname":"Italian","autonym":"italiano","*":"Mela"},{"lang":"iu","url":"https://iu.wikipedia.org/wiki/%E1%91%AD%E1%92%BB%E1%92%A5%E1%93%87%E1%90%85%E1%94%AD%E1%96%85/kimminaujaq","langname":"Inuktitut","autonym":"ᐃᓄᒃᑎᑐᑦ/inuktitut","*":"ᑭᒻᒥᓇᐅᔭᖅ/kimminaujaq"},{"lang":"jbo","url":"https://jbo.wikipedia.org/wiki/plise","langname":"Lojban","autonym":"la
+        .lojban.","*":"plise"},{"lang":"jv","url":"https://jv.wikipedia.org/wiki/Apel","langname":"Javanese","autonym":"Basa
+        Jawa","*":"Apel"},{"lang":"kaa","url":"https://kaa.wikipedia.org/wiki/Alma","langname":"Kara-Kalpak","autonym":"Qaraqalpaqsha","*":"Alma"},{"lang":"kk","url":"https://kk.wikipedia.org/wiki/%D0%90%D0%BB%D0%BC%D0%B0","langname":"Kazakh","autonym":"қазақша","*":"Алма"},{"lang":"kn","url":"https://kn.wikipedia.org/wiki/%E0%B2%B8%E0%B3%87%E0%B2%AC%E0%B3%81","langname":"Kannada","autonym":"ಕನ್ನಡ","*":"ಸೇಬು"},{"lang":"krc","url":"https://krc.wikipedia.org/wiki/%D0%90%D0%BB%D0%BC%D0%B0","langname":"Karachay-Balkar","autonym":"къарачай-малкъар","*":"Алма"},{"lang":"ksh","url":"https://ksh.wikipedia.org/wiki/Appel","langname":"Colognian","autonym":"Ripoarisch","*":"Appel"},{"lang":"ku","url":"https://ku.wikipedia.org/wiki/S%C3%AAv","langname":"Kurdish","autonym":"kurdî","*":"Sêv"},{"lang":"kw","url":"https://kw.wikipedia.org/wiki/Aval","langname":"Cornish","autonym":"kernowek","*":"Aval"},{"lang":"la","url":"https://la.wikipedia.org/wiki/Malum","langname":"Latin","autonym":"Latina","*":"Malum"},{"lang":"lb","url":"https://lb.wikipedia.org/wiki/Apel","langname":"Luxembourgish","autonym":"Lëtzebuergesch","*":"Apel"},{"lang":"li","url":"https://li.wikipedia.org/wiki/Appel","langname":"Limburgish","autonym":"Limburgs","*":"Appel"},{"lang":"lt","url":"https://lt.wikipedia.org/wiki/Obuolys","langname":"Lithuanian","autonym":"lietuvių","*":"Obuolys"},{"lang":"lv","url":"https://lv.wikipedia.org/wiki/%C4%80bols","langname":"Latvian","autonym":"latviešu","*":"Ābols"},{"lang":"map-bms","url":"https://map-bms.wikipedia.org/wiki/Apel","langname":"Basa
+        Banyumasan","autonym":"Basa Banyumasan","*":"Apel"},{"lang":"mg","url":"https://mg.wikipedia.org/wiki/Paoma","langname":"Malagasy","autonym":"Malagasy","*":"Paoma"},{"lang":"mn","url":"https://mn.wikipedia.org/wiki/%D0%90%D0%BB%D0%B8%D0%BC","langname":"Mongolian","autonym":"монгол","*":"Алим"},{"lang":"mr","url":"https://mr.wikipedia.org/wiki/%E0%A4%B8%E0%A4%AB%E0%A4%B0%E0%A4%9A%E0%A4%82%E0%A4%A6","langname":"Marathi","autonym":"मराठी","*":"सफरचंद"},{"lang":"nah","url":"https://nah.wikipedia.org/wiki/Manzana","langname":"Nāhuatl","autonym":"Nāhuatl","*":"Manzana"},{"lang":"nap","url":"https://nap.wikipedia.org/wiki/Mir","langname":"Neapolitan","autonym":"Napulitano","*":"Mir"},{"lang":"nds","url":"https://nds.wikipedia.org/wiki/Huusappel","langname":"Low
+        German","autonym":"Plattdüütsch","*":"Huusappel"},{"lang":"nds-nl","url":"https://nds-nl.wikipedia.org/wiki/Appel","langname":"Low
+        Saxon","autonym":"Nedersaksies","*":"Appel"},{"lang":"ne","url":"https://ne.wikipedia.org/wiki/%E0%A4%B8%E0%A5%8D%E0%A4%AF%E0%A4%BE%E0%A4%89","langname":"Nepali","autonym":"नेपाली","*":"स्याउ"},{"lang":"new","url":"https://new.wikipedia.org/wiki/%E0%A4%B8%E0%A5%8D%E0%A4%AF%E0%A4%BE%E0%A4%89","langname":"Newari","autonym":"नेपाल
+        भाषा","*":"स्याउ"},{"lang":"nl","url":"https://nl.wikipedia.org/wiki/Appel_(plant)","langname":"Dutch","autonym":"Nederlands","*":"Appel
+        (plant)"},{"lang":"nn","url":"https://nn.wikipedia.org/wiki/Eple","langname":"Norwegian
+        Nynorsk","autonym":"norsk nynorsk","*":"Eple"},{"lang":"no","url":"https://no.wikipedia.org/wiki/Epleslekten","langname":"Norwegian","autonym":"norsk","*":"Epleslekten"},{"lang":"nv","url":"https://nv.wikipedia.org/wiki/Bilas%C3%A1ana","langname":"Navajo","autonym":"Diné
+        bizaad","*":"Bilasáana"},{"lang":"oc","url":"https://oc.wikipedia.org/wiki/Poma","langname":"Occitan","autonym":"occitan","*":"Poma"},{"lang":"os","url":"https://os.wikipedia.org/wiki/%D0%A4%C3%A6%D1%82%D0%BA%D1%8A%D1%83%D1%8B","langname":"Ossetic","autonym":"Ирон","*":"Фæткъуы"},{"lang":"pam","url":"https://pam.wikipedia.org/wiki/Mansanas","langname":"Pampanga","autonym":"Kapampangan","*":"Mansanas"},{"lang":"pl","url":"https://pl.wikipedia.org/wiki/Jab%C5%82ko","langname":"Polish","autonym":"polski","*":"Jabłko"},{"lang":"pms","url":"https://pms.wikipedia.org/wiki/Malus_domestica","langname":"Piedmontese","autonym":"Piemontèis","*":"Malus
+        domestica"},{"lang":"ps","url":"https://ps.wikipedia.org/wiki/%D9%85%DA%BC%D9%87","langname":"Pashto","autonym":"پښتو","*":"مڼه"},{"lang":"pt","url":"https://pt.wikipedia.org/wiki/Ma%C3%A7%C3%A3","langname":"Portuguese","autonym":"português","*":"Maçã"},{"lang":"qu","url":"https://qu.wikipedia.org/wiki/Mansana","langname":"Quechua","autonym":"Runa
+        Simi","*":"Mansana"},{"lang":"ro","url":"https://ro.wikipedia.org/wiki/M%C4%83r","langname":"Romanian","autonym":"română","*":"Măr"},{"lang":"ru","url":"https://ru.wikipedia.org/wiki/%D0%AF%D0%B1%D0%BB%D0%BE%D0%BA%D0%BE","langname":"Russian","autonym":"русский","*":"Яблоко"},{"lang":"rw","url":"https://rw.wikipedia.org/wiki/Pome","langname":"Kinyarwanda","autonym":"Kinyarwanda","*":"Pome"},{"lang":"scn","url":"https://scn.wikipedia.org/wiki/Pumu","langname":"Sicilian","autonym":"sicilianu","*":"Pumu"},{"lang":"sco","url":"https://sco.wikipedia.org/wiki/Aiple","langname":"Scots","autonym":"Scots","*":"Aiple"},{"lang":"sd","url":"https://sd.wikipedia.org/wiki/%D8%A7%D9%8E%D9%86%D8%A8%D9%90%DA%99%D9%90%D9%8A","langname":"Sindhi","autonym":"سنڌي","*":"اَنبِڙِي"},{"lang":"sh","url":"https://sh.wikipedia.org/wiki/Jabuka","langname":"Serbo-Croatian","autonym":"srpskohrvatski
+        / српскохрватски","*":"Jabuka"},{"lang":"si","url":"https://si.wikipedia.org/wiki/%E0%B6%87%E0%B6%B4%E0%B6%BD%E0%B7%8A","langname":"Sinhala","autonym":"සිංහල","*":"ඇපල්"},{"lang":"sk","url":"https://sk.wikipedia.org/wiki/Jablko","langname":"Slovak","autonym":"slovenčina","*":"Jablko"},{"lang":"sl","url":"https://sl.wikipedia.org/wiki/Jabolko","langname":"Slovenian","autonym":"slovenščina","*":"Jabolko"},{"lang":"sq","url":"https://sq.wikipedia.org/wiki/Molla","langname":"Albanian","autonym":"shqip","*":"Molla"},{"lang":"sr","url":"https://sr.wikipedia.org/wiki/%D0%88%D0%B0%D0%B1%D1%83%D0%BA%D0%B0","langname":"Serbian","autonym":"српски
+        / srpski","*":"Јабука"},{"lang":"sv","url":"https://sv.wikipedia.org/wiki/%C3%84ppeltr%C3%A4d","langname":"Swedish","autonym":"svenska","*":"Äppelträd"},{"lang":"sw","url":"https://sw.wikipedia.org/wiki/Tofaa","langname":"Swahili","autonym":"Kiswahili","*":"Tofaa"},{"lang":"te","url":"https://te.wikipedia.org/wiki/%E0%B0%86%E0%B0%AA%E0%B0%BF%E0%B0%B2%E0%B1%8D","langname":"Telugu","autonym":"తెలుగు","*":"ఆపిల్"},{"lang":"tg","url":"https://tg.wikipedia.org/wiki/%D0%A1%D0%B5%D0%B1","langname":"Tajik","autonym":"тоҷикӣ","*":"Себ"},{"lang":"tl","url":"https://tl.wikipedia.org/wiki/Mansanas","langname":"Tagalog","autonym":"Tagalog","*":"Mansanas"},{"lang":"tt","url":"https://tt.wikipedia.org/wiki/%D0%90%D0%BB%D0%BC%D0%B0","langname":"Tatar","autonym":"татарча/tatarça","*":"Алма"},{"lang":"udm","url":"https://udm.wikipedia.org/wiki/%D0%A3%D0%BB%D0%BC%D0%BE%D0%BF%D1%83","langname":"Udmurt","autonym":"удмурт","*":"Улмопу"},{"lang":"ug","url":"https://ug.wikipedia.org/wiki/%D8%A6%D8%A7%D9%84%D9%85%D8%A7","langname":"Uyghur","autonym":"ئۇيغۇرچە
+        / Uyghurche","*":"ئالما"},{"lang":"uk","url":"https://uk.wikipedia.org/wiki/%D0%AF%D0%B1%D0%BB%D1%83%D0%BA%D0%BE","langname":"Ukrainian","autonym":"українська","*":"Яблуко"},{"lang":"uz","url":"https://uz.wikipedia.org/wiki/Olma","langname":"Uzbek","autonym":"oʻzbekcha/ўзбекча","*":"Olma"},{"lang":"ve","url":"https://ve.wikipedia.org/wiki/Apula","langname":"Venda","autonym":"Tshivenda","*":"Apula"},{"lang":"vec","url":"https://vec.wikipedia.org/wiki/Pomaro","langname":"Venetian","autonym":"vèneto","*":"Pomaro"},{"lang":"vi","url":"https://vi.wikipedia.org/wiki/Malus_domestica","langname":"Vietnamese","autonym":"Tiếng
+        Việt","*":"Malus domestica"},{"lang":"wa","url":"https://wa.wikipedia.org/wiki/Pem%C3%AE","langname":"Walloon","autonym":"walon","*":"Pemî"},{"lang":"war","url":"https://war.wikipedia.org/wiki/Mansanas","langname":"Waray","autonym":"Winaray","*":"Mansanas"},{"lang":"yi","url":"https://yi.wikipedia.org/wiki/%D7%A2%D7%A4%D7%9C","langname":"Yiddish","autonym":"ייִדיש","*":"עפל"},{"lang":"zh","url":"https://zh.wikipedia.org/wiki/%E8%98%8B%E6%9E%9C%E6%A8%B9","langname":"Chinese","autonym":"中文","*":"蘋果樹"},{"lang":"zh-min-nan","url":"https://zh-min-nan.wikipedia.org/wiki/Ph%C5%8Dng-k%C3%B3-chhi%C5%AB","langname":"Chinese
+        (Min Nan)","autonym":"Bân-lâm-gú","*":"Phōng-kó-chhiū"},{"lang":"zh-yue","url":"https://zh-yue.wikipedia.org/wiki/%E8%98%8B%E6%9E%9C","langname":"Cantonese","autonym":"粵語","*":"蘋果"}],"categories":[{"sortkey":"Malus
+        domestica","hidden":"","*":"Species_of_Rosaceae"},{"sortkey":"","hidden":"","*":"Taxon_galleries"},{"sortkey":"","hidden":"","*":"Biology_pages_with_wikidata_link"},{"sortkey":"
+        ","*":"Malus_domestica"}],"links":[{"ns":10,"exists":"","*":"Template:Rosaceae
+        (APG)"},{"ns":10,"exists":"","*":"Template:Angiosperms"},{"ns":0,"exists":"","*":"Eukaryota"},{"ns":0,"*":"Archaeplastida"},{"ns":0,"exists":"","*":"Plantae"},{"ns":0,"exists":"","*":"Angiosperms"},{"ns":0,"*":"Eudicots"},{"ns":0,"*":"Core
+        eudicots"},{"ns":0,"*":"Superrosids"},{"ns":0,"exists":"","*":"Rosids"},{"ns":0,"*":"Eurosids
+        I"},{"ns":0,"exists":"","*":"Rosales"},{"ns":0,"exists":"","*":"Rosaceae"},{"ns":0,"*":"Amygdaloideae"},{"ns":0,"*":"Maleae"},{"ns":0,"exists":"","*":"Malus"},{"ns":0,"exists":"","*":"APG
+        IV"},{"ns":0,"exists":"","*":"Apple cultivars"},{"ns":0,"exists":"","*":"Viscum
+        album"},{"ns":14,"*":"Category:Rosaceae by species"},{"ns":14,"exists":"","*":"Category:Amygdaloideae"},{"ns":14,"exists":"","*":"Category:Archaeplastida"},{"ns":14,"exists":"","*":"Category:Core
+        eudicots"},{"ns":14,"exists":"","*":"Category:Eudicots"},{"ns":14,"exists":"","*":"Category:Eurosids
+        I"},{"ns":14,"exists":"","*":"Category:Maleae"},{"ns":14,"exists":"","*":"Category:Malus
+        domestica"},{"ns":14,"exists":"","*":"Category:Superrosids"},{"ns":4,"exists":"","*":"Commons:QI"}],"templates":[{"ns":10,"exists":"","*":"Template:Taxonavigation"},{"ns":10,"exists":"","*":"Template:Rosaceae
+        (APG)"},{"ns":10,"exists":"","*":"Template:TaxonavigationIncluded2"},{"ns":10,"exists":"","*":"Template:Taxonavigation/classification"},{"ns":10,"exists":"","*":"Template:Angiosperms"},{"ns":10,"exists":"","*":"Template:TaxonavigationIncluded"},{"ns":10,"exists":"","*":"Template:Wikispecies"},{"ns":10,"exists":"","*":"Template:Wikispecies/i18n"},{"ns":10,"exists":"","*":"Template:LangSwitch"},{"ns":10,"exists":"","*":"Template:VN"},{"ns":10,"exists":"","*":"Template:VN/title"},{"ns":10,"exists":"","*":"Template:Incorrect
+        biology template usage/AssertEmpty"},{"ns":10,"exists":"","*":"Template:Is
+        QI"},{"ns":10,"exists":"","*":"Template:De"},{"ns":10,"exists":"","*":"Template:Description"},{"ns":10,"exists":"","*":"Template:Dir"},{"ns":10,"exists":"","*":"Template:Main"},{"ns":10,"exists":"","*":"Template:Main
+        gallery"},{"ns":828,"exists":"","*":"Module:Taxonavigation"},{"ns":828,"exists":"","*":"Module:Biology"},{"ns":828,"exists":"","*":"Module:Arguments"},{"ns":828,"exists":"","*":"Module:Fallback"},{"ns":828,"exists":"","*":"Module:Fallbacklist"},{"ns":828,"exists":"","*":"Module:Wikidata4Bio"},{"ns":0,"exists":"","*":"Malus
+        domestica"}],"images":["Quality_images_logo.svg","Apples_on_tree_2011_G1.jpg","Trierer_Weinapfel.JPG","Malus_domestica_LC0122.jpg","Malus_domestica_a1.jpg","Cleaned-Illustration_Malus_domestica.jpg","Malus-domestica-blomstring.JPG","Appletree_bloom_l.jpg","Malus_domestica_a2.jpg","Rosaceae_Malus_pumila_Malus_pumila_Var_domestica_Apples_Fuji.jpg","Sterappel_dwarsdrsn.jpg","Manzanas_-_Apples.jpg","Knoppar_på_Raud_Torstein,_bløming_seint_i_mai_2005_i_Oslo..jpg","Malus_domestica_sl1.jpg","Malus_domestica_sl2.jpg","Malus_domestica_sl3.jpg","Malus_domestica_sl4.jpg","Malus_domestica_sl5.jpg","Malus_domestica_sl6.jpg","Malus_domestica_sl7.jpg","Malus_domestica_sl8.jpg","Apfelschorf.jpg","Schurft_bij_appel_(Venturia_inaequalis_on_Malus_domestica_''Schone_van_Boskoop''.jpg","Madige-Apfel-Frucht.jpg","Monilia_sp._on_apple.jpg","Alkmene_apple_Moniliarot.jpg","Botrytis-rot_op_appel_Goudreinet_(Botryotinia_fuckeliana).jpg","Gravenstein_apples_with_codling_moth.JPG","Flutrinne_008.jpg","Wasp_eating_apple.jpg","Apfelbaumkäfer_ugglan.jpg","Viscum_album_230208a.jpg","Apples.jpg","Wikispecies-logo.svg","Wikidata-logo-without-paddings.svg"],"externallinks":["https://www.wikidata.org/wiki/Q18674606"],"sections":[{"toclevel":1,"level":"2","line":"Malus
+        domestica","number":"1","index":"1","fromtitle":"Malus_domestica","byteoffset":1532,"anchor":"Malus_domestica"},{"toclevel":2,"level":"3","line":"Pests
+        and diseases","number":"1.1","index":"2","fromtitle":"Malus_domestica","byteoffset":2512,"anchor":"Pests_and_diseases"},{"toclevel":1,"level":"2","line":"Apple
+        cultivars","number":"2","index":"3","fromtitle":"Malus_domestica","byteoffset":3330,"anchor":"Apple_cultivars"}],"displaytitle":"<i>Malus
+        domestica</i>","iwlinks":[{"prefix":"en","url":"https://en.wikipedia.org/wiki/Wikispecies","*":"en:Wikispecies"},{"prefix":"en","url":"https://en.wikipedia.org/wiki/Common_name","*":"en:Common
+        name"},{"prefix":"species","url":"https://species.wikimedia.org/wiki/Malus_domestica","*":"species:Malus
+        domestica"},{"prefix":"wikidata","url":"https://www.wikidata.org/wiki/Q18674606","*":"wikidata:Q18674606"},{"prefix":"als","url":"https://als.wikipedia.org/wiki/Kulturapfel","*":"als:Kulturapfel"},{"prefix":"am","url":"https://am.wikipedia.org/wiki/%E1%89%B1%E1%8D%8B%E1%88%95","*":"am:ቱፋሕ"},{"prefix":"ast","url":"https://ast.wikipedia.org/wiki/Malus_domestica","*":"ast:Malus
+        domestica"},{"prefix":"az","url":"https://az.wikipedia.org/wiki/M%C9%99d%C9%99ni_alma_a%C4%9Fac%C4%B1","*":"az:Mədəni
+        alma ağacı"},{"prefix":"bo","url":"https://bo.wikipedia.org/wiki/%E0%BD%80%E0%BD%B4%E0%BC%8B%E0%BD%A4%E0%BD%B4%E0%BC%8D","*":"bo:ཀུ་ཤུ།"},{"prefix":"bpy","url":"https://bpy.wikipedia.org/wiki/%E0%A6%86%E0%A6%AA%E0%A7%87%E0%A6%B2","*":"bpy:আপেল"},{"prefix":"ca","url":"https://ca.wikipedia.org/wiki/Pomera_comuna","*":"ca:Pomera
+        comuna"},{"prefix":"cdo","url":"https://cdo.wikipedia.org/wiki/B%C3%ACng-gu%C5%8D","*":"cdo:Bìng-guō"},{"prefix":"cs","url":"https://cs.wikipedia.org/wiki/Jablo%C5%88_dom%C3%A1c%C3%AD","*":"cs:Jabloň
+        domácí"},{"prefix":"csb","url":"https://csb.wikipedia.org/wiki/Dom%C3%B4c%C3%B4_jab%C5%82%C3%B3nka","*":"csb:Domôcô
+        jabłónka"},{"prefix":"da","url":"https://da.wikipedia.org/wiki/Almindelig_%C3%A6ble","*":"da:Almindelig
+        æble"},{"prefix":"de","url":"https://de.wikipedia.org/wiki/Kulturapfel","*":"de:Kulturapfel"},{"prefix":"dsb","url":"https://dsb.wikipedia.org/wiki/Zagrodna_jab%C5%82u%C5%A1cyna","*":"dsb:Zagrodna
+        jabłušcyna"},{"prefix":"eo","url":"https://eo.wikipedia.org/wiki/Kulturpomo","*":"eo:Kulturpomo"},{"prefix":"es","url":"https://es.wikipedia.org/wiki/Malus_domestica","*":"es:Malus
+        domestica"},{"prefix":"et","url":"https://et.wikipedia.org/wiki/%C3%95unapuu","*":"et:Õunapuu"},{"prefix":"eu","url":"https://eu.wikipedia.org/wiki/Sagarrondo","*":"eu:Sagarrondo"},{"prefix":"fi","url":"https://fi.wikipedia.org/wiki/Tarhaomenapuu","*":"fi:Tarhaomenapuu"},{"prefix":"fr","url":"https://fr.wikipedia.org/wiki/Pommier_domestique","*":"fr:Pommier
+        domestique"},{"prefix":"frr","url":"https://frr.wikipedia.org/wiki/Aapelbuum","*":"frr:Aapelbuum"},{"prefix":"gl","url":"https://gl.wikipedia.org/wiki/Maceira","*":"gl:Maceira"},{"prefix":"gv","url":"https://gv.wikipedia.org/wiki/Ooyl","*":"gv:Ooyl"},{"prefix":"hsb","url":"https://hsb.wikipedia.org/wiki/Zahrodna_jab%C5%82u%C4%8Dina","*":"hsb:Zahrodna
+        jabłučina"},{"prefix":"hu","url":"https://hu.wikipedia.org/wiki/Nemes_alma","*":"hu:Nemes
+        alma"},{"prefix":"ia","url":"https://ia.wikipedia.org/wiki/Malus_domestica","*":"ia:Malus
+        domestica"},{"prefix":"it","url":"https://it.wikipedia.org/wiki/Malus_domestica","*":"it:Malus
+        domestica"},{"prefix":"jv","url":"https://jv.wikipedia.org/wiki/Apel","*":"jv:Apel"},{"prefix":"ku","url":"https://ku.wikipedia.org/wiki/S%C3%AAv","*":"ku:Sêv"},{"prefix":"kw","url":"https://kw.wikipedia.org/wiki/Aval","*":"kw:Aval"},{"prefix":"li","url":"https://li.wikipedia.org/wiki/Appel","*":"li:Appel"},{"prefix":"lv","url":"https://lv.wikipedia.org/wiki/%C4%80bele","*":"lv:Ābele"},{"prefix":"mn","url":"https://mn.wikipedia.org/wiki/%D0%90%D0%BB%D0%B8%D0%BC","*":"mn:Алим"},{"prefix":"nah","url":"https://nah.wikipedia.org/wiki/Manzanacuahuitl","*":"nah:Manzanacuahuitl"},{"prefix":"nap","url":"https://nap.wikipedia.org/wiki/Mir","*":"nap:Mir"},{"prefix":"nds","url":"https://nds.wikipedia.org/wiki/Huusappel","*":"nds:Huusappel"},{"prefix":"ne","url":"https://ne.wikipedia.org/wiki/%E0%A4%B8%E0%A5%8D%E0%A4%AF%E0%A4%BE%E0%A4%89","*":"ne:स्याउ"},{"prefix":"nl","url":"https://nl.wikipedia.org/wiki/Appel_(plant)","*":"nl:Appel
+        (plant)"},{"prefix":"nn","url":"https://nn.wikipedia.org/wiki/Eple","*":"nn:Eple"},{"prefix":"oc","url":"https://oc.wikipedia.org/wiki/Pomi%C3%A8r","*":"oc:Pomièr"},{"prefix":"os","url":"https://os.wikipedia.org/wiki/%D0%A5%C3%A6%D0%B4%D0%B7%D0%B0%D1%80%D0%BE%D0%BD_%D1%84%C3%A6%D1%82%D0%BA%D1%8A%D1%83%D1%8B","*":"os:Хæдзарон
+        фæткъуы"},{"prefix":"pam","url":"https://pam.wikipedia.org/wiki/Mansanas","*":"pam:Mansanas"},{"prefix":"pl","url":"https://pl.wikipedia.org/wiki/Jab%C5%82o%C5%84_domowa","*":"pl:Jabłoń
+        domowa"},{"prefix":"ps","url":"https://ps.wikipedia.org/wiki/%D9%85%DA%BC%D9%87","*":"ps:مڼه"},{"prefix":"pt","url":"https://pt.wikipedia.org/wiki/Malus_domestica","*":"pt:Malus
+        domestica"},{"prefix":"qu","url":"https://qu.wikipedia.org/wiki/Mansana","*":"qu:Mansana"},{"prefix":"ro","url":"https://ro.wikipedia.org/wiki/M%C4%83r","*":"ro:Măr"},{"prefix":"ru","url":"https://ru.wikipedia.org/wiki/%D0%AF%D0%B1%D0%BB%D0%BE%D0%BD%D1%8F_%D0%B4%D0%BE%D0%BC%D0%B0%D1%88%D0%BD%D1%8F%D1%8F","*":"ru:Яблоня
+        домашняя"},{"prefix":"sh","url":"https://sh.wikipedia.org/wiki/Jabuka","*":"sh:Jabuka"},{"prefix":"si","url":"https://si.wikipedia.org/wiki/%E0%B6%87%E0%B6%B4%E0%B6%BD%E0%B7%8A","*":"si:ඇපල්"},{"prefix":"sk","url":"https://sk.wikipedia.org/wiki/Jablo%C5%88_dom%C3%A1ca","*":"sk:Jabloň
+        domáca"},{"prefix":"sl","url":"https://sl.wikipedia.org/wiki/Jablana","*":"sl:Jablana"},{"prefix":"sr","url":"https://sr.wikipedia.org/wiki/%D0%94%D0%BE%D0%BC%D0%B0%D1%9B%D0%B0_%D1%98%D0%B0%D0%B1%D1%83%D0%BA%D0%B0","*":"sr:Домаћа
+        јабука"},{"prefix":"sv","url":"https://sv.wikipedia.org/wiki/%C3%84ppeltr%C3%A4d","*":"sv:Äppelträd"},{"prefix":"te","url":"https://te.wikipedia.org/wiki/%E0%B0%86%E0%B0%AA%E0%B0%BF%E0%B0%B2%E0%B1%8D","*":"te:ఆపిల్"},{"prefix":"uk","url":"https://uk.wikipedia.org/wiki/%D0%AF%D0%B1%D0%BB%D1%83%D0%BD%D1%8F_%D0%B4%D0%BE%D0%BC%D0%B0%D1%88%D0%BD%D1%8F","*":"uk:Яблуня
+        домашня"},{"prefix":"uz","url":"https://uz.wikipedia.org/wiki/Olma","*":"uz:Olma"},{"prefix":"vec","url":"https://vec.wikipedia.org/wiki/Pomaro","*":"vec:Pomaro"},{"prefix":"vi","url":"https://vi.wikipedia.org/wiki/Malus_domestica","*":"vi:Malus
+        domestica"},{"prefix":"zh","url":"https://zh.wikipedia.org/wiki/%E8%98%8B%E6%9E%9C%E6%A8%B9","*":"zh:蘋果樹"}],"properties":[{"name":"displaytitle","*":"<i>Malus
+        domestica</i>"},{"name":"wikibase_item","*":"Q18674606"}]}}'
+  recorded_at: 2018-04-26 04:56:15 GMT
+  recorded_with: vcr/0.0.7.9431

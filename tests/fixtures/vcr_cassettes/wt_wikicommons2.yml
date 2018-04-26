@@ -1,0 +1,391 @@
+http_interactions:
+- request:
+    method: get
+    uri: https://commons.wikimedia.org/w/api.php?page=Poa_annua&action=parse&redirects=TRUE&format=json&utf8=TRUE&prop=text%7Clanglinks%7Ccategories%7Clinks%7Ctemplates%7Cimages%7Cexternallinks%7Csections%7Crevid%7Cdisplaytitle%7Ciwlinks%7Cproperties
+    body:
+      encoding: ''
+      string: ''
+    headers:
+      User-Agent: libcurl/7.54.0 r-curl/3.2 crul/0.5.2
+      Accept-Encoding: gzip, deflate
+      Accept: application/json, text/xml, application/xml, */*
+  response:
+    status:
+      status_code: '200'
+      message: OK
+      explanation: Request fulfilled, document follows
+    headers:
+      status: HTTP/1.1 200 OK
+      date: Wed, 25 Apr 2018 22:23:27 GMT
+      content-type: application/json; charset=utf-8
+      transfer-encoding: chunked
+      connection: keep-alive
+      server: mw1342.eqiad.wmnet
+      x-powered-by: HHVM/3.18.6-dev
+      x-content-type-options: nosniff
+      cache-control: private, must-revalidate, max-age=0
+      p3p: CP="This is not a P3P policy! See https://commons.wikimedia.org/wiki/Special:CentralAutoLogin/P3P
+        for more info."
+      x-frame-options: DENY
+      content-disposition: inline; filename=api-result.json
+      vary: Accept-Encoding,Treat-as-Untrusted,X-Forwarded-Proto,Cookie,Authorization
+      backend-timing: D=52271 t=1524695007771479
+      content-encoding: gzip
+      x-varnish: 346865158, 47627551, 290343260, 645860178
+      via: 1.1 varnish (Varnish/5.1), 1.1 varnish (Varnish/5.1), 1.1 varnish (Varnish/5.1),
+        1.1 varnish (Varnish/5.1)
+      accept-ranges: bytes
+      age: '0'
+      x-cache: cp1055 pass, cp2007 pass, cp4029 pass, cp4029 pass
+      x-cache-status: pass
+      strict-transport-security: max-age=106384710; includeSubDomains; preload
+      x-analytics: ns=-1;special=Badtitle;WMF-Last-Access=25-Apr-2018;https=1
+      x-client-ip: 157.130.179.86
+    body:
+      encoding: UTF-8
+      string: '{"parse":{"title":"Poa annua","pageid":95919,"revid":290894725,"redirects":[],"text":{"*":"<div
+        class=\"mw-parser-output\"><div style=\"float:left; margin:2px auto; border-top:1px
+        solid #ccc; border-bottom:1px solid #aaa; font-size:97%\"><b><a href=\"/wiki/APG_IV\"
+        class=\"mw-redirect\" title=\"APG IV\">APG IV Classification</a></b>:&#160;Domain<b>:&#160;<a
+        href=\"/wiki/Eukaryota\" class=\"mw-redirect\" title=\"Eukaryota\"><span style=\"color:#005896\">Eukaryota</span></a></b>&#160;•
+        (unranked)<b>:&#160;<a href=\"/wiki/Category:Archaeplastida\" title=\"Category:Archaeplastida\">Archaeplastida</a></b>&#160;•
+        Regnum<b>:&#160;<a href=\"/wiki/Plantae\" class=\"mw-redirect\" title=\"Plantae\"><span
+        style=\"color:#005896\">Plantae</span></a></b>&#160;• Cladus<b>:&#160;<a href=\"/wiki/Angiosperms\"
+        title=\"Angiosperms\"><span style=\"color:#005896\">angiosperms</span></a></b>&#160;•
+        Cladus<b>:&#160;<a href=\"/wiki/Category:Monocots\" title=\"Category:Monocots\">monocots</a></b>&#160;•
+        Cladus<b>:&#160;<a href=\"/wiki/Commelinids\" class=\"mw-redirect\" title=\"Commelinids\"><span
+        style=\"color:#005896\">commelinids</span></a></b>&#160;• Ordo<b>:&#160;<a
+        href=\"/wiki/Poales\" class=\"mw-redirect\" title=\"Poales\"><span style=\"color:#005896\">Poales</span></a></b>&#160;•
+        Familia<b>:&#160;<a href=\"/wiki/Poaceae\" class=\"mw-redirect\" title=\"Poaceae\"><span
+        style=\"color:#005896\">Poaceae</span></a></b>&#160;• Cladus<b>:&#160;<a href=\"/wiki/Category:BEP_clade\"
+        title=\"Category:BEP clade\">BEP&#160;clade</a></b>&#160;• Subfamilia<b>:&#160;<a
+        href=\"/wiki/Category:Pooideae\" title=\"Category:Pooideae\">Pooideae</a></b>&#160;•
+        Tribus<b>:&#160;<a href=\"/wiki/Category:Poeae\" title=\"Category:Poeae\">Poeae</a></b>&#160;•
+        Subtribus<b>:&#160;<a href=\"/wiki/Category:Poinae\" title=\"Category:Poinae\">Poinae</a></b>&#160;•
+        Genus<b>:&#160;<i><a href=\"/wiki/Category:Poa\" title=\"Category:Poa\">Poa</a></i></b>&#160;•
+        <b>Species:&#160;<i><a href=\"/wiki/Category:Poa_annua\" title=\"Category:Poa
+        annua\">Poa&#160;annua</a></i></b> <span style=\"white-space:nowrap; font-size:80%\"><b><a
+        href=\"/wiki/Carl_von_Linn%C3%A9\" title=\"Carl von Linné\">L.</a></b></span></div>\n<div
+        style=\"clear:both\"></div>\n<div style=\"margin:2px auto; border:1px solid
+        #ccc;\" class=\"biota\">\n<div style=\"background:#f1fcf1;\">&#160;<b><a href=\"https://en.wikipedia.org/wiki/Common_name\"
+        class=\"extiw\" title=\"en:Common name\">Vernacular names</a></b>&#160;<small>[<a
+        href=\"https://www.wikidata.org/wiki/Q157571\" class=\"extiw\" title=\"wikidata:Q157571\">edit
+        wikidata ''Poa annua''</a>]</small> <a href=\"https://www.wikidata.org/wiki/Q157571\"
+        title=\"Wikidata ''Poa annua'' linked to current gallery\"><img alt=\"Wikidata
+        ''Poa annua'' linked to current gallery\" src=\"https://upload.wikimedia.org/wikipedia/commons/thumb/d/d2/Wikidata-logo-without-paddings.svg/20px-Wikidata-logo-without-paddings.svg.png\"
+        width=\"20\" height=\"12\" srcset=\"https://upload.wikimedia.org/wikipedia/commons/thumb/d/d2/Wikidata-logo-without-paddings.svg/30px-Wikidata-logo-without-paddings.svg.png
+        1.5x, https://upload.wikimedia.org/wikipedia/commons/thumb/d/d2/Wikidata-logo-without-paddings.svg/40px-Wikidata-logo-without-paddings.svg.png
+        2x\" data-file-width=\"512\" data-file-height=\"316\" /></a></div>\n<div style=\"padding:0
+        4px; background:#fdfdfd; font-size:95%\" class=\"hlist\">\n<ul>\n<li><b><bdi
+        lang=\"en\">English</bdi>:&#160;<bdi class=\"vernacular\" lang=\"en\"><a href=\"https://en.wikipedia.org/wiki/Poa_annua\"
+        class=\"extiw\" title=\"en:Poa annua\">annual bluegrass, annual meadow grass,
+        Annual Meadow Grass</a>, Annual Meadow-grass</bdi></b></li>\n<li><b><bdi lang=\"af\">Afrikaans</bdi>:</b>&#160;<bdi
+        class=\"vernacular\" lang=\"af\">Wintergras</bdi></li>\n<li><b><bdi lang=\"ar\">العربية</bdi>:</b>&#160;<bdi
+        class=\"vernacular\" lang=\"ar\"><a href=\"https://ar.wikipedia.org/wiki/%D9%82%D8%A8%D8%A3_%D8%AD%D9%88%D9%84%D9%8A\"
+        class=\"extiw\" title=\"ar:قبأ حولي\">قبأ حولي</a></bdi></li>\n<li><b><bdi
+        lang=\"bg\">български</bdi>:</b>&#160;<bdi class=\"vernacular\" lang=\"bg\">едногодишна
+        ливадина</bdi></li>\n<li><b><bdi lang=\"ca\">català</bdi>:</b>&#160;<bdi class=\"vernacular\"
+        lang=\"ca\"><a href=\"https://ca.wikipedia.org/wiki/P%C3%A8l_de_bou\" class=\"extiw\"
+        title=\"ca:Pèl de bou\">Pèl de bou</a></bdi></li>\n<li><b><bdi lang=\"cs\">čeština</bdi>:</b>&#160;<bdi
+        class=\"vernacular\" lang=\"cs\"><a href=\"https://cs.wikipedia.org/wiki/Lipnice_ro%C4%8Dn%C3%AD\"
+        class=\"extiw\" title=\"cs:Lipnice roční\">Lipnice roční</a></bdi></li>\n<li><b><bdi
+        lang=\"cy\">Cymraeg</bdi>:</b>&#160;<bdi class=\"vernacular\" lang=\"cy\"><a
+        href=\"https://cy.wikipedia.org/wiki/Gweunwellt_unflwydd\" class=\"extiw\"
+        title=\"cy:Gweunwellt unflwydd\">gweunwellt unflwydd</a></bdi></li>\n<li><b><bdi
+        lang=\"da\">dansk</bdi>:</b>&#160;<bdi class=\"vernacular\" lang=\"da\"><a
+        href=\"https://da.wikipedia.org/wiki/En%C3%A5rig_rapgr%C3%A6s\" class=\"extiw\"
+        title=\"da:Enårig rapgræs\">Enårig rapgræs</a></bdi></li>\n<li><b><bdi lang=\"de\">Deutsch</bdi>:</b>&#160;<bdi
+        class=\"vernacular\" lang=\"de\"><a href=\"https://de.wikipedia.org/wiki/Einj%C3%A4hriges_Rispengras\"
+        class=\"extiw\" title=\"de:Einjähriges Rispengras\">Einjährige Rispe, Einjähriges
+        Rispengras</a></bdi></li>\n<li><b><bdi lang=\"et\">eesti</bdi>:</b>&#160;<bdi
+        class=\"vernacular\" lang=\"et\"><a href=\"https://et.wikipedia.org/wiki/Murunurmikas\"
+        class=\"extiw\" title=\"et:Murunurmikas\">Murunurmikas</a></bdi></li>\n<li><b><bdi
+        lang=\"fi\">suomi</bdi>:</b>&#160;<bdi class=\"vernacular\" lang=\"fi\"><a
+        href=\"https://fi.wikipedia.org/wiki/Kyl%C3%A4nurmikka\" class=\"extiw\" title=\"fi:Kylänurmikka\">Kylänurmikka</a></bdi></li>\n<li><b><bdi
+        lang=\"fr\">français</bdi>:</b>&#160;<bdi class=\"vernacular\" lang=\"fr\"><a
+        href=\"https://fr.wikipedia.org/wiki/P%C3%A2turin_annuel\" class=\"extiw\"
+        title=\"fr:Pâturin annuel\">Pâturin annuel</a></bdi></li>\n<li><b><bdi lang=\"ga\">Gaeilge</bdi>:</b>&#160;<bdi
+        class=\"vernacular\" lang=\"ga\"><a href=\"https://ga.wikipedia.org/wiki/Cuise_bliant%C3%BAil\"
+        class=\"extiw\" title=\"ga:Cuise bliantúil\">Cuise bliantúil</a></bdi></li>\n<li><b><bdi
+        lang=\"hsb\">hornjoserbsce</bdi>:</b>&#160;<bdi class=\"vernacular\" lang=\"hsb\"><a
+        href=\"https://hsb.wikipedia.org/wiki/M%C3%B3li%C4%8Dka_lipnica\" class=\"extiw\"
+        title=\"hsb:Mólička lipnica\">Mólička lipnica</a></bdi></li>\n<li><b><bdi
+        lang=\"is\">íslenska</bdi>:</b>&#160;<bdi class=\"vernacular\" lang=\"is\"><a
+        href=\"https://is.wikipedia.org/wiki/Varpasveifgras\" class=\"extiw\" title=\"is:Varpasveifgras\">Varpasveifgras</a></bdi></li>\n<li><b><bdi
+        lang=\"ja\">日本語</bdi>:</b>&#160;<bdi class=\"vernacular\" lang=\"ja\"><a href=\"https://ja.wikipedia.org/wiki/%E3%82%B9%E3%82%BA%E3%83%A1%E3%83%8E%E3%82%AB%E3%82%BF%E3%83%93%E3%83%A9\"
+        class=\"extiw\" title=\"ja:スズメノカタビラ\">スズメノカタビラ</a></bdi></li>\n<li><b><bdi
+        lang=\"lt\">lietuvių</bdi>:</b>&#160;<bdi class=\"vernacular\" lang=\"lt\"><a
+        href=\"https://lt.wikipedia.org/wiki/Vienamet%C4%97_migl%C4%97\" class=\"extiw\"
+        title=\"lt:Vienametė miglė\">Vienametė miglė</a></bdi></li>\n<li><b><bdi lang=\"mk\">македонски</bdi>:</b>&#160;<bdi
+        class=\"vernacular\" lang=\"mk\">Едногодишна ливадарка</bdi></li>\n<li><b><bdi
+        lang=\"nb\">norsk bokmål</bdi>:</b>&#160;<bdi class=\"vernacular\" lang=\"nb\">Tunrapp</bdi></li>\n<li><b><bdi
+        lang=\"nl\">Nederlands</bdi>:</b>&#160;<bdi class=\"vernacular\" lang=\"nl\"><a
+        href=\"https://nl.wikipedia.org/wiki/Straatgras\" class=\"extiw\" title=\"nl:Straatgras\">Straatgras</a></bdi></li>\n<li><b><bdi
+        lang=\"no\">norsk</bdi>:</b>&#160;<bdi class=\"vernacular\" lang=\"no\"><a
+        href=\"https://no.wikipedia.org/wiki/Tunrapp\" class=\"extiw\" title=\"no:Tunrapp\">Tunrapp</a></bdi></li>\n<li><b><bdi
+        lang=\"pl\">polski</bdi>:</b>&#160;<bdi class=\"vernacular\" lang=\"pl\"><a
+        href=\"https://pl.wikipedia.org/wiki/Wiechlina_roczna\" class=\"extiw\" title=\"pl:Wiechlina
+        roczna\">Wiechlina roczna</a></bdi></li>\n<li><b><bdi lang=\"qu\">Runa Simi</bdi>:</b>&#160;<bdi
+        class=\"vernacular\" lang=\"qu\"><a href=\"https://qu.wikipedia.org/wiki/P%27ata_qachu\"
+        class=\"extiw\" title=\"qu:P''ata qachu\">P''ata qachu</a></bdi></li>\n<li><b><bdi
+        lang=\"ru\">русский</bdi>:</b>&#160;<bdi class=\"vernacular\" lang=\"ru\"><a
+        href=\"https://ru.wikipedia.org/wiki/%D0%9C%D1%8F%D1%82%D0%BB%D0%B8%D0%BA_%D0%BE%D0%B4%D0%BD%D0%BE%D0%BB%D0%B5%D1%82%D0%BD%D0%B8%D0%B9\"
+        class=\"extiw\" title=\"ru:Мятлик однолетний\">Мятлик однолетний</a></bdi></li>\n<li><b><bdi
+        lang=\"sv\">svenska</bdi>:</b>&#160;<bdi class=\"vernacular\" lang=\"sv\"><a
+        href=\"https://sv.wikipedia.org/wiki/Vitgr%C3%B6e\" class=\"extiw\" title=\"sv:Vitgröe\">Vitgröe</a></bdi></li>\n<li><b><bdi
+        lang=\"uk\">українська</bdi>:</b>&#160;<bdi class=\"vernacular\" lang=\"uk\"><a
+        href=\"https://uk.wikipedia.org/wiki/%D0%A2%D0%BE%D0%BD%D0%BA%D0%BE%D0%BD%D1%96%D0%B3_%D0%BE%D0%B4%D0%BD%D0%BE%D1%80%D1%96%D1%87%D0%BD%D0%B8%D0%B9\"
+        class=\"extiw\" title=\"uk:Тонконіг однорічний\">Тонконіг однорічний</a></bdi></li>\n<li><b><bdi
+        lang=\"zh\">中文</bdi>:</b>&#160;<bdi class=\"vernacular\" lang=\"zh\"><a href=\"https://zh.wikipedia.org/wiki/%E6%97%A9%E7%86%9F%E7%A6%BE\"
+        class=\"extiw\" title=\"zh:早熟禾\">早熟禾</a></bdi></li>\n<li><b><bdi lang=\"zh-tw\">中文（台灣）‎</bdi>:</b>&#160;<bdi
+        class=\"vernacular\" lang=\"zh-tw\">早熟禾</bdi></li>\n</ul>\n</div>\n</div>\n<h2><span
+        class=\"mw-headline\" id=\"Images_of_the_whole_plant\">Images of the whole
+        plant</span><span class=\"mw-editsection\"><span class=\"mw-editsection-bracket\">[</span><a
+        href=\"/w/index.php?title=Poa_annua&amp;action=edit&amp;section=1\" title=\"Edit
+        section: Images of the whole plant\">edit</a><span class=\"mw-editsection-bracket\">]</span></span></h2>\n<ul
+        class=\"gallery mw-gallery-packed\">\n<li class=\"gallerybox\" style=\"width:
+        182.66666666667px\">\n<div style=\"width: 182.66666666667px\">\n<div class=\"thumb\"
+        style=\"width: 180.66666666667px;\">\n<div style=\"margin:0px auto;\"><a href=\"/wiki/File:Poa-annua-total.JPG\"
+        class=\"image\"><img alt=\"\" src=\"https://upload.wikimedia.org/wikipedia/commons/thumb/7/71/Poa-annua-total.JPG/271px-Poa-annua-total.JPG\"
+        width=\"181\" height=\"120\" srcset=\"https://upload.wikimedia.org/wikipedia/commons/thumb/7/71/Poa-annua-total.JPG/407px-Poa-annua-total.JPG
+        1.5x, https://upload.wikimedia.org/wikipedia/commons/thumb/7/71/Poa-annua-total.JPG/542px-Poa-annua-total.JPG
+        2x\" data-file-width=\"1355\" data-file-height=\"900\" /></a></div>\n</div>\n<div
+        class=\"gallerytext\">\n<p>Flowering plant</p>\n</div>\n</div>\n</li>\n<li
+        class=\"gallerybox\" style=\"width: 162px\">\n<div style=\"width: 162px\">\n<div
+        class=\"thumb\" style=\"width: 160px;\">\n<div style=\"margin:0px auto;\"><a
+        href=\"/wiki/File:Poa_annua.jpg\" class=\"image\"><img alt=\"\" src=\"https://upload.wikimedia.org/wikipedia/commons/thumb/7/77/Poa_annua.jpg/240px-Poa_annua.jpg\"
+        width=\"160\" height=\"120\" srcset=\"https://upload.wikimedia.org/wikipedia/commons/thumb/7/77/Poa_annua.jpg/360px-Poa_annua.jpg
+        1.5x, https://upload.wikimedia.org/wikipedia/commons/thumb/7/77/Poa_annua.jpg/480px-Poa_annua.jpg
+        2x\" data-file-width=\"1477\" data-file-height=\"1108\" /></a></div>\n</div>\n<div
+        class=\"gallerytext\">\n<p>Habit</p>\n</div>\n</div>\n</li>\n<li class=\"gallerybox\"
+        style=\"width: 124.66666666667px\">\n<div style=\"width: 124.66666666667px\">\n<div
+        class=\"thumb\" style=\"width: 122.66666666667px;\">\n<div style=\"margin:0px
+        auto;\"><a href=\"/wiki/File:Straatgras_tongetje_(Poa_annua_ligula).jpg\"
+        class=\"image\"><img alt=\"\" src=\"https://upload.wikimedia.org/wikipedia/commons/thumb/3/3b/Straatgras_tongetje_%28Poa_annua_ligula%29.jpg/184px-Straatgras_tongetje_%28Poa_annua_ligula%29.jpg\"
+        width=\"123\" height=\"120\" srcset=\"https://upload.wikimedia.org/wikipedia/commons/thumb/3/3b/Straatgras_tongetje_%28Poa_annua_ligula%29.jpg/276px-Straatgras_tongetje_%28Poa_annua_ligula%29.jpg
+        1.5x, https://upload.wikimedia.org/wikipedia/commons/thumb/3/3b/Straatgras_tongetje_%28Poa_annua_ligula%29.jpg/368px-Straatgras_tongetje_%28Poa_annua_ligula%29.jpg
+        2x\" data-file-width=\"967\" data-file-height=\"946\" /></a></div>\n</div>\n<div
+        class=\"gallerytext\">\n<p>Ligula</p>\n</div>\n</div>\n</li>\n<li class=\"gallerybox\"
+        style=\"width: 81.333333333333px\">\n<div style=\"width: 81.333333333333px\">\n<div
+        class=\"thumb\" style=\"width: 79.333333333333px;\">\n<div style=\"margin:0px
+        auto;\"><a href=\"/wiki/File:Straatgras.jpg\" class=\"image\"><img alt=\"Straatgras.jpg\"
+        src=\"https://upload.wikimedia.org/wikipedia/commons/thumb/2/2e/Straatgras.jpg/119px-Straatgras.jpg\"
+        width=\"80\" height=\"120\" srcset=\"https://upload.wikimedia.org/wikipedia/commons/thumb/2/2e/Straatgras.jpg/179px-Straatgras.jpg
+        1.5x, https://upload.wikimedia.org/wikipedia/commons/thumb/2/2e/Straatgras.jpg/238px-Straatgras.jpg
+        2x\" data-file-width=\"640\" data-file-height=\"966\" /></a></div>\n</div>\n<div
+        class=\"gallerytext\"></div>\n</div>\n</li>\n</ul>\n<h2><span class=\"mw-headline\"
+        id=\"Flowers\">Flowers</span><span class=\"mw-editsection\"><span class=\"mw-editsection-bracket\">[</span><a
+        href=\"/w/index.php?title=Poa_annua&amp;action=edit&amp;section=2\" title=\"Edit
+        section: Flowers\">edit</a><span class=\"mw-editsection-bracket\">]</span></span></h2>\n<ul
+        class=\"gallery mw-gallery-packed\">\n<li class=\"gallerybox\" style=\"width:
+        162px\">\n<div style=\"width: 162px\">\n<div class=\"thumb\" style=\"width:
+        160px;\">\n<div style=\"margin:0px auto;\"><a href=\"/wiki/File:Poa_annua.jpeg\"
+        class=\"image\"><img alt=\"\" src=\"https://upload.wikimedia.org/wikipedia/commons/thumb/7/7b/Poa_annua.jpeg/240px-Poa_annua.jpeg\"
+        width=\"160\" height=\"120\" srcset=\"https://upload.wikimedia.org/wikipedia/commons/thumb/7/7b/Poa_annua.jpeg/360px-Poa_annua.jpeg
+        1.5x, https://upload.wikimedia.org/wikipedia/commons/thumb/7/7b/Poa_annua.jpeg/480px-Poa_annua.jpeg
+        2x\" data-file-width=\"800\" data-file-height=\"600\" /></a></div>\n</div>\n<div
+        class=\"gallerytext\">\n<p><i>Poa annua</i> quality detail,<br />\nPhoto by
+        Kristian Peters</p>\n</div>\n</div>\n</li>\n<li class=\"gallerybox\" style=\"width:
+        182.66666666667px\">\n<div style=\"width: 182.66666666667px\">\n<div class=\"thumb\"
+        style=\"width: 180.66666666667px;\">\n<div style=\"margin:0px auto;\"><a href=\"/wiki/File:Poa.annua.jpg\"
+        class=\"image\"><img alt=\"Poa.annua.jpg\" src=\"https://upload.wikimedia.org/wikipedia/commons/thumb/4/4f/Poa.annua.jpg/271px-Poa.annua.jpg\"
+        width=\"181\" height=\"120\" srcset=\"https://upload.wikimedia.org/wikipedia/commons/thumb/4/4f/Poa.annua.jpg/407px-Poa.annua.jpg
+        1.5x, https://upload.wikimedia.org/wikipedia/commons/thumb/4/4f/Poa.annua.jpg/542px-Poa.annua.jpg
+        2x\" data-file-width=\"640\" data-file-height=\"425\" /></a></div>\n</div>\n<div
+        class=\"gallerytext\"></div>\n</div>\n</li>\n<li class=\"gallerybox\" style=\"width:
+        182.66666666667px\">\n<div style=\"width: 182.66666666667px\">\n<div class=\"thumb\"
+        style=\"width: 180.66666666667px;\">\n<div style=\"margin:0px auto;\"><a href=\"/wiki/File:Poa.annua.2.jpg\"
+        class=\"image\"><img alt=\"Poa.annua.2.jpg\" src=\"https://upload.wikimedia.org/wikipedia/commons/thumb/7/78/Poa.annua.2.jpg/271px-Poa.annua.2.jpg\"
+        width=\"181\" height=\"120\" srcset=\"https://upload.wikimedia.org/wikipedia/commons/thumb/7/78/Poa.annua.2.jpg/406px-Poa.annua.2.jpg
+        1.5x, https://upload.wikimedia.org/wikipedia/commons/thumb/7/78/Poa.annua.2.jpg/541px-Poa.annua.2.jpg
+        2x\" data-file-width=\"640\" data-file-height=\"426\" /></a></div>\n</div>\n<div
+        class=\"gallerytext\"></div>\n</div>\n</li>\n</ul>\n<h2><span class=\"mw-headline\"
+        id=\"Seeds\">Seeds</span><span class=\"mw-editsection\"><span class=\"mw-editsection-bracket\">[</span><a
+        href=\"/w/index.php?title=Poa_annua&amp;action=edit&amp;section=3\" title=\"Edit
+        section: Seeds\">edit</a><span class=\"mw-editsection-bracket\">]</span></span></h2>\n<ul
+        class=\"gallery mw-gallery-packed\">\n<li class=\"gallerybox\" style=\"width:
+        156.66666666667px\">\n<div style=\"width: 156.66666666667px\">\n<div class=\"thumb\"
+        style=\"width: 154.66666666667px;\">\n<div style=\"margin:0px auto;\"><a href=\"/wiki/File:Poa_annua_fruits_(seeds),_straatgras_zaden.jpg\"
+        class=\"image\"><img alt=\"\" src=\"https://upload.wikimedia.org/wikipedia/commons/thumb/a/ae/Poa_annua_fruits_%28seeds%29%2C_straatgras_zaden.jpg/232px-Poa_annua_fruits_%28seeds%29%2C_straatgras_zaden.jpg\"
+        width=\"155\" height=\"120\" srcset=\"https://upload.wikimedia.org/wikipedia/commons/thumb/a/ae/Poa_annua_fruits_%28seeds%29%2C_straatgras_zaden.jpg/348px-Poa_annua_fruits_%28seeds%29%2C_straatgras_zaden.jpg
+        1.5x, https://upload.wikimedia.org/wikipedia/commons/thumb/a/ae/Poa_annua_fruits_%28seeds%29%2C_straatgras_zaden.jpg/464px-Poa_annua_fruits_%28seeds%29%2C_straatgras_zaden.jpg
+        2x\" data-file-width=\"2297\" data-file-height=\"1781\" /></a></div>\n</div>\n<div
+        class=\"gallerytext\">\n<p>Seeds</p>\n</div>\n</div>\n</li>\n<li class=\"gallerybox\"
+        style=\"width: 94.666666666667px\">\n<div style=\"width: 94.666666666667px\">\n<div
+        class=\"thumb\" style=\"width: 92.666666666667px;\">\n<div style=\"margin:0px
+        auto;\"><a href=\"/wiki/File:Straatgras_vruchten_(Poa_annua_fruits).jpg\"
+        class=\"image\"><img alt=\"\" src=\"https://upload.wikimedia.org/wikipedia/commons/thumb/3/30/Straatgras_vruchten_%28Poa_annua_fruits%29.jpg/139px-Straatgras_vruchten_%28Poa_annua_fruits%29.jpg\"
+        width=\"93\" height=\"120\" srcset=\"https://upload.wikimedia.org/wikipedia/commons/thumb/3/30/Straatgras_vruchten_%28Poa_annua_fruits%29.jpg/209px-Straatgras_vruchten_%28Poa_annua_fruits%29.jpg
+        1.5x, https://upload.wikimedia.org/wikipedia/commons/thumb/3/30/Straatgras_vruchten_%28Poa_annua_fruits%29.jpg/278px-Straatgras_vruchten_%28Poa_annua_fruits%29.jpg
+        2x\" data-file-width=\"537\" data-file-height=\"695\" /></a></div>\n</div>\n<div
+        class=\"gallerytext\">\n<p>Seeds</p>\n</div>\n</div>\n</li>\n</ul>\n<h2><span
+        class=\"mw-headline\" id=\"Botanical_illustrations\"><a href=\"/wiki/Category:Poa_annua_-_botanical_illustrations\"
+        title=\"Category:Poa annua - botanical illustrations\">Botanical illustrations</a></span></h2>\n<center>\n<ul
+        class=\"gallery mw-gallery-traditional\">\n<li class=\"gallerybox\" style=\"width:
+        155px\">\n<div style=\"width: 155px\">\n<div class=\"thumb\" style=\"width:
+        150px;\">\n<div style=\"margin:15px auto;\"><a href=\"/wiki/File:Poa_spp_Sturm31.jpg\"
+        class=\"image\"><img alt=\"\" src=\"https://upload.wikimedia.org/wikipedia/commons/thumb/e/ed/Poa_spp_Sturm31.jpg/80px-Poa_spp_Sturm31.jpg\"
+        width=\"80\" height=\"120\" srcset=\"https://upload.wikimedia.org/wikipedia/commons/thumb/e/ed/Poa_spp_Sturm31.jpg/120px-Poa_spp_Sturm31.jpg
+        1.5x, https://upload.wikimedia.org/wikipedia/commons/thumb/e/ed/Poa_spp_Sturm31.jpg/160px-Poa_spp_Sturm31.jpg
+        2x\" data-file-width=\"801\" data-file-height=\"1200\" /></a></div>\n</div>\n<div
+        class=\"gallerytext\">\n<p><i>Poa annua</i> and <i><a href=\"/wiki/Poa_bulbosa\"
+        title=\"Poa bulbosa\">Poa bulbosa</a></i></p>\n</div>\n</div>\n</li>\n<li
+        class=\"gallerybox\" style=\"width: 155px\">\n<div style=\"width: 155px\">\n<div
+        class=\"thumb\" style=\"width: 150px;\">\n<div style=\"margin:15px auto;\"><a
+        href=\"/wiki/File:Nsr-slika-322.png\" class=\"image\"><img alt=\"\" src=\"https://upload.wikimedia.org/wikipedia/commons/thumb/9/9b/Nsr-slika-322.png/88px-Nsr-slika-322.png\"
+        width=\"88\" height=\"120\" srcset=\"https://upload.wikimedia.org/wikipedia/commons/thumb/9/9b/Nsr-slika-322.png/132px-Nsr-slika-322.png
+        1.5x, https://upload.wikimedia.org/wikipedia/commons/thumb/9/9b/Nsr-slika-322.png/176px-Nsr-slika-322.png
+        2x\" data-file-width=\"458\" data-file-height=\"623\" /></a></div>\n</div>\n<div
+        class=\"gallerytext\">\n<p>Jednoletna látovka. (<i>Póa ánnua</i>.)<br />\nIllustration
+        #322 in: Martin Cilenšek: <i><a href=\"/wiki/Category:Na%C5%A1e_%C5%A1kodljive_rastline\"
+        title=\"Category:Naše škodljive rastline\">Naše škodljive rastline</a></i>,
+        Celovec (1892)</p>\n</div>\n</div>\n</li>\n<li class=\"gallerybox\" style=\"width:
+        155px\">\n<div style=\"width: 155px\">\n<div class=\"thumb\" style=\"width:
+        150px;\">\n<div style=\"margin:15px auto;\"><a href=\"/wiki/File:WWB-0058-024.png\"
+        class=\"image\"><img alt=\"\" src=\"https://upload.wikimedia.org/wikipedia/commons/thumb/5/5f/WWB-0058-024.png/82px-WWB-0058-024.png\"
+        width=\"82\" height=\"120\" srcset=\"https://upload.wikimedia.org/wikipedia/commons/thumb/5/5f/WWB-0058-024.png/123px-WWB-0058-024.png
+        1.5x, https://upload.wikimedia.org/wikipedia/commons/thumb/5/5f/WWB-0058-024.png/164px-WWB-0058-024.png
+        2x\" data-file-width=\"2546\" data-file-height=\"3713\" /></a></div>\n</div>\n<div
+        class=\"gallerytext\">\n<center><i>Poa annua</i><br />\nplate 24 in:<br />\n<a
+        href=\"/wiki/Category:Wayside_and_woodland_blossoms\" title=\"Category:Wayside
+        and woodland blossoms\"><i><b>Wayside and woodland blossoms</b></i></a>,<br
+        />\n<a href=\"/w/index.php?title=Wayside_and_woodland_blossoms&amp;action=edit&amp;redlink=1\"
+        class=\"new\" title=\"Wayside and woodland blossoms (page does not exist)\">1895</a>,<br
+        />\npage 58</center>\n</div>\n</div>\n</li>\n<li class=\"gallerybox\" style=\"width:
+        155px\">\n<div style=\"width: 155px\">\n<div class=\"thumb\" style=\"width:
+        150px;\">\n<div style=\"margin:15px auto;\"><a href=\"/wiki/File:WWB-0058-024-Gramineae.png\"
+        class=\"image\"><img alt=\"\" src=\"https://upload.wikimedia.org/wikipedia/commons/thumb/f/f2/WWB-0058-024-Gramineae.png/82px-WWB-0058-024-Gramineae.png\"
+        width=\"82\" height=\"120\" srcset=\"https://upload.wikimedia.org/wikipedia/commons/thumb/f/f2/WWB-0058-024-Gramineae.png/123px-WWB-0058-024-Gramineae.png
+        1.5x, https://upload.wikimedia.org/wikipedia/commons/thumb/f/f2/WWB-0058-024-Gramineae.png/164px-WWB-0058-024-Gramineae.png
+        2x\" data-file-width=\"2546\" data-file-height=\"3713\" /></a></div>\n</div>\n<div
+        class=\"gallerytext\">\n<center><i>Poa annua</i><br />\nplate 24 in:<br />\n<a
+        href=\"/wiki/Category:Wayside_and_woodland_blossoms\" title=\"Category:Wayside
+        and woodland blossoms\"><i><b>Wayside and woodland blossoms</b></i></a>,<br
+        />\n<a href=\"/w/index.php?title=Wayside_and_woodland_blossoms&amp;action=edit&amp;redlink=1\"
+        class=\"new\" title=\"Wayside and woodland blossoms (page does not exist)\">1895</a>,<br
+        />\npage 58</center>\n<p>alternative</p>\n</div>\n</div>\n</li>\n<li class=\"gallerybox\"
+        style=\"width: 155px\">\n<div style=\"width: 155px\">\n<div class=\"thumb\"
+        style=\"width: 150px;\">\n<div style=\"margin:15px auto;\"><a href=\"/wiki/File:WWB-0058-024-Poa_annua.png\"
+        class=\"image\"><img alt=\"\" src=\"https://upload.wikimedia.org/wikipedia/commons/thumb/2/2d/WWB-0058-024-Poa_annua.png/48px-WWB-0058-024-Poa_annua.png\"
+        width=\"48\" height=\"120\" srcset=\"https://upload.wikimedia.org/wikipedia/commons/thumb/2/2d/WWB-0058-024-Poa_annua.png/71px-WWB-0058-024-Poa_annua.png
+        1.5x, https://upload.wikimedia.org/wikipedia/commons/thumb/2/2d/WWB-0058-024-Poa_annua.png/95px-WWB-0058-024-Poa_annua.png
+        2x\" data-file-width=\"832\" data-file-height=\"2088\" /></a></div>\n</div>\n<div
+        class=\"gallerytext\">\n<center><i>Poa annua</i><br />\nplate 24 in:<br />\n<a
+        href=\"/wiki/Category:Wayside_and_woodland_blossoms\" title=\"Category:Wayside
+        and woodland blossoms\"><i><b>Wayside and woodland blossoms</b></i></a>,<br
+        />\n<a href=\"/w/index.php?title=Wayside_and_woodland_blossoms&amp;action=edit&amp;redlink=1\"
+        class=\"new\" title=\"Wayside and woodland blossoms (page does not exist)\">1895</a>,<br
+        />\npage 58</center>\n<p>crop</p>\n</div>\n</div>\n</li>\n<li class=\"gallerybox\"
+        style=\"width: 155px\">\n<div style=\"width: 155px\">\n<div class=\"thumb\"
+        style=\"width: 150px;\">\n<div style=\"margin:15px auto;\"><a href=\"/wiki/File:Britishentomologyvolume1Plate1.jpg\"
+        class=\"image\"><img alt=\"Britishentomologyvolume1Plate1.jpg\" src=\"https://upload.wikimedia.org/wikipedia/commons/thumb/5/5e/Britishentomologyvolume1Plate1.jpg/66px-Britishentomologyvolume1Plate1.jpg\"
+        width=\"66\" height=\"120\" srcset=\"https://upload.wikimedia.org/wikipedia/commons/thumb/5/5e/Britishentomologyvolume1Plate1.jpg/99px-Britishentomologyvolume1Plate1.jpg
+        1.5x, https://upload.wikimedia.org/wikipedia/commons/thumb/5/5e/Britishentomologyvolume1Plate1.jpg/132px-Britishentomologyvolume1Plate1.jpg
+        2x\" data-file-width=\"933\" data-file-height=\"1698\" /></a></div>\n</div>\n<div
+        class=\"gallerytext\"></div>\n</div>\n</li>\n</ul>\n</center>\n<p><a href=\"/wiki/File:Farm-Fresh_www_page.png\"
+        class=\"image\"><img alt=\"Farm-Fresh www page.png\" src=\"https://upload.wikimedia.org/wikipedia/commons/thumb/a/ab/Farm-Fresh_www_page.png/30px-Farm-Fresh_www_page.png\"
+        width=\"30\" height=\"30\" srcset=\"https://upload.wikimedia.org/wikipedia/commons/a/ab/Farm-Fresh_www_page.png
+        1.5x\" data-file-width=\"32\" data-file-height=\"32\" /></a> <b>Selected Weblinks</b></p>\n<table
+        class=\"toccolours\" style=\"margin:.5em 0; padding:0 .1em\">\n<tr>\n<td style=\"padding:0
+        .5em; border:0\"><a href=\"/wiki/File:Wikispecies-logo.svg\" class=\"image\"
+        title=\"Wikispecies\"><img alt=\"Wikispecies\" src=\"https://upload.wikimedia.org/wikipedia/commons/thumb/d/df/Wikispecies-logo.svg/15px-Wikispecies-logo.svg.png\"
+        width=\"15\" height=\"18\" srcset=\"https://upload.wikimedia.org/wikipedia/commons/thumb/d/df/Wikispecies-logo.svg/23px-Wikispecies-logo.svg.png
+        1.5x, https://upload.wikimedia.org/wikipedia/commons/thumb/d/df/Wikispecies-logo.svg/30px-Wikispecies-logo.svg.png
+        2x\" data-file-width=\"941\" data-file-height=\"1103\" /></a></td>\n<td style=\"border:0\"><a
+        href=\"https://en.wikipedia.org/wiki/Wikispecies\" class=\"extiw\" title=\"en:Wikispecies\">Wikispecies</a>
+        has an entry on: <i><b><a href=\"https://species.wikimedia.org/wiki/Special:Search/Poa_annua\"
+        class=\"extiw\" title=\"species:Special:Search/Poa annua\">Poa annua</a></b></i>.</td>\n</tr>\n</table>\n<table
+        class=\"messagebox plainlinks layouttemplate\" style=\"border-collapse:collapse;
+        border-width:2px; border-style:solid; width:100%; clear: both; border-width:1px;direction:ltr;
+        border-left-width: 8px;\">\n<tr>\n<td class=\"mbox-image\" style=\"padding-left:.9em;\"><a
+        href=\"/wiki/File:Wikidata-logo.svg\" class=\"image\"><img alt=\"Wikidata-logo.svg\"
+        src=\"https://upload.wikimedia.org/wikipedia/commons/thumb/f/ff/Wikidata-logo.svg/30px-Wikidata-logo.svg.png\"
+        width=\"30\" height=\"17\" srcset=\"https://upload.wikimedia.org/wikipedia/commons/thumb/f/ff/Wikidata-logo.svg/45px-Wikidata-logo.svg.png
+        1.5x, https://upload.wikimedia.org/wikipedia/commons/thumb/f/ff/Wikidata-logo.svg/60px-Wikidata-logo.svg.png
+        2x\" data-file-width=\"1050\" data-file-height=\"590\" /></a></td>\n<td class=\"mbox-text\"
+        style=\"\"><a href=\"https://www.wikidata.org/wiki/Wikidata:Main_page\" class=\"extiw\"
+        title=\"wikidata:Wikidata:Main page\">Wikidata</a> has <a href=\"https://www.wikidata.org/wiki/Q157571\"
+        class=\"extiw\" title=\"wikidata:Q157571\">entry Q157571</a> with data related
+        to this item.</td>\n</tr>\n</table>\n<p><a href=\"/wiki/File:Green_open_book_1.png\"
+        class=\"image\"><img alt=\"Green open book 1.png\" src=\"https://upload.wikimedia.org/wikipedia/commons/thumb/4/4f/Green_open_book_1.png/30px-Green_open_book_1.png\"
+        width=\"30\" height=\"30\" srcset=\"https://upload.wikimedia.org/wikipedia/commons/thumb/4/4f/Green_open_book_1.png/45px-Green_open_book_1.png
+        1.5x, https://upload.wikimedia.org/wikipedia/commons/thumb/4/4f/Green_open_book_1.png/60px-Green_open_book_1.png
+        2x\" data-file-width=\"200\" data-file-height=\"200\" /></a> <b>Description
+        of taxon</b> <a rel=\"nofollow\" class=\"external text\" href=\"http://www.botanicus.org/page/358087\">Species
+        Plantarum 1: 68. 1753. (1 May 1753)</a></p>\n<div style=\"clear:both;\"></div>\n\n\n<!--
+        \nNewPP limit report\nParsed by mw1337\nCached time: 20180408091122\nCache
+        expiry: 1900800\nDynamic content: false\nCPU time usage: 0.236 seconds\nReal
+        time usage: 0.301 seconds\nPreprocessor visited node count: 817/1000000\nPreprocessor
+        generated node count: 0/1500000\nPost‐expand include size: 19698/2097152 bytes\nTemplate
+        argument size: 576/2097152 bytes\nHighest expansion depth: 16/40\nExpensive
+        parser function count: 17/500\nUnstrip recursion depth: 0/20\nUnstrip post‐expand
+        size: 12094/5000000 bytes\nLua time usage: 0.139/10.000 seconds\nLua memory
+        usage: 2.5 MB/50 MB\n-->\n<!--\nTransclusion expansion time report (%,ms,calls,template)\n100.00%  272.335      1
+        -total\n 46.90%  127.733      1 Template:VN\n 17.85%   48.625      1 Template:Taxonavigation\n
+        14.41%   39.237      1 Template:Poaceae_(APG)\n 13.84%   37.701      1 Template:TaxonavigationIncluded2\n  9.57%   26.066      1
+        Template:Angiosperms\n  8.80%   23.977      1 Template:TaxonavigationIncluded\n  8.06%   21.959      1
+        Template:Wikidata\n  6.30%   17.161      8 Template:LangSwitch\n  5.56%   15.130      1
+        Template:LanSwreflinks\n-->\n</div>\n<!-- Saved in parser cache with key commonswiki:pcache:idhash:95919-0!canonical
+        and timestamp 20180408091122 and revision id 290894725\n -->\n"},"langlinks":[{"lang":"ar","url":"https://ar.wikipedia.org/wiki/%D9%82%D8%A8%D8%A3_%D8%AD%D9%88%D9%84%D9%8A","langname":"Arabic","autonym":"العربية","*":"قبأ
+        حولي"},{"lang":"ca","url":"https://ca.wikipedia.org/wiki/P%C3%A8l_de_bou","langname":"Catalan","autonym":"català","*":"Pèl
+        de bou"},{"lang":"ceb","url":"https://ceb.wikipedia.org/wiki/Poa_annua","langname":"Cebuano","autonym":"Cebuano","*":"Poa
+        annua"},{"lang":"cs","url":"https://cs.wikipedia.org/wiki/Lipnice_ro%C4%8Dn%C3%AD","langname":"Czech","autonym":"čeština","*":"Lipnice
+        roční"},{"lang":"cy","url":"https://cy.wikipedia.org/wiki/Gweunwellt_unflwydd","langname":"Welsh","autonym":"Cymraeg","*":"Gweunwellt
+        unflwydd"},{"lang":"da","url":"https://da.wikipedia.org/wiki/En%C3%A5rig_rapgr%C3%A6s","langname":"Danish","autonym":"dansk","*":"Enårig
+        rapgræs"},{"lang":"de","url":"https://de.wikipedia.org/wiki/Einj%C3%A4hriges_Rispengras","langname":"German","autonym":"Deutsch","*":"Einjähriges
+        Rispengras"},{"lang":"en","url":"https://en.wikipedia.org/wiki/Poa_annua","langname":"English","autonym":"English","*":"Poa
+        annua"},{"lang":"eo","url":"https://eo.wikipedia.org/wiki/Poa_annua","langname":"Esperanto","autonym":"Esperanto","*":"Poa
+        annua"},{"lang":"es","url":"https://es.wikipedia.org/wiki/Poa_annua","langname":"Spanish","autonym":"español","*":"Poa
+        annua"},{"lang":"et","url":"https://et.wikipedia.org/wiki/Murunurmikas","langname":"Estonian","autonym":"eesti","*":"Murunurmikas"},{"lang":"fi","url":"https://fi.wikipedia.org/wiki/Kyl%C3%A4nurmikka","langname":"Finnish","autonym":"suomi","*":"Kylänurmikka"},{"lang":"fr","url":"https://fr.wikipedia.org/wiki/P%C3%A2turin_annuel","langname":"French","autonym":"français","*":"Pâturin
+        annuel"},{"lang":"ga","url":"https://ga.wikipedia.org/wiki/Cuise_bliant%C3%BAil","langname":"Irish","autonym":"Gaeilge","*":"Cuise
+        bliantúil"},{"lang":"hsb","url":"https://hsb.wikipedia.org/wiki/M%C3%B3li%C4%8Dka_lipnica","langname":"Upper
+        Sorbian","autonym":"hornjoserbsce","*":"Mólička lipnica"},{"lang":"is","url":"https://is.wikipedia.org/wiki/Varpasveifgras","langname":"Icelandic","autonym":"íslenska","*":"Varpasveifgras"},{"lang":"it","url":"https://it.wikipedia.org/wiki/Poa_annua","langname":"Italian","autonym":"italiano","*":"Poa
+        annua"},{"lang":"ja","url":"https://ja.wikipedia.org/wiki/%E3%82%B9%E3%82%BA%E3%83%A1%E3%83%8E%E3%82%AB%E3%82%BF%E3%83%93%E3%83%A9","langname":"Japanese","autonym":"日本語","*":"スズメノカタビラ"},{"lang":"lt","url":"https://lt.wikipedia.org/wiki/Vienamet%C4%97_migl%C4%97","langname":"Lithuanian","autonym":"lietuvių","*":"Vienametė
+        miglė"},{"lang":"nl","url":"https://nl.wikipedia.org/wiki/Straatgras","langname":"Dutch","autonym":"Nederlands","*":"Straatgras"},{"lang":"no","url":"https://no.wikipedia.org/wiki/Tunrapp","langname":"Norwegian","autonym":"norsk","*":"Tunrapp"},{"lang":"pl","url":"https://pl.wikipedia.org/wiki/Wiechlina_roczna","langname":"Polish","autonym":"polski","*":"Wiechlina
+        roczna"},{"lang":"pt","url":"https://pt.wikipedia.org/wiki/Poa_annua","langname":"Portuguese","autonym":"português","*":"Poa
+        annua"},{"lang":"qu","url":"https://qu.wikipedia.org/wiki/P%27ata_qachu","langname":"Quechua","autonym":"Runa
+        Simi","*":"P''ata qachu"},{"lang":"ru","url":"https://ru.wikipedia.org/wiki/%D0%9C%D1%8F%D1%82%D0%BB%D0%B8%D0%BA_%D0%BE%D0%B4%D0%BD%D0%BE%D0%BB%D0%B5%D1%82%D0%BD%D0%B8%D0%B9","langname":"Russian","autonym":"русский","*":"Мятлик
+        однолетний"},{"lang":"sv","url":"https://sv.wikipedia.org/wiki/Vitgr%C3%B6e","langname":"Swedish","autonym":"svenska","*":"Vitgröe"},{"lang":"uk","url":"https://uk.wikipedia.org/wiki/%D0%A2%D0%BE%D0%BD%D0%BA%D0%BE%D0%BD%D1%96%D0%B3_%D0%BE%D0%B4%D0%BD%D0%BE%D1%80%D1%96%D1%87%D0%BD%D0%B8%D0%B9","langname":"Ukrainian","autonym":"українська","*":"Тонконіг
+        однорічний"},{"lang":"vi","url":"https://vi.wikipedia.org/wiki/Poa_annua","langname":"Vietnamese","autonym":"Tiếng
+        Việt","*":"Poa annua"},{"lang":"war","url":"https://war.wikipedia.org/wiki/Poa_annua","langname":"Waray","autonym":"Winaray","*":"Poa
+        annua"},{"lang":"zh","url":"https://zh.wikipedia.org/wiki/%E6%97%A9%E7%86%9F%E7%A6%BE","langname":"Chinese","autonym":"中文","*":"早熟禾"}],"categories":[{"sortkey":"Poa
+        annua","hidden":"","*":"Species_of_Poaceae"},{"sortkey":"","hidden":"","*":"Taxon_galleries"},{"sortkey":"","hidden":"","*":"Biology_pages_with_wikidata_link"},{"sortkey":"
+        ","*":"Poa_annua"}],"links":[{"ns":10,"exists":"","*":"Template:Poaceae (APG)"},{"ns":10,"exists":"","*":"Template:Angiosperms"},{"ns":10,"exists":"","*":"Template:On
+        Wikidata/i18n/en"},{"ns":0,"exists":"","*":"Eukaryota"},{"ns":0,"*":"Archaeplastida"},{"ns":0,"exists":"","*":"Plantae"},{"ns":0,"exists":"","*":"Angiosperms"},{"ns":0,"*":"Monocots"},{"ns":0,"exists":"","*":"Commelinids"},{"ns":0,"exists":"","*":"Poales"},{"ns":0,"exists":"","*":"Poaceae"},{"ns":0,"*":"BEP
+        clade"},{"ns":0,"*":"Pooideae"},{"ns":0,"*":"Poeae"},{"ns":0,"*":"Poinae"},{"ns":0,"*":"Poa"},{"ns":0,"exists":"","*":"APG
+        IV"},{"ns":0,"exists":"","*":"Carl von Linné"},{"ns":0,"exists":"","*":"Poa
+        bulbosa"},{"ns":0,"*":"Wayside and woodland blossoms"},{"ns":14,"*":"Category:Poaceae
+        by species"},{"ns":14,"exists":"","*":"Category:Archaeplastida"},{"ns":14,"exists":"","*":"Category:BEP
+        clade"},{"ns":14,"exists":"","*":"Category:Monocots"},{"ns":14,"exists":"","*":"Category:Naše
+        škodljive rastline"},{"ns":14,"exists":"","*":"Category:Poa"},{"ns":14,"exists":"","*":"Category:Poa
+        annua"},{"ns":14,"exists":"","*":"Category:Poa annua - botanical illustrations"},{"ns":14,"exists":"","*":"Category:Poeae"},{"ns":14,"exists":"","*":"Category:Poinae"},{"ns":14,"exists":"","*":"Category:Pooideae"},{"ns":14,"exists":"","*":"Category:Wayside
+        and woodland blossoms"}],"templates":[{"ns":10,"exists":"","*":"Template:Taxonavigation"},{"ns":10,"exists":"","*":"Template:Poaceae
+        (APG)"},{"ns":10,"exists":"","*":"Template:TaxonavigationIncluded2"},{"ns":10,"exists":"","*":"Template:Taxonavigation/classification"},{"ns":10,"exists":"","*":"Template:Angiosperms"},{"ns":10,"exists":"","*":"Template:TaxonavigationIncluded"},{"ns":10,"exists":"","*":"Template:VN"},{"ns":10,"exists":"","*":"Template:VN/title"},{"ns":10,"exists":"","*":"Template:LangSwitch"},{"ns":10,"exists":"","*":"Template:Incorrect
+        biology template usage/AssertEmpty"},{"ns":10,"exists":"","*":"Template:LanSwplant"},{"ns":10,"exists":"","*":"Template:LanSwWholePlants"},{"ns":10,"exists":"","*":"Template:LanSwWholePlants/title"},{"ns":10,"exists":"","*":"Template:LanSwflower"},{"ns":10,"exists":"","*":"Template:LanSwFlowers"},{"ns":10,"exists":"","*":"Template:LanSwFlowers/title"},{"ns":10,"exists":"","*":"Template:LanSwseed"},{"ns":10,"exists":"","*":"Template:LanSwSeeds"},{"ns":10,"exists":"","*":"Template:LanSwseed/title"},{"ns":10,"exists":"","*":"Template:LanSwSeeds/title"},{"ns":10,"exists":"","*":"Template:LanSwillucat"},{"ns":10,"exists":"","*":"Template:LanSwillu/title"},{"ns":10,"exists":"","*":"Template:LanSwIllustrations/title"},{"ns":10,"exists":"","*":"Template:WWB"},{"ns":10,"exists":"","*":"Template:LanSwreflinks"},{"ns":10,"exists":"","*":"Template:LanSwRefLinks"},{"ns":10,"exists":"","*":"Template:LanSwRefLinks/title"},{"ns":10,"exists":"","*":"Template:Ws"},{"ns":10,"exists":"","*":"Template:WikispeciesCompact"},{"ns":10,"exists":"","*":"Template:Wikispecies/i18n"},{"ns":10,"exists":"","*":"Template:Wikidata"},{"ns":10,"exists":"","*":"Template:On
+        Wikidata"},{"ns":10,"exists":"","*":"Template:Autotranslate"},{"ns":10,"exists":"","*":"Template:On
+        Wikidata/i18n/en"},{"ns":10,"exists":"","*":"Template:On Wikidata/layout"},{"ns":10,"exists":"","*":"Template:Mbox"},{"ns":10,"exists":"","*":"Template:Dir"},{"ns":10,"exists":"","*":"Template:Interwiki
+        from wikidata"},{"ns":10,"exists":"","*":"Template:Interwiki from Wikidata"},{"ns":10,"exists":"","*":"Template:LanSwreffirst"},{"ns":10,"exists":"","*":"Template:LanSwRefFirst"},{"ns":10,"exists":"","*":"Template:LanSwRefFirst/title"},{"ns":10,"exists":"","*":"Template:-"},{"ns":10,"exists":"","*":"Template:Clear"},{"ns":828,"exists":"","*":"Module:Taxonavigation"},{"ns":828,"exists":"","*":"Module:Biology"},{"ns":828,"exists":"","*":"Module:Arguments"},{"ns":828,"exists":"","*":"Module:Fallback"},{"ns":828,"exists":"","*":"Module:Fallbacklist"},{"ns":828,"exists":"","*":"Module:Wikidata4Bio"},{"ns":0,"exists":"","*":"Poa
+        annua"}],"images":["Poa-annua-total.JPG","Poa_annua.jpg","Straatgras_tongetje_(Poa_annua_ligula).jpg","Straatgras.jpg","Poa_annua.jpeg","Poa.annua.jpg","Poa.annua.2.jpg","Poa_annua_fruits_(seeds),_straatgras_zaden.jpg","Straatgras_vruchten_(Poa_annua_fruits).jpg","Poa_spp_Sturm31.jpg","Nsr-slika-322.png","WWB-0058-024.png","WWB-0058-024-Gramineae.png","WWB-0058-024-Poa_annua.png","Britishentomologyvolume1Plate1.jpg","Wikidata-logo-without-paddings.svg","Farm-Fresh_www_page.png","Wikispecies-logo.svg","Wikidata-logo.svg","Green_open_book_1.png"],"externallinks":["https://www.wikidata.org/wiki/Q157571","http://www.botanicus.org/page/358087"],"sections":[{"toclevel":1,"level":"2","line":"Images
+        of the whole plant","number":"1","index":"1","fromtitle":"Poa_annua","byteoffset":211,"anchor":"Images_of_the_whole_plant"},{"toclevel":1,"level":"2","line":"Flowers","number":"2","index":"2","fromtitle":"Poa_annua","byteoffset":411,"anchor":"Flowers"},{"toclevel":1,"level":"2","line":"Seeds","number":"3","index":"3","fromtitle":"Poa_annua","byteoffset":590,"anchor":"Seeds"},{"toclevel":1,"level":"2","line":"Botanical
+        illustrations","number":"4","index":"","byteoffset":null,"anchor":"Botanical_illustrations"}],"displaytitle":"<i>Poa
+        annua</i>","iwlinks":[{"prefix":"en","url":"https://en.wikipedia.org/wiki/Common_name","*":"en:Common
+        name"},{"prefix":"en","url":"https://en.wikipedia.org/wiki/Poa_annua","*":"en:Poa
+        annua"},{"prefix":"en","url":"https://en.wikipedia.org/wiki/Wikispecies","*":"en:Wikispecies"},{"prefix":"wikidata","url":"https://www.wikidata.org/wiki/Q157571","*":"wikidata:Q157571"},{"prefix":"wikidata","url":"https://www.wikidata.org/wiki/Wikidata:Main_page","*":"wikidata:Wikidata:Main
+        page"},{"prefix":"ar","url":"https://ar.wikipedia.org/wiki/%D9%82%D8%A8%D8%A3_%D8%AD%D9%88%D9%84%D9%8A","*":"ar:قبأ
+        حولي"},{"prefix":"ca","url":"https://ca.wikipedia.org/wiki/P%C3%A8l_de_bou","*":"ca:Pèl
+        de bou"},{"prefix":"cs","url":"https://cs.wikipedia.org/wiki/Lipnice_ro%C4%8Dn%C3%AD","*":"cs:Lipnice
+        roční"},{"prefix":"cy","url":"https://cy.wikipedia.org/wiki/Gweunwellt_unflwydd","*":"cy:Gweunwellt
+        unflwydd"},{"prefix":"da","url":"https://da.wikipedia.org/wiki/En%C3%A5rig_rapgr%C3%A6s","*":"da:Enårig
+        rapgræs"},{"prefix":"de","url":"https://de.wikipedia.org/wiki/Einj%C3%A4hriges_Rispengras","*":"de:Einjähriges
+        Rispengras"},{"prefix":"et","url":"https://et.wikipedia.org/wiki/Murunurmikas","*":"et:Murunurmikas"},{"prefix":"fi","url":"https://fi.wikipedia.org/wiki/Kyl%C3%A4nurmikka","*":"fi:Kylänurmikka"},{"prefix":"fr","url":"https://fr.wikipedia.org/wiki/P%C3%A2turin_annuel","*":"fr:Pâturin
+        annuel"},{"prefix":"ga","url":"https://ga.wikipedia.org/wiki/Cuise_bliant%C3%BAil","*":"ga:Cuise
+        bliantúil"},{"prefix":"hsb","url":"https://hsb.wikipedia.org/wiki/M%C3%B3li%C4%8Dka_lipnica","*":"hsb:Mólička
+        lipnica"},{"prefix":"is","url":"https://is.wikipedia.org/wiki/Varpasveifgras","*":"is:Varpasveifgras"},{"prefix":"ja","url":"https://ja.wikipedia.org/wiki/%E3%82%B9%E3%82%BA%E3%83%A1%E3%83%8E%E3%82%AB%E3%82%BF%E3%83%93%E3%83%A9","*":"ja:スズメノカタビラ"},{"prefix":"lt","url":"https://lt.wikipedia.org/wiki/Vienamet%C4%97_migl%C4%97","*":"lt:Vienametė
+        miglė"},{"prefix":"nl","url":"https://nl.wikipedia.org/wiki/Straatgras","*":"nl:Straatgras"},{"prefix":"no","url":"https://no.wikipedia.org/wiki/Tunrapp","*":"no:Tunrapp"},{"prefix":"pl","url":"https://pl.wikipedia.org/wiki/Wiechlina_roczna","*":"pl:Wiechlina
+        roczna"},{"prefix":"qu","url":"https://qu.wikipedia.org/wiki/P%27ata_qachu","*":"qu:P''ata
+        qachu"},{"prefix":"ru","url":"https://ru.wikipedia.org/wiki/%D0%9C%D1%8F%D1%82%D0%BB%D0%B8%D0%BA_%D0%BE%D0%B4%D0%BD%D0%BE%D0%BB%D0%B5%D1%82%D0%BD%D0%B8%D0%B9","*":"ru:Мятлик
+        однолетний"},{"prefix":"sv","url":"https://sv.wikipedia.org/wiki/Vitgr%C3%B6e","*":"sv:Vitgröe"},{"prefix":"uk","url":"https://uk.wikipedia.org/wiki/%D0%A2%D0%BE%D0%BD%D0%BA%D0%BE%D0%BD%D1%96%D0%B3_%D0%BE%D0%B4%D0%BD%D0%BE%D1%80%D1%96%D1%87%D0%BD%D0%B8%D0%B9","*":"uk:Тонконіг
+        однорічний"},{"prefix":"zh","url":"https://zh.wikipedia.org/wiki/%E6%97%A9%E7%86%9F%E7%A6%BE","*":"zh:早熟禾"},{"prefix":"species","url":"https://species.wikimedia.org/wiki/Special:Search/Poa_annua","*":"species:Special:Search/Poa
+        annua"}],"properties":[{"name":"displaytitle","*":"<i>Poa annua</i>"},{"name":"notoc","*":""},{"name":"wikibase_item","*":"Q157571"}]}}'
+  recorded_at: 2018-04-25 22:23:28 GMT
+  recorded_with: vcr/0.0.7.9431
