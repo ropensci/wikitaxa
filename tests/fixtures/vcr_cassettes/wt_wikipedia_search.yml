@@ -16,73 +16,74 @@ http_interactions:
       explanation: Request fulfilled, document follows
     headers:
       status: HTTP/1.1 200 OK
-      date: Thu, 26 Apr 2018 04:59:51 GMT
+      date: Mon, 30 Apr 2018 23:25:58 GMT
       content-type: application/json; charset=utf-8
-      content-length: '1361'
+      content-length: '1362'
       connection: keep-alive
-      server: mw1280.eqiad.wmnet
+      server: mw1345.eqiad.wmnet
       x-powered-by: HHVM/3.18.6-dev
+      x-content-type-options: nosniff
+      cache-control: private, must-revalidate, max-age=0
       p3p: CP="This is not a P3P policy! See https://en.wikipedia.org/wiki/Special:CentralAutoLogin/P3P
         for more info."
-      cache-control: private, must-revalidate, max-age=0
-      vary: Accept-Encoding,Treat-as-Untrusted,X-Forwarded-Proto,Cookie,Authorization
-      content-disposition: inline; filename=api-result.json
-      x-content-type-options: nosniff
       x-frame-options: SAMEORIGIN
-      backend-timing: D=105630 t=1524718791615943
+      content-disposition: inline; filename=api-result.json
+      vary: Accept-Encoding,Treat-as-Untrusted,X-Forwarded-Proto,Cookie,Authorization
+      backend-timing: D=89927 t=1525130758272370
       content-encoding: gzip
-      x-varnish: 120265540, 233717776, 79230093, 1023151376
+      x-varnish: 494815785, 162680910, 538057309, 541427714
       via: 1.1 varnish (Varnish/5.1), 1.1 varnish (Varnish/5.1), 1.1 varnish (Varnish/5.1),
         1.1 varnish (Varnish/5.1)
       accept-ranges: bytes
       age: '0'
-      x-cache: cp1054 pass, cp2004 pass, cp4030 pass, cp4027 pass
+      x-cache: cp1054 pass, cp2004 pass, cp4028 pass, cp4030 pass
       x-cache-status: pass
       strict-transport-security: max-age=106384710; includeSubDomains; preload
-      x-analytics: ns=-1;special=Badtitle;WMF-Last-Access=26-Apr-2018;WMF-Last-Access-Global=26-Apr-2018;https=1
-      x-client-ip: 24.21.229.59
+      x-analytics: ns=-1;special=Badtitle;WMF-Last-Access=30-Apr-2018;WMF-Last-Access-Global=30-Apr-2018;https=1
+      x-client-ip: 136.152.209.32
     body:
       encoding: UTF-8
-      string: '{"batchcomplete":"","continue":{"sroffset":10,"continue":"-||"},"query":{"searchinfo":{"totalhits":2970},"search":[{"ns":0,"title":"Pine","pageid":39389,"size":28287,"wordcount":3194,"snippet":"A
+      string: '{"batchcomplete":"","continue":{"sroffset":10,"continue":"-||"},"query":{"searchinfo":{"totalhits":2972},"search":[{"ns":0,"title":"Pine","pageid":39389,"size":28281,"wordcount":3194,"snippet":"A
         pine is any conifer in the genus <span class=\"searchmatch\">Pinus</span>,
         /<span class=\"searchmatch\">ˈpiːnuːs</span>/, of the family Pinaceae. <span
         class=\"searchmatch\">Pinus</span> is the sole genus in the subfamily Pinoideae.
-        The Plant List compiled","timestamp":"2018-04-23T16:59:30Z"},{"ns":0,"title":"List
+        The Plant List compiled","timestamp":"2018-04-30T10:39:40Z"},{"ns":0,"title":"List
         of Pinus species","pageid":448990,"size":14277,"wordcount":997,"snippet":"<span
         class=\"searchmatch\">Pinus</span>, the pines, is a genus of approximately
         111 extant tree and shrub species. The genus is currently split into two subgenera:
         subgenus <span class=\"searchmatch\">Pinus</span> (hard","timestamp":"2018-04-09T06:20:59Z"},{"ns":0,"title":"Pinus
+        contorta","pageid":507717,"size":22658,"wordcount":2316,"snippet":"all pines
+        (member species of the genus <span class=\"searchmatch\">Pinus</span>), it
+        is an evergreen conifer.   There are four subspecies of <span class=\"searchmatch\">Pinus</span>
+        contorta, and one of them is sometimes","timestamp":"2018-03-18T18:03:21Z"},{"ns":0,"title":"Pinus
+        longaeva","pageid":649634,"size":12620,"wordcount":1380,"snippet":"sometimes
+        form dense forests. <span class=\"searchmatch\">Pinus</span> longaeva trees
+        generally do not form closed canopies, usually covering only 15-50%. <span
+        class=\"searchmatch\">Pinus</span> longaeva shares habitats with","timestamp":"2018-03-25T05:02:32Z"},{"ns":0,"title":"Pinus
         ponderosa","pageid":532941,"size":30907,"wordcount":2675,"snippet":"misidentified
         it as <span class=\"searchmatch\">Pinus</span> resinosa (red pine). In 1829,
         Douglas concluded that he had a new pine among his specimens and coined the
         name <span class=\"searchmatch\">Pinus</span> ponderosa for","timestamp":"2018-03-26T23:55:24Z"},{"ns":0,"title":"Pinus
-        contorta","pageid":507717,"size":22658,"wordcount":2315,"snippet":"all pines
-        (member species of the genus <span class=\"searchmatch\">Pinus</span>), it
-        is an evergreen conifer.    There are four subspecies of <span class=\"searchmatch\">Pinus</span>
-        contorta, and one of them is sometimes","timestamp":"2018-03-18T18:03:21Z"},{"ns":0,"title":"Pinus
-        nigra","pageid":438963,"size":11942,"wordcount":1356,"snippet":"hypodermal
-        cells. P. nigra subsp. nigra var. nigra (syn. <span class=\"searchmatch\">Pinus</span>
-        nigra var. austriaca, <span class=\"searchmatch\">Pinus</span> nigra subsp.
-        dalmatica) (Austrian pine): Austria, Balkans","timestamp":"2018-04-09T15:59:27Z"},{"ns":0,"title":"Scots
-        pine","pageid":181580,"size":21359,"wordcount":2390,"snippet":"genetically
-        distinct. <span class=\"searchmatch\">Pinus</span> sylvestris var. sylvestris.
-        The bulk of the range, from Scotland and Spain to central Siberia. Described
-        above. <span class=\"searchmatch\">Pinus</span> sylvestris var","timestamp":"2018-03-11T01:49:34Z"},{"ns":0,"title":"Pinus
         taeda","pageid":435341,"size":16280,"wordcount":1801,"snippet":"<span class=\"searchmatch\">Pinus</span>
         taeda, commonly known as loblolly pine, is one of several pines native to
-        the Southeastern United States, from central Texas east to Florida, and","timestamp":"2018-04-15T18:48:27Z"},{"ns":0,"title":"Pinus
-        mugo","pageid":438946,"size":10839,"wordcount":808,"snippet":"surprisingly
-        often.           <span class=\"searchmatch\">Pinus</span> mugo subsp. mugo.
-        Romania.                    <span class=\"searchmatch\">Pinus</span> mugo
-        subsp. uncinata.                    <span class=\"searchmatch\">Pinus</span>
-        mugo subsp. rotundata.","timestamp":"2018-03-25T05:03:09Z"},{"ns":0,"title":"Pinus
-        resinosa","pageid":507802,"size":7533,"wordcount":720,"snippet":"&quot;<span
-        class=\"searchmatch\">Pinus</span> resinosa&quot;. Flora of North America
-        (FNA). Missouri Botanical Garden  – via eFloras.org.    Earle, Christopher
-        J. &quot;Gymnosperm Database: <span class=\"searchmatch\">Pinus</span> resinosa","timestamp":"2018-02-16T19:58:39Z"},{"ns":0,"title":"Pinus
-        longaeva","pageid":649634,"size":12620,"wordcount":1380,"snippet":"sometimes
-        form dense forests. <span class=\"searchmatch\">Pinus</span> longaeva trees
-        generally do not form closed canopies, usually covering only 15-50%. <span
-        class=\"searchmatch\">Pinus</span> longaeva shares habitats with","timestamp":"2018-03-25T05:02:32Z"}]}}'
-  recorded_at: 2018-04-26 04:59:51 GMT
-  recorded_with: vcr/0.0.7.9431
+        the Southeastern United States, from central Texas east to Florida, and","timestamp":"2018-04-27T05:21:02Z"},{"ns":0,"title":"Pinus
+        lambertiana","pageid":459402,"size":10715,"wordcount":1158,"snippet":"Fire
+        affected this specimen, but it survived. <span class=\"searchmatch\">Pinus</span>
+        lambertiana is a member of the white pine group, <span class=\"searchmatch\">Pinus</span>
+        subgenus Strobus, and, like all members of that","timestamp":"2018-02-16T23:22:12Z"},{"ns":0,"title":"Pinus
+        strobus","pageid":464301,"size":29341,"wordcount":3481,"snippet":"3 ft) tall
+        &amp; wide. MBG:<span class=\"searchmatch\">Pinus</span> strobus ''Macopin''
+        <span class=\"searchmatch\">Pinus</span> strobus ''Paul Waxman'' — 61 to 152 cm
+        (2 to 5 ft) tall &amp; wide. MBG: <span class=\"searchmatch\">Pinus</span>
+        strobus ''Paul Waxman''  ","timestamp":"2018-04-23T22:25:21Z"},{"ns":0,"title":"Scots
+        pine","pageid":181580,"size":22261,"wordcount":2440,"snippet":"genetically
+        distinct. <span class=\"searchmatch\">Pinus</span> sylvestris var. sylvestris.
+        The bulk of the range, from Scotland and Spain to central Siberia. Described
+        above. <span class=\"searchmatch\">Pinus</span> sylvestris var","timestamp":"2018-04-30T18:00:16Z"},{"ns":0,"title":"Pinus
+        roxburghii","pageid":1248855,"size":9171,"wordcount":1116,"snippet":"<span
+        class=\"searchmatch\">Pinus</span> wallichiana (blue pine), <span class=\"searchmatch\">Pinus</span>
+        bhutanica (Bhutan white pine), <span class=\"searchmatch\">Pinus</span> armandii
+        (Chinese white pine), <span class=\"searchmatch\">Pinus</span> gerardiana
+        (chilgoza pine) and <span class=\"searchmatch\">Pinus</span> densata","timestamp":"2018-04-23T00:22:21Z"}]}}'
+  recorded_at: 2018-04-30 23:25:58 GMT
+  recorded_with: vcr/0.0.8.9534, webmockr/0.2.2.9119, crul/0.5.2

@@ -16,11 +16,11 @@ http_interactions:
       explanation: Request fulfilled, document follows
     headers:
       status: HTTP/1.1 200 OK
-      date: Thu, 26 Apr 2018 04:57:13 GMT
+      date: Mon, 30 Apr 2018 23:25:55 GMT
       content-type: application/json; charset=utf-8
       content-length: '83'
       connection: keep-alive
-      server: mw1277.eqiad.wmnet
+      server: mw1221.eqiad.wmnet
       x-powered-by: HHVM/3.18.6-dev
       p3p: CP="This is not a P3P policy! See https://commons.wikimedia.org/wiki/Special:CentralAutoLogin/P3P
         for more info."
@@ -29,20 +29,20 @@ http_interactions:
       content-disposition: inline; filename=api-result.json
       x-content-type-options: nosniff
       x-frame-options: DENY
-      backend-timing: D=56453 t=1524718633712256
+      backend-timing: D=42916 t=1525130754930510
       content-encoding: gzip
-      x-varnish: 137992661, 460217120, 527285696, 1021869806
+      x-varnish: 1048941419, 379925462, 539461228, 548113235
       via: 1.1 varnish (Varnish/5.1), 1.1 varnish (Varnish/5.1), 1.1 varnish (Varnish/5.1),
         1.1 varnish (Varnish/5.1)
       accept-ranges: bytes
       age: '0'
-      x-cache: cp1053 pass, cp2023 pass, cp4028 pass, cp4027 pass
+      x-cache: cp1053 pass, cp2023 pass, cp4028 pass, cp4030 pass
       x-cache-status: pass
       strict-transport-security: max-age=106384710; includeSubDomains; preload
-      x-analytics: ns=-1;special=Badtitle;WMF-Last-Access=26-Apr-2018;https=1
-      x-client-ip: 24.21.229.59
+      x-analytics: ns=-1;special=Badtitle;WMF-Last-Access=30-Apr-2018;https=1
+      x-client-ip: 136.152.209.32
     body:
       encoding: UTF-8
       string: '{"batchcomplete":"","query":{"searchinfo":{"totalhits":0},"search":[]}}'
-  recorded_at: 2018-04-26 04:57:13 GMT
-  recorded_with: vcr/0.0.7.9431
+  recorded_at: 2018-04-30 23:25:55 GMT
+  recorded_with: vcr/0.0.8.9534, webmockr/0.2.2.9119, crul/0.5.2
