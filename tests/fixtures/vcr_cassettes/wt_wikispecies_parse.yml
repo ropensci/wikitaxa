@@ -16,31 +16,31 @@ http_interactions:
       explanation: Request fulfilled, document follows
     headers:
       status: HTTP/1.1 200 OK
-      date: Mon, 30 Apr 2018 23:26:03 GMT
+      date: Thu, 03 May 2018 00:23:41 GMT
       content-type: application/json; charset=utf-8
       transfer-encoding: chunked
       connection: keep-alive
-      server: mw1221.eqiad.wmnet
+      server: mw1348.eqiad.wmnet
       x-powered-by: HHVM/3.18.6-dev
+      x-content-type-options: nosniff
+      cache-control: private, must-revalidate, max-age=0
       p3p: CP="This is not a P3P policy! See https://species.wikimedia.org/wiki/Special:CentralAutoLogin/P3P
         for more info."
-      cache-control: private, must-revalidate, max-age=0
-      vary: Accept-Encoding,Treat-as-Untrusted,X-Forwarded-Proto,Cookie,Authorization
-      content-disposition: inline; filename=api-result.json
-      x-content-type-options: nosniff
       x-frame-options: DENY
-      backend-timing: D=37947 t=1525130763235349
+      content-disposition: inline; filename=api-result.json
+      vary: Accept-Encoding,Treat-as-Untrusted,X-Forwarded-Proto,Cookie,Authorization
+      backend-timing: D=89841 t=1525307020984430
       content-encoding: gzip
-      x-varnish: 751917573, 172203547, 744002011, 541427782
+      x-varnish: 258574066, 111707477, 711867151, 226743941
       via: 1.1 varnish (Varnish/5.1), 1.1 varnish (Varnish/5.1), 1.1 varnish (Varnish/5.1),
         1.1 varnish (Varnish/5.1)
       accept-ranges: bytes
       age: '0'
-      x-cache: cp1065 pass, cp2004 pass, cp4030 pass, cp4030 pass
+      x-cache: cp1065 pass, cp2013 pass, cp4028 pass, cp4029 pass
       x-cache-status: pass
       strict-transport-security: max-age=106384710; includeSubDomains; preload
-      x-analytics: ns=-1;special=Badtitle;WMF-Last-Access=30-Apr-2018;https=1
-      x-client-ip: 136.152.209.32
+      x-analytics: ns=-1;special=Badtitle;WMF-Last-Access=03-May-2018;https=1
+      x-client-ip: 157.130.179.86
     body:
       encoding: UTF-8
       string: '{"parse":{"title":"Malus domestica","pageid":86997,"revid":3582826,"redirects":[],"text":{"*":"<div
@@ -175,5 +175,5 @@ http_interactions:
         domestica</i>","iwlinks":[{"prefix":"commons","url":"https://commons.wikimedia.org/wiki/Malus_domestica","*":"commons:Malus
         domestica"},{"prefix":"c","url":"https://commons.wikimedia.org/wiki/","*":"c:"}],"properties":[{"name":"displaytitle","*":"<i>Malus
         domestica</i>"},{"name":"notoc","*":""},{"name":"wikibase_item","*":"Q18674606"}]}}'
-  recorded_at: 2018-04-30 23:26:03 GMT
-  recorded_with: vcr/0.0.8.9534, webmockr/0.2.2.9119, crul/0.5.2
+  recorded_at: 2018-05-03 00:23:41 GMT
+  recorded_with: vcr/0.0.8.9536, webmockr/0.2.2.9119, crul/0.5.2

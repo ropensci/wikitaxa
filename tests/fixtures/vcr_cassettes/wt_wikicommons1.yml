@@ -16,11 +16,11 @@ http_interactions:
       explanation: Request fulfilled, document follows
     headers:
       status: HTTP/1.1 200 OK
-      date: Mon, 30 Apr 2018 23:25:52 GMT
+      date: Thu, 03 May 2018 00:23:33 GMT
       content-type: application/json; charset=utf-8
       transfer-encoding: chunked
       connection: keep-alive
-      server: mw1225.eqiad.wmnet
+      server: mw1286.eqiad.wmnet
       x-powered-by: HHVM/3.18.6-dev
       p3p: CP="This is not a P3P policy! See https://commons.wikimedia.org/wiki/Special:CentralAutoLogin/P3P
         for more info."
@@ -29,18 +29,18 @@ http_interactions:
       content-disposition: inline; filename=api-result.json
       x-content-type-options: nosniff
       x-frame-options: DENY
-      backend-timing: D=89901 t=1525130751862686
+      backend-timing: D=74691 t=1525307013208610
       content-encoding: gzip
-      x-varnish: 760521835, 94216387, 432806813, 551388767
+      x-varnish: 257692382, 512384398, 725200361, 221817109
       via: 1.1 varnish (Varnish/5.1), 1.1 varnish (Varnish/5.1), 1.1 varnish (Varnish/5.1),
         1.1 varnish (Varnish/5.1)
       accept-ranges: bytes
       age: '0'
-      x-cache: cp1065 pass, cp2001 pass, cp4028 pass, cp4030 pass
+      x-cache: cp1065 pass, cp2001 pass, cp4029 pass, cp4029 pass
       x-cache-status: pass
       strict-transport-security: max-age=106384710; includeSubDomains; preload
-      x-analytics: ns=-1;special=Badtitle;WMF-Last-Access=30-Apr-2018;https=1
-      x-client-ip: 136.152.209.32
+      x-analytics: ns=-1;special=Badtitle;WMF-Last-Access=03-May-2018;https=1
+      x-client-ip: 157.130.179.86
     body:
       encoding: UTF-8
       string: '{"parse":{"title":"Malus domestica","pageid":9161,"revid":281940175,"redirects":[],"text":{"*":"<div
@@ -572,20 +572,20 @@ http_interactions:
         1.5x, https://upload.wikimedia.org/wikipedia/commons/thumb/e/ee/Apples.jpg/160px-Apples.jpg
         2x\" data-file-width=\"1800\" data-file-height=\"2700\" /></a></div>\n</div>\n<div
         class=\"gallerytext\">\n<p>different apple cultivars</p>\n</div>\n</div>\n</li>\n</ul>\n\n\n<!--
-        \nNewPP limit report\nParsed by mw1310\nCached time: 20180427113018\nCache
-        expiry: 1900800\nDynamic content: false\nCPU time usage: 0.240 seconds\nReal
-        time usage: 0.305 seconds\nPreprocessor visited node count: 1208/1000000\nPreprocessor
+        \nNewPP limit report\nParsed by mw1311\nCached time: 20180502115505\nCache
+        expiry: 1900800\nDynamic content: false\nCPU time usage: 0.220 seconds\nReal
+        time usage: 0.281 seconds\nPreprocessor visited node count: 1208/1000000\nPreprocessor
         generated node count: 0/1500000\nPost‐expand include size: 41015/2097152 bytes\nTemplate
         argument size: 449/2097152 bytes\nHighest expansion depth: 16/40\nExpensive
         parser function count: 17/500\nUnstrip recursion depth: 0/20\nUnstrip post‐expand
-        size: 26176/5000000 bytes\nLua time usage: 0.098/10.000 seconds\nLua memory
-        usage: 2.66 MB/50 MB\n-->\n<!--\nTransclusion expansion time report (%,ms,calls,template)\n100.00%  254.874      1
-        -total\n 36.89%   94.027      1 Template:VN\n 22.40%   57.101      1 Template:Taxonavigation\n
-        18.44%   47.007      1 Template:Rosaceae_(APG)\n 17.93%   45.695      1 Template:TaxonavigationIncluded2\n
-        12.11%   30.858      1 Template:Angiosperms\n 11.67%   29.747      1 Template:TaxonavigationIncluded\n  4.77%   12.153      1
-        Template:Wikispecies\n  4.67%   11.913      4 Template:LangSwitch\n  3.80%    9.693      1
+        size: 26176/5000000 bytes\nLua time usage: 0.086/10.000 seconds\nLua memory
+        usage: 2.66 MB/50 MB\n-->\n<!--\nTransclusion expansion time report (%,ms,calls,template)\n100.00%  224.612      1
+        -total\n 37.99%   85.338      1 Template:VN\n 23.27%   52.275      1 Template:Taxonavigation\n
+        19.77%   44.403      1 Template:Rosaceae_(APG)\n 19.22%   43.181      1 Template:TaxonavigationIncluded2\n
+        13.41%   30.130      1 Template:Angiosperms\n 12.55%   28.196      1 Template:TaxonavigationIncluded\n  4.78%   10.726      4
+        Template:LangSwitch\n  4.57%   10.264      1 Template:Wikispecies\n  3.76%    8.450      1
         Template:Wikispecies/i18n\n-->\n</div>\n<!-- Saved in parser cache with key
-        commonswiki:pcache:idhash:9161-0!canonical and timestamp 20180427113018 and
+        commonswiki:pcache:idhash:9161-0!canonical and timestamp 20180502115505 and
         revision id 281940175\n -->\n"},"langlinks":[{"lang":"als","url":"https://als.wikipedia.org/wiki/Kulturapfel","langname":"Alemannisch","autonym":"Alemannisch","*":"Kulturapfel"},{"lang":"am","url":"https://am.wikipedia.org/wiki/%E1%89%B1%E1%8D%8B%E1%88%95","langname":"Amharic","autonym":"አማርኛ","*":"ቱፋሕ"},{"lang":"an","url":"https://an.wikipedia.org/wiki/Mazana","langname":"Aragonese","autonym":"aragonés","*":"Mazana"},{"lang":"as","url":"https://as.wikipedia.org/wiki/%E0%A6%86%E0%A6%AA%E0%A7%87%E0%A6%B2","langname":"Assamese","autonym":"অসমীয়া","*":"আপেল"},{"lang":"ast","url":"https://ast.wikipedia.org/wiki/Mazana","langname":"Asturian","autonym":"asturianu","*":"Mazana"},{"lang":"az","url":"https://az.wikipedia.org/wiki/Alma_(meyv%C9%99)","langname":"Azerbaijani","autonym":"azərbaycanca","*":"Alma
         (meyvə)"},{"lang":"bat-smg","url":"https://bat-smg.wikipedia.org/wiki/Vuobel%C4%97s","langname":"Samogitian","autonym":"žemaitėška","*":"Vuobelės"},{"lang":"be","url":"https://be.wikipedia.org/wiki/%D0%AF%D0%B1%D0%BB%D1%8B%D0%BA","langname":"Belarusian","autonym":"беларуская","*":"Яблык"},{"lang":"be-x-old","url":"https://be-x-old.wikipedia.org/wiki/%D0%AF%D0%B1%D0%BB%D1%8B%D0%BA","langname":"Belarusian
         (Taraškievica orthography)","autonym":"беларуская (тарашкевіца)‎","*":"Яблык"},{"lang":"bh","url":"https://bh.wikipedia.org/wiki/%E0%A4%B8%E0%A5%87%E0%A4%B5","langname":"Bhojpuri","autonym":"भोजपुरी","*":"सेव"},{"lang":"bo","url":"https://bo.wikipedia.org/wiki/%E0%BD%80%E0%BD%B4%E0%BC%8B%E0%BD%A4%E0%BD%B4%E0%BC%8D","langname":"Tibetan","autonym":"བོད་ཡིག","*":"ཀུ་ཤུ།"},{"lang":"bpy","url":"https://bpy.wikipedia.org/wiki/%E0%A6%86%E0%A6%AA%E0%A7%87%E0%A6%B2","langname":"Bishnupriya","autonym":"বিষ্ণুপ্রিয়া
@@ -662,5 +662,5 @@ http_interactions:
         домашня"},{"prefix":"uz","url":"https://uz.wikipedia.org/wiki/Olma","*":"uz:Olma"},{"prefix":"vec","url":"https://vec.wikipedia.org/wiki/Pomaro","*":"vec:Pomaro"},{"prefix":"vi","url":"https://vi.wikipedia.org/wiki/Malus_domestica","*":"vi:Malus
         domestica"},{"prefix":"zh","url":"https://zh.wikipedia.org/wiki/%E8%98%8B%E6%9E%9C%E6%A8%B9","*":"zh:蘋果樹"}],"properties":[{"name":"displaytitle","*":"<i>Malus
         domestica</i>"},{"name":"wikibase_item","*":"Q18674606"}]}}'
-  recorded_at: 2018-04-30 23:25:52 GMT
-  recorded_with: vcr/0.0.8.9534, webmockr/0.2.2.9119, crul/0.5.2
+  recorded_at: 2018-05-03 00:23:33 GMT
+  recorded_with: vcr/0.0.8.9536, webmockr/0.2.2.9119, crul/0.5.2

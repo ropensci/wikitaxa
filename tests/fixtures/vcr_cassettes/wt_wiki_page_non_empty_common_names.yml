@@ -16,11 +16,11 @@ http_interactions:
       explanation: Request fulfilled, document follows
     headers:
       status: HTTP/1.1 200 OK
-      date: Mon, 30 Apr 2018 23:26:09 GMT
+      date: Thu, 03 May 2018 00:23:45 GMT
       content-type: application/json; charset=utf-8
       transfer-encoding: chunked
       connection: keep-alive
-      server: mw1278.eqiad.wmnet
+      server: mw1317.eqiad.wmnet
       x-powered-by: HHVM/3.18.6-dev
       p3p: CP="This is not a P3P policy! See https://en.wikipedia.org/wiki/Special:CentralAutoLogin/P3P
         for more info."
@@ -29,18 +29,18 @@ http_interactions:
       content-disposition: inline; filename=api-result.json
       x-content-type-options: nosniff
       x-frame-options: SAMEORIGIN
-      backend-timing: D=102597 t=1525130769620631
+      backend-timing: D=106340 t=1525307025683575
       content-encoding: gzip
-      x-varnish: 761959332, 88767388, 536328138, 550865413
+      x-varnish: 255537271, 96652358, 318777924, 224445059
       via: 1.1 varnish (Varnish/5.1), 1.1 varnish (Varnish/5.1), 1.1 varnish (Varnish/5.1),
         1.1 varnish (Varnish/5.1)
       accept-ranges: bytes
       age: '0'
-      x-cache: cp1065 pass, cp2001 pass, cp4028 pass, cp4030 pass
+      x-cache: cp1065 pass, cp2007 pass, cp4027 pass, cp4029 pass
       x-cache-status: pass
       strict-transport-security: max-age=106384710; includeSubDomains; preload
-      x-analytics: ns=-1;special=Badtitle;WMF-Last-Access=30-Apr-2018;WMF-Last-Access-Global=30-Apr-2018;https=1
-      x-client-ip: 136.152.209.32
+      x-analytics: ns=-1;special=Badtitle;WMF-Last-Access=03-May-2018;WMF-Last-Access-Global=03-May-2018;https=1
+      x-client-ip: 157.130.179.86
     body:
       encoding: UTF-8
       string: '{"parse":{"title":"Apple","pageid":18978754,"revid":838508763,"redirects":[{"from":"Malus
@@ -2767,22 +2767,21 @@ http_interactions:
         style=\"padding:0em 0.25em\">\n<ul>\n<li><span class=\"nowrap\"><a href=\"/wiki/National_Diet_Library\"
         title=\"National Diet Library\">NDL</a>: <span class=\"uid\"><a rel=\"nofollow\"
         class=\"external text\" href=\"https://id.ndl.go.jp/auth/ndlna/00569482\">00569482</a></span></span></li>\n</ul>\n</div>\n</td>\n</tr>\n</table>\n</div>\n\n\n<!--
-        \nNewPP limit report\nParsed by mw1253\nCached time: 20180430214243\nCache
-        expiry: 1900800\nDynamic content: false\nCPU time usage: 1.680 seconds\nReal
-        time usage: 2.080 seconds\nPreprocessor visited node count: 13249/1000000\nPreprocessor
+        \nNewPP limit report\nParsed by mw1265\nCached time: 20180502085151\nCache
+        expiry: 1900800\nDynamic content: false\nCPU time usage: 1.452 seconds\nReal
+        time usage: 1.777 seconds\nPreprocessor visited node count: 13251/1000000\nPreprocessor
         generated node count: 0/1500000\nPost‐expand include size: 285013/2097152
         bytes\nTemplate argument size: 14208/2097152 bytes\nHighest expansion depth:
         19/40\nExpensive parser function count: 28/500\nUnstrip recursion depth: 0/20\nUnstrip
-        post‐expand size: 126891/5000000 bytes\nLua time usage: 0.989/10.000 seconds\nLua
-        memory usage: 10.73 MB/50 MB\n-->\n<!--\nTransclusion expansion time report
-        (%,ms,calls,template)\n100.00% 1851.009      1 -total\n 36.36%  673.115      1
-        Template:Reflist\n 15.36%  284.260      1 Template:Speciesbox\n 14.94%  276.580      1
-        Template:Taxobox/core\n 13.27%  245.713      7 Template:Infobox\n  9.49%  175.728      1
-        Template:Taxonbar\n  8.48%  157.023     26 Template:Cite_book\n  7.96%  147.374      1
-        Template:Infobox_nutritional_value\n  7.90%  146.279     25 Template:Cite_web\n  7.81%  144.577      1
-        Template:Taxobox/taxonomy\n-->\n</div>\n<!-- Saved in parser cache with key
-        enwiki:pcache:idhash:18978754-0!canonical and timestamp 20180430214241 and
-        revision id 838508763\n -->\n"},"langlinks":[{"lang":"af","url":"https://af.wikipedia.org/wiki/Appel","langname":"Afrikaans","autonym":"Afrikaans","*":"Appel"},{"lang":"als","url":"https://als.wikipedia.org/wiki/Apfel","langname":"Alemannisch","autonym":"Alemannisch","*":"Apfel"},{"lang":"am","url":"https://am.wikipedia.org/wiki/%E1%8D%96%E1%88%9D","langname":"Amharic","autonym":"አማርኛ","*":"ፖም"},{"lang":"ang","url":"https://ang.wikipedia.org/wiki/%C3%86ppel","langname":"Old
+        post‐expand size: 126891/5000000 bytes\nLua time usage: 0.803/10.000 seconds\nLua
+        memory usage: 11.01 MB/50 MB\n-->\n<!--\nTransclusion expansion time report
+        (%,ms,calls,template)\n100.00% 1557.516      1 -total\n 32.92%  512.746      1
+        Template:Reflist\n 17.35%  270.299      1 Template:Speciesbox\n 16.84%  262.222      1
+        Template:Taxobox/core\n 13.00%  202.423      7 Template:Infobox\n  9.39%  146.279      1
+        Template:Taxonbar\n  8.52%  132.624      1 Template:Taxobox/taxonomy\n  8.41%  130.918      1
+        Template:Infobox_nutritional_value\n  7.11%  110.769     26 Template:Cite_book\n  6.37%   99.269     25
+        Template:Cite_web\n-->\n</div>\n<!-- Saved in parser cache with key enwiki:pcache:idhash:18978754-0!canonical
+        and timestamp 20180502085150 and revision id 838508763\n -->\n"},"langlinks":[{"lang":"af","url":"https://af.wikipedia.org/wiki/Appel","langname":"Afrikaans","autonym":"Afrikaans","*":"Appel"},{"lang":"als","url":"https://als.wikipedia.org/wiki/Apfel","langname":"Alemannisch","autonym":"Alemannisch","*":"Apfel"},{"lang":"am","url":"https://am.wikipedia.org/wiki/%E1%8D%96%E1%88%9D","langname":"Amharic","autonym":"አማርኛ","*":"ፖም"},{"lang":"ang","url":"https://ang.wikipedia.org/wiki/%C3%86ppel","langname":"Old
         English","autonym":"Ænglisc","*":"Æppel"},{"lang":"ar","url":"https://ar.wikipedia.org/wiki/%D8%AA%D9%81%D8%A7%D8%AD","langname":"Arabic","autonym":"العربية","*":"تفاح"},{"lang":"an","url":"https://an.wikipedia.org/wiki/Mazana","langname":"Aragonese","autonym":"aragonés","*":"Mazana"},{"lang":"arc","url":"https://arc.wikipedia.org/wiki/%DC%9A%DC%99%DC%98%DC%AA%DC%90","langname":"Aramaic","autonym":"ܐܪܡܝܐ","*":"ܚܙܘܪܐ"},{"lang":"roa-rup","url":"https://roa-rup.wikipedia.org/wiki/Muz%C3%A2","langname":"Aromanian","autonym":"armãneashti","*":"Muzâ"},{"lang":"ast","url":"https://ast.wikipedia.org/wiki/Mazana","langname":"Asturian","autonym":"asturianu","*":"Mazana"},{"lang":"atj","url":"https://atj.wikipedia.org/wiki/Wamin","langname":"Atikamekw","autonym":"Atikamekw","*":"Wamin"},{"lang":"gn","url":"https://gn.wikipedia.org/wiki/Guavirana%27a","langname":"Guarani","autonym":"Avañe''ẽ","*":"Guavirana''a"},{"lang":"az","url":"https://az.wikipedia.org/wiki/Alma_(meyv%C9%99)","langname":"Azerbaijani","autonym":"azərbaycanca","*":"Alma
         (meyvə)"},{"lang":"azb","url":"https://azb.wikipedia.org/wiki/%D8%A2%D9%84%D9%85%D8%A7","langname":"South
         Azerbaijani","autonym":"تۆرکجه","*":"آلما"},{"lang":"bn","url":"https://bn.wikipedia.org/wiki/%E0%A6%86%E0%A6%AA%E0%A7%87%E0%A6%B2","langname":"Bangla","autonym":"বাংলা","*":"আপেল"},{"lang":"zh-min-nan","url":"https://zh-min-nan.wikipedia.org/wiki/Ph%C5%8Dng-k%C3%B3","langname":"Chinese
@@ -3120,5 +3119,5 @@ http_interactions:
         reading","number":"13","index":"30","fromtitle":"Apple","byteoffset":72571,"anchor":"Further_reading"},{"toclevel":1,"level":"2","line":"External
         links","number":"14","index":"31","fromtitle":"Apple","byteoffset":72958,"anchor":"External_links"}],"displaytitle":"Apple","iwlinks":[{"prefix":"commons","url":"https://commons.wikimedia.org/wiki/Category:Apple_cultivars","*":"commons:Category:Apple
         cultivars"},{"prefix":"wikidata","url":"https://www.wikidata.org/wiki/Q158657","*":"wikidata:Q158657"},{"prefix":"wikidata","url":"https://www.wikidata.org/wiki/Q18674606","*":"wikidata:Q18674606"}],"properties":[{"name":"wikibase_item","*":"Q89"},{"name":"wikibase-badge-Q17437798","*":""}]}}'
-  recorded_at: 2018-04-30 23:26:10 GMT
-  recorded_with: vcr/0.0.8.9534, webmockr/0.2.2.9119, crul/0.5.2
+  recorded_at: 2018-05-03 00:23:45 GMT
+  recorded_with: vcr/0.0.8.9536, webmockr/0.2.2.9119, crul/0.5.2
