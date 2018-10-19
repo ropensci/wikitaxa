@@ -18,13 +18,25 @@
 <!-- Font Awesome icons -->
 <link href="https://maxcdn.bootstrapcdn.com/font-awesome/4.6.3/css/font-awesome.min.css" rel="stylesheet" integrity="sha384-T8Gy5hrqNKT+hzMclPo118YTQO6cYprQmhrYwIiQ/3axmI1hQomh7Ud2hPOy8SP1" crossorigin="anonymous">
 
+<!-- clipboard.js -->
+<script src="https://cdnjs.cloudflare.com/ajax/libs/clipboard.js/1.7.1/clipboard.min.js" integrity="sha384-cV+rhyOuRHc9Ub/91rihWcGmMmCXDeksTtCihMupQHSsi8GIIRDG0ThDc3HGQFJ3" crossorigin="anonymous"></script>
+
+<!-- sticky kit -->
+<script src="https://cdnjs.cloudflare.com/ajax/libs/sticky-kit/1.1.3/sticky-kit.min.js" integrity="sha256-c4Rlo1ZozqTPE2RLuvbusY3+SU1pQaJC0TjuhygMipw=" crossorigin="anonymous"></script>
 
 <!-- pkgdown -->
 <link href="../pkgdown.css" rel="stylesheet">
-<script src="../jquery.sticky-kit.min.js"></script>
 <script src="../pkgdown.js"></script>
-  
-  
+
+
+
+<meta property="og:title" content="Wikipedia — wt_wikipedia" />
+
+<meta property="og:description" content="Wikipedia" />
+<meta name="twitter:card" content="summary" />
+
+
+
 <!-- mathjax -->
 <script src='https://mathjax.rstudio.com/latest/MathJax.js?config=TeX-AMS-MML_HTMLorMML'></script>
 
@@ -47,8 +59,12 @@
         <span class="icon-bar"></span>
         <span class="icon-bar"></span>
       </button>
-      <a class="navbar-brand" href="../index.html">wikitaxa</a>
+      <span class="navbar-brand">
+        <a class="navbar-link" href="../index.html">wikitaxa</a>
+        <span class="label label-default" data-toggle="tooltip" data-placement="bottom" title="Released package">0.3.0</span>
+      </span>
     </div>
+
     <div id="navbar" class="navbar-collapse collapse">
       <ul class="nav navbar-nav">
         <li>
@@ -73,7 +89,7 @@
   </ul>
 </li>
 <li>
-  <a href="../news/index.html">News</a>
+  <a href="../news/index.html">Changelog</a>
 </li>
       </ul>
       
@@ -85,6 +101,7 @@
   </a>
 </li>
       </ul>
+      
     </div><!--/.nav-collapse -->
   </div><!--/.container -->
 </div><!--/.navbar -->
@@ -92,25 +109,29 @@
       
       </header>
 
-      <div class="row">
+<div class="row">
   <div class="col-md-9 contents">
     <div class="page-header">
     <h1>Wikipedia</h1>
+    <small class="dont-index">Source: <a href='https://github.com/ropensci/wikitaxa/blob/master/R/wikipedia.R'><code>R/wikipedia.R</code></a></small>
+    <div class="hidden name"><code>wt_wikipedia.Rd</code></div>
     </div>
 
+    <div class="ref-description">
     
     <p>Wikipedia</p>
     
+    </div>
 
     <pre class="usage"><span class='fu'>wt_wikipedia</span>(<span class='no'>name</span>, <span class='kw'>wiki</span> <span class='kw'>=</span> <span class='st'>"en"</span>, <span class='kw'>utf8</span> <span class='kw'>=</span> <span class='fl'>TRUE</span>, <span class='no'>...</span>)
 
-<span class='fu'>wt_wikipedia_parse</span>(<span class='no'>page</span>, <span class='kw'>types</span> <span class='kw'>=</span> <span class='fu'>c</span>(<span class='st'>"langlinks"</span>, <span class='st'>"iwlinks"</span>, <span class='st'>"externallinks"</span>,
-  <span class='st'>"common_names"</span>, <span class='st'>"classification"</span>), <span class='kw'>tidy</span> <span class='kw'>=</span> <span class='fl'>FALSE</span>)
+<span class='fu'>wt_wikipedia_parse</span>(<span class='no'>page</span>, <span class='kw'>types</span> <span class='kw'>=</span> <span class='fu'>c</span>(<span class='st'>"langlinks"</span>, <span class='st'>"iwlinks"</span>,
+  <span class='st'>"externallinks"</span>, <span class='st'>"common_names"</span>, <span class='st'>"classification"</span>), <span class='kw'>tidy</span> <span class='kw'>=</span> <span class='fl'>FALSE</span>)
 
 <span class='fu'>wt_wikipedia_search</span>(<span class='no'>query</span>, <span class='kw'>wiki</span> <span class='kw'>=</span> <span class='st'>"en"</span>, <span class='kw'>limit</span> <span class='kw'>=</span> <span class='fl'>10</span>, <span class='kw'>offset</span> <span class='kw'>=</span> <span class='fl'>0</span>,
   <span class='kw'>utf8</span> <span class='kw'>=</span> <span class='fl'>TRUE</span>, <span class='no'>...</span>)</pre>
     
-    <h2 class="hasAnchor" id="arguments"><a class="anchor" href="#arguments"></a> Arguments</h2>
+    <h2 class="hasAnchor" id="arguments"><a class="anchor" href="#arguments"></a>Arguments</h2>
     <table class="ref-arguments">
     <colgroup><col class="name" /><col class="desc" /></colgroup>
     <tr>
@@ -124,17 +145,17 @@ language codes.</p></td>
     </tr>
     <tr>
       <th>utf8</th>
-      <td><p>(logical) If `TRUE`, encodes most (but not all) non-ASCII
+      <td><p>(logical) If <code>TRUE</code>, encodes most (but not all) non-ASCII
 characters as UTF-8 instead of replacing them with hexadecimal escape
-sequences. Default: `TRUE`</p></td>
+sequences. Default: <code>TRUE</code></p></td>
     </tr>
     <tr>
       <th>...</th>
-      <td><p>curl options, passed on to [httr::GET()]</p></td>
+      <td><p>curl options, passed on to <code><a href='http://www.rdocumentation.org/packages/httr/topics/GET'>httr::GET()</a></code></p></td>
     </tr>
     <tr>
       <th>page</th>
-      <td><p>([httr::response()]) Result of [wt_wiki_page()]</p></td>
+      <td><p>(<code><a href='http://www.rdocumentation.org/packages/httr/topics/response'>httr::response()</a></code>) Result of <code><a href='wt_wiki_page.html'>wt_wiki_page()</a></code></p></td>
     </tr>
     <tr>
       <th>types</th>
@@ -143,7 +164,7 @@ sequences. Default: `TRUE`</p></td>
     <tr>
       <th>tidy</th>
       <td><p>(logical). tidy output to data.frame's if possible.
-Default: `FALSE`</p></td>
+Default: <code>FALSE</code></p></td>
     </tr>
     <tr>
       <th>query</th>
@@ -167,10 +188,11 @@ Default: `FALSE`</p></td>
 <li><p>common_names - a data.frame with <code>name</code> and <code>language</code> columns</p></li>
 <li><p>classification - a data.frame with <code>rank</code> and <code>name</code> columns</p></li>
 <li><p>synonyms - a character vector with taxonomic names</p></li>
-</ul><p><code>wt_wikipedia_parse</code> returns a list with same slots determined by
-the <code>types</code> parmeter
+</ul>
 
-<code>wt_wikipedia_search</code> returns a list with slots for <code>continue</code> and
+<p><code>wt_wikipedia_parse</code> returns a list with same slots determined by
+the <code>types</code> parmeter</p>
+<p><code>wt_wikipedia_search</code> returns a list with slots for <code>continue</code> and
 <code>query</code>, where <code>query</code> holds the results, with <code>query$search</code> slot with
 the search results</p>
     
@@ -225,11 +247,14 @@ the search results</p>
 </div>
 
 <div class="pkgdown">
-  <p>Site built with <a href="http://hadley.github.io/pkgdown/">pkgdown</a>.</p>
+  <p>Site built with <a href="http://pkgdown.r-lib.org/">pkgdown</a>.</p>
 </div>
 
       </footer>
    </div>
 
+  
+
   </body>
 </html>
+
