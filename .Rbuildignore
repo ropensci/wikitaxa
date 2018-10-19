@@ -13,7 +13,7 @@ vignettes/taxize_infotable.md
 vignettes/margins.sty
 vignettes/cache/
 ^appveyor\.yml$
-^CONDUCT\.md$
+^CODE_OF_CONDUCT\.md$
 ^cran-comments\.md$
 ^revdep$
 .github
