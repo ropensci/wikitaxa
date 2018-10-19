@@ -36,3 +36,6 @@ Suggests:
     rmarkdown,
     vcr
 RoxygenNote: 6.1.0
+X-schema.org-applicationCategory: Taxonomy
+X-schema.org-keywords: taxonomy, species, API, web-services, Wikipedia, vernacular, Wikispecies, Wikicommons
+X-schema.org-isPartOf: https://ropensci.org
