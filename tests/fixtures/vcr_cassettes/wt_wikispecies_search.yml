@@ -6,7 +6,7 @@ http_interactions:
       encoding: ''
       string: ''
     headers:
-      User-Agent: libcurl/7.54.0 r-curl/3.2 crul/0.5.2
+      User-Agent: libcurl/7.54.0 r-curl/3.2 crul/0.6.0
       Accept-Encoding: gzip, deflate
       Accept: application/json, text/xml, application/xml, */*
   response:
@@ -16,78 +16,81 @@ http_interactions:
       explanation: Request fulfilled, document follows
     headers:
       status: HTTP/1.1 200 OK
-      date: Thu, 03 May 2018 00:23:41 GMT
+      date: Fri, 19 Oct 2018 19:08:04 GMT
       content-type: application/json; charset=utf-8
-      content-length: '923'
+      content-length: '934'
       connection: keep-alive
-      server: mw1290.eqiad.wmnet
+      server: mw1279.eqiad.wmnet
       x-powered-by: HHVM/3.18.6-dev
-      x-content-type-options: nosniff
-      cache-control: private, must-revalidate, max-age=0
       p3p: CP="This is not a P3P policy! See https://species.wikimedia.org/wiki/Special:CentralAutoLogin/P3P
         for more info."
-      x-frame-options: DENY
-      content-disposition: inline; filename=api-result.json
+      cache-control: private, must-revalidate, max-age=0
+      x-search-id: ewuovu2na0tlghubby36cas00
+      x-content-type-options: nosniff
       vary: Accept-Encoding,Treat-as-Untrusted,X-Forwarded-Proto,Cookie,Authorization
-      backend-timing: D=74081 t=1525307021570956
+      content-disposition: inline; filename=api-result.json
+      x-frame-options: DENY
+      backend-timing: D=158588 t=1539976084435969
       content-encoding: gzip
-      x-varnish: 612200051, 407132725, 313423003, 179974365
+      x-varnish: 613886251, 396022525, 406441141, 46232004
       via: 1.1 varnish (Varnish/5.1), 1.1 varnish (Varnish/5.1), 1.1 varnish (Varnish/5.1),
         1.1 varnish (Varnish/5.1)
       accept-ranges: bytes
       age: '0'
-      x-cache: cp1054 pass, cp2004 pass, cp4027 pass, cp4029 pass
+      x-cache: cp1087 pass, cp2004 pass, cp4031 pass, cp4028 pass
       x-cache-status: pass
       strict-transport-security: max-age=106384710; includeSubDomains; preload
-      x-analytics: ns=-1;special=Badtitle;WMF-Last-Access=03-May-2018;https=1
+      x-analytics: ns=-1;special=Badtitle;WMF-Last-Access=19-Oct-2018;https=1
       x-client-ip: 157.130.179.86
     body:
       encoding: UTF-8
-      string: '{"batchcomplete":"","continue":{"sroffset":10,"continue":"-||"},"query":{"searchinfo":{"totalhits":401},"search":[{"ns":0,"title":"Pinus","pageid":17362,"size":1570,"wordcount":282,"snippet":"Familia:
-        Pinaceae   Genus: <span class=\"searchmatch\">Pinus</span>  Subgenera: P. subg. <span
+      string: '{"batchcomplete":"","continue":{"sroffset":10,"continue":"-||"},"query":{"searchinfo":{"totalhits":417},"search":[{"ns":0,"title":"Pinus","pageid":17362,"size":1570,"wordcount":281,"snippet":"Familia:
+        Pinaceae  Genus: <span class=\"searchmatch\">Pinus</span>  Subgenera: P. subg. <span
         class=\"searchmatch\">Pinus</span> – P. subg. Strobus   <span class=\"searchmatch\">Pinus</span>
         L.   Apinus Neck., nom. illeg. Caryopitys Small Cembra Opiz Ducampopinus","timestamp":"2017-02-08T18:23:44Z"},{"ns":0,"title":"Pinus
         nigra subsp. nigra","pageid":327138,"size":1412,"wordcount":127,"snippet":"Familia:
-        Pinaceae  Genus: <span class=\"searchmatch\">Pinus</span>  Species: <span
-        class=\"searchmatch\">Pinus</span> nigra  Subspecies: <span class=\"searchmatch\">Pinus</span>
-        nigra subsp. nigra  <span class=\"searchmatch\">Pinus</span> nigra J.F.Arnold
-        subsp. nigra   <span class=\"searchmatch\">Pinus</span> laricio var. nigra
-        (J","timestamp":"2016-03-13T23:35:20Z"},{"ns":0,"title":"Pinus subg. Pinus","pageid":300923,"size":318,"wordcount":27,"snippet":"Pinaceae  Genus:
+        Pinaceae Genus: <span class=\"searchmatch\">Pinus</span> Species: <span class=\"searchmatch\">Pinus</span>
+        nigra Subspecies: <span class=\"searchmatch\">Pinus</span> nigra subsp. nigra
+        <span class=\"searchmatch\">Pinus</span> nigra J.F.Arnold subsp. nigra <span
+        class=\"searchmatch\">Pinus</span> laricio var. nigra (J","timestamp":"2016-03-13T23:35:20Z"},{"ns":0,"title":"Pinus
+        subg. Pinus","pageid":300923,"size":318,"wordcount":27,"snippet":"Pinaceae  Genus:
         <span class=\"searchmatch\">Pinus</span>  Subgenus: P. subg. <span class=\"searchmatch\">Pinus</span>  Sectiones:
-        P. sect. Pinea – P. sect. <span class=\"searchmatch\">Pinus</span> – P. sect. Trifoliae  <span
-        class=\"searchmatch\">Pinus</span> subg. <span class=\"searchmatch\">Pinus</span>  <span
-        class=\"searchmatch\">Pinus</span> sylvestris L.","timestamp":"2017-02-08T18:29:55Z"},{"ns":0,"title":"Pinus
-        clausa","pageid":45047,"size":1520,"wordcount":208,"snippet":"Pinaceae   Genus:
-        <span class=\"searchmatch\">Pinus</span>  Subgenus: P. subg. <span class=\"searchmatch\">Pinus</span>  Sectio:
-        P. sect. Trifoliae  Subsectiones: P. subsect. Contortae  Species: <span class=\"searchmatch\">Pinus</span>
-        clausa   <span class=\"searchmatch\">Pinus</span> clausa (Chapman","timestamp":"2017-08-16T15:18:30Z"},{"ns":0,"title":"Pinus
+        P. sect. Pinea –  P. sect. <span class=\"searchmatch\">Pinus</span> –  P. sect. Trifoliae    <span
+        class=\"searchmatch\">Pinus</span> subg. <span class=\"searchmatch\">Pinus</span>   <span
+        class=\"searchmatch\">Pinus</span> sylvestris","timestamp":"2017-02-08T18:29:55Z"},{"ns":0,"title":"Pinus
+        clausa","pageid":45047,"size":1520,"wordcount":208,"snippet":"Pinaceae Genus:
+        <span class=\"searchmatch\">Pinus</span> Subgenus: P. subg. <span class=\"searchmatch\">Pinus</span>
+        Sectio: P. sect. Trifoliae Subsectiones: P. subsect. Contortae Species: <span
+        class=\"searchmatch\">Pinus</span> clausa <span class=\"searchmatch\">Pinus</span>
+        clausa (Chapman","timestamp":"2017-08-16T15:18:30Z"},{"ns":0,"title":"Pinus
         resinosa","pageid":45082,"size":1195,"wordcount":165,"snippet":"Pinaceae  Genus:
         <span class=\"searchmatch\">Pinus</span>  Subgenus: P. subg. <span class=\"searchmatch\">Pinus</span>  Sectio:
         P. sect. <span class=\"searchmatch\">Pinus</span>  Subsectio: P. subsect. <span
         class=\"searchmatch\">Pinus</span>  Species: <span class=\"searchmatch\">Pinus</span>
-        resinosa  <span class=\"searchmatch\">Pinus</span> resinosa Aiton (1789)","timestamp":"2016-03-13T23:36:45Z"},{"ns":0,"title":"Pinus
+        resinosa   <span class=\"searchmatch\">Pinus</span> resinosa Aiton (1789)","timestamp":"2016-03-13T23:36:45Z"},{"ns":0,"title":"Pinus
         sect. Pinus","pageid":300935,"size":623,"wordcount":68,"snippet":"Pinaceae  Genus:
         <span class=\"searchmatch\">Pinus</span>  Subgenus: P. subg. <span class=\"searchmatch\">Pinus</span>  Sectio:
         P. sect. <span class=\"searchmatch\">Pinus</span>  Subsectiones: P. subsect. Leucodermes –
         P. subsect. <span class=\"searchmatch\">Pinus</span> Species incertae sedis:","timestamp":"2017-03-12T09:22:52Z"},{"ns":0,"title":"Pinus
         gordoniana","pageid":260795,"size":594,"wordcount":61,"snippet":"Pinaceae  Genus:
         <span class=\"searchmatch\">Pinus</span>  Subgenus: P. subg. <span class=\"searchmatch\">Pinus</span>  Sectio:
-        P. sect. Trifoliae  Subsectio: P. subsect. Ponderosae  Species: P. gordoniana  <span
+        P. sect. Trifoliae  Subsectio: P. subsect. Ponderosae  Species: P. gordoniana   <span
         class=\"searchmatch\">Pinus</span> gordoniana Hartw","timestamp":"2016-08-13T11:03:04Z"},{"ns":0,"title":"Pinus
         thunbergii","pageid":73542,"size":999,"wordcount":140,"snippet":"Genus: <span
-        class=\"searchmatch\">Pinus</span>  Subgenus: P. subg. <span class=\"searchmatch\">Pinus</span>  Sectio:
-        P. sect. <span class=\"searchmatch\">Pinus</span>  Subsectio: P. subsect. <span
-        class=\"searchmatch\">Pinus</span>  Species: <span class=\"searchmatch\">Pinus</span>
-        thunbergii  <span class=\"searchmatch\">Pinus</span> thunbergii Parl.  <span
+        class=\"searchmatch\">Pinus</span> Subgenus: P. subg. <span class=\"searchmatch\">Pinus</span>
+        Sectio: P. sect. <span class=\"searchmatch\">Pinus</span> Subsectio: P. subsect. <span
+        class=\"searchmatch\">Pinus</span> Species: <span class=\"searchmatch\">Pinus</span>
+        thunbergii <span class=\"searchmatch\">Pinus</span> thunbergii Parl. <span
         class=\"searchmatch\">Pinus</span> thunbergiana","timestamp":"2017-07-06T23:20:53Z"},{"ns":0,"title":"Pinus
-        sabiniana","pageid":45084,"size":644,"wordcount":80,"snippet":"<span class=\"searchmatch\">Pinus</span>  Subgenus:
-        P. subg. <span class=\"searchmatch\">Pinus</span>  Sectio: P. sect. Trifoliae  Subsectio:
-        P. subsect. Ponderosae  Species: P. sabiniana  <span class=\"searchmatch\">Pinus</span>
-        sabiniana Douglas  <span class=\"searchmatch\">Pinus</span>","timestamp":"2015-10-31T14:41:01Z"},{"ns":0,"title":"Pinus
         subsect. Pinus","pageid":300938,"size":718,"wordcount":94,"snippet":"Familia:
         Pinaceae  Genus: <span class=\"searchmatch\">Pinus</span>  Subgenus: P. subg. <span
         class=\"searchmatch\">Pinus</span>  Sectio: P. sect. <span class=\"searchmatch\">Pinus</span>  Subsectio:
         P. subsect. <span class=\"searchmatch\">Pinus</span>  Species: P. densata –
-        P. densiflora –","timestamp":"2017-03-12T09:24:41Z"}]}}'
-  recorded_at: 2018-05-03 00:23:41 GMT
-  recorded_with: vcr/0.0.8.9536, webmockr/0.2.2.9119, crul/0.5.2
+        P. densiflora –","timestamp":"2017-03-12T09:24:41Z"},{"ns":0,"title":"Pinus
+        sabiniana","pageid":45084,"size":644,"wordcount":80,"snippet":"Genus: <span
+        class=\"searchmatch\">Pinus</span> Subgenus: P. subg. <span class=\"searchmatch\">Pinus</span>
+        Sectio: P. sect. Trifoliae Subsectio: P. subsect. Ponderosae Species: P. sabiniana
+        <span class=\"searchmatch\">Pinus</span> sabiniana Douglas <span class=\"searchmatch\">Pinus</span>
+        sabineana","timestamp":"2015-10-31T14:41:01Z"}]}}'
+  recorded_at: 2018-10-19 19:08:04 GMT
+  recorded_with: vcr/0.2.0, webmockr/0.2.8.9100

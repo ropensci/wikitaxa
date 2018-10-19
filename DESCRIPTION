@@ -4,7 +4,7 @@ Description: 'Taxonomic' information from 'Wikipedia', 'Wikicommons',
     'Wikispecies', and 'Wikidata'. Functions included for getting
     taxonomic information from each of the sources just listed, as
     well performing taxonomic search.
-Version: 0.2.0.9101
+Version: 0.2.1.9210
 License: MIT + file LICENSE
 URL: https://github.com/ropensci/wikitaxa
 BugReports: https://github.com/ropensci/wikitaxa/issues
@@ -29,11 +29,11 @@ Imports:
     jsonlite,
     xml2
 Suggests:
-    roxygen2 (>= 6.0.1),
+    roxygen2 (>= 6.1.0),
     testthat,
     knitr,
     rmarkdown,
-    webmockr (>= 0.2.2.9112),
-    vcr (>= 0.0.8.9538)
-Remotes: ropensci/vcr, ropensci/webmockr   
-RoxygenNote: 6.0.1
+    webmockr (>= 0.2.8),
+    vcr (>= 0.2.0)
+Remotes: ropensci/vcr
+RoxygenNote: 6.1.0

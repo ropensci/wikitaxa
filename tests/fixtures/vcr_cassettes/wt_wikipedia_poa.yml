@@ -6,7 +6,7 @@ http_interactions:
       encoding: ''
       string: ''
     headers:
-      User-Agent: libcurl/7.54.0 r-curl/3.2 crul/0.5.2
+      User-Agent: libcurl/7.54.0 r-curl/3.2 crul/0.6.0
       Accept-Encoding: gzip, deflate
       Accept: application/json, text/xml, application/xml, */*
   response:
@@ -16,73 +16,82 @@ http_interactions:
       explanation: Request fulfilled, document follows
     headers:
       status: HTTP/1.1 200 OK
-      date: Thu, 03 May 2018 00:23:37 GMT
+      date: Fri, 19 Oct 2018 19:08:00 GMT
       content-type: application/json; charset=utf-8
       transfer-encoding: chunked
       connection: keep-alive
-      server: mw1348.eqiad.wmnet
+      server: mw1284.eqiad.wmnet
       x-powered-by: HHVM/3.18.6-dev
-      x-content-type-options: nosniff
-      cache-control: private, must-revalidate, max-age=0
       p3p: CP="This is not a P3P policy! See https://en.wikipedia.org/wiki/Special:CentralAutoLogin/P3P
         for more info."
-      x-frame-options: SAMEORIGIN
-      content-disposition: inline; filename=api-result.json
+      cache-control: private, must-revalidate, max-age=0
       vary: Accept-Encoding,Treat-as-Untrusted,X-Forwarded-Proto,Cookie,Authorization
-      backend-timing: D=42518 t=1525307017274388
+      content-disposition: inline; filename=api-result.json
+      x-content-type-options: nosniff
+      x-frame-options: SAMEORIGIN
+      backend-timing: D=46090 t=1539976079960228
       content-encoding: gzip
-      x-varnish: 452089391, 100042331, 497327921, 235153018
+      x-varnish: 613939057, 1065896221, 951546760, 50948832
       via: 1.1 varnish (Varnish/5.1), 1.1 varnish (Varnish/5.1), 1.1 varnish (Varnish/5.1),
         1.1 varnish (Varnish/5.1)
       accept-ranges: bytes
       age: '0'
-      x-cache: cp1055 pass, cp2007 pass, cp4030 pass, cp4029 pass
+      x-cache: cp1087 pass, cp2023 pass, cp4027 pass, cp4028 pass
       x-cache-status: pass
       strict-transport-security: max-age=106384710; includeSubDomains; preload
-      x-analytics: ns=-1;special=Badtitle;WMF-Last-Access=03-May-2018;WMF-Last-Access-Global=03-May-2018;https=1
+      x-analytics: ns=-1;special=Badtitle;WMF-Last-Access=19-Oct-2018;WMF-Last-Access-Global=19-Oct-2018;https=1
       x-client-ip: 157.130.179.86
     body:
       encoding: UTF-8
-      string: '{"parse":{"title":"Poa annua","pageid":4579575,"revid":832575075,"redirects":[],"text":{"*":"<div
-        class=\"mw-parser-output\"><table class=\"infobox biota\" style=\"text-align:
-        left; width: 200px; font-size: 100%\">\n<tr>\n<th colspan=\"2\" style=\"text-align:
-        center; background-color: rgb(180,250,180)\"><i>Poa annua</i></th>\n</tr>\n<tr>\n<td
-        colspan=\"2\" style=\"text-align: center\"><a href=\"/wiki/File:Poa_annua.jpeg\"
-        class=\"image\"><img alt=\"Poa annua.jpeg\" src=\"//upload.wikimedia.org/wikipedia/commons/thumb/7/7b/Poa_annua.jpeg/220px-Poa_annua.jpeg\"
+      string: '{"parse":{"title":"Poa annua","pageid":4579575,"revid":862397858,"redirects":[],"text":{"*":"<div
+        class=\"mw-parser-output\"><p class=\"mw-empty-elt\">\n</p>\n<table class=\"infobox
+        biota\" style=\"text-align: left; width: 200px; font-size: 100%\">\n\n<tbody><tr>\n<th
+        colspan=\"2\" style=\"text-align: center; background-color: rgb(180,250,180)\"><i>Poa
+        annua</i>\n</th></tr>\n<tr>\n<td colspan=\"2\" style=\"text-align: center\"><a
+        href=\"/wiki/File:Poa_annua.jpeg\" class=\"image\"><img alt=\"Poa annua.jpeg\"
+        src=\"//upload.wikimedia.org/wikipedia/commons/thumb/7/7b/Poa_annua.jpeg/220px-Poa_annua.jpeg\"
         width=\"220\" height=\"165\" srcset=\"//upload.wikimedia.org/wikipedia/commons/thumb/7/7b/Poa_annua.jpeg/330px-Poa_annua.jpeg
         1.5x, //upload.wikimedia.org/wikipedia/commons/thumb/7/7b/Poa_annua.jpeg/440px-Poa_annua.jpeg
-        2x\" data-file-width=\"800\" data-file-height=\"600\" /></a></td>\n</tr>\n<tr>\n<th
+        2x\" data-file-width=\"800\" data-file-height=\"600\" /></a>\n</td></tr>\n\n\n\n\n\n<tr>\n<th
         colspan=\"2\" style=\"min-width:15em; text-align: center; background-color:
         rgb(180,250,180)\"><a href=\"/wiki/Taxonomy_(biology)\" title=\"Taxonomy (biology)\">Scientific
-        classification</a></th>\n</tr>\n<tr>\n<td>Kingdom:</td>\n<td><span class=\"kingdom\"><a
-        href=\"/wiki/Plantae\" class=\"mw-redirect\" title=\"Plantae\">Plantae</a></span></td>\n</tr>\n<tr>\n<td>(unranked):</td>\n<td><span
-        class=\"(unranked)\"><a href=\"/wiki/Angiosperms\" class=\"mw-redirect\" title=\"Angiosperms\">Angiosperms</a></span></td>\n</tr>\n<tr>\n<td>(unranked):</td>\n<td><span
-        class=\"(unranked)\"><a href=\"/wiki/Monocots\" class=\"mw-redirect\" title=\"Monocots\">Monocots</a></span></td>\n</tr>\n<tr>\n<td>(unranked):</td>\n<td><span
-        class=\"(unranked)\"><a href=\"/wiki/Commelinids\" title=\"Commelinids\">Commelinids</a></span></td>\n</tr>\n<tr>\n<td>Order:</td>\n<td><span
-        class=\"order\"><a href=\"/wiki/Poales\" title=\"Poales\">Poales</a></span></td>\n</tr>\n<tr>\n<td>Family:</td>\n<td><span
-        class=\"family\"><a href=\"/wiki/Poaceae\" title=\"Poaceae\">Poaceae</a></span></td>\n</tr>\n<tr>\n<td>Genus:</td>\n<td><span
-        class=\"genus\"><i><a href=\"/wiki/Meadow-grass\" class=\"mw-redirect\" title=\"Meadow-grass\">Poa</a></i></span></td>\n</tr>\n<tr>\n<td>Species:</td>\n<td><span
-        class=\"species\"><i>P.&#160;annua</i></span></td>\n</tr>\n<tr>\n<th colspan=\"2\"
-        style=\"text-align: center; background-color: rgb(180,250,180)\"><a href=\"/wiki/Binomial_nomenclature\"
-        title=\"Binomial nomenclature\">Binomial name</a></th>\n</tr>\n<tr>\n<td colspan=\"2\"
-        style=\"text-align: center\"><b><span class=\"binomial\"><i>Poa annua</i></span></b><br
-        />\n<small><a href=\"/wiki/Carl_Linnaeus\" title=\"Carl Linnaeus\">L.</a></small></td>\n</tr>\n</table>\n<p><i><b>Poa
+        classification</a> <span class=\"plainlinks\" style=\"font-size:smaller; float:right;
+        padding-right:0.4em; margin-left:-3em;\"><a href=\"/wiki/Template:Taxonomy/Poa\"
+        title=\"edit\"><img alt=\"edit\" src=\"//upload.wikimedia.org/wikipedia/commons/7/74/Red_Pencil_Icon.png\"
+        width=\"16\" height=\"16\" data-file-width=\"16\" data-file-height=\"16\"
+        /></a></span>\n</th></tr>\n<tr>\n<td>Kingdom:</td>\n<td><a href=\"/wiki/Plant\"
+        title=\"Plant\">Plantae</a>\n</td></tr>\n<tr>\n<td><i>Clade</i>:</td>\n<td><a
+        href=\"/wiki/Flowering_plant\" title=\"Flowering plant\">Angiosperms</a>\n</td></tr>\n<tr>\n<td><i>Clade</i>:</td>\n<td><a
+        href=\"/wiki/Monocotyledon\" title=\"Monocotyledon\">Monocots</a>\n</td></tr>\n<tr>\n<td><i>Clade</i>:</td>\n<td><a
+        href=\"/wiki/Commelinids\" title=\"Commelinids\">Commelinids</a>\n</td></tr>\n<tr>\n<td>Order:</td>\n<td><a
+        href=\"/wiki/Poales\" title=\"Poales\">Poales</a>\n</td></tr>\n\n<tr>\n<td>Family:</td>\n<td><a
+        href=\"/wiki/Poaceae\" title=\"Poaceae\">Poaceae</a>\n</td></tr>\n\n<tr>\n<td>Subfamily:</td>\n<td><a
+        href=\"/wiki/Pooideae\" title=\"Pooideae\">Pooideae</a>\n</td></tr>\n\n<tr>\n<td>Genus:</td>\n<td><a
+        href=\"/wiki/Poa\" title=\"Poa\"><i>Poa</i></a>\n</td></tr>\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n<tr>\n<td>Species:\n</td>\n<td><span
+        class=\"species\"><i><b>P.&#160;annua</b></i></span>\n</td></tr>\n\n\n\n\n\n\n\n<tr>\n<th
+        colspan=\"2\" style=\"text-align: center; background-color: rgb(180,250,180)\"><a
+        href=\"/wiki/Binomial_nomenclature\" title=\"Binomial nomenclature\">Binomial
+        name</a>\n</th></tr>\n<tr>\n<td colspan=\"2\" style=\"text-align: center\"><b><span
+        class=\"binomial\"><i>Poa annua</i></span></b><br /><div style=\"font-size:
+        85%;\"><a href=\"/wiki/Carl_Linnaeus\" title=\"Carl Linnaeus\">L.</a></div>\n</td></tr>\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n</tbody></table>\n<p><i><b>Poa
         annua</b></i>, or <b>annual meadow grass</b> (known in America more commonly
-        as <b>annual bluegrass</b> or simply <b>poa</b>), is a widespread low-growing
+        as <b>annual bluegrass</b> or simply <b>poa</b>), is a  widespread low-growing
         turfgrass in temperate climates. Though <i>P. annua</i> is commonly considered
         a solely <a href=\"/wiki/Annual_plant\" title=\"Annual plant\">annual plant</a>
         due to its name, <a href=\"/wiki/Perennial\" class=\"mw-redirect\" title=\"Perennial\">perennial</a>
         bio-types do exist. <i>Poa</i> (πόα) is Greek for \"<a href=\"/wiki/Fodder\"
         title=\"Fodder\">fodder</a>\". It is one of the sweetest grasses for green
-        fodder, but less useful than <a href=\"/wiki/Hay\" title=\"Hay\">hay</a>.
+        fodder, but less  useful than <a href=\"/wiki/Hay\" title=\"Hay\">hay</a>.
         This grass may have originated as a <a href=\"/wiki/Hybrid_(biology)\" title=\"Hybrid
         (biology)\">hybrid</a> between <i><a href=\"/w/index.php?title=Poa_supina&amp;action=edit&amp;redlink=1\"
         class=\"new\" title=\"Poa supina (page does not exist)\">Poa supina</a></i>
         and <i><a href=\"/wiki/Poa_infirma\" title=\"Poa infirma\">Poa infirma</a></i>.<sup
-        id=\"cite_ref-1\" class=\"reference\"><a href=\"#cite_note-1\">[1]</a></sup></p>\n<p></p>\n<div
-        id=\"toc\" class=\"toc\">\n<div class=\"toctitle\" lang=\"en\" dir=\"ltr\"
-        xml:lang=\"en\">\n<h2>Contents</h2>\n</div>\n<ul>\n<li class=\"toclevel-1
-        tocsection-1\"><a href=\"#Description\"><span class=\"tocnumber\">1</span>
+        id=\"cite_ref-1\" class=\"reference\"><a href=\"#cite_note-1\">&#91;1&#93;</a></sup>\n</p>\n<div
+        id=\"toc\" class=\"toc\"><input type=\"checkbox\" role=\"button\" id=\"toctogglecheckbox\"
+        class=\"toctogglecheckbox\" style=\"display:none\" /><div class=\"toctitle\"
+        lang=\"en\" dir=\"ltr\"><h2>Contents</h2><span class=\"toctogglespan\"><label
+        class=\"toctogglelabel\" for=\"toctogglecheckbox\"></label></span></div>\n<ul>\n<li
+        class=\"toclevel-1 tocsection-1\"><a href=\"#Description\"><span class=\"tocnumber\">1</span>
         <span class=\"toctext\">Description</span></a></li>\n<li class=\"toclevel-1
         tocsection-2\"><a href=\"#Etymology\"><span class=\"tocnumber\">2</span> <span
         class=\"toctext\">Etymology</span></a></li>\n<li class=\"toclevel-1 tocsection-3\"><a
@@ -91,172 +100,202 @@ http_interactions:
         tocsection-4\"><a href=\"#References\"><span class=\"tocnumber\">4</span>
         <span class=\"toctext\">References</span></a></li>\n<li class=\"toclevel-1
         tocsection-5\"><a href=\"#External_links\"><span class=\"tocnumber\">5</span>
-        <span class=\"toctext\">External links</span></a></li>\n</ul>\n</div>\n<p></p>\n<h2><span
+        <span class=\"toctext\">External links</span></a></li>\n</ul>\n</div>\n\n<h2><span
         class=\"mw-headline\" id=\"Description\">Description</span><span class=\"mw-editsection\"><span
         class=\"mw-editsection-bracket\">[</span><a href=\"/w/index.php?title=Poa_annua&amp;action=edit&amp;section=1\"
         title=\"Edit section: Description\">edit</a><span class=\"mw-editsection-bracket\">]</span></span></h2>\n<p>It
         has a slightly creeping, fibrous, rootstock. The stem grows from 15–25&#160;cm
-        high. It is slightly flattened, due to being folded rather than rolled.</p>\n<p>The
-        <a href=\"/wiki/Panicle\" title=\"Panicle\">panicle</a> is open and triangular
-        shaped, 5 to 7.5&#160;cm long. The <a href=\"/wiki/Spikelet\" class=\"mw-redirect\"
-        title=\"Spikelet\">spikelets</a> are stalked, <a href=\"/wiki/Awn_(botany)\"
-        title=\"Awn (botany)\">awnless</a>, 1 to 2&#160;cm long when flowering, and
-        loosely arranged on delicate paired or spreading branches. Sometimes they
-        are tinged purple.</p>\n<p>The vivid green leaves are short and blunt at the
-        tips, shaped like the <a href=\"/wiki/Prow\" title=\"Prow\">prow</a> of a
-        small canoe. They are soft and drooping. Long sheaths clasp the stem. The
-        leaves are smooth above and below, with finely serrated edges. Occasionally
-        the leaves are serrated transversely.</p>\n<p>The <a href=\"/wiki/Ligule\"
+        (6-10 in.) high. It is slightly flattened, due to being folded rather than
+        rolled.\n</p><p>The <a href=\"/wiki/Panicle\" title=\"Panicle\">panicle</a>
+        is open and triangular shaped, 5 to 7.5&#160;cm (2 to 3 in.) long. The <a
+        href=\"/wiki/Spikelet\" title=\"Spikelet\">spikelets</a> are stalked, <a href=\"/wiki/Awn_(botany)\"
+        title=\"Awn (botany)\">awnless</a>, 1 to 2&#160;cm (3/8 to 3/4 in.) long when
+        flowering, and loosely arranged on delicate paired or spreading branches.  Sometimes
+        they are tinged purple.\n</p><p>The vivid green leaves are short and blunt
+        at the tips, shaped like the <a href=\"/wiki/Prow\" title=\"Prow\">prow</a>
+        of a small canoe.  They are soft and drooping.  Long sheaths clasp the stem.  The
+        leaves are smooth above and below, with finely serrated edges.  Occasionally
+        the leaves are serrated transversely.\n</p><p>The <a href=\"/wiki/Ligule\"
         title=\"Ligule\">ligule</a> is pointed and silvery. Compared this to Common
         Meadowgrass <i><a href=\"/wiki/Poa_pratensis\" title=\"Poa pratensis\">Poa
         pratensis</a></i>, which has a squared ligule, and <i><a href=\"/wiki/Poa_trivialis\"
         title=\"Poa trivialis\">Poa trivialis</a></i>, which has a pointed, but less
-        silvery ligule.</p>\n<p>The leaves are smooth above and below, with finely
-        serrated edges. Occasionally the leaves are serrated transversely.</p>\n<p>It
-        is in flower all year around except for severe winters. The seeds ripen and
-        are deposited 8 months of the year. The plant grows rapidly from seed, flowering
+        silvery ligule.\n</p><p>The leaves are smooth above and below, with finely
+        serrated edges.  Occasionally the leaves are serrated transversely.\n</p><p>It
+        is in flower all year around except for severe winters.  The seeds ripen and
+        are deposited 8 months of the year.  The plant grows rapidly from seed, flowering
         within 6 weeks, seeding and then dying.<sup id=\"cite_ref-2\" class=\"reference\"><a
-        href=\"#cite_note-2\">[2]</a></sup></p>\n<h2><span class=\"mw-headline\" id=\"Etymology\">Etymology</span><span
-        class=\"mw-editsection\"><span class=\"mw-editsection-bracket\">[</span><a
+        href=\"#cite_note-2\">&#91;2&#93;</a></sup>\n</p>\n<h2><span class=\"mw-headline\"
+        id=\"Etymology\">Etymology</span><span class=\"mw-editsection\"><span class=\"mw-editsection-bracket\">[</span><a
         href=\"/w/index.php?title=Poa_annua&amp;action=edit&amp;section=2\" title=\"Edit
         section: Etymology\">edit</a><span class=\"mw-editsection-bracket\">]</span></span></h2>\n<p><i>Poa</i>
         is derived from the <a href=\"/wiki/Greek_language\" title=\"Greek language\">Greek</a>
         name for a type of fodder grass.<sup id=\"cite_ref-gledhill_3-0\" class=\"reference\"><a
-        href=\"#cite_note-gledhill-3\">[3]</a></sup></p>\n<p><i>Annua</i> means ''annual''
-        or ''one year''.<sup id=\"cite_ref-gledhill_3-1\" class=\"reference\"><a href=\"#cite_note-gledhill-3\">[3]</a></sup></p>\n<h2><span
-        class=\"mw-headline\" id=\"Distribution_and_habitat\">Distribution and habitat</span><span
-        class=\"mw-editsection\"><span class=\"mw-editsection-bracket\">[</span><a
-        href=\"/w/index.php?title=Poa_annua&amp;action=edit&amp;section=3\" title=\"Edit
-        section: Distribution and habitat\">edit</a><span class=\"mw-editsection-bracket\">]</span></span></h2>\n<p>It
+        href=\"#cite_note-gledhill-3\">&#91;3&#93;</a></sup>\n</p><p><i>Annua</i>
+        means ''annual'' or ''one year''.<sup id=\"cite_ref-gledhill_3-1\" class=\"reference\"><a
+        href=\"#cite_note-gledhill-3\">&#91;3&#93;</a></sup>\n</p>\n<h2><span class=\"mw-headline\"
+        id=\"Distribution_and_habitat\">Distribution and habitat</span><span class=\"mw-editsection\"><span
+        class=\"mw-editsection-bracket\">[</span><a href=\"/w/index.php?title=Poa_annua&amp;action=edit&amp;section=3\"
+        title=\"Edit section: Distribution and habitat\">edit</a><span class=\"mw-editsection-bracket\">]</span></span></h2>\n<p>It
         is a common <a href=\"/wiki/Weed\" title=\"Weed\">weed</a> of cultivation,
         known in the Americas as annual bluegrass.<sup id=\"cite_ref-4\" class=\"reference\"><a
-        href=\"#cite_note-4\">[4]</a></sup> It occurs as a common constituent of <a
-        href=\"/wiki/Lawn\" title=\"Lawn\">lawns</a>, where it is also often treated
-        as a weed, and grows on waste ground. Many golf <a href=\"/wiki/Putting_green\"
+        href=\"#cite_note-4\">&#91;4&#93;</a></sup> It occurs as a common constituent
+        of <a href=\"/wiki/Lawn\" title=\"Lawn\">lawns</a>, where it is also often
+        treated as a weed, and grows on waste ground. Many golf <a href=\"/wiki/Putting_green\"
         class=\"mw-redirect\" title=\"Putting green\">putting greens</a>, including
         the famously fast <a href=\"/wiki/Oakmont_Country_Club\" title=\"Oakmont Country
         Club\">Oakmont Country Club</a> greens, are annual bluegrass,<sup id=\"cite_ref-5\"
-        class=\"reference\"><a href=\"#cite_note-5\">[5]</a></sup> although many courses
-        have converted to <a href=\"/wiki/Creeping_bentgrass\" class=\"mw-redirect\"
-        title=\"Creeping bentgrass\">creeping bentgrass</a> (<i>Agrostis stolonifera</i>).</p>\n<p>It
+        class=\"reference\"><a href=\"#cite_note-5\">&#91;5&#93;</a></sup> although
+        many courses have converted to <a href=\"/wiki/Creeping_bentgrass\" class=\"mw-redirect\"
+        title=\"Creeping bentgrass\">creeping bentgrass</a> (<i>Agrostis stolonifera</i>).\n</p><p>It
         has appeared on <a href=\"/wiki/King_George_Island_(South_Shetland_Islands)\"
         title=\"King George Island (South Shetland Islands)\">King George Island</a>
         in the <a href=\"/wiki/Antarctic\" title=\"Antarctic\">Antarctic</a> <a href=\"/wiki/South_Shetland_Islands\"
-        title=\"South Shetland Islands\">South Shetland Islands</a> as an <a href=\"/wiki/Invasive_species\"
+        title=\"South Shetland Islands\">South Shetland Islands</a>  as an <a href=\"/wiki/Invasive_species\"
         title=\"Invasive species\">invasive species</a>,<sup id=\"cite_ref-6\" class=\"reference\"><a
-        href=\"#cite_note-6\">[6]</a></sup> as well as on <a href=\"/wiki/Australia\"
+        href=\"#cite_note-6\">&#91;6&#93;</a></sup> as well as on <a href=\"/wiki/Australia\"
         title=\"Australia\">Australia</a>''s <a href=\"/wiki/Subantarctic\" title=\"Subantarctic\">subantarctic</a>
         <a href=\"/wiki/Heard_Island_and_McDonald_Islands\" title=\"Heard Island and
         McDonald Islands\">Heard</a> and <a href=\"/wiki/Macquarie_Island\" title=\"Macquarie
-        Island\">Macquarie Islands</a>.</p>\n<table role=\"presentation\" class=\"mbox-small
+        Island\">Macquarie Islands</a>.\n</p>\n<table role=\"presentation\" class=\"mbox-small
         plainlinks sistersitebox\" style=\"background-color:#f9f9f9;border:1px solid
-        #aaa;color:#000\">\n<tr>\n<td class=\"mbox-image\"><img alt=\"\" src=\"//upload.wikimedia.org/wikipedia/en/thumb/4/4a/Commons-logo.svg/30px-Commons-logo.svg.png\"
+        #aaa;color:#000\">\n<tbody><tr>\n<td class=\"mbox-image\"><img alt=\"\" src=\"//upload.wikimedia.org/wikipedia/en/thumb/4/4a/Commons-logo.svg/30px-Commons-logo.svg.png\"
         width=\"30\" height=\"40\" class=\"noviewer\" srcset=\"//upload.wikimedia.org/wikipedia/en/thumb/4/4a/Commons-logo.svg/45px-Commons-logo.svg.png
         1.5x, //upload.wikimedia.org/wikipedia/en/thumb/4/4a/Commons-logo.svg/59px-Commons-logo.svg.png
         2x\" data-file-width=\"1024\" data-file-height=\"1376\" /></td>\n<td class=\"mbox-text
         plainlist\">Wikimedia Commons has media related to <i><b><a href=\"https://commons.wikimedia.org/wiki/Poa_annua\"
-        class=\"extiw\" title=\"commons:Poa annua\">Poa annua</a></b></i>.</td>\n</tr>\n</table>\n<table
+        class=\"extiw\" title=\"commons:Poa annua\">Poa annua</a></b></i>.</td></tr></tbody></table>\n<table
         role=\"presentation\" class=\"mbox-small plainlinks sistersitebox\" style=\"background-color:#f9f9f9;border:1px
-        solid #aaa;color:#000\">\n<tr>\n<td class=\"mbox-image\"><img alt=\"\" src=\"//upload.wikimedia.org/wikipedia/commons/thumb/d/df/Wikispecies-logo.svg/34px-Wikispecies-logo.svg.png\"
+        solid #aaa;color:#000\">\n<tbody><tr>\n<td class=\"mbox-image\"><img alt=\"\"
+        src=\"//upload.wikimedia.org/wikipedia/commons/thumb/d/df/Wikispecies-logo.svg/34px-Wikispecies-logo.svg.png\"
         width=\"34\" height=\"40\" class=\"noviewer\" srcset=\"//upload.wikimedia.org/wikipedia/commons/thumb/d/df/Wikispecies-logo.svg/51px-Wikispecies-logo.svg.png
         1.5x, //upload.wikimedia.org/wikipedia/commons/thumb/d/df/Wikispecies-logo.svg/68px-Wikispecies-logo.svg.png
         2x\" data-file-width=\"941\" data-file-height=\"1103\" /></td>\n<td class=\"mbox-text
         plainlist\"><a href=\"/wiki/Wikispecies\" title=\"Wikispecies\">Wikispecies</a>
         has information related to <i><b><a href=\"https://species.wikimedia.org/wiki/Poa_annua\"
-        class=\"extiw\" title=\"wikispecies:Poa annua\">Poa annua</a></b></i></td>\n</tr>\n</table>\n<ul
-        class=\"gallery mw-gallery-traditional\">\n<li class=\"gallerybox\" style=\"width:
-        155px\">\n<div style=\"width: 155px\">\n<div class=\"thumb\" style=\"width:
-        150px;\">\n<div style=\"margin:30px auto;\"><a href=\"/wiki/File:Poa_annua.jpg\"
+        class=\"extiw\" title=\"wikispecies:Poa annua\">Poa annua</a></b></i></td></tr></tbody></table>\n<ul
+        class=\"gallery mw-gallery-traditional\">\n\t\t<li class=\"gallerybox\" style=\"width:
+        155px\"><div style=\"width: 155px\">\n\t\t\t<div class=\"thumb\" style=\"width:
+        150px;\"><div style=\"margin:30px auto;\"><a href=\"/wiki/File:Poa_annua.jpg\"
         class=\"image\"><img alt=\"\" src=\"//upload.wikimedia.org/wikipedia/commons/thumb/7/77/Poa_annua.jpg/120px-Poa_annua.jpg\"
         width=\"120\" height=\"90\" srcset=\"//upload.wikimedia.org/wikipedia/commons/thumb/7/77/Poa_annua.jpg/180px-Poa_annua.jpg
         1.5x, //upload.wikimedia.org/wikipedia/commons/thumb/7/77/Poa_annua.jpg/240px-Poa_annua.jpg
-        2x\" data-file-width=\"1477\" data-file-height=\"1108\" /></a></div>\n</div>\n<div
-        class=\"gallerytext\">\n<p>Habit</p>\n</div>\n</div>\n</li>\n<li class=\"gallerybox\"
-        style=\"width: 155px\">\n<div style=\"width: 155px\">\n<div class=\"thumb\"
-        style=\"width: 150px;\">\n<div style=\"margin:16.5px auto;\"><a href=\"/wiki/File:Straatgras_tongetje_(Poa_annua_ligula).jpg\"
-        class=\"image\"><img alt=\"\" src=\"//upload.wikimedia.org/wikipedia/commons/thumb/3/3b/Straatgras_tongetje_%28Poa_annua_ligula%29.jpg/120px-Straatgras_tongetje_%28Poa_annua_ligula%29.jpg\"
+        2x\" data-file-width=\"1477\" data-file-height=\"1108\" /></a></div></div>\n\t\t\t<div
+        class=\"gallerytext\">\n<p>Habit\n</p>\n\t\t\t</div>\n\t\t</div></li>\n\t\t<li
+        class=\"gallerybox\" style=\"width: 155px\"><div style=\"width: 155px\">\n\t\t\t<div
+        class=\"thumb\" style=\"width: 150px;\"><div style=\"margin:16.5px auto;\"><a
+        href=\"/wiki/File:Straatgras_tongetje_(Poa_annua_ligula).jpg\" class=\"image\"><img
+        alt=\"\" src=\"//upload.wikimedia.org/wikipedia/commons/thumb/3/3b/Straatgras_tongetje_%28Poa_annua_ligula%29.jpg/120px-Straatgras_tongetje_%28Poa_annua_ligula%29.jpg\"
         width=\"120\" height=\"117\" srcset=\"//upload.wikimedia.org/wikipedia/commons/thumb/3/3b/Straatgras_tongetje_%28Poa_annua_ligula%29.jpg/180px-Straatgras_tongetje_%28Poa_annua_ligula%29.jpg
         1.5x, //upload.wikimedia.org/wikipedia/commons/thumb/3/3b/Straatgras_tongetje_%28Poa_annua_ligula%29.jpg/240px-Straatgras_tongetje_%28Poa_annua_ligula%29.jpg
-        2x\" data-file-width=\"967\" data-file-height=\"946\" /></a></div>\n</div>\n<div
-        class=\"gallerytext\">\n<p>Ligule is silvery and pointed.</p>\n</div>\n</div>\n</li>\n<li
-        class=\"gallerybox\" style=\"width: 155px\">\n<div style=\"width: 155px\">\n<div
-        class=\"thumb\" style=\"width: 150px;\">\n<div style=\"margin:35px auto;\"><a
+        2x\" data-file-width=\"967\" data-file-height=\"946\" /></a></div></div>\n\t\t\t<div
+        class=\"gallerytext\">\n<p>Ligule is silvery and pointed.\n</p>\n\t\t\t</div>\n\t\t</div></li>\n\t\t<li
+        class=\"gallerybox\" style=\"width: 155px\"><div style=\"width: 155px\">\n\t\t\t<div
+        class=\"thumb\" style=\"width: 150px;\"><div style=\"margin:35px auto;\"><a
         href=\"/wiki/File:Poa.annua.jpg\" class=\"image\"><img alt=\"\" src=\"//upload.wikimedia.org/wikipedia/commons/thumb/4/4f/Poa.annua.jpg/120px-Poa.annua.jpg\"
         width=\"120\" height=\"80\" srcset=\"//upload.wikimedia.org/wikipedia/commons/thumb/4/4f/Poa.annua.jpg/180px-Poa.annua.jpg
         1.5x, //upload.wikimedia.org/wikipedia/commons/thumb/4/4f/Poa.annua.jpg/240px-Poa.annua.jpg
-        2x\" data-file-width=\"640\" data-file-height=\"425\" /></a></div>\n</div>\n<div
-        class=\"gallerytext\">\n<p>the panicle is open and triangular shaped</p>\n</div>\n</div>\n</li>\n<li
-        class=\"gallerybox\" style=\"width: 155px\">\n<div style=\"width: 155px\">\n<div
-        class=\"thumb\" style=\"width: 150px;\">\n<div style=\"margin:35px auto;\"><a
-        href=\"/wiki/File:Poa.annua.2.jpg\" class=\"image\"><img alt=\"Poa.annua.2.jpg\"
-        src=\"//upload.wikimedia.org/wikipedia/commons/thumb/7/78/Poa.annua.2.jpg/120px-Poa.annua.2.jpg\"
+        2x\" data-file-width=\"640\" data-file-height=\"425\" /></a></div></div>\n\t\t\t<div
+        class=\"gallerytext\">\n<p>The panicle is open and triangular shaped\n</p>\n\t\t\t</div>\n\t\t</div></li>\n\t\t<li
+        class=\"gallerybox\" style=\"width: 155px\"><div style=\"width: 155px\">\n\t\t\t<div
+        class=\"thumb\" style=\"width: 150px;\"><div style=\"margin:35px auto;\"><a
+        href=\"/wiki/File:Poa.annua.2.jpg\" class=\"image\"><img alt=\"\" src=\"//upload.wikimedia.org/wikipedia/commons/thumb/7/78/Poa.annua.2.jpg/120px-Poa.annua.2.jpg\"
         width=\"120\" height=\"80\" srcset=\"//upload.wikimedia.org/wikipedia/commons/thumb/7/78/Poa.annua.2.jpg/180px-Poa.annua.2.jpg
         1.5x, //upload.wikimedia.org/wikipedia/commons/thumb/7/78/Poa.annua.2.jpg/240px-Poa.annua.2.jpg
-        2x\" data-file-width=\"640\" data-file-height=\"426\" /></a></div>\n</div>\n<div
-        class=\"gallerytext\"></div>\n</div>\n</li>\n</ul>\n<h2><span class=\"mw-headline\"
+        2x\" data-file-width=\"640\" data-file-height=\"426\" /></a></div></div>\n\t\t\t<div
+        class=\"gallerytext\">\n<p>Flowers\n</p>\n\t\t\t</div>\n\t\t</div></li>\n\t\t<li
+        class=\"gallerybox\" style=\"width: 155px\"><div style=\"width: 155px\">\n\t\t\t<div
+        class=\"thumb\" style=\"width: 150px;\"><div style=\"margin:15px auto;\"><a
+        href=\"/wiki/File:Poa_annua_on_a_footpath._24_Oktoberplein,_Utrecht,_The_Netherlands,_May_20,_2018.jpg\"
+        class=\"image\"><img alt=\"\" src=\"//upload.wikimedia.org/wikipedia/commons/thumb/2/23/Poa_annua_on_a_footpath._24_Oktoberplein%2C_Utrecht%2C_The_Netherlands%2C_May_20%2C_2018.jpg/90px-Poa_annua_on_a_footpath._24_Oktoberplein%2C_Utrecht%2C_The_Netherlands%2C_May_20%2C_2018.jpg\"
+        width=\"90\" height=\"120\" srcset=\"//upload.wikimedia.org/wikipedia/commons/thumb/2/23/Poa_annua_on_a_footpath._24_Oktoberplein%2C_Utrecht%2C_The_Netherlands%2C_May_20%2C_2018.jpg/135px-Poa_annua_on_a_footpath._24_Oktoberplein%2C_Utrecht%2C_The_Netherlands%2C_May_20%2C_2018.jpg
+        1.5x, //upload.wikimedia.org/wikipedia/commons/thumb/2/23/Poa_annua_on_a_footpath._24_Oktoberplein%2C_Utrecht%2C_The_Netherlands%2C_May_20%2C_2018.jpg/180px-Poa_annua_on_a_footpath._24_Oktoberplein%2C_Utrecht%2C_The_Netherlands%2C_May_20%2C_2018.jpg
+        2x\" data-file-width=\"1704\" data-file-height=\"2272\" /></a></div></div>\n\t\t\t<div
+        class=\"gallerytext\">\n<p>Stubborn clump of <i>Poa annua</i> on footpath
+        stones\n</p>\n\t\t\t</div>\n\t\t</div></li>\n</ul>\n<h2><span class=\"mw-headline\"
         id=\"References\">References</span><span class=\"mw-editsection\"><span class=\"mw-editsection-bracket\">[</span><a
         href=\"/w/index.php?title=Poa_annua&amp;action=edit&amp;section=4\" title=\"Edit
         section: References\">edit</a><span class=\"mw-editsection-bracket\">]</span></span></h2>\n<div
-        class=\"reflist\" style=\"list-style-type: decimal;\">\n<div class=\"mw-references-wrap\">\n<ol
+        class=\"reflist\" style=\"list-style-type: decimal;\">\n<div class=\"mw-references-wrap\"><ol
         class=\"references\">\n<li id=\"cite_note-1\"><span class=\"mw-cite-backlink\"><b><a
         href=\"#cite_ref-1\">^</a></b></span> <span class=\"reference-text\">Collins
         pocket guide Grasses, Sedges, Rushes and Ferns. Fitter.R, Fitter.A, Farrer.A.
-        1995. page 54</span></li>\n<li id=\"cite_note-2\"><span class=\"mw-cite-backlink\"><b><a
+        1995. page 54</span>\n</li>\n<li id=\"cite_note-2\"><span class=\"mw-cite-backlink\"><b><a
         href=\"#cite_ref-2\">^</a></b></span> <span class=\"reference-text\"><a rel=\"nofollow\"
         class=\"external text\" href=\"http://www.bsbi.org.uk/identification.html\">BSBI
         Description</a> <a rel=\"nofollow\" class=\"external text\" href=\"https://web.archive.org/web/20110717004923/http://www.bsbi.org.uk/identification.html\">Archived</a>
         2011-07-17 at the <a href=\"/wiki/Wayback_Machine\" title=\"Wayback Machine\">Wayback
-        Machine</a>. retrieved 10 December 2010.</span></li>\n<li id=\"cite_note-gledhill-3\"><span
+        Machine</a>. retrieved 10 December 2010.</span>\n</li>\n<li id=\"cite_note-gledhill-3\"><span
         class=\"mw-cite-backlink\">^ <a href=\"#cite_ref-gledhill_3-0\"><sup><i><b>a</b></i></sup></a>
         <a href=\"#cite_ref-gledhill_3-1\"><sup><i><b>b</b></i></sup></a></span> <span
         class=\"reference-text\">Gledhill, David (2008). \"The Names of Plants\".
-        Cambridge University Press. <a href=\"/wiki/International_Standard_Book_Number\"
-        title=\"International Standard Book Number\">ISBN</a>&#160;<a href=\"/wiki/Special:BookSources/9780521866453\"
+        Cambridge University Press. <style data-mw-deduplicate=\"TemplateStyles:r861714446\">.mw-parser-output
+        cite.citation{font-style:inherit}.mw-parser-output q{quotes:\"\\\"\"\"\\\"\"\"''\"\"''\"}.mw-parser-output
+        code.cs1-code{color:inherit;background:inherit;border:inherit;padding:inherit}.mw-parser-output
+        .cs1-lock-free a{background:url(\"//upload.wikimedia.org/wikipedia/commons/thumb/6/65/Lock-green.svg/9px-Lock-green.svg.png\")no-repeat;background-position:right
+        .1em center}.mw-parser-output .cs1-lock-limited a,.mw-parser-output .cs1-lock-registration
+        a{background:url(\"//upload.wikimedia.org/wikipedia/commons/thumb/d/d6/Lock-gray-alt-2.svg/9px-Lock-gray-alt-2.svg.png\")no-repeat;background-position:right
+        .1em center}.mw-parser-output .cs1-lock-subscription a{background:url(\"//upload.wikimedia.org/wikipedia/commons/thumb/a/aa/Lock-red-alt-2.svg/9px-Lock-red-alt-2.svg.png\")no-repeat;background-position:right
+        .1em center}.mw-parser-output .cs1-subscription,.mw-parser-output .cs1-registration{color:#555}.mw-parser-output
+        .cs1-subscription span,.mw-parser-output .cs1-registration span{border-bottom:1px
+        dotted;cursor:help}.mw-parser-output .cs1-hidden-error{display:none;font-size:100%}.mw-parser-output
+        .cs1-visible-error{font-size:100%}.mw-parser-output .cs1-subscription,.mw-parser-output
+        .cs1-registration,.mw-parser-output .cs1-format{font-size:95%}.mw-parser-output
+        .cs1-kern-left,.mw-parser-output .cs1-kern-wl-left{padding-left:0.2em}.mw-parser-output
+        .cs1-kern-right,.mw-parser-output .cs1-kern-wl-right{padding-right:0.2em}</style><a
+        href=\"/wiki/International_Standard_Book_Number\" title=\"International Standard
+        Book Number\">ISBN</a>&#160;<a href=\"/wiki/Special:BookSources/9780521866453\"
         title=\"Special:BookSources/9780521866453\">9780521866453</a> (hardback),
-        <a href=\"/wiki/International_Standard_Book_Number\" title=\"International
-        Standard Book Number\">ISBN</a>&#160;<a href=\"/wiki/Special:BookSources/9780521685535\"
-        title=\"Special:BookSources/9780521685535\">9780521685535</a> (paperback).
-        pp 50, 308</span></li>\n<li id=\"cite_note-4\"><span class=\"mw-cite-backlink\"><b><a
+        <link rel=\"mw-deduplicated-inline-style\" href=\"mw-data:TemplateStyles:r861714446\"/><a
+        href=\"/wiki/International_Standard_Book_Number\" title=\"International Standard
+        Book Number\">ISBN</a>&#160;<a href=\"/wiki/Special:BookSources/9780521685535\"
+        title=\"Special:BookSources/9780521685535\">9780521685535</a> (paperback).  pp
+        50, 308</span>\n</li>\n<li id=\"cite_note-4\"><span class=\"mw-cite-backlink\"><b><a
         href=\"#cite_ref-4\">^</a></b></span> <span class=\"reference-text\"><cite
         class=\"citation web\">Ohlendorf, B.; D. W. Cudney; C. L. Elmore; V. A. Gibeault
         (April 2003). <a rel=\"nofollow\" class=\"external text\" href=\"http://www.ipm.ucdavis.edu/PMG/PESTNOTES/pn7464.html\">\"Annual
         Bluegrass Management Guidelines--UC IPM\"</a>. University of California<span
         class=\"reference-accessdate\">. Retrieved <span class=\"nowrap\">2007-09-08</span></span>.</cite><span
         title=\"ctx_ver=Z39.88-2004&amp;rft_val_fmt=info%3Aofi%2Ffmt%3Akev%3Amtx%3Abook&amp;rft.genre=unknown&amp;rft.btitle=Annual+Bluegrass+Management+Guidelines--UC+IPM&amp;rft.pub=University+of+California&amp;rft.date=2003-04&amp;rft.aulast=Ohlendorf&amp;rft.aufirst=B.&amp;rft.au=D.+W.+Cudney&amp;rft.au=C.+L.+Elmore&amp;rft.au=V.+A.+Gibeault&amp;rft_id=http%3A%2F%2Fwww.ipm.ucdavis.edu%2FPMG%2FPESTNOTES%2Fpn7464.html&amp;rfr_id=info%3Asid%2Fen.wikipedia.org%3APoa+annua\"
-        class=\"Z3988\"><span style=\"display:none;\">&#160;</span></span></span></li>\n<li
+        class=\"Z3988\"></span><link rel=\"mw-deduplicated-inline-style\" href=\"mw-data:TemplateStyles:r861714446\"/></span>\n</li>\n<li
         id=\"cite_note-5\"><span class=\"mw-cite-backlink\"><b><a href=\"#cite_ref-5\">^</a></b></span>
         <span class=\"reference-text\"><cite class=\"citation news\">Dvorchak, Robert
         (2007-06-13). <a rel=\"nofollow\" class=\"external text\" href=\"http://www.post-gazette.com/pg/07164/793591-382.stm\">\"Oakmont-inspired
         Stimpmeter allows USGA to accurately measure speed, consistency of putting
         surfaces\"</a>. <i>Pittsburgh Post-Gazette</i>.</cite><span title=\"ctx_ver=Z39.88-2004&amp;rft_val_fmt=info%3Aofi%2Ffmt%3Akev%3Amtx%3Ajournal&amp;rft.genre=article&amp;rft.jtitle=Pittsburgh+Post-Gazette&amp;rft.atitle=Oakmont-inspired+Stimpmeter+allows+USGA+to+accurately+measure+speed%2C+consistency+of+putting+surfaces&amp;rft.date=2007-06-13&amp;rft.aulast=Dvorchak&amp;rft.aufirst=Robert&amp;rft_id=http%3A%2F%2Fwww.post-gazette.com%2Fpg%2F07164%2F793591-382.stm&amp;rfr_id=info%3Asid%2Fen.wikipedia.org%3APoa+annua\"
-        class=\"Z3988\"><span style=\"display:none;\">&#160;</span></span></span></li>\n<li
+        class=\"Z3988\"></span><link rel=\"mw-deduplicated-inline-style\" href=\"mw-data:TemplateStyles:r861714446\"/></span>\n</li>\n<li
         id=\"cite_note-6\"><span class=\"mw-cite-backlink\"><b><a href=\"#cite_ref-6\">^</a></b></span>
         <span class=\"reference-text\"><a rel=\"nofollow\" class=\"external text\"
         href=\"https://www.economist.com/blogs/babbage/2012/03/antarctic-ecology\">Antarctic
         ecology: Polar invaders</a>, <a href=\"/wiki/The_Economist\" title=\"The Economist\">The
-        Economist</a>, Mar 6th 2012</span></li>\n</ol>\n</div>\n</div>\n<h2><span
-        class=\"mw-headline\" id=\"External_links\">External links</span><span class=\"mw-editsection\"><span
+        Economist</a>, Mar 6th 2012</span>\n</li>\n</ol></div></div>\n<h2><span class=\"mw-headline\"
+        id=\"External_links\">External links</span><span class=\"mw-editsection\"><span
         class=\"mw-editsection-bracket\">[</span><a href=\"/w/index.php?title=Poa_annua&amp;action=edit&amp;section=5\"
-        title=\"Edit section: External links\">edit</a><span class=\"mw-editsection-bracket\">]</span></span></h2>\n<ul>\n<li><a
+        title=\"Edit section: External links\">edit</a><span class=\"mw-editsection-bracket\">]</span></span></h2>\n<ul><li><a
         rel=\"nofollow\" class=\"external text\" href=\"http://poa.ipk-gatersleben.de\">European
         <i>Poa</i> Database</a></li>\n<li>The Observers Book of Grasses, Sedges and
-        Rushes. Frances Rose. pages 38–39</li>\n<li><a rel=\"nofollow\" class=\"external
+        Rushes. Frances Rose.  pages 38–39</li>\n<li><a rel=\"nofollow\" class=\"external
         text\" href=\"http://www.kew.org/data/grasses-db/\">Kew gardens grass database</a></li>\n<li>Weeds
         friend or foe? Sally Roth. pages 86–87</li>\n<li><a rel=\"nofollow\" class=\"external
         text\" href=\"https://web.archive.org/web/20110717004923/http://www.bsbi.org.uk/identification.html\">BSBI
-        Description</a></li>\n</ul>\n<div role=\"navigation\" class=\"navbox\" aria-label=\"Navbox\"
-        style=\"padding:3px\">\n<table class=\"nowraplinks hlist navbox-inner\" style=\"border-spacing:0;background:transparent;color:inherit\">\n<tr>\n<th
-        scope=\"row\" class=\"navbox-group\" style=\"width:1%;text-align: left;\"><a
-        href=\"/wiki/Help:Taxon_identifiers\" title=\"Help:Taxon identifiers\">Taxon
-        identifiers</a></th>\n<td class=\"navbox-list navbox-odd\" style=\"text-align:left;border-left-width:2px;border-left-style:solid;width:100%;padding:0px\">\n<div
-        style=\"padding:0em 0.25em\">\n<ul>\n<li><span style=\"white-space:nowrap;\"><a
-        href=\"/wiki/Wikidata\" title=\"Wikidata\">Wd</a>: <span class=\"uid\"><span
+        Description</a></li></ul>\n<div role=\"navigation\" class=\"navbox\" aria-labelledby=\"Taxon_identifiers\"
+        style=\"padding:3px\"><table class=\"nowraplinks hlist navbox-inner\" style=\"border-spacing:0;background:transparent;color:inherit\"><tbody><tr><th
+        id=\"Taxon_identifiers\" scope=\"row\" class=\"navbox-group\" style=\"width:1%;text-align:
+        left;\"><a href=\"/wiki/Help:Taxon_identifiers\" title=\"Help:Taxon identifiers\">Taxon
+        identifiers</a></th><td class=\"navbox-list navbox-odd\" style=\"text-align:left;border-left-width:2px;border-left-style:solid;width:100%;padding:0px\"><div
+        style=\"padding:0em 0.25em\">\n<ul><li><span style=\"white-space:nowrap;\"><a
+        href=\"/wiki/Wikidata\" title=\"Wikidata\">Wikidata</a>: <span class=\"uid\"><span
         class=\"external\"><a href=\"https://www.wikidata.org/wiki/Q157571\" class=\"extiw\"
         title=\"wikidata:Q157571\">Q157571</a></span></span></span></li>\n<li><span
+        style=\"white-space:nowrap;\"><a href=\"/wiki/Wikispecies\" title=\"Wikispecies\">Wikispecies</a>:
+        <span class=\"uid\"><span class=\"external\"><a href=\"https://species.wikimedia.org/wiki/Poa_annua\"
+        class=\"extiw\" title=\"wikispecies:Poa annua\">Poa annua</a></span></span></span></li>\n<li><span
         style=\"white-space:nowrap;\">APDB: <span class=\"uid\"><a rel=\"nofollow\"
         class=\"external text\" href=\"http://www.ville-ge.ch/musinfo/bd/cjb/africa/details.php?langue=an&amp;id=51929\">51929</a></span></span></li>\n<li><span
         style=\"white-space:nowrap;\"><a href=\"/wiki/ARKive\" title=\"ARKive\">ARKive</a>:
         <span class=\"uid\"><a rel=\"nofollow\" class=\"external text\" href=\"http://www.arkive.org/annual-meadow-grass/poa-annua/\">poa-annua</a></span></span></li>\n<li><span
+        style=\"white-space:nowrap;\">BioLib: <span class=\"uid\"><a rel=\"nofollow\"
+        class=\"external text\" href=\"https://www.biolib.cz/en/taxon/id42418\">42418</a></span></span></li>\n<li><span
         style=\"white-space:nowrap;\">Calflora: <span class=\"uid\"><a rel=\"nofollow\"
         class=\"external text\" href=\"http://www.calflora.org/cgi-bin/species_query.cgi?where-calrecnum=6658\">6658</a></span></span></li>\n<li><span
         style=\"white-space:nowrap;\"><a href=\"/wiki/Encyclopedia_of_Life\" title=\"Encyclopedia
@@ -282,12 +321,17 @@ http_interactions:
         style=\"white-space:nowrap;\"><a href=\"/wiki/International_Plant_Names_Index\"
         title=\"International Plant Names Index\">IPNI</a>: <span class=\"uid\"><a
         rel=\"nofollow\" class=\"external text\" href=\"http://www.ipni.org/ipni/idPlantNameSearch.do?id=320035-2\">320035-2</a></span></span></li>\n<li><span
+        style=\"white-space:nowrap;\">IRMNG: <span class=\"uid\"><a rel=\"nofollow\"
+        class=\"external text\" href=\"http://www.irmng.org/aphia.php?p=taxdetails&amp;id=10589082\">10589082</a></span></span></li>\n<li><span
         style=\"white-space:nowrap;\"><a href=\"/wiki/Integrated_Taxonomic_Information_System\"
         title=\"Integrated Taxonomic Information System\">ITIS</a>: <span class=\"uid\"><a
         rel=\"nofollow\" class=\"external text\" href=\"https://www.itis.gov/servlet/SingleRpt/SingleRpt?search_topic=TSN&amp;search_value=41107\">41107</a></span></span></li>\n<li><span
         style=\"white-space:nowrap;\"><a href=\"/wiki/IUCN_Red_List\" title=\"IUCN
         Red List\">IUCN</a>: <span class=\"uid\"><a rel=\"nofollow\" class=\"external
-        text\" href=\"http://www.iucnredlist.org/details/168729/0\">168729</a></span></span></li>\n<li><span
+        text\" href=\"http://oldredlist.iucnredlist.org/details/168729/0\">168729</a></span></span></li>\n<li><span
+        style=\"white-space:nowrap;\"><a href=\"/wiki/National_Biodiversity_Network\"
+        title=\"National Biodiversity Network\">NBN</a>: <span class=\"uid\"><a rel=\"nofollow\"
+        class=\"external text\" href=\"https://data.nbn.org.uk/Taxa/NBNSYS0000002544\">NBNSYS0000002544</a></span></span></li>\n<li><span
         style=\"white-space:nowrap;\"><a href=\"/wiki/National_Center_for_Biotechnology_Information\"
         title=\"National Center for Biotechnology Information\">NCBI</a>: <span class=\"uid\"><a
         rel=\"nofollow\" class=\"external text\" href=\"https://www.ncbi.nlm.nih.gov/Taxonomy/Browser/wwwtax.cgi?mode=Info&amp;id=93036\">93036</a></span></span></li>\n<li><span
@@ -314,22 +358,24 @@ http_interactions:
         class=\"external text\" href=\"http://data.canadensys.net/vascan/taxon/7844\">7844</a></span></span></li>\n<li><span
         style=\"white-space:nowrap;\"><a href=\"/wiki/World_Checklist_of_Selected_Plant_Families\"
         title=\"World Checklist of Selected Plant Families\">WCSP</a>: <span class=\"uid\"><a
-        rel=\"nofollow\" class=\"external text\" href=\"http://wcsp.science.kew.org/namedetail.do?name_id=435194\">435194</a></span></span></li>\n</ul>\n</div>\n</td>\n</tr>\n</table>\n</div>\n\n\n<!--
-        \nNewPP limit report\nParsed by mw1333\nCached time: 20180430213419\nCache
-        expiry: 1900800\nDynamic content: false\nCPU time usage: 0.384 seconds\nReal
-        time usage: 0.524 seconds\nPreprocessor visited node count: 4010/1000000\nPreprocessor
-        generated node count: 0/1500000\nPost‐expand include size: 26345/2097152 bytes\nTemplate
-        argument size: 3056/2097152 bytes\nHighest expansion depth: 24/40\nExpensive
-        parser function count: 24/500\nUnstrip recursion depth: 0/20\nUnstrip post‐expand
-        size: 7259/5000000 bytes\nLua time usage: 0.207/10.000 seconds\nLua memory
-        usage: 4.68 MB/50 MB\n-->\n<!--\nTransclusion expansion time report (%,ms,calls,template)\n100.00%  482.965      1
-        -total\n 35.33%  170.647      1 Template:Taxobox\n 32.82%  158.520      1
-        Template:Taxonbar\n 32.25%  155.749      1 Template:Taxobox/core\n 21.03%  101.572      1
-        Template:Reflist\n 16.68%   80.569     14 Template:Taxobox_colour\n 15.02%   72.536     14
-        Template:Delink\n 10.00%   48.274      8 Template:Taxonomy\n  7.74%   37.379      1
-        Template:Cite_web\n  7.00%   33.813      1 Template:If_empty\n-->\n</div>\n<!--
-        Saved in parser cache with key enwiki:pcache:idhash:4579575-0!canonical and
-        timestamp 20180430213418 and revision id 832575075\n -->\n"},"langlinks":[{"lang":"ar","url":"https://ar.wikipedia.org/wiki/%D9%82%D8%A8%D8%A3_%D8%AD%D9%88%D9%84%D9%8A","langname":"Arabic","autonym":"العربية","*":"قبأ
+        rel=\"nofollow\" class=\"external text\" href=\"http://wcsp.science.kew.org/namedetail.do?name_id=435194\">435194</a></span></span></li>\n<li><span
+        style=\"white-space:nowrap;\">WOI: <span class=\"uid\"><a rel=\"nofollow\"
+        class=\"external text\" href=\"http://www.wildflowers.co.il/english/plant.asp?ID=2228\">2228</a></span></span></li></ul>\n</div></td></tr></tbody></table></div>\n\n<!--
+        \nNewPP limit report\nParsed by mw1254\nCached time: 20181019011921\nCache
+        expiry: 1900800\nDynamic content: false\nCPU time usage: 0.604 seconds\nReal
+        time usage: 0.754 seconds\nPreprocessor visited node count: 6057/1000000\nPreprocessor
+        generated node count: 0/1500000\nPost‐expand include size: 30985/2097152 bytes\nTemplate
+        argument size: 5133/2097152 bytes\nHighest expansion depth: 19/40\nExpensive
+        parser function count: 28/500\nUnstrip recursion depth: 1/20\nUnstrip post‐expand
+        size: 14765/5000000 bytes\nNumber of Wikibase entities loaded: 29/400\nLua
+        time usage: 0.400/10.000 seconds\nLua memory usage: 4.73 MB/50 MB\n-->\n<!--\nTransclusion
+        expansion time report (%,ms,calls,template)\n100.00%  692.582      1 -total\n
+        48.45%  335.561      1 Template:Speciesbox\n 47.14%  326.516      1 Template:Taxobox/core\n
+        28.93%  200.377      1 Template:Taxonbar\n 22.10%  153.088      1 Template:Taxobox/taxonomy\n
+        17.67%  122.384      1 Template:Reflist\n 12.63%   87.465     72 Template:Taxon_info\n  7.90%   54.725      2
+        Template:ISBN\n  7.47%   51.742      8 Template:Taxon_link\n  5.29%   36.660      1
+        Template:Cite_web\n-->\n\n<!-- Saved in parser cache with key enwiki:pcache:idhash:4579575-0!canonical
+        and timestamp 20181019011920 and revision id 862397858\n -->\n</div>"},"langlinks":[{"lang":"ar","url":"https://ar.wikipedia.org/wiki/%D9%82%D8%A8%D8%A3_%D8%AD%D9%88%D9%84%D9%8A","langname":"Arabic","autonym":"العربية","*":"قبأ
         حولي"},{"lang":"ca","url":"https://ca.wikipedia.org/wiki/P%C3%A8l_de_bou","langname":"Catalan","autonym":"català","*":"Pèl
         de bou"},{"lang":"ceb","url":"https://ceb.wikipedia.org/wiki/Poa_annua","langname":"Cebuano","autonym":"Cebuano","*":"Poa
         annua"},{"lang":"cs","url":"https://cs.wikipedia.org/wiki/Lipnice_ro%C4%8Dn%C3%AD","langname":"Czech","autonym":"čeština","*":"Lipnice
@@ -341,7 +387,8 @@ http_interactions:
         annua"},{"lang":"fr","url":"https://fr.wikipedia.org/wiki/P%C3%A2turin_annuel","langname":"French","autonym":"français","*":"Pâturin
         annuel"},{"lang":"ga","url":"https://ga.wikipedia.org/wiki/Cuise_bliant%C3%BAil","langname":"Irish","autonym":"Gaeilge","*":"Cuise
         bliantúil"},{"lang":"hsb","url":"https://hsb.wikipedia.org/wiki/M%C3%B3li%C4%8Dka_lipnica","langname":"Upper
-        Sorbian","autonym":"hornjoserbsce","*":"Mólička lipnica"},{"lang":"is","url":"https://is.wikipedia.org/wiki/Varpasveifgras","langname":"Icelandic","autonym":"íslenska","*":"Varpasveifgras"},{"lang":"it","url":"https://it.wikipedia.org/wiki/Poa_annua","langname":"Italian","autonym":"italiano","*":"Poa
+        Sorbian","autonym":"hornjoserbsce","*":"Mólička lipnica"},{"lang":"hr","url":"https://hr.wikipedia.org/wiki/Jednogodi%C5%A1nja_vlasnja%C4%8Da","langname":"Croatian","autonym":"hrvatski","*":"Jednogodišnja
+        vlasnjača"},{"lang":"is","url":"https://is.wikipedia.org/wiki/Varpasveifgras","langname":"Icelandic","autonym":"íslenska","*":"Varpasveifgras"},{"lang":"it","url":"https://it.wikipedia.org/wiki/Poa_annua","langname":"Italian","autonym":"italiano","*":"Poa
         annua"},{"lang":"lt","url":"https://lt.wikipedia.org/wiki/Vienamet%C4%97_migl%C4%97","langname":"Lithuanian","autonym":"lietuvių","*":"Vienametė
         miglė"},{"lang":"nl","url":"https://nl.wikipedia.org/wiki/Straatgras","langname":"Dutch","autonym":"Nederlands","*":"Straatgras"},{"lang":"ja","url":"https://ja.wikipedia.org/wiki/%E3%82%B9%E3%82%BA%E3%83%A1%E3%83%8E%E3%82%AB%E3%82%BF%E3%83%93%E3%83%A9","langname":"Japanese","autonym":"日本語","*":"スズメノカタビラ"},{"lang":"no","url":"https://no.wikipedia.org/wiki/Tunrapp","langname":"Norwegian","autonym":"norsk","*":"Tunrapp"},{"lang":"pl","url":"https://pl.wikipedia.org/wiki/Wiechlina_roczna","langname":"Polish","autonym":"polski","*":"Wiechlina
         roczna"},{"lang":"pt","url":"https://pt.wikipedia.org/wiki/Poa_annua","langname":"Portuguese","autonym":"português","*":"Poa
@@ -350,13 +397,13 @@ http_interactions:
         однолетний"},{"lang":"fi","url":"https://fi.wikipedia.org/wiki/Kyl%C3%A4nurmikka","langname":"Finnish","autonym":"suomi","*":"Kylänurmikka"},{"lang":"sv","url":"https://sv.wikipedia.org/wiki/Vitgr%C3%B6e","langname":"Swedish","autonym":"svenska","*":"Vitgröe"},{"lang":"uk","url":"https://uk.wikipedia.org/wiki/%D0%A2%D0%BE%D0%BD%D0%BA%D0%BE%D0%BD%D1%96%D0%B3_%D0%BE%D0%B4%D0%BD%D0%BE%D1%80%D1%96%D1%87%D0%BD%D0%B8%D0%B9","langname":"Ukrainian","autonym":"українська","*":"Тонконіг
         однорічний"},{"lang":"vi","url":"https://vi.wikipedia.org/wiki/Poa_annua","langname":"Vietnamese","autonym":"Tiếng
         Việt","*":"Poa annua"},{"lang":"war","url":"https://war.wikipedia.org/wiki/Poa_annua","langname":"Waray","autonym":"Winaray","*":"Poa
-        annua"},{"lang":"zh","url":"https://zh.wikipedia.org/wiki/%E6%97%A9%E7%86%9F%E7%A6%BE","langname":"Chinese","autonym":"中文","*":"早熟禾"}],"categories":[{"sortkey":"","hidden":"","*":"Webarchive_template_wayback_links"},{"sortkey":"","hidden":"","*":"Articles_with_''species''_microformats"},{"sortkey":"","hidden":"","*":"Taxonbars_with_20+_taxon_IDs"},{"sortkey":"","hidden":"","*":"Taxonbars_with_25+_taxon_IDs"},{"sortkey":"annua","*":"Poa"},{"sortkey":"","*":"Grasses_of_Europe"},{"sortkey":"","*":"Garden_plants_of_Europe"},{"sortkey":"","*":"Lawn_grasses"},{"sortkey":"","*":"Plants_described_in_1753"},{"sortkey":"","*":"Taxa_named_by_Carl_Linnaeus"},{"sortkey":"","*":"Invasive_plant_species"},{"sortkey":"","*":"Flora_of_the_Antipodes_Islands"},{"sortkey":"","*":"Flora_of_the_Auckland_Islands"},{"sortkey":"","*":"Flora_of_Macquarie_Island"},{"sortkey":"","*":"Flora_of_Heard_Island_and_McDonald_Islands"},{"sortkey":"","*":"Invasive_plant_species_in_the_United_States"}],"links":[{"ns":0,"exists":"","*":"ARKive"},{"ns":0,"exists":"","*":"Angiosperms"},{"ns":0,"exists":"","*":"Annual
+        annua"},{"lang":"zh","url":"https://zh.wikipedia.org/wiki/%E6%97%A9%E7%86%9F%E7%A6%BE","langname":"Chinese","autonym":"中文","*":"早熟禾"}],"categories":[{"sortkey":"","hidden":"","*":"Webarchive_template_wayback_links"},{"sortkey":"","hidden":"","*":"Articles_with_''species''_microformats"},{"sortkey":"","hidden":"","*":"Taxonbars_with_25+_taxon_IDs"},{"sortkey":"annua","*":"Poa"},{"sortkey":"","*":"Grasses_of_Europe"},{"sortkey":"","*":"Garden_plants_of_Europe"},{"sortkey":"","*":"Lawn_grasses"},{"sortkey":"","*":"Plants_described_in_1753"},{"sortkey":"","*":"Taxa_named_by_Carl_Linnaeus"},{"sortkey":"","*":"Invasive_plant_species"},{"sortkey":"","*":"Flora_of_the_Antipodes_Islands"},{"sortkey":"","*":"Flora_of_the_Auckland_Islands"},{"sortkey":"","*":"Flora_of_Macquarie_Island"},{"sortkey":"","*":"Flora_of_Heard_Island_and_McDonald_Islands"},{"sortkey":"","*":"Invasive_plant_species_in_the_United_States"}],"links":[{"ns":10,"exists":"","*":"Template:Taxonomy/Poa"},{"ns":0,"exists":"","*":"ARKive"},{"ns":0,"exists":"","*":"Annual
         plant"},{"ns":0,"exists":"","*":"Antarctic"},{"ns":0,"exists":"","*":"Australia"},{"ns":0,"exists":"","*":"Awn
         (botany)"},{"ns":0,"exists":"","*":"Binomial nomenclature"},{"ns":0,"exists":"","*":"Carl
         Linnaeus"},{"ns":0,"exists":"","*":"Commelinids"},{"ns":0,"exists":"","*":"Creeping
         bentgrass"},{"ns":0,"exists":"","*":"EPPO Code"},{"ns":0,"exists":"","*":"Encyclopedia
         of Life"},{"ns":0,"exists":"","*":"FloraBase"},{"ns":0,"exists":"","*":"Flora
-        of China"},{"ns":0,"exists":"","*":"Fodder"},{"ns":0,"exists":"","*":"Germplasm
+        of China"},{"ns":0,"exists":"","*":"Flowering plant"},{"ns":0,"exists":"","*":"Fodder"},{"ns":0,"exists":"","*":"Germplasm
         Resources Information Network"},{"ns":0,"exists":"","*":"Global Biodiversity
         Information Facility"},{"ns":0,"exists":"","*":"GrassBase"},{"ns":0,"exists":"","*":"Greek
         language"},{"ns":0,"exists":"","*":"Hay"},{"ns":0,"exists":"","*":"Heard Island
@@ -364,40 +411,49 @@ http_interactions:
         Red List"},{"ns":0,"exists":"","*":"Integrated Taxonomic Information System"},{"ns":0,"exists":"","*":"International
         Plant Names Index"},{"ns":0,"exists":"","*":"International Standard Book Number"},{"ns":0,"exists":"","*":"Invasive
         species"},{"ns":0,"exists":"","*":"King George Island (South Shetland Islands)"},{"ns":0,"exists":"","*":"Lawn"},{"ns":0,"exists":"","*":"Ligule"},{"ns":0,"exists":"","*":"Macquarie
-        Island"},{"ns":0,"exists":"","*":"Meadow-grass"},{"ns":0,"exists":"","*":"Monocots"},{"ns":0,"exists":"","*":"National
-        Center for Biotechnology Information"},{"ns":0,"exists":"","*":"Natural Resources
-        Conservation Service"},{"ns":0,"exists":"","*":"Oakmont Country Club"},{"ns":0,"exists":"","*":"Panicle"},{"ns":0,"exists":"","*":"Perennial"},{"ns":0,"exists":"","*":"Plantae"},{"ns":0,"exists":"","*":"Plants
-        of the World Online"},{"ns":0,"exists":"","*":"Poa infirma"},{"ns":0,"exists":"","*":"Poa
-        pratensis"},{"ns":0,"exists":"","*":"Poa trivialis"},{"ns":0,"exists":"","*":"Poaceae"},{"ns":0,"exists":"","*":"Poales"},{"ns":0,"exists":"","*":"Prow"},{"ns":0,"exists":"","*":"Putting
+        Island"},{"ns":0,"exists":"","*":"Monocotyledon"},{"ns":0,"exists":"","*":"National
+        Biodiversity Network"},{"ns":0,"exists":"","*":"National Center for Biotechnology
+        Information"},{"ns":0,"exists":"","*":"Natural Resources Conservation Service"},{"ns":0,"exists":"","*":"Oakmont
+        Country Club"},{"ns":0,"exists":"","*":"Panicle"},{"ns":0,"exists":"","*":"Perennial"},{"ns":0,"exists":"","*":"Plant"},{"ns":0,"exists":"","*":"Plants
+        of the World Online"},{"ns":0,"exists":"","*":"Poa"},{"ns":0,"exists":"","*":"Poa
+        infirma"},{"ns":0,"exists":"","*":"Poa pratensis"},{"ns":0,"exists":"","*":"Poa
+        trivialis"},{"ns":0,"exists":"","*":"Poaceae"},{"ns":0,"exists":"","*":"Poales"},{"ns":0,"exists":"","*":"Pooideae"},{"ns":0,"exists":"","*":"Prow"},{"ns":0,"exists":"","*":"Putting
         green"},{"ns":0,"exists":"","*":"South Shetland Islands"},{"ns":0,"exists":"","*":"Spikelet"},{"ns":0,"exists":"","*":"Subantarctic"},{"ns":0,"exists":"","*":"Taxonomy
         (biology)"},{"ns":0,"exists":"","*":"The Economist"},{"ns":0,"exists":"","*":"The
         Plant List"},{"ns":0,"exists":"","*":"Tropicos"},{"ns":0,"exists":"","*":"Wayback
         Machine"},{"ns":0,"exists":"","*":"Weed"},{"ns":0,"exists":"","*":"Wikidata"},{"ns":0,"exists":"","*":"Wikispecies"},{"ns":0,"exists":"","*":"World
         Checklist of Selected Plant Families"},{"ns":0,"*":"Poa supina"},{"ns":12,"exists":"","*":"Help:Taxon
-        identifiers"}],"templates":[{"ns":10,"exists":"","*":"Template:Taxobox"},{"ns":10,"exists":"","*":"Template:Taxobox/core"},{"ns":10,"exists":"","*":"Template:Taxobox
-        colour"},{"ns":10,"exists":"","*":"Template:Delink"},{"ns":10,"exists":"","*":"Template:If
-        empty"},{"ns":10,"exists":"","*":"Template:Sets taxobox colour"},{"ns":10,"exists":"","*":"Template:Taxobox/Error
-        colour"},{"ns":10,"exists":"","*":"Template:Str find0"},{"ns":10,"exists":"","*":"Template:;"},{"ns":10,"exists":"","*":"Template:COLON"},{"ns":10,"exists":"","*":"Template:Colon"},{"ns":10,"exists":"","*":"Template:Taxobox
-        name"},{"ns":10,"exists":"","*":"Template:PAGENAMEBASE"},{"ns":10,"exists":"","*":"Template:1x"},{"ns":10,"exists":"","*":"Template:Italic
-        title"},{"ns":10,"exists":"","*":"Template:Taxonomy"},{"ns":10,"exists":"","*":"Template:Anglicise
-        rank"},{"ns":10,"exists":"","*":"Template:Str left"},{"ns":10,"exists":"","*":"Template:Taxonomy/nobreak"},{"ns":10,"exists":"","*":"Template:Str
+        identifiers"}],"templates":[{"ns":10,"exists":"","*":"Template:Speciesbox"},{"ns":10,"exists":"","*":"Template:Taxobox/core"},{"ns":10,"exists":"","*":"Template:Taxobox
+        colour"},{"ns":10,"exists":"","*":"Template:Delink"},{"ns":10,"exists":"","*":"Template:Taxobox/Error
+        colour"},{"ns":10,"exists":"","*":"Template:Taxonomy/Poa"},{"ns":10,"exists":"","*":"Template:Don''t
+        edit this line parent"},{"ns":10,"exists":"","*":"Template:Taxonomy/Poeae"},{"ns":10,"exists":"","*":"Template:Taxonomy/Pooideae"},{"ns":10,"exists":"","*":"Template:Taxonomy/BOP
+        clade"},{"ns":10,"exists":"","*":"Template:Taxonomy/Poaceae"},{"ns":10,"exists":"","*":"Template:Taxonomy/Graminid
+        clade"},{"ns":10,"exists":"","*":"Template:Taxonomy/Poales"},{"ns":10,"exists":"","*":"Template:Taxonomy/Commelinids"},{"ns":10,"exists":"","*":"Template:Taxonomy/Monocots"},{"ns":10,"exists":"","*":"Template:Taxonomy/Angiosperms"},{"ns":10,"exists":"","*":"Template:;"},{"ns":10,"exists":"","*":"Template:COLON"},{"ns":10,"exists":"","*":"Template:Colon"},{"ns":10,"exists":"","*":"Template:Speciesbox/name"},{"ns":10,"exists":"","*":"Template:PAGENAMEBASE"},{"ns":10,"exists":"","*":"Template:Str
+        letter/trim"},{"ns":10,"exists":"","*":"Template:Italic title"},{"ns":10,"exists":"","*":"Template:Edit
+        taxonomy"},{"ns":10,"exists":"","*":"Template:Taxobox/taxonomy"},{"ns":10,"exists":"","*":"Template:Taxon
+        info"},{"ns":10,"exists":"","*":"Template:Don''t edit this line extinct"},{"ns":10,"exists":"","*":"Template:Don''t
+        edit this line same as"},{"ns":10,"exists":"","*":"Template:Str left"},{"ns":10,"exists":"","*":"Template:Taxonomy/Plantae"},{"ns":10,"exists":"","*":"Template:Taxonomy/Eukaryota"},{"ns":10,"exists":"","*":"Template:Taxonomy/Life"},{"ns":10,"exists":"","*":"Template:Taxobox/showtaxon"},{"ns":10,"exists":"","*":"Template:Taxobox/displayed
+        cell"},{"ns":10,"exists":"","*":"Template:Don''t edit this line always display"},{"ns":10,"exists":"","*":"Template:Don''t
+        edit this line rank"},{"ns":10,"exists":"","*":"Template:Anglicise rank"},{"ns":10,"exists":"","*":"Template:!!"},{"ns":10,"exists":"","*":"Template:Taxon
+        link"},{"ns":10,"exists":"","*":"Template:Is italic taxon"},{"ns":10,"exists":"","*":"Template:Don''t
+        edit this line link target"},{"ns":10,"exists":"","*":"Template:Don''t edit
+        this line link text"},{"ns":10,"exists":"","*":"Template:Taxonomy"},{"ns":10,"exists":"","*":"Template:Taxonomy/nobreak"},{"ns":10,"exists":"","*":"Template:Str
         find"},{"ns":10,"exists":"","*":"Template:Str rep"},{"ns":10,"exists":"","*":"Template:Commons"},{"ns":10,"exists":"","*":"Template:Sister
         project"},{"ns":10,"exists":"","*":"Template:Side box"},{"ns":10,"exists":"","*":"Template:Wikispecies"},{"ns":10,"exists":"","*":"Template:Reflist"},{"ns":10,"exists":"","*":"Template:Webarchive"},{"ns":10,"exists":"","*":"Template:ISBN"},{"ns":10,"exists":"","*":"Template:Catalog
-        lookup link"},{"ns":10,"exists":"","*":"Template:Trim"},{"ns":10,"exists":"","*":"Template:Yesno-no"},{"ns":10,"exists":"","*":"Template:Yesno"},{"ns":10,"exists":"","*":"Template:Error-small"},{"ns":10,"exists":"","*":"Template:Tl"},{"ns":10,"exists":"","*":"Template:Main
+        lookup link"},{"ns":10,"exists":"","*":"Template:Yesno-no"},{"ns":10,"exists":"","*":"Template:Yesno"},{"ns":10,"exists":"","*":"Template:Trim"},{"ns":10,"exists":"","*":"Template:Error-small"},{"ns":10,"exists":"","*":"Template:Tl"},{"ns":10,"exists":"","*":"Template:Main
         other"},{"ns":10,"exists":"","*":"Template:Cite web"},{"ns":10,"exists":"","*":"Template:Cite
-        news"},{"ns":10,"exists":"","*":"Template:Taxonbar"},{"ns":828,"exists":"","*":"Module:Delink"},{"ns":828,"exists":"","*":"Module:No
-        globals"},{"ns":828,"exists":"","*":"Module:Arguments"},{"ns":828,"exists":"","*":"Module:If
-        empty"},{"ns":828,"exists":"","*":"Module:String"},{"ns":828,"exists":"","*":"Module:Italic
+        news"},{"ns":10,"exists":"","*":"Template:Taxonbar"},{"ns":828,"exists":"","*":"Module:Autotaxobox"},{"ns":828,"exists":"","*":"Module:TaxonItalics"},{"ns":828,"exists":"","*":"Module:Delink"},{"ns":828,"exists":"","*":"Module:No
+        globals"},{"ns":828,"exists":"","*":"Module:Arguments"},{"ns":828,"exists":"","*":"Module:String"},{"ns":828,"exists":"","*":"Module:Italic
         title"},{"ns":828,"exists":"","*":"Module:Yesno"},{"ns":828,"exists":"","*":"Module:InfoboxImage"},{"ns":828,"exists":"","*":"Module:Side
-        box"},{"ns":828,"exists":"","*":"Module:Webarchive"},{"ns":828,"exists":"","*":"Module:Check
-        isxn"},{"ns":828,"exists":"","*":"Module:Error"},{"ns":828,"exists":"","*":"Module:Citation/CS1"},{"ns":828,"exists":"","*":"Module:Citation/CS1/Configuration"},{"ns":828,"exists":"","*":"Module:Citation/CS1/Whitelist"},{"ns":828,"exists":"","*":"Module:Citation/CS1/Utilities"},{"ns":828,"exists":"","*":"Module:Citation/CS1/Date
+        box"},{"ns":828,"exists":"","*":"Module:Webarchive"},{"ns":828,"exists":"","*":"Module:Webarchive/data"},{"ns":828,"exists":"","*":"Module:Citation/CS1/styles.css"},{"ns":828,"exists":"","*":"Module:Catalog
+        lookup link"},{"ns":828,"exists":"","*":"Module:Check isxn"},{"ns":828,"exists":"","*":"Module:Error"},{"ns":828,"exists":"","*":"Module:Citation/CS1"},{"ns":828,"exists":"","*":"Module:Citation/CS1/Configuration"},{"ns":828,"exists":"","*":"Module:Citation/CS1/Whitelist"},{"ns":828,"exists":"","*":"Module:Citation/CS1/Utilities"},{"ns":828,"exists":"","*":"Module:Citation/CS1/Date
         validation"},{"ns":828,"exists":"","*":"Module:Citation/CS1/Identifiers"},{"ns":828,"exists":"","*":"Module:Citation/CS1/COinS"},{"ns":828,"exists":"","*":"Module:Check
-        for unknown parameters"},{"ns":828,"exists":"","*":"Module:Taxonbar"},{"ns":828,"exists":"","*":"Module:Taxonbar/conf"},{"ns":828,"exists":"","*":"Module:TaxonItalics"},{"ns":828,"exists":"","*":"Module:ResolveEntityId"},{"ns":828,"exists":"","*":"Module:Navbox"},{"ns":828,"exists":"","*":"Module:Navbar"}],"images":["Poa_annua.jpg","Straatgras_tongetje_(Poa_annua_ligula).jpg","Poa.annua.jpg","Poa.annua.2.jpg","Poa_annua.jpeg","Commons-logo.svg","Wikispecies-logo.svg"],"externallinks":["http://www.bsbi.org.uk/identification.html","https://web.archive.org/web/20110717004923/http://www.bsbi.org.uk/identification.html","http://www.ipm.ucdavis.edu/PMG/PESTNOTES/pn7464.html","http://www.post-gazette.com/pg/07164/793591-382.stm","https://www.economist.com/blogs/babbage/2012/03/antarctic-ecology","http://poa.ipk-gatersleben.de","http://www.kew.org/data/grasses-db/","http://www.ville-ge.ch/musinfo/bd/cjb/africa/details.php?langue=an&id=51929","http://www.arkive.org/annual-meadow-grass/poa-annua/","http://www.calflora.org/cgi-bin/species_query.cgi?where-calrecnum=6658","http://eol.org/pages/1114594","https://gd.eppo.int/taxon/POAAN","http://florabase.dec.wa.gov.au/browse/profile/571","http://www.efloras.org/florataxon.aspx?flora_id=2&taxon_id=200025985","https://www.gbif.org/species/2704179","http://www.kew.org/data/grasses-db/www/imp08130.htm","https://npgsweb.ars-grin.gov/gringlobal/taxonomydetail.aspx?id=28904","https://www.inaturalist.org/taxa/52808","http://www.ipni.org/ipni/idPlantNameSearch.do?id=320035-2","https://www.itis.gov/servlet/SingleRpt/SingleRpt?search_topic=TSN&search_value=41107","http://www.iucnredlist.org/details/168729/0","https://www.ncbi.nlm.nih.gov/Taxonomy/Browser/wwwtax.cgi?mode=Info&id=93036","http://www.nzor.org.nz/names/086570fe-7ec6-4f6f-a8c5-14659fba5a09","https://www.paldat.org/pub/Poa_annua","http://www.plantarium.ru/page/view/item/27869.html","http://www.theplantlist.org/tpl1.1/record/kew-435194","http://plants.usda.gov/core/profile?symbol=POAN","http://www.plantsoftheworldonline.org/taxon/urn:lsid:ipni.org:names:320035-2","http://www.tropicos.org/Name/25509881","http://www.ubio.org/browser/details.php?namebankID=5408026","http://data.canadensys.net/vascan/taxon/7844","http://wcsp.science.kew.org/namedetail.do?name_id=435194"],"sections":[{"toclevel":1,"level":"2","line":"Description","number":"1","index":"1","fromtitle":"Poa_annua","byteoffset":995,"anchor":"Description"},{"toclevel":1,"level":"2","line":"Etymology","number":"2","index":"2","fromtitle":"Poa_annua","byteoffset":2453,"anchor":"Etymology"},{"toclevel":1,"level":"2","line":"Distribution
-        and habitat","number":"3","index":"3","fromtitle":"Poa_annua","byteoffset":2802,"anchor":"Distribution_and_habitat"},{"toclevel":1,"level":"2","line":"References","number":"4","index":"4","fromtitle":"Poa_annua","byteoffset":4529,"anchor":"References"},{"toclevel":1,"level":"2","line":"External
-        links","number":"5","index":"5","fromtitle":"Poa_annua","byteoffset":4557,"anchor":"External_links"}],"displaytitle":"<i>Poa
+        for unknown parameters"},{"ns":828,"exists":"","*":"Module:Taxonbar"},{"ns":828,"exists":"","*":"Module:Taxonbar/conf"},{"ns":828,"exists":"","*":"Module:ResolveEntityId"},{"ns":828,"exists":"","*":"Module:Navbox"},{"ns":828,"exists":"","*":"Module:Navbar"}],"images":["Poa_annua.jpg","Straatgras_tongetje_(Poa_annua_ligula).jpg","Poa.annua.jpg","Poa.annua.2.jpg","Poa_annua_on_a_footpath._24_Oktoberplein,_Utrecht,_The_Netherlands,_May_20,_2018.jpg","Poa_annua.jpeg","Red_Pencil_Icon.png","Commons-logo.svg","Wikispecies-logo.svg"],"externallinks":["http://www.bsbi.org.uk/identification.html","https://web.archive.org/web/20110717004923/http://www.bsbi.org.uk/identification.html","http://www.ipm.ucdavis.edu/PMG/PESTNOTES/pn7464.html","http://www.post-gazette.com/pg/07164/793591-382.stm","https://www.economist.com/blogs/babbage/2012/03/antarctic-ecology","http://poa.ipk-gatersleben.de","http://www.kew.org/data/grasses-db/","http://www.ville-ge.ch/musinfo/bd/cjb/africa/details.php?langue=an&id=51929","http://www.arkive.org/annual-meadow-grass/poa-annua/","https://www.biolib.cz/en/taxon/id42418","http://www.calflora.org/cgi-bin/species_query.cgi?where-calrecnum=6658","http://eol.org/pages/1114594","https://gd.eppo.int/taxon/POAAN","http://florabase.dec.wa.gov.au/browse/profile/571","http://www.efloras.org/florataxon.aspx?flora_id=2&taxon_id=200025985","https://www.gbif.org/species/2704179","http://www.kew.org/data/grasses-db/www/imp08130.htm","https://npgsweb.ars-grin.gov/gringlobal/taxonomydetail.aspx?id=28904","https://www.inaturalist.org/taxa/52808","http://www.ipni.org/ipni/idPlantNameSearch.do?id=320035-2","http://www.irmng.org/aphia.php?p=taxdetails&id=10589082","https://www.itis.gov/servlet/SingleRpt/SingleRpt?search_topic=TSN&search_value=41107","http://oldredlist.iucnredlist.org/details/168729/0","https://data.nbn.org.uk/Taxa/NBNSYS0000002544","https://www.ncbi.nlm.nih.gov/Taxonomy/Browser/wwwtax.cgi?mode=Info&id=93036","http://www.nzor.org.nz/names/086570fe-7ec6-4f6f-a8c5-14659fba5a09","https://www.paldat.org/pub/Poa_annua","http://www.plantarium.ru/page/view/item/27869.html","http://www.theplantlist.org/tpl1.1/record/kew-435194","http://plants.usda.gov/core/profile?symbol=POAN","http://www.plantsoftheworldonline.org/taxon/urn:lsid:ipni.org:names:320035-2","http://www.tropicos.org/Name/25509881","http://www.ubio.org/browser/details.php?namebankID=5408026","http://data.canadensys.net/vascan/taxon/7844","http://wcsp.science.kew.org/namedetail.do?name_id=435194","http://www.wildflowers.co.il/english/plant.asp?ID=2228"],"sections":[{"toclevel":1,"level":"2","line":"Description","number":"1","index":"1","fromtitle":"Poa_annua","byteoffset":768,"anchor":"Description"},{"toclevel":1,"level":"2","line":"Etymology","number":"2","index":"2","fromtitle":"Poa_annua","byteoffset":2267,"anchor":"Etymology"},{"toclevel":1,"level":"2","line":"Distribution
+        and habitat","number":"3","index":"3","fromtitle":"Poa_annua","byteoffset":2616,"anchor":"Distribution_and_habitat"},{"toclevel":1,"level":"2","line":"References","number":"4","index":"4","fromtitle":"Poa_annua","byteoffset":4463,"anchor":"References"},{"toclevel":1,"level":"2","line":"External
+        links","number":"5","index":"5","fromtitle":"Poa_annua","byteoffset":4491,"anchor":"External_links"}],"displaytitle":"<i>Poa
         annua</i>","iwlinks":[{"prefix":"commons","url":"https://commons.wikimedia.org/wiki/Poa_annua","*":"commons:Poa
         annua"},{"prefix":"wikispecies","url":"https://species.wikimedia.org/wiki/Poa_annua","*":"wikispecies:Poa
         annua"},{"prefix":"wikidata","url":"https://www.wikidata.org/wiki/Q157571","*":"wikidata:Q157571"}],"properties":[{"name":"displaytitle","*":"<i>Poa
         annua</i>"},{"name":"wikibase_item","*":"Q157571"}]}}'
-  recorded_at: 2018-05-03 00:23:37 GMT
-  recorded_with: vcr/0.0.8.9536, webmockr/0.2.2.9119, crul/0.5.2
+  recorded_at: 2018-10-19 19:08:00 GMT
+  recorded_with: vcr/0.2.0, webmockr/0.2.8.9100
