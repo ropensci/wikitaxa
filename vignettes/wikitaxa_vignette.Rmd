@@ -2,7 +2,11 @@
 title: "Introduction to the wikitaxa package"
 author: "Scott Chamberlain"
 date: "`r Sys.Date()`"
-output: rmarkdown::html_vignette
+output: 
+    html_document:
+        toc: true
+        toc_float: true
+        theme: readable
 vignette: >
   %\VignetteIndexEntry{Introduction to the wikitaxa package}
   %\VignetteEngine{knitr::rmarkdown}
