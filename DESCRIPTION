@@ -33,7 +33,5 @@ Suggests:
     testthat,
     knitr,
     rmarkdown,
-    webmockr (>= 0.2.8),
-    vcr (>= 0.2.0)
-Remotes: ropensci/vcr
+    vcr
 RoxygenNote: 6.1.0
