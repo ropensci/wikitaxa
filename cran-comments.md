@@ -1,7 +1,7 @@
 ## Test environments
 
-* local OS X install, R 3.4.3 patched
-* ubuntu 12.04 (on travis-ci), R 3.4.3
+* local OS X install, R 3.5.1 patched
+* ubuntu 14.04 (on travis-ci), R 3.5.1
 * win-builder (devel and release)
 
 ## R CMD check results
@@ -12,16 +12,17 @@
 License components with restrictions and base license permitting such:
   MIT + file LICENSE
 File 'LICENSE':
-  YEAR: 2017
+  YEAR: 2018
   COPYRIGHT HOLDER: Scott Chamberlain
 
 ## Reverse dependencies
 
-There is 1 reverse dependency, and there was no problems when testing with it.
+* I have run R CMD check on the 2 reverse dependencies.
+  (Summary at <https://github.com/ropensci/wikitaxa/blob/master/revdep/README.md>). No problems were found.
 
 ---
 
-This version includes three bug fixes to improve usability.
+This version includes test caching for http requests and a bug fix.
 
 Thanks!
 Scott Chamberlain

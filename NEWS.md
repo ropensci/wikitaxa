@@ -1,3 +1,16 @@
+wikitaxa 0.3.0
+==============
+
+### MINOR IMPROVEMENTS
+
+* integration with vcr for test caching for all HTTP requests (#17) (#18)
+* link to `taxize` book and `wikitaxa` vignette in readme (#16)
+
+### BUG FIXES
+
+* fix to `wt_wikipedia()` to separate `<br>` tags appropriately (#15)
+
+
 wikitaxa 0.2.0
 ==============
 
