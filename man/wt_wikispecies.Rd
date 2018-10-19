@@ -8,26 +8,27 @@
 \usage{
 wt_wikispecies(name, utf8 = TRUE, ...)
 
-wt_wikispecies_parse(page, types = c("langlinks", "iwlinks", "externallinks",
-  "common_names", "classification"), tidy = FALSE)
+wt_wikispecies_parse(page, types = c("langlinks", "iwlinks",
+  "externallinks", "common_names", "classification"), tidy = FALSE)
 
-wt_wikispecies_search(query, limit = 10, offset = 0, utf8 = TRUE, ...)
+wt_wikispecies_search(query, limit = 10, offset = 0, utf8 = TRUE,
+  ...)
 }
 \arguments{
 \item{name}{(character) Wiki name - as a page title, must be length 1}
 
-\item{utf8}{(logical) If `TRUE`, encodes most (but not all) non-ASCII
+\item{utf8}{(logical) If \code{TRUE}, encodes most (but not all) non-ASCII
 characters as UTF-8 instead of replacing them with hexadecimal escape
-sequences. Default: `TRUE`}
+sequences. Default: \code{TRUE}}
 
-\item{...}{curl options, passed on to [httr::GET()]}
+\item{...}{curl options, passed on to \code{\link[httr:GET]{httr::GET()}}}
 
-\item{page}{([httr::response()]) Result of [wt_wiki_page()]}
+\item{page}{(\code{\link[httr:response]{httr::response()}}) Result of \code{\link[=wt_wiki_page]{wt_wiki_page()}}}
 
 \item{types}{(character) List of properties to parse}
 
 \item{tidy}{(logical). tidy output to data.frame's if possible.
-Default: `FALSE`}
+Default: \code{FALSE}}
 
 \item{query}{(character) query terms}
 
@@ -76,3 +77,4 @@ lapply(res$query$search$title[1:3], wt_wikispecies)
 \references{
 \url{https://www.mediawiki.org/wiki/API:Search} for help on search
 }
+\concept{Wikispecies functions}

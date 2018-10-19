@@ -31,3 +31,4 @@ Other MediaWiki functions: \code{\link{wt_wiki_page_parse}},
   \code{\link{wt_wiki_page}},
   \code{\link{wt_wiki_url_build}}
 }
+\concept{MediaWiki functions}

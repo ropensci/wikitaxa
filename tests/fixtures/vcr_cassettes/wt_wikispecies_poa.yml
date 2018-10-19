@@ -1,0 +1,215 @@
+http_interactions:
+- request:
+    method: get
+    uri: https://species.wikimedia.org/w/api.php?page=Poa_annua&action=parse&redirects=TRUE&format=json&utf8=TRUE&prop=text%7Clanglinks%7Ccategories%7Clinks%7Ctemplates%7Cimages%7Cexternallinks%7Csections%7Crevid%7Cdisplaytitle%7Ciwlinks%7Cproperties
+    body:
+      encoding: ''
+      string: ''
+    headers:
+      User-Agent: libcurl/7.54.0 r-curl/3.2 crul/0.6.0
+      Accept-Encoding: gzip, deflate
+      Accept: application/json, text/xml, application/xml, */*
+  response:
+    status:
+      status_code: '200'
+      message: OK
+      explanation: Request fulfilled, document follows
+    headers:
+      status: HTTP/1.1 200 OK
+      date: Fri, 19 Oct 2018 19:08:03 GMT
+      content-type: application/json; charset=utf-8
+      transfer-encoding: chunked
+      connection: keep-alive
+      server: mw1281.eqiad.wmnet
+      x-powered-by: HHVM/3.18.6-dev
+      p3p: CP="This is not a P3P policy! See https://species.wikimedia.org/wiki/Special:CentralAutoLogin/P3P
+        for more info."
+      cache-control: private, must-revalidate, max-age=0
+      vary: Accept-Encoding,Treat-as-Untrusted,X-Forwarded-Proto,Cookie,Authorization
+      content-disposition: inline; filename=api-result.json
+      x-content-type-options: nosniff
+      x-frame-options: DENY
+      backend-timing: D=64687 t=1539976083128470
+      content-encoding: gzip
+      x-varnish: 615396014, 138061914, 446118849, 54695714
+      via: 1.1 varnish (Varnish/5.1), 1.1 varnish (Varnish/5.1), 1.1 varnish (Varnish/5.1),
+        1.1 varnish (Varnish/5.1)
+      accept-ranges: bytes
+      age: '0'
+      x-cache: cp1087 pass, cp2007 pass, cp4030 pass, cp4028 pass
+      x-cache-status: pass
+      strict-transport-security: max-age=106384710; includeSubDomains; preload
+      x-analytics: ns=-1;special=Badtitle;WMF-Last-Access=19-Oct-2018;https=1
+      x-client-ip: 157.130.179.86
+    body:
+      encoding: UTF-8
+      string: '{"parse":{"title":"Poa annua","pageid":75484,"revid":3606585,"redirects":[],"text":{"*":"<div
+        class=\"mw-parser-output\"><div class=\"thumb tright\"><div class=\"thumbinner\"
+        style=\"width:252px;\"><a href=\"/wiki/File:Poa_annua.jpg\" class=\"image\"><img
+        alt=\"\" src=\"//upload.wikimedia.org/wikipedia/commons/thumb/7/77/Poa_annua.jpg/250px-Poa_annua.jpg\"
+        width=\"250\" height=\"188\" class=\"thumbimage\" srcset=\"//upload.wikimedia.org/wikipedia/commons/thumb/7/77/Poa_annua.jpg/375px-Poa_annua.jpg
+        1.5x, //upload.wikimedia.org/wikipedia/commons/thumb/7/77/Poa_annua.jpg/500px-Poa_annua.jpg
+        2x\" data-file-width=\"1477\" data-file-height=\"1108\" /></a>  <div class=\"thumbcaption\"><div
+        class=\"magnify\"><a href=\"/wiki/File:Poa_annua.jpg\" class=\"internal\"
+        title=\"Enlarge\"></a></div><i>Poa annua</i></div></div></div>\n<h2><span
+        class=\"mw-headline\" id=\"Taxonavigation\">Taxonavigation</span><span class=\"mw-editsection\"><span
+        class=\"mw-editsection-bracket\">[</span><a href=\"/w/index.php?title=Poa_annua&amp;action=edit&amp;section=1\"
+        title=\"Edit section: Taxonavigation\">edit</a><span class=\"mw-editsection-bracket\">]</span></span></h2>\n<table
+        class=\"wikitable mw-collapsible mw-collapsed\">\n<tbody><tr>\n<th>Taxonavigation:
+        <a href=\"/wiki/Poales\" title=\"Poales\">Poales&#160;</a>\n</th></tr>\n<tr>\n<td>Classification
+        System: APG IV\n<p>Superregnum: <a href=\"/wiki/Eukaryota\" title=\"Eukaryota\">Eukaryota</a>
+        <br />\nRegnum: <a href=\"/wiki/Plantae\" title=\"Plantae\">Plantae</a> <br
+        />\nCladus: <a href=\"/wiki/Magnoliopsida\" title=\"Magnoliopsida\">Angiosperms</a>
+        <br />\nCladus: <a href=\"/wiki/Monocots\" title=\"Monocots\">Monocots</a><br
+        />\nCladus: <a href=\"/wiki/Commelinids\" title=\"Commelinids\">Commelinids</a><br
+        />\nOrdo: <a href=\"/wiki/Poales\" title=\"Poales\">Poales</a><br />\n</p>\n</td></tr></tbody></table>\n<p>Familia:
+        <a href=\"/wiki/Poaceae\" title=\"Poaceae\">Poaceae</a> <br />\nSubfamilia:
+        <a href=\"/wiki/Pooideae\" title=\"Pooideae\">Pooideae</a> <br />\nTribus:
+        <a href=\"/wiki/Poeae\" title=\"Poeae\">Poeae</a> <br />\nSubtribus: <a href=\"/wiki/Poinae\"
+        title=\"Poinae\">Poinae</a><br />\nGenus: <i><a href=\"/wiki/Poa\" title=\"Poa\">Poa</a></i>   <br
+        />\nSpecies: <i><a class=\"mw-selflink selflink\">Poa annua</a></i>\n</p>\n<h2><span
+        class=\"mw-headline\" id=\"Name\">Name</span><span class=\"mw-editsection\"><span
+        class=\"mw-editsection-bracket\">[</span><a href=\"/w/index.php?title=Poa_annua&amp;action=edit&amp;section=2\"
+        title=\"Edit section: Name\">edit</a><span class=\"mw-editsection-bracket\">]</span></span></h2>\n<p><i>Poa
+        annua</i> <span style=\"font-variant: small-caps;\" class=\"vcard\"><span
+        class=\"fn n nickname\"><a href=\"/wiki/L.\" class=\"mw-redirect\" title=\"L.\">L.</a></span></span>,
+        Sp. Pl. Sp. Pl. 1: 68. (1753)\n</p>\n<h3><span class=\"mw-headline\" id=\"Synonyms\">Synonyms</span><span
+        class=\"mw-editsection\"><span class=\"mw-editsection-bracket\">[</span><a
+        href=\"/w/index.php?title=Poa_annua&amp;action=edit&amp;section=3\" title=\"Edit
+        section: Synonyms\">edit</a><span class=\"mw-editsection-bracket\">]</span></span></h3>\n<ul><li><b>Homotypic</b>\n<ul><li><i>Ochlopoa
+        annua</i> (L.) H.Scholz, Ber. Inst. Landschafts Pflanzenökol. Univ. Hohenheim
+        Beih. 16: 58 (2003)</li></ul></li>\n<li><b>Heterotypic</b>\n<ul><li><i>Poa
+        humilis</i> Lej., Fl. Spa 1: 49 (1811), <a href=\"/wiki/Nom._illeg.\" class=\"mw-redirect\"
+        title=\"Nom. illeg.\">nom. illeg.</a></li>\n<li><i>Aira pumila</i> Pursh,
+        Fl. Amer. Sept. 1: 76 (1813)</li>\n<li><i>Catabrosa pumila</i> (Pursh) Roem.
+        &amp; Schult., Syst. Veg., ed. 15 bis 2: 696 (1817)</li>\n<li><i>Poa annua</i>
+        var. <i>crispa</i> Gray, Nat. Arr. Brit. Pl. 2: 105 (1821 publ. 1822)</li>\n<li><i>Poa
+        annua</i> var. <i>rubra</i> Gray, Nat. Arr. Brit. Pl. 2: 105 (1821 publ. 1822)</li>\n<li><i>Poa
+        annua</i> var. <i>vivipara</i> Gray, Nat. Arr. Brit. Pl. 2: 105 (1821 publ.
+        1822)</li>\n<li><i>Poa variegata</i> Haller f. in J.S.Schleicher, Cat. Pl.
+        Helv., ed. 4: 38 (1821), <a href=\"/wiki/Nom._illeg.\" class=\"mw-redirect\"
+        title=\"Nom. illeg.\">nom. illeg.</a></li>\n<li><i>Poa aestivalis</i> J.Presl
+        in C.B.Presl, Reliq. Haenk. 1: 272 (1830)</li>\n<li><i>Poa algida</i> Trin.,
+        Linnaea 10: 306 (1836)</li>\n<li><i>Poa hohenackeri</i> Trin., Bull. Sci.
+        Acad. Imp. Sci. Saint-Pétersbourg 1: 69 (1836)</li>\n<li><i>Poa hansiana</i>
+        Nees in J.F.Royle, Ill. Bot. Himal. Mts.: 46 (1840), <a href=\"/wiki/Nom._nud.\"
+        class=\"mw-redirect\" title=\"Nom. nud.\">nom. nud.</a></li>\n<li><i>Poa meyenii</i>
+        Nees &amp; Meyen in C.G.D.Nees von Esenbeck, Gramineae: 31 (1841)</li>\n<li><i>Poa
+        annua</i> var. <i>sericea</i> Parn., Grass. Scotland: 91 (1842)</li>\n<li><i>Poa
+        ovalis</i> Tineo, Pl. Rar. Sicil.: 21 (1846)</li>\n<li><i>Poa annua</i> var.
+        <i>eriolepis</i> É.Desv. in C.Gay, Fl. Chil. 6: 405 (1854)</li>\n<li><i>Poa
+        puberula</i> Steud., Syn. Pl. Glumac. 1: 256 (1854)</li>\n<li><i>Poa bipollicaris</i>
+        Hochst., Flora 38: 321 (1855)</li>\n<li><i>Poa annua</i> var. <i>aquatica</i>
+        Asch., Fl. Brandenburg 1: 844 (1864)</li>\n<li><i>Poa annua</i> var. <i>reptans</i>
+        Hausskn., Mitt. Geogr. Ges. (Thüringen) Jena 9: 7 (1891)</li>\n<li><i>Poa
+        annua</i> var. <i>rigidiuscula</i> Dewey, Contr. U.S. Natl. Herb. 3: 262 (1895)</li>\n<li><i>Poa
+        annua</i> var. <i>raniglumis</i> S.E.Fröhner, Wiss. Z. Martin-Luther-Univ.
+        Halle-Wittenberg, Math.-Naturwiss. Reihe 12: 670 (1963)</li>\n<li><i>Poa annua</i>
+        subsp. <i>notabilis</i> Chrtek &amp; V.Jirásek, Biologia (Bratislava) 19:
+        494 (1964)</li>\n<li><i>Poa annua</i> var. <i>pilantha</i> Ronniger, Ber.
+        Deutsch. Bot. Ges. 81: 17 (1968)</li>\n<li><i>Poa annua</i> subsp. <i>pilantha</i>
+        (Ronniger) H.Scholz, Ber. Deutsch. Bot. Ges. 81(Sonderabh.): 17 (1968)</li>\n<li><i>Festuca
+        tenuiculmis</i> Tovar, Mem. Mus. Hist. Nat. \"Javier Prado\" 16: 55 (1972)</li>\n<li><i>Poa
+        annua</i> f. <i>reptans</i> (Hausskn.) T.Koyama, Grass. Japan: 523 (1987)</li>\n<li><i>Poa
+        annua</i> f. <i>purpurea</i> Mike L.Grant, Watsonia 24: 525 (2003)</li>\n<li><i>Ochlopoa
+        annua</i> subsp. <i>notabilis</i> (Chrtek &amp; V.Jirásek) H.Scholz &amp;
+        Valdés, Willdenowia 36: 661 (2006)</li>\n<li><i>Ochlopoa annua</i> subsp.
+        <i>pilantha</i> (Ronniger) H.Scholz &amp; Valdés, Willdenowia 36: 661 (2006)</li>\n<li><i>Ochlopoa
+        annua</i> subsp. <i>raniglumis</i> (S.E.Fröhner) H.Scholz &amp; Valdés, Willdenowia
+        36: 662 (2006)</li>\n<li><i>Ochlopoa raniglumis</i> (S.E.Fröhner) Bomble,
+        Jahrb. Bochum. Bot. Vereins 3: 110 (2012)</li>\n<li><i>Poa portalii</i> H.Scholz,
+        Willdenowia 42: 293 (2012)</li></ul></li></ul>\n<h2><span class=\"mw-headline\"
+        id=\"References\">References</span><span class=\"mw-editsection\"><span class=\"mw-editsection-bracket\">[</span><a
+        href=\"/w/index.php?title=Poa_annua&amp;action=edit&amp;section=4\" title=\"Edit
+        section: References\">edit</a><span class=\"mw-editsection-bracket\">]</span></span></h2>\n<ul><li><span
+        style=\"font-variant: small-caps;\" class=\"vcard\"><span class=\"fn n nickname\"><a
+        href=\"/wiki/Carolus_Linnaeus\" title=\"Carolus Linnaeus\">Linnaeus, C.</a></span></span>
+        1753. <a rel=\"nofollow\" class=\"external text\" href=\"http://www.botanicus.org/title/b12069590\"><i>Species
+        Plantarum</i></a> 1: <a rel=\"nofollow\" class=\"external text\" href=\"http://www.biodiversitylibrary.org/openurl?pid=title:669&amp;volume=1&amp;issue=&amp;spage=68&amp;date=1753\">68.</a></li>\n<li
+        class=\"mw-empty-elt\"></li>\n<li><span style=\"font-variant: small-caps;\"
+        class=\"vcard\"><span class=\"fn n nickname\"><a href=\"/wiki/Rafa%C3%ABl_Herman_Anna_Govaerts\"
+        title=\"Rafaël Herman Anna Govaerts\">Govaerts, R.</a></span></span> <i>et
+        al.</i> 2018. <a rel=\"nofollow\" class=\"external text\" href=\"https://wcsp.science.kew.org/qsearch.do?page=quickSearch&amp;plantName=Poa+annua\"><i>Poa
+        annua</i></a> in <i>World Checklist of Selected Plant Families.</i> The Board
+        of Trustees of the <a href=\"https://en.wikipedia.org/wiki/Royal_Botanic_Gardens,_Kew\"
+        class=\"extiw\" title=\"en:Royal Botanic Gardens, Kew\">Royal Botanic Gardens,
+        Kew</a>. Published on the internet. Accessed: 2018 Jan. 25.</li>\n<li class=\"mw-empty-elt\"></li>\n<li><a
+        href=\"https://en.wikipedia.org/wiki/International_Plant_Names_Index\" class=\"extiw\"
+        title=\"en:International Plant Names Index\"><span style=\"font-variant: small-caps;\"
+        class=\"vcard\"><span class=\"fn n nickname\">International Plant Names Index</span></span></a>.
+        2018. <a rel=\"nofollow\" class=\"external text\" href=\"http://www.ipni.org/ipni/simplePlantNameSearch.do?find_wholeName=Poa+annua\"><i>Poa
+        annua</i>.</a> Published online. Accessed Jan. 25 2018.</li></ul>\n<ul><li
+        class=\"mw-empty-elt\"></li>\n<li><span style=\"font-variant: small-caps;\"
+        class=\"vcard\"><span class=\"fn n nickname\">USDA, ARS, Germplasm Resources
+        Information Network.</span></span> <a rel=\"nofollow\" class=\"external text\"
+        href=\"https://npgsweb.ars-grin.gov/gringlobal/taxonomydetail.aspx?id=28904\"><i>Poa
+        annua</i></a> in the <a rel=\"nofollow\" class=\"external text\" href=\"http://www.ars-grin.gov/npgs/gringlobal/sb/home.html\"><i>Germplasm
+        Resources Information Network (GRIN)</i>,</a> U.S. Department of Agriculture
+        Agricultural Research Service.</li></ul>\n<h2><span class=\"mw-headline\"
+        id=\"Vernacular_names\">Vernacular names</span><span class=\"mw-editsection\"><span
+        class=\"mw-editsection-bracket\">[</span><a href=\"/w/index.php?title=Poa_annua&amp;action=edit&amp;section=5\"
+        title=\"Edit section: Vernacular names\">edit</a><span class=\"mw-editsection-bracket\">]</span></span></h2>\n<div
+        style=\"padding:0 10px; -moz-column-count: 2; -moz-column-gap: 40px; -moz-column-rule:
+        1px solid #aaa; -webkit-column-count: 2; -webkit-column-gap: 40px; -webkit-column-rule:
+        1px solid #aaa; column-count: 2; column-gap: 40px; column-rule: 1px solid
+        #aaa; border:1px solid #aaa; background:#f9f9f9; font-size:90%\"><b>Afrikaans:</b>&#160;Wintergras<br
+        /><b>Deutsch:</b>&#160;Einjährige Rispe, Einjähriges Rispengras<br /><b>English:</b>&#160;annual
+        meadow grass<br /><b>français:</b>&#160;Pâturin annuel<br /><b>íslenska:</b>&#160;Varpasveifgras<br
+        /><b>македонски:</b>&#160;Едногодишна ливадарка<br /><b>Nederlands:</b>&#160;Straatgras<br
+        /><b>suomi:</b>&#160;Kylänurmikka<br /></div>\n<table class=\"toccolours\"
+        width=\"100%\" style=\"margin:0.5em 0; clear:both; padding:0;\">\n\n<tbody><tr>\n<td
+        width=\"40\" align=\"center\"><a href=\"/wiki/File:Commons-logo.svg\" class=\"image\"
+        title=\"Wikimedia Commons\"><img alt=\"\" src=\"//upload.wikimedia.org/wikipedia/commons/thumb/4/4a/Commons-logo.svg/15px-Commons-logo.svg.png\"
+        width=\"15\" height=\"20\" srcset=\"//upload.wikimedia.org/wikipedia/commons/thumb/4/4a/Commons-logo.svg/23px-Commons-logo.svg.png
+        1.5x, //upload.wikimedia.org/wikipedia/commons/thumb/4/4a/Commons-logo.svg/30px-Commons-logo.svg.png
+        2x\" data-file-width=\"1024\" data-file-height=\"1376\" /></a>\n</td>\n<td>For
+        more multimedia, look at <i><b><a href=\"https://commons.wikimedia.org/wiki/Special:Search/Poa_annua\"
+        class=\"extiw\" title=\"c:Special:Search/Poa annua\">Poa annua</a></b></i>
+        on <a href=\"https://commons.wikimedia.org/wiki/\" class=\"extiw\" title=\"c:\">Wikimedia
+        Commons</a>.\n</td></tr></tbody></table>\n\n<!-- \nNewPP limit report\nParsed
+        by mw1256\nCached time: 20181010212750\nCache expiry: 1900800\nDynamic content:
+        false\nCPU time usage: 0.068 seconds\nReal time usage: 0.098 seconds\nPreprocessor
+        visited node count: 884/1000000\nPreprocessor generated node count: 0/1500000\nPost‐expand
+        include size: 8828/2097152 bytes\nTemplate argument size: 540/2097152 bytes\nHighest
+        expansion depth: 11/40\nExpensive parser function count: 0/500\nUnstrip recursion
+        depth: 0/20\nUnstrip post‐expand size: 0/5000000 bytes\nNumber of Wikibase
+        entities loaded: 0/400\n-->\n<!--\nTransclusion expansion time report (%,ms,calls,template)\n100.00%   69.546      1
+        -total\n 39.52%   27.483      1 Template:VN\n 30.93%   21.511      1 Template:Poa\n
+        27.91%   19.408      1 Template:Poinae\n 25.22%   17.537      1 Template:Poeae\n
+        22.36%   15.553      1 Template:Pooideae\n 18.75%   13.041      1 Template:Poaceae\n
+        16.61%   11.555      1 Template:Taxonav\n 10.74%    7.471      1 Template:Poales\n  8.74%    6.078      1
+        Template:Commelinids\n-->\n\n<!-- Saved in parser cache with key specieswiki:pcache:idhash:75484-0!canonical
+        and timestamp 20181010212750 and revision id 3606585\n -->\n</div>"},"langlinks":[{"lang":"ar","url":"https://ar.wikipedia.org/wiki/%D9%82%D8%A8%D8%A3_%D8%AD%D9%88%D9%84%D9%8A","langname":"Arabic","autonym":"العربية","*":"قبأ
+        حولي"},{"lang":"ca","url":"https://ca.wikipedia.org/wiki/P%C3%A8l_de_bou","langname":"Catalan","autonym":"català","*":"Pèl
+        de bou"},{"lang":"ceb","url":"https://ceb.wikipedia.org/wiki/Poa_annua","langname":"Cebuano","autonym":"Cebuano","*":"Poa
+        annua"},{"lang":"cs","url":"https://cs.wikipedia.org/wiki/Lipnice_ro%C4%8Dn%C3%AD","langname":"Czech","autonym":"čeština","*":"Lipnice
+        roční"},{"lang":"cy","url":"https://cy.wikipedia.org/wiki/Gweunwellt_unflwydd","langname":"Welsh","autonym":"Cymraeg","*":"Gweunwellt
+        unflwydd"},{"lang":"da","url":"https://da.wikipedia.org/wiki/En%C3%A5rig_rapgr%C3%A6s","langname":"Danish","autonym":"dansk","*":"Enårig
+        rapgræs"},{"lang":"de","url":"https://de.wikipedia.org/wiki/Einj%C3%A4hriges_Rispengras","langname":"German","autonym":"Deutsch","*":"Einjähriges
+        Rispengras"},{"lang":"en","url":"https://en.wikipedia.org/wiki/Poa_annua","langname":"English","autonym":"English","*":"Poa
+        annua"},{"lang":"eo","url":"https://eo.wikipedia.org/wiki/Poa_annua","langname":"Esperanto","autonym":"Esperanto","*":"Poa
+        annua"},{"lang":"es","url":"https://es.wikipedia.org/wiki/Poa_annua","langname":"Spanish","autonym":"español","*":"Poa
+        annua"},{"lang":"et","url":"https://et.wikipedia.org/wiki/Murunurmikas","langname":"Estonian","autonym":"eesti","*":"Murunurmikas"},{"lang":"fi","url":"https://fi.wikipedia.org/wiki/Kyl%C3%A4nurmikka","langname":"Finnish","autonym":"suomi","*":"Kylänurmikka"},{"lang":"fr","url":"https://fr.wikipedia.org/wiki/P%C3%A2turin_annuel","langname":"French","autonym":"français","*":"Pâturin
+        annuel"},{"lang":"ga","url":"https://ga.wikipedia.org/wiki/Cuise_bliant%C3%BAil","langname":"Irish","autonym":"Gaeilge","*":"Cuise
+        bliantúil"},{"lang":"hr","url":"https://hr.wikipedia.org/wiki/Jednogodi%C5%A1nja_vlasnja%C4%8Da","langname":"Croatian","autonym":"hrvatski","*":"Jednogodišnja
+        vlasnjača"},{"lang":"hsb","url":"https://hsb.wikipedia.org/wiki/M%C3%B3li%C4%8Dka_lipnica","langname":"Upper
+        Sorbian","autonym":"hornjoserbsce","*":"Mólička lipnica"},{"lang":"is","url":"https://is.wikipedia.org/wiki/Varpasveifgras","langname":"Icelandic","autonym":"íslenska","*":"Varpasveifgras"},{"lang":"it","url":"https://it.wikipedia.org/wiki/Poa_annua","langname":"Italian","autonym":"italiano","*":"Poa
+        annua"},{"lang":"ja","url":"https://ja.wikipedia.org/wiki/%E3%82%B9%E3%82%BA%E3%83%A1%E3%83%8E%E3%82%AB%E3%82%BF%E3%83%93%E3%83%A9","langname":"Japanese","autonym":"日本語","*":"スズメノカタビラ"},{"lang":"lt","url":"https://lt.wikipedia.org/wiki/Vienamet%C4%97_migl%C4%97","langname":"Lithuanian","autonym":"lietuvių","*":"Vienametė
+        miglė"},{"lang":"nl","url":"https://nl.wikipedia.org/wiki/Straatgras","langname":"Dutch","autonym":"Nederlands","*":"Straatgras"},{"lang":"no","url":"https://no.wikipedia.org/wiki/Tunrapp","langname":"Norwegian","autonym":"norsk","*":"Tunrapp"},{"lang":"pl","url":"https://pl.wikipedia.org/wiki/Wiechlina_roczna","langname":"Polish","autonym":"polski","*":"Wiechlina
+        roczna"},{"lang":"pt","url":"https://pt.wikipedia.org/wiki/Poa_annua","langname":"Portuguese","autonym":"português","*":"Poa
+        annua"},{"lang":"qu","url":"https://qu.wikipedia.org/wiki/P%27ata_qachu","langname":"Quechua","autonym":"Runa
+        Simi","*":"P''ata qachu"},{"lang":"ru","url":"https://ru.wikipedia.org/wiki/%D0%9C%D1%8F%D1%82%D0%BB%D0%B8%D0%BA_%D0%BE%D0%B4%D0%BD%D0%BE%D0%BB%D0%B5%D1%82%D0%BD%D0%B8%D0%B9","langname":"Russian","autonym":"русский","*":"Мятлик
+        однолетний"},{"lang":"sv","url":"https://sv.wikipedia.org/wiki/Vitgr%C3%B6e","langname":"Swedish","autonym":"svenska","*":"Vitgröe"},{"lang":"uk","url":"https://uk.wikipedia.org/wiki/%D0%A2%D0%BE%D0%BD%D0%BA%D0%BE%D0%BD%D1%96%D0%B3_%D0%BE%D0%B4%D0%BD%D0%BE%D1%80%D1%96%D1%87%D0%BD%D0%B8%D0%B9","langname":"Ukrainian","autonym":"українська","*":"Тонконіг
+        однорічний"},{"lang":"vi","url":"https://vi.wikipedia.org/wiki/Poa_annua","langname":"Vietnamese","autonym":"Tiếng
+        Việt","*":"Poa annua"},{"lang":"war","url":"https://war.wikipedia.org/wiki/Poa_annua","langname":"Waray","autonym":"Winaray","*":"Poa
+        annua"},{"lang":"zh","url":"https://zh.wikipedia.org/wiki/%E6%97%A9%E7%86%9F%E7%A6%BE","langname":"Chinese","autonym":"中文","*":"早熟禾"}],"categories":[{"sortkey":"","hidden":"","*":"Pages_with_taxonavigation_templates"},{"sortkey":"","hidden":"","*":"Pages_with_vernacular_names"},{"sortkey":"","hidden":"","*":"Pages_with_Wikimedia_Commons_links"}],"links":[{"ns":0,"exists":"","*":"Carolus
+        Linnaeus"},{"ns":0,"exists":"","*":"Commelinids"},{"ns":0,"exists":"","*":"Eukaryota"},{"ns":0,"exists":"","*":"L."},{"ns":0,"exists":"","*":"Magnoliopsida"},{"ns":0,"exists":"","*":"Monocots"},{"ns":0,"exists":"","*":"Nom.
+        illeg."},{"ns":0,"exists":"","*":"Nom. nud."},{"ns":0,"exists":"","*":"Plantae"},{"ns":0,"exists":"","*":"Poa"},{"ns":0,"exists":"","*":"Poaceae"},{"ns":0,"exists":"","*":"Poales"},{"ns":0,"exists":"","*":"Poeae"},{"ns":0,"exists":"","*":"Poinae"},{"ns":0,"exists":"","*":"Pooideae"},{"ns":0,"exists":"","*":"Rafaël
+        Herman Anna Govaerts"}],"templates":[{"ns":10,"exists":"","*":"Template:Poa"},{"ns":10,"exists":"","*":"Template:Poinae"},{"ns":10,"exists":"","*":"Template:Poeae"},{"ns":10,"exists":"","*":"Template:Pooideae"},{"ns":10,"exists":"","*":"Template:Poaceae"},{"ns":10,"exists":"","*":"Template:Taxonav"},{"ns":10,"exists":"","*":"Template:Taxonavigation"},{"ns":10,"exists":"","*":"Template:Poales"},{"ns":10,"exists":"","*":"Template:Commelinids"},{"ns":10,"exists":"","*":"Template:Monocots"},{"ns":10,"exists":"","*":"Template:Angiospermae"},{"ns":10,"exists":"","*":"Template:Plantae"},{"ns":10,"exists":"","*":"Template:A"},{"ns":10,"exists":"","*":"Template:HOT"},{"ns":10,"exists":"","*":"Template:HET"},{"ns":10,"exists":"","*":"Template:LSP"},{"ns":10,"exists":"","*":"Template:WCSP"},{"ns":10,"exists":"","*":"Template:IPNI"},{"ns":10,"exists":"","*":"Template:Aut"},{"ns":10,"exists":"","*":"Template:GRIN"},{"ns":10,"exists":"","*":"Template:VN"},{"ns":10,"exists":"","*":"Template:Commons"}],"images":["Poa_annua.jpg","Commons-logo.svg"],"externallinks":["http://www.botanicus.org/title/b12069590","http://www.biodiversitylibrary.org/openurl?pid=title:669&volume=1&issue=&spage=68&date=1753","https://wcsp.science.kew.org/qsearch.do?page=quickSearch&plantName=Poa+annua","http://www.ipni.org/ipni/simplePlantNameSearch.do?find_wholeName=Poa+annua","https://npgsweb.ars-grin.gov/gringlobal/taxonomydetail.aspx?id=28904","http://www.ars-grin.gov/npgs/gringlobal/sb/home.html"],"sections":[{"toclevel":1,"level":"2","line":"Taxonavigation","number":"1","index":"1","fromtitle":"Poa_annua","byteoffset":57,"anchor":"Taxonavigation"},{"toclevel":1,"level":"2","line":"Name","number":"2","index":"2","fromtitle":"Poa_annua","byteoffset":114,"anchor":"Name"},{"toclevel":2,"level":"3","line":"Synonyms","number":"2.1","index":"3","fromtitle":"Poa_annua","byteoffset":180,"anchor":"Synonyms"},{"toclevel":1,"level":"2","line":"References","number":"3","index":"4","fromtitle":"Poa_annua","byteoffset":2895,"anchor":"References"},{"toclevel":1,"level":"2","line":"Vernacular
+        names","number":"4","index":"5","fromtitle":"Poa_annua","byteoffset":2997,"anchor":"Vernacular_names"}],"displaytitle":"Poa
+        annua","iwlinks":[{"prefix":"en","url":"https://en.wikipedia.org/wiki/Royal_Botanic_Gardens,_Kew","*":"en:Royal
+        Botanic Gardens, Kew"},{"prefix":"en","url":"https://en.wikipedia.org/wiki/International_Plant_Names_Index","*":"en:International
+        Plant Names Index"},{"prefix":"c","url":"https://commons.wikimedia.org/wiki/Special:Search/Poa_annua","*":"c:Special:Search/Poa
+        annua"},{"prefix":"c","url":"https://commons.wikimedia.org/wiki/","*":"c:"}],"properties":[{"name":"notoc","*":""},{"name":"wikibase_item","*":"Q157571"}]}}'
+  recorded_at: 2018-10-19 19:08:03 GMT
+  recorded_with: vcr/0.2.0, webmockr/0.2.8.9100

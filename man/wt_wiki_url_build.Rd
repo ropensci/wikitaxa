@@ -6,9 +6,9 @@
 \usage{
 wt_wiki_url_build(wiki, type = NULL, page = NULL, api = FALSE,
   action = "parse", redirects = TRUE, format = "json", utf8 = TRUE,
-  prop = c("text", "langlinks", "categories", "links", "templates", "images",
-  "externallinks", "sections", "revid", "displaytitle", "iwlinks",
-  "properties"))
+  prop = c("text", "langlinks", "categories", "links", "templates",
+  "images", "externallinks", "sections", "revid", "displaytitle",
+  "iwlinks", "properties"))
 }
 \arguments{
 \item{wiki}{(character | list) Either the wiki name or a list with
@@ -58,3 +58,4 @@ Other MediaWiki functions: \code{\link{wt_wiki_page_parse}},
   \code{\link{wt_wiki_page}},
   \code{\link{wt_wiki_url_parse}}
 }
+\concept{MediaWiki functions}

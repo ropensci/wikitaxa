@@ -1,0 +1,181 @@
+http_interactions:
+- request:
+    method: get
+    uri: https://species.wikimedia.org/w/api.php?page=Malus_domestica&action=parse&redirects=TRUE&format=json&utf8=TRUE&prop=text%7Clanglinks%7Ccategories%7Clinks%7Ctemplates%7Cimages%7Cexternallinks%7Csections%7Crevid%7Cdisplaytitle%7Ciwlinks%7Cproperties
+    body:
+      encoding: ''
+      string: ''
+    headers:
+      User-Agent: libcurl/7.54.0 r-curl/3.2 crul/0.6.0
+      Accept-Encoding: gzip, deflate
+      Accept: application/json, text/xml, application/xml, */*
+  response:
+    status:
+      status_code: '200'
+      message: OK
+      explanation: Request fulfilled, document follows
+    headers:
+      status: HTTP/1.1 200 OK
+      date: Fri, 19 Oct 2018 19:08:02 GMT
+      content-type: application/json; charset=utf-8
+      transfer-encoding: chunked
+      connection: keep-alive
+      server: mw1317.eqiad.wmnet
+      x-powered-by: HHVM/3.18.6-dev
+      p3p: CP="This is not a P3P policy! See https://species.wikimedia.org/wiki/Special:CentralAutoLogin/P3P
+        for more info."
+      cache-control: private, must-revalidate, max-age=0
+      vary: Accept-Encoding,Treat-as-Untrusted,X-Forwarded-Proto,Cookie,Authorization
+      content-disposition: inline; filename=api-result.json
+      x-content-type-options: nosniff
+      x-frame-options: DENY
+      backend-timing: D=47312 t=1539976082567394
+      content-encoding: gzip
+      x-varnish: 239240179, 83378728, 963054312, 1629127
+      via: 1.1 varnish (Varnish/5.1), 1.1 varnish (Varnish/5.1), 1.1 varnish (Varnish/5.1),
+        1.1 varnish (Varnish/5.1)
+      accept-ranges: bytes
+      age: '0'
+      x-cache: cp1077 pass, cp2010 pass, cp4027 pass, cp4028 pass
+      x-cache-status: pass
+      strict-transport-security: max-age=106384710; includeSubDomains; preload
+      x-analytics: ns=-1;special=Badtitle;WMF-Last-Access=19-Oct-2018;https=1
+      x-client-ip: 157.130.179.86
+    body:
+      encoding: UTF-8
+      string: '{"parse":{"title":"Malus domestica","pageid":86997,"revid":3885343,"redirects":[],"text":{"*":"<div
+        class=\"mw-parser-output\"><div class=\"thumb tright\"><div class=\"thumbinner\"
+        style=\"width:252px;\"><a href=\"/wiki/File:Discovery_apples.jpg\" class=\"image\"><img
+        alt=\"\" src=\"//upload.wikimedia.org/wikipedia/commons/thumb/a/a3/Discovery_apples.jpg/250px-Discovery_apples.jpg\"
+        width=\"250\" height=\"188\" class=\"thumbimage\" srcset=\"//upload.wikimedia.org/wikipedia/commons/thumb/a/a3/Discovery_apples.jpg/375px-Discovery_apples.jpg
+        1.5x, //upload.wikimedia.org/wikipedia/commons/thumb/a/a3/Discovery_apples.jpg/500px-Discovery_apples.jpg
+        2x\" data-file-width=\"2048\" data-file-height=\"1536\" /></a>  <div class=\"thumbcaption\"><div
+        class=\"magnify\"><a href=\"/wiki/File:Discovery_apples.jpg\" class=\"internal\"
+        title=\"Zvětšit\"></a></div><i>Malus domestica</i> ''Discovery''</div></div></div>\n<h2><span
+        class=\"mw-headline\" id=\"Taxonavigation\">Taxonavigation</span><span class=\"mw-editsection\"><span
+        class=\"mw-editsection-bracket\">[</span><a href=\"/w/index.php?title=Malus_domestica&amp;action=edit&amp;section=1\"
+        title=\"Edit section: Taxonavigation\">edit</a><span class=\"mw-editsection-bracket\">]</span></span></h2>\n<table
+        class=\"wikitable mw-collapsible mw-collapsed\">\n<tbody><tr>\n<th>Taxonavigation:
+        <a href=\"/wiki/Rosales\" title=\"Rosales\">Rosales&#160;</a>\n</th></tr>\n<tr>\n<td>Classification
+        System: APG IV\n<p>Superregnum: <a href=\"/wiki/Eukaryota\" title=\"Eukaryota\">Eukaryota</a>
+        <br />\nRegnum: <a href=\"/wiki/Plantae\" title=\"Plantae\">Plantae</a> <br
+        />\nCladus: <a href=\"/wiki/Magnoliopsida\" title=\"Magnoliopsida\">Angiosperms</a>
+        <br />\nCladus: <a href=\"/wiki/Eudicots\" title=\"Eudicots\">Eudicots</a>
+        <br />\nCladus: <a href=\"/wiki/Core_eudicots\" title=\"Core eudicots\">Core
+        eudicots</a> <br />\nCladus: <a href=\"/wiki/Rosids\" title=\"Rosids\">Rosids</a>
+        <br />\nCladus: <a href=\"/wiki/Eurosids_I\" title=\"Eurosids I\">Eurosids
+        I</a> <br />\nOrdo: <a href=\"/wiki/Rosales\" title=\"Rosales\">Rosales</a><br
+        />\n</p>\n</td></tr></tbody></table>\n<p>Familia: <a href=\"/wiki/Rosaceae\"
+        title=\"Rosaceae\">Rosaceae</a><br />\nSubfamilia: <a href=\"/wiki/Amygdaloideae\"
+        title=\"Amygdaloideae\">Amygdaloideae</a><br />\nTribus: <a href=\"/wiki/Maleae\"
+        title=\"Maleae\">Maleae</a><br />\nGenus: <i><a href=\"/wiki/Malus\" title=\"Malus\">Malus</a></i>
+        <br />\nSectio: <a href=\"/wiki/Malus_sect._Malus\" title=\"Malus sect. Malus\"><i>M.</i>
+        sect. <i>Malus</i></a> <br />\nSpecies: <i><a class=\"mw-selflink selflink\">Malus
+        domestica</a></i>\n</p>\n<h2><span class=\"mw-headline\" id=\"Name\">Name</span><span
+        class=\"mw-editsection\"><span class=\"mw-editsection-bracket\">[</span><a
+        href=\"/w/index.php?title=Malus_domestica&amp;action=edit&amp;section=2\"
+        title=\"Edit section: Name\">edit</a><span class=\"mw-editsection-bracket\">]</span></span></h2>\n<p><i>Malus
+        domestica</i> <a href=\"/wiki/Borkh.\" class=\"mw-redirect\" title=\"Borkh.\">Borkh.</a>\n</p>\n<h2><span
+        class=\"mw-headline\" id=\"Hybrids\">Hybrids</span><span class=\"mw-editsection\"><span
+        class=\"mw-editsection-bracket\">[</span><a href=\"/w/index.php?title=Malus_domestica&amp;action=edit&amp;section=3\"
+        title=\"Edit section: Hybrids\">edit</a><span class=\"mw-editsection-bracket\">]</span></span></h2>\n<p><i><a
+        href=\"/wiki/Malus_%C3%97_adstringens\" title=\"Malus × adstringens\"><abbr
+        title=\"Malus\">M</abbr>.&#160;× adstringens</a></i>&#160;–\n<i><a href=\"/wiki/Malus_%C3%97_dawsoniana\"
+        title=\"Malus × dawsoniana\"><abbr title=\"Malus\">M</abbr>.&#160;× dawsoniana</a></i>\n</p>\n<h2><span
+        class=\"mw-headline\" id=\"References\">References</span><span class=\"mw-editsection\"><span
+        class=\"mw-editsection-bracket\">[</span><a href=\"/w/index.php?title=Malus_domestica&amp;action=edit&amp;section=4\"
+        title=\"Edit section: References\">edit</a><span class=\"mw-editsection-bracket\">]</span></span></h2>\n<ul><li>Theoretisches-praktisches
+        Handbuch der Forstbotanik und Forsttechnologie 2:1272.  1803</li>\n<li>USDA,
+        ARS, National Genetic Resources Program. Germplasm Resources Information Network
+        - (GRIN) [Online Database]. <a rel=\"nofollow\" class=\"external autonumber\"
+        href=\"https://web.archive.org/web/20090115062704/http://www.ars-grin.gov/cgi-bin/npgs/html/taxon.pl?104681\">[1]</a></li></ul>\n<h2><span
+        class=\"mw-headline\" id=\"Vernacular_names\">Vernacular names</span><span
+        class=\"mw-editsection\"><span class=\"mw-editsection-bracket\">[</span><a
+        href=\"/w/index.php?title=Malus_domestica&amp;action=edit&amp;section=5\"
+        title=\"Edit section: Vernacular names\">edit</a><span class=\"mw-editsection-bracket\">]</span></span></h2>\n<div
+        style=\"padding:0 10px; -moz-column-count: 2; -moz-column-gap: 40px; -moz-column-rule:
+        1px solid #aaa; -webkit-column-count: 2; -webkit-column-gap: 40px; -webkit-column-rule:
+        1px solid #aaa; column-count: 2; column-gap: 40px; column-rule: 1px solid
+        #aaa; border:1px solid #aaa; background:#f9f9f9; font-size:90%\"><b>български:</b>&#160;Ябълка<br
+        /><b>català:</b>&#160;Poma, pomera<br /><b>čeština:</b>&#160;jabloň domácí<br
+        /><b>Deutsch:</b>&#160;Apfel<br /><b>eesti:</b>&#160;Aed-õunapuu<br /><b>Ελληνικά:</b>&#160;Μηλιά<br
+        /><b>English:</b>&#160;Apple<br /><b>español:</b>&#160;Manzano<br /><b>français:</b>&#160;Pomme<br
+        /><b>furlan:</b>&#160;Melâr<br /><b>한국어:</b>&#160;사과나무<br /><b>Hawaiʻi:</b>&#160;‘Āpala<br
+        /><b>italiano:</b>&#160;Melo<br /><b>Mirandés:</b>&#160;Maçaneira<br /><b>Nordfriisk:</b>&#160;Aapel<br
+        /><b>norsk:</b>&#160;Eple<br /><b>português:</b>&#160;Maçã, Macieira<br /><b>русский:</b>&#160;Яблоня
+        домашняя<br /><b>suomi:</b>&#160;Tarhaomenapuu<br /><b>Türkçe:</b>&#160;Elma<br
+        /><b>українська:</b>&#160;Яблуня домашня<br /><b>vèneto:</b>&#160;Pomaro<br
+        /></div>\n<table class=\"toccolours\" width=\"100%\" style=\"margin:0.5em
+        0; clear:both; padding:0;\">\n\n<tbody><tr>\n<td width=\"40\" align=\"center\"><a
+        href=\"/wiki/File:Commons-logo.svg\" class=\"image\" title=\"Wikimedia Commons\"><img
+        alt=\"\" src=\"//upload.wikimedia.org/wikipedia/commons/thumb/4/4a/Commons-logo.svg/15px-Commons-logo.svg.png\"
+        width=\"15\" height=\"20\" srcset=\"//upload.wikimedia.org/wikipedia/commons/thumb/4/4a/Commons-logo.svg/23px-Commons-logo.svg.png
+        1.5x, //upload.wikimedia.org/wikipedia/commons/thumb/4/4a/Commons-logo.svg/30px-Commons-logo.svg.png
+        2x\" data-file-width=\"1024\" data-file-height=\"1376\" /></a>\n</td>\n<td>For
+        more multimedia, look at <i><b><a href=\"https://commons.wikimedia.org/wiki/Malus_domestica\"
+        class=\"extiw\" title=\"c:Malus domestica\"><i>Malus domestica</i></a></b></i>
+        on <a href=\"https://commons.wikimedia.org/wiki/\" class=\"extiw\" title=\"c:\">Wikimedia
+        Commons</a>.\n</td></tr></tbody></table>\n\n<!-- \nNewPP limit report\nParsed
+        by mw1328\nCached time: 20181011184332\nCache expiry: 1900800\nDynamic content:
+        false\nCPU time usage: 0.116 seconds\nReal time usage: 0.145 seconds\nPreprocessor
+        visited node count: 2366/1000000\nPreprocessor generated node count: 0/1500000\nPost‐expand
+        include size: 16304/2097152 bytes\nTemplate argument size: 4599/2097152 bytes\nHighest
+        expansion depth: 27/40\nExpensive parser function count: 0/500\nUnstrip recursion
+        depth: 0/20\nUnstrip post‐expand size: 0/5000000 bytes\nNumber of Wikibase
+        entities loaded: 0/400\n-->\n<!--\nTransclusion expansion time report (%,ms,calls,template)\n100.00%  119.575      1
+        -total\n 38.54%   46.084      1 Template:Italic\n 33.96%   40.609      1 Template:Str_find\n
+        32.46%   38.811      1 Template:Str_find/logic\n 27.77%   33.201      1 Template:VN\n
+        23.21%   27.754      1 Template:Malus_sect._Malus\n 21.88%   26.159      1
+        Template:Malus\n 20.39%   24.376      1 Template:Maleae\n 18.72%   22.389      1
+        Template:Amygdaloideae\n 17.84%   21.331     99 Template:Str_left\n-->\n\n<!--
+        Saved in parser cache with key specieswiki:pcache:idhash:86997-0!canonical
+        and timestamp 20181011184331 and revision id 3885343\n -->\n</div>"},"langlinks":[{"lang":"als","url":"https://als.wikipedia.org/wiki/Kulturapfel","langname":"Alemannisch","autonym":"Alemannisch","*":"Kulturapfel"},{"lang":"am","url":"https://am.wikipedia.org/wiki/%E1%89%B1%E1%8D%8B%E1%88%95","langname":"Amharic","autonym":"አማርኛ","*":"ቱፋሕ"},{"lang":"ast","url":"https://ast.wikipedia.org/wiki/Malus_domestica","langname":"Asturian","autonym":"asturianu","*":"Malus
+        domestica"},{"lang":"az","url":"https://az.wikipedia.org/wiki/M%C9%99d%C9%99ni_alma_a%C4%9Fac%C4%B1","langname":"Azerbaijani","autonym":"azərbaycanca","*":"Mədəni
+        alma ağacı"},{"lang":"bat-smg","url":"https://bat-smg.wikipedia.org/wiki/Vuobel%C4%97s","langname":"Samogitian","autonym":"žemaitėška","*":"Vuobelės"},{"lang":"bo","url":"https://bo.wikipedia.org/wiki/%E0%BD%80%E0%BD%B4%E0%BC%8B%E0%BD%A4%E0%BD%B4%E0%BC%8D","langname":"Tibetan","autonym":"བོད་ཡིག","*":"ཀུ་ཤུ།"},{"lang":"bpy","url":"https://bpy.wikipedia.org/wiki/%E0%A6%86%E0%A6%AA%E0%A7%87%E0%A6%B2","langname":"Bishnupriya","autonym":"বিষ্ণুপ্রিয়া
+        মণিপুরী","*":"আপেল"},{"lang":"ca","url":"https://ca.wikipedia.org/wiki/Pomera_comuna","langname":"Catalan","autonym":"català","*":"Pomera
+        comuna"},{"lang":"cdo","url":"https://cdo.wikipedia.org/wiki/B%C3%ACng-gu%C5%8D","langname":"Min
+        Dong Chinese","autonym":"Mìng-dĕ̤ng-ngṳ̄","*":"Bìng-guō"},{"lang":"cs","url":"https://cs.wikipedia.org/wiki/Jablo%C5%88_dom%C3%A1c%C3%AD","langname":"Czech","autonym":"čeština","*":"Jabloň
+        domácí"},{"lang":"csb","url":"https://csb.wikipedia.org/wiki/Dom%C3%B4c%C3%B4_jab%C5%82%C3%B3nka","langname":"Kashubian","autonym":"kaszëbsczi","*":"Domôcô
+        jabłónka"},{"lang":"da","url":"https://da.wikipedia.org/wiki/Almindelig_%C3%A6ble","langname":"Danish","autonym":"dansk","*":"Almindelig
+        æble"},{"lang":"de","url":"https://de.wikipedia.org/wiki/Kulturapfel","langname":"German","autonym":"Deutsch","*":"Kulturapfel"},{"lang":"dsb","url":"https://dsb.wikipedia.org/wiki/Zagrodna_jab%C5%82u%C5%A1cyna","langname":"Lower
+        Sorbian","autonym":"dolnoserbski","*":"Zagrodna jabłušcyna"},{"lang":"eo","url":"https://eo.wikipedia.org/wiki/Kulturpomo","langname":"Esperanto","autonym":"Esperanto","*":"Kulturpomo"},{"lang":"es","url":"https://es.wikipedia.org/wiki/Malus_domestica","langname":"Spanish","autonym":"español","*":"Malus
+        domestica"},{"lang":"et","url":"https://et.wikipedia.org/wiki/%C3%95unapuu","langname":"Estonian","autonym":"eesti","*":"Õunapuu"},{"lang":"eu","url":"https://eu.wikipedia.org/wiki/Sagarrondo","langname":"Basque","autonym":"euskara","*":"Sagarrondo"},{"lang":"fi","url":"https://fi.wikipedia.org/wiki/Tarhaomenapuu","langname":"Finnish","autonym":"suomi","*":"Tarhaomenapuu"},{"lang":"fiu-vro","url":"https://fiu-vro.wikipedia.org/wiki/Uibu","langname":"Võro","autonym":"Võro","*":"Uibu"},{"lang":"fr","url":"https://fr.wikipedia.org/wiki/Pommier_domestique","langname":"French","autonym":"français","*":"Pommier
+        domestique"},{"lang":"frr","url":"https://frr.wikipedia.org/wiki/Aapelbuum","langname":"Northern
+        Frisian","autonym":"Nordfriisk","*":"Aapelbuum"},{"lang":"gl","url":"https://gl.wikipedia.org/wiki/Maceira","langname":"Galician","autonym":"galego","*":"Maceira"},{"lang":"gv","url":"https://gv.wikipedia.org/wiki/Ooyl","langname":"Manx","autonym":"Gaelg","*":"Ooyl"},{"lang":"hsb","url":"https://hsb.wikipedia.org/wiki/Zahrodna_jab%C5%82u%C4%8Dina","langname":"Upper
+        Sorbian","autonym":"hornjoserbsce","*":"Zahrodna jabłučina"},{"lang":"hu","url":"https://hu.wikipedia.org/wiki/Nemes_alma","langname":"Hungarian","autonym":"magyar","*":"Nemes
+        alma"},{"lang":"ia","url":"https://ia.wikipedia.org/wiki/Malus_domestica","langname":"Interlingua","autonym":"interlingua","*":"Malus
+        domestica"},{"lang":"it","url":"https://it.wikipedia.org/wiki/Malus_domestica","langname":"Italian","autonym":"italiano","*":"Malus
+        domestica"},{"lang":"jv","url":"https://jv.wikipedia.org/wiki/Apel","langname":"Javanese","autonym":"Basa
+        Jawa","*":"Apel"},{"lang":"ku","url":"https://ku.wikipedia.org/wiki/S%C3%AAv","langname":"Kurdish","autonym":"kurdî","*":"Sêv"},{"lang":"kw","url":"https://kw.wikipedia.org/wiki/Aval","langname":"Cornish","autonym":"kernowek","*":"Aval"},{"lang":"li","url":"https://li.wikipedia.org/wiki/Appel","langname":"Limburgish","autonym":"Limburgs","*":"Appel"},{"lang":"lv","url":"https://lv.wikipedia.org/wiki/%C4%80bele","langname":"Latvian","autonym":"latviešu","*":"Ābele"},{"lang":"mn","url":"https://mn.wikipedia.org/wiki/%D0%90%D0%BB%D0%B8%D0%BC","langname":"Mongolian","autonym":"монгол","*":"Алим"},{"lang":"nah","url":"https://nah.wikipedia.org/wiki/Manzanacuahuitl","langname":"Nāhuatl","autonym":"Nāhuatl","*":"Manzanacuahuitl"},{"lang":"nap","url":"https://nap.wikipedia.org/wiki/Mir","langname":"Neapolitan","autonym":"Napulitano","*":"Mir"},{"lang":"nds","url":"https://nds.wikipedia.org/wiki/Huusappel","langname":"Low
+        German","autonym":"Plattdüütsch","*":"Huusappel"},{"lang":"ne","url":"https://ne.wikipedia.org/wiki/%E0%A4%B8%E0%A5%8D%E0%A4%AF%E0%A4%BE%E0%A4%89","langname":"Nepali","autonym":"नेपाली","*":"स्याउ"},{"lang":"nl","url":"https://nl.wikipedia.org/wiki/Appel_(plant)","langname":"Dutch","autonym":"Nederlands","*":"Appel
+        (plant)"},{"lang":"nn","url":"https://nn.wikipedia.org/wiki/Eple","langname":"Norwegian
+        Nynorsk","autonym":"norsk nynorsk","*":"Eple"},{"lang":"oc","url":"https://oc.wikipedia.org/wiki/Pomi%C3%A8r","langname":"Occitan","autonym":"occitan","*":"Pomièr"},{"lang":"os","url":"https://os.wikipedia.org/wiki/%D0%A5%C3%A6%D0%B4%D0%B7%D0%B0%D1%80%D0%BE%D0%BD_%D1%84%C3%A6%D1%82%D0%BA%D1%8A%D1%83%D1%8B","langname":"Ossetic","autonym":"Ирон","*":"Хæдзарон
+        фæткъуы"},{"lang":"pam","url":"https://pam.wikipedia.org/wiki/Mansanas","langname":"Pampanga","autonym":"Kapampangan","*":"Mansanas"},{"lang":"pl","url":"https://pl.wikipedia.org/wiki/Jab%C5%82o%C5%84_domowa","langname":"Polish","autonym":"polski","*":"Jabłoń
+        domowa"},{"lang":"pms","url":"https://pms.wikipedia.org/wiki/Malus_domestica","langname":"Piedmontese","autonym":"Piemontèis","*":"Malus
+        domestica"},{"lang":"ps","url":"https://ps.wikipedia.org/wiki/%D9%85%DA%BC%D9%87","langname":"Pashto","autonym":"پښتو","*":"مڼه"},{"lang":"pt","url":"https://pt.wikipedia.org/wiki/Malus_domestica","langname":"Portuguese","autonym":"português","*":"Malus
+        domestica"},{"lang":"qu","url":"https://qu.wikipedia.org/wiki/Mansana","langname":"Quechua","autonym":"Runa
+        Simi","*":"Mansana"},{"lang":"ro","url":"https://ro.wikipedia.org/wiki/M%C4%83r","langname":"Romanian","autonym":"română","*":"Măr"},{"lang":"ru","url":"https://ru.wikipedia.org/wiki/%D0%AF%D0%B1%D0%BB%D0%BE%D0%BD%D1%8F_%D0%B4%D0%BE%D0%BC%D0%B0%D1%88%D0%BD%D1%8F%D1%8F","langname":"Russian","autonym":"русский","*":"Яблоня
+        домашняя"},{"lang":"sh","url":"https://sh.wikipedia.org/wiki/Jabuka","langname":"Serbo-Croatian","autonym":"srpskohrvatski
+        / српскохрватски","*":"Jabuka"},{"lang":"si","url":"https://si.wikipedia.org/wiki/%E0%B6%87%E0%B6%B4%E0%B6%BD%E0%B7%8A","langname":"Sinhala","autonym":"සිංහල","*":"ඇපල්"},{"lang":"sk","url":"https://sk.wikipedia.org/wiki/Jablo%C5%88_dom%C3%A1ca","langname":"Slovak","autonym":"slovenčina","*":"Jabloň
+        domáca"},{"lang":"sl","url":"https://sl.wikipedia.org/wiki/Jablana","langname":"Slovenian","autonym":"slovenščina","*":"Jablana"},{"lang":"sr","url":"https://sr.wikipedia.org/wiki/%D0%94%D0%BE%D0%BC%D0%B0%D1%9B%D0%B0_%D1%98%D0%B0%D0%B1%D1%83%D0%BA%D0%B0","langname":"Serbian","autonym":"српски
+        / srpski","*":"Домаћа јабука"},{"lang":"sv","url":"https://sv.wikipedia.org/wiki/%C3%84ppeltr%C3%A4d","langname":"Swedish","autonym":"svenska","*":"Äppelträd"},{"lang":"te","url":"https://te.wikipedia.org/wiki/%E0%B0%86%E0%B0%AA%E0%B0%BF%E0%B0%B2%E0%B1%8D","langname":"Telugu","autonym":"తెలుగు","*":"ఆపిల్"},{"lang":"tk","url":"https://tk.wikipedia.org/wiki/Medeni_Alma","langname":"Turkmen","autonym":"Türkmençe","*":"Medeni
+        Alma"},{"lang":"uk","url":"https://uk.wikipedia.org/wiki/%D0%AF%D0%B1%D0%BB%D1%83%D0%BD%D1%8F_%D0%B4%D0%BE%D0%BC%D0%B0%D1%88%D0%BD%D1%8F","langname":"Ukrainian","autonym":"українська","*":"Яблуня
+        домашня"},{"lang":"uz","url":"https://uz.wikipedia.org/wiki/Olma","langname":"Uzbek","autonym":"oʻzbekcha/ўзбекча","*":"Olma"},{"lang":"vec","url":"https://vec.wikipedia.org/wiki/Pomaro","langname":"Venetian","autonym":"vèneto","*":"Pomaro"},{"lang":"vi","url":"https://vi.wikipedia.org/wiki/Malus_domestica","langname":"Vietnamese","autonym":"Tiếng
+        Việt","*":"Malus domestica"},{"lang":"zh-min-nan","url":"https://zh-min-nan.wikipedia.org/wiki/Ph%C5%8Dng-k%C3%B3-chhi%C5%AB","langname":"Chinese
+        (Min Nan)","autonym":"Bân-lâm-gú","*":"Phōng-kó-chhiū"},{"lang":"zh-yue","url":"https://zh-yue.wikipedia.org/wiki/%E8%98%8B%E6%9E%9C%E6%A8%B9","langname":"Cantonese","autonym":"粵語","*":"蘋果樹"}],"categories":[{"sortkey":"","hidden":"","*":"Pages_with_taxonavigation_templates"},{"sortkey":"","hidden":"","*":"Pages_with_vernacular_names"},{"sortkey":"","hidden":"","*":"Pages_with_Wikimedia_Commons_links"}],"links":[{"ns":0,"exists":"","*":"Amygdaloideae"},{"ns":0,"exists":"","*":"Borkh."},{"ns":0,"exists":"","*":"Core
+        eudicots"},{"ns":0,"exists":"","*":"Eudicots"},{"ns":0,"exists":"","*":"Eukaryota"},{"ns":0,"exists":"","*":"Eurosids
+        I"},{"ns":0,"exists":"","*":"Magnoliopsida"},{"ns":0,"exists":"","*":"Maleae"},{"ns":0,"exists":"","*":"Malus"},{"ns":0,"exists":"","*":"Malus
+        sect. Malus"},{"ns":0,"exists":"","*":"Malus × adstringens"},{"ns":0,"exists":"","*":"Malus
+        × dawsoniana"},{"ns":0,"exists":"","*":"Plantae"},{"ns":0,"exists":"","*":"Rosaceae"},{"ns":0,"exists":"","*":"Rosales"},{"ns":0,"exists":"","*":"Rosids"}],"templates":[{"ns":10,"exists":"","*":"Template:Italic"},{"ns":10,"exists":"","*":"Template:Str
+        find"},{"ns":10,"exists":"","*":"Template:Str find/logic"},{"ns":10,"exists":"","*":"Template:Str
+        left"},{"ns":10,"exists":"","*":"Template:Str len"},{"ns":10,"exists":"","*":"Template:Str
+        len/core"},{"ns":10,"exists":"","*":"Template:Image"},{"ns":10,"exists":"","*":"Template:Malus
+        sect. Malus"},{"ns":10,"exists":"","*":"Template:Malus"},{"ns":10,"exists":"","*":"Template:Maleae"},{"ns":10,"exists":"","*":"Template:Amygdaloideae"},{"ns":10,"exists":"","*":"Template:Rosaceae"},{"ns":10,"exists":"","*":"Template:Taxonav"},{"ns":10,"exists":"","*":"Template:Taxonavigation"},{"ns":10,"exists":"","*":"Template:Rosales"},{"ns":10,"exists":"","*":"Template:Eurosids
+        I"},{"ns":10,"exists":"","*":"Template:Rosids"},{"ns":10,"exists":"","*":"Template:Core
+        eudicots"},{"ns":10,"exists":"","*":"Template:Eudicots"},{"ns":10,"exists":"","*":"Template:Angiospermae"},{"ns":10,"exists":"","*":"Template:Plantae"},{"ns":10,"exists":"","*":"Template:Fbr"},{"ns":10,"exists":"","*":"Template:Sp"},{"ns":10,"exists":"","*":"Template:Splast"},{"ns":10,"exists":"","*":"Template:VN"},{"ns":10,"exists":"","*":"Template:Commons2"},{"ns":10,"exists":"","*":"Template:Commons"}],"images":["Discovery_apples.jpg","Commons-logo.svg"],"externallinks":["https://web.archive.org/web/20090115062704/http://www.ars-grin.gov/cgi-bin/npgs/html/taxon.pl?104681"],"sections":[{"toclevel":1,"level":"2","line":"Taxonavigation","number":"1","index":"1","fromtitle":"Malus_domestica","byteoffset":73,"anchor":"Taxonavigation"},{"toclevel":1,"level":"2","line":"Name","number":"2","index":"2","fromtitle":"Malus_domestica","byteoffset":156,"anchor":"Name"},{"toclevel":1,"level":"2","line":"Hybrids","number":"3","index":"3","fromtitle":"Malus_domestica","byteoffset":205,"anchor":"Hybrids"},{"toclevel":1,"level":"2","line":"References","number":"4","index":"4","fromtitle":"Malus_domestica","byteoffset":285,"anchor":"References"},{"toclevel":1,"level":"2","line":"Vernacular
+        names","number":"5","index":"5","fromtitle":"Malus_domestica","byteoffset":618,"anchor":"Vernacular_names"}],"displaytitle":"<i>Malus
+        domestica</i>","iwlinks":[{"prefix":"c","url":"https://commons.wikimedia.org/wiki/Malus_domestica","*":"c:Malus
+        domestica"},{"prefix":"c","url":"https://commons.wikimedia.org/wiki/","*":"c:"}],"properties":[{"name":"displaytitle","*":"<i>Malus
+        domestica</i>"},{"name":"notoc","*":""},{"name":"wikibase_item","*":"Q18674606"}]}}'
+  recorded_at: 2018-10-19 19:08:02 GMT
+  recorded_with: vcr/0.2.0, webmockr/0.2.8.9100

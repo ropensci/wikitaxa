@@ -1,0 +1,49 @@
+http_interactions:
+- request:
+    method: get
+    uri: https://en.wikipedia.org/w/api.php?action=query&list=search&srsearch=asdfadfaadfadfs&utf8=&format=json&srprop=size%7Cwordcount%7Ctimestamp%7Csnippet&srlimit=10&sroffset=0
+    body:
+      encoding: ''
+      string: ''
+    headers:
+      User-Agent: libcurl/7.54.0 r-curl/3.2 crul/0.6.0
+      Accept-Encoding: gzip, deflate
+      Accept: application/json, text/xml, application/xml, */*
+  response:
+    status:
+      status_code: '200'
+      message: OK
+      explanation: Request fulfilled, document follows
+    headers:
+      status: HTTP/1.1 200 OK
+      date: Fri, 19 Oct 2018 19:08:02 GMT
+      content-type: application/json; charset=utf-8
+      content-length: '83'
+      connection: keep-alive
+      server: mw1276.eqiad.wmnet
+      x-powered-by: HHVM/3.18.6-dev
+      p3p: CP="This is not a P3P policy! See https://en.wikipedia.org/wiki/Special:CentralAutoLogin/P3P
+        for more info."
+      cache-control: private, must-revalidate, max-age=0
+      x-search-id: 5nhmllvf4xmuib6jn9zwviak9
+      x-content-type-options: nosniff
+      vary: Accept-Encoding,Treat-as-Untrusted,X-Forwarded-Proto,Cookie,Authorization
+      content-disposition: inline; filename=api-result.json
+      x-frame-options: SAMEORIGIN
+      backend-timing: D=50370 t=1539976082014293
+      content-encoding: gzip
+      x-varnish: 197607735, 1069452251, 584861553, 53810193
+      via: 1.1 varnish (Varnish/5.1), 1.1 varnish (Varnish/5.1), 1.1 varnish (Varnish/5.1),
+        1.1 varnish (Varnish/5.1)
+      accept-ranges: bytes
+      age: '0'
+      x-cache: cp1085 pass, cp2023 pass, cp4028 pass, cp4028 pass
+      x-cache-status: pass
+      strict-transport-security: max-age=106384710; includeSubDomains; preload
+      x-analytics: ns=-1;special=Badtitle;WMF-Last-Access=19-Oct-2018;WMF-Last-Access-Global=19-Oct-2018;https=1
+      x-client-ip: 157.130.179.86
+    body:
+      encoding: UTF-8
+      string: '{"batchcomplete":"","query":{"searchinfo":{"totalhits":0},"search":[]}}'
+  recorded_at: 2018-10-19 19:08:02 GMT
+  recorded_with: vcr/0.2.0, webmockr/0.2.8.9100

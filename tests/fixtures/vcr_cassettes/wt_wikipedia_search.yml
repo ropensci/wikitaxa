@@ -1,0 +1,91 @@
+http_interactions:
+- request:
+    method: get
+    uri: https://en.wikipedia.org/w/api.php?action=query&list=search&srsearch=Pinus&utf8=&format=json&srprop=size%7Cwordcount%7Ctimestamp%7Csnippet&srlimit=10&sroffset=0
+    body:
+      encoding: ''
+      string: ''
+    headers:
+      User-Agent: libcurl/7.54.0 r-curl/3.2 crul/0.6.0
+      Accept-Encoding: gzip, deflate
+      Accept: application/json, text/xml, application/xml, */*
+  response:
+    status:
+      status_code: '200'
+      message: OK
+      explanation: Request fulfilled, document follows
+    headers:
+      status: HTTP/1.1 200 OK
+      date: Fri, 19 Oct 2018 19:08:01 GMT
+      content-type: application/json; charset=utf-8
+      content-length: '1367'
+      connection: keep-alive
+      server: mw1340.eqiad.wmnet
+      x-powered-by: HHVM/3.18.6-dev
+      p3p: CP="This is not a P3P policy! See https://en.wikipedia.org/wiki/Special:CentralAutoLogin/P3P
+        for more info."
+      cache-control: private, must-revalidate, max-age=0
+      x-search-id: njzvbvux0iw21ix481yuj0c0
+      x-content-type-options: nosniff
+      vary: Accept-Encoding,Treat-as-Untrusted,X-Forwarded-Proto,Cookie,Authorization
+      content-disposition: inline; filename=api-result.json
+      x-frame-options: SAMEORIGIN
+      backend-timing: D=108650 t=1539976081501007
+      content-encoding: gzip
+      x-varnish: 616833849, 399182561, 449547298, 54008380
+      via: 1.1 varnish (Varnish/5.1), 1.1 varnish (Varnish/5.1), 1.1 varnish (Varnish/5.1),
+        1.1 varnish (Varnish/5.1)
+      accept-ranges: bytes
+      age: '0'
+      x-cache: cp1087 pass, cp2004 pass, cp4030 pass, cp4028 pass
+      x-cache-status: pass
+      strict-transport-security: max-age=106384710; includeSubDomains; preload
+      x-analytics: ns=-1;special=Badtitle;WMF-Last-Access=19-Oct-2018;WMF-Last-Access-Global=19-Oct-2018;https=1
+      x-client-ip: 157.130.179.86
+    body:
+      encoding: UTF-8
+      string: '{"batchcomplete":"","continue":{"sroffset":10,"continue":"-||"},"query":{"searchinfo":{"totalhits":3144},"search":[{"ns":0,"title":"Pine","pageid":39389,"size":28676,"wordcount":3298,"snippet":"A
+        pine is any conifer in the genus <span class=\"searchmatch\">Pinus</span>,
+        /<span class=\"searchmatch\">ˈpiːnuːs</span>/, of the family Pinaceae. <span
+        class=\"searchmatch\">Pinus</span> is the sole genus in the subfamily Pinoideae.
+        The Plant List compiled","timestamp":"2018-10-13T07:58:58Z"},{"ns":0,"title":"Pinus
+        ponderosa","pageid":532941,"size":28882,"wordcount":2778,"snippet":"misidentified
+        it as <span class=\"searchmatch\">Pinus</span> resinosa (red pine). In 1829,
+        Douglas concluded that he had a new pine among his specimens and coined the
+        name <span class=\"searchmatch\">Pinus</span> ponderosa for","timestamp":"2018-08-16T22:22:37Z"},{"ns":0,"title":"Pinus
+        strobus","pageid":464301,"size":28962,"wordcount":3578,"snippet":"3 ft) tall
+        &amp; wide. MBG:<span class=\"searchmatch\">Pinus</span> strobus ''Macopin''
+        <span class=\"searchmatch\">Pinus</span> strobus ''Paul Waxman'' — 61 to 152 cm
+        (2 to 5 ft) tall &amp; wide. MBG: <span class=\"searchmatch\">Pinus</span>
+        strobus ''Paul Waxman'' Smaller","timestamp":"2018-10-10T13:11:23Z"},{"ns":0,"title":"Pinus
+        contorta","pageid":507717,"size":21733,"wordcount":2529,"snippet":"all pines
+        (member species of the genus <span class=\"searchmatch\">Pinus</span>), it
+        is an evergreen conifer. There are four subspecies of <span class=\"searchmatch\">Pinus</span>
+        contorta, and one of them is sometimes considered","timestamp":"2018-09-05T02:23:25Z"},{"ns":0,"title":"Pinus
+        longaeva","pageid":649634,"size":12244,"wordcount":1379,"snippet":"sometimes
+        form dense forests. <span class=\"searchmatch\">Pinus</span> longaeva trees
+        generally do not form closed canopies, usually covering only 15-50%. <span
+        class=\"searchmatch\">Pinus</span> longaeva shares habitats with","timestamp":"2018-09-04T16:59:04Z"},{"ns":0,"title":"Pinus
+        flexilis","pageid":463797,"size":13615,"wordcount":1447,"snippet":"and soft.
+        <span class=\"searchmatch\">Pinus</span> flexilis is typically a high-elevation
+        pine, often marking the tree line either on its own, or with whitebark pine
+        (<span class=\"searchmatch\">Pinus</span> albicaulis)","timestamp":"2018-09-05T03:35:02Z"},{"ns":0,"title":"List
+        of Pinus species","pageid":448990,"size":18644,"wordcount":1659,"snippet":"<span
+        class=\"searchmatch\">Pinus</span>, the pines, is a genus of approximately
+        111 extant tree and shrub species. The genus is currently split into two subgenera:
+        subgenus <span class=\"searchmatch\">Pinus</span> (hard","timestamp":"2018-10-06T03:23:01Z"},{"ns":0,"title":"Bristlecone
+        pine","pageid":215931,"size":16057,"wordcount":1660,"snippet":"bad soils.
+        One of the three species, <span class=\"searchmatch\">Pinus</span> longaeva,
+        is among the longest-lived life forms on Earth. The oldest <span class=\"searchmatch\">Pinus</span>
+        longaeva is more than 5,000 years old","timestamp":"2018-09-14T00:56:16Z"},{"ns":0,"title":"Pinus
+        lambertiana","pageid":459402,"size":10226,"wordcount":1197,"snippet":"Fire
+        affected this specimen, but it survived. <span class=\"searchmatch\">Pinus</span>
+        lambertiana is a member of the white pine group (<span class=\"searchmatch\">Pinus</span>
+        subgenus Strobus) and, like all members of that","timestamp":"2018-09-05T03:32:56Z"},{"ns":0,"title":"Pinus
+        mugo","pageid":438946,"size":11703,"wordcount":893,"snippet":"encyclopedia)
+        is still repeated surprisingly often. <span class=\"searchmatch\">Pinus</span>
+        mugo subsp. mugo, Romania <span class=\"searchmatch\">Pinus</span> mugo subsp.
+        uncinata <span class=\"searchmatch\">Pinus</span> mugo subsp. rotundata, Swiss
+        National Park","timestamp":"2018-10-04T16:13:35Z"}]}}'
+  recorded_at: 2018-10-19 19:08:01 GMT
+  recorded_with: vcr/0.2.0, webmockr/0.2.8.9100

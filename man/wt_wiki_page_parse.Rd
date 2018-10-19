@@ -4,8 +4,8 @@
 \alias{wt_wiki_page_parse}
 \title{Parse MediaWiki Page}
 \usage{
-wt_wiki_page_parse(page, types = c("langlinks", "iwlinks", "externallinks"),
-  tidy = FALSE)
+wt_wiki_page_parse(page, types = c("langlinks", "iwlinks",
+  "externallinks"), tidy = FALSE)
 }
 \arguments{
 \item{page}{(\link[crul:HttpResponse]{crul::HttpResponse}) Result of \code{\link[=wt_wiki_page]{wt_wiki_page()}}}
@@ -37,3 +37,4 @@ Other MediaWiki functions: \code{\link{wt_wiki_page}},
   \code{\link{wt_wiki_url_build}},
   \code{\link{wt_wiki_url_parse}}
 }
+\concept{MediaWiki functions}
