@@ -12,6 +12,10 @@ wikitaxa
 
 `wikitaxa` - taxonomy data from Wikipedia/Wikidata/Wikispecies
 
+Get started below and with the vignette: <https://cran.rstudio.com/web/packages/wikitaxa/vignettes/wikitaxa_vignette.html>
+
+See also the taxize book: <https://ropensci.github.io/taxize-book/>
+
 
 ### Low level API
 
