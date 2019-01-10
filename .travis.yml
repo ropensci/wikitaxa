@@ -3,6 +3,10 @@ sudo: false
 cache: packages
 dist: trusty
 
+env:
+  global:
+    - R_CHECK_ARGS="--no-build-vignettes --no-manual --as-cran --run-dontrun"
+
 matrix:
   include:
     - os: linux
@@ -13,8 +17,6 @@ matrix:
     - os: linux
       r: devel
       env: _R_CHECK_LENGTH_1_LOGIC2_=TRUE
-
-r_check_args: "--no-build-vignettes --as-cran --run-dontrun"
 
 r_binary_packages:
   - covr
