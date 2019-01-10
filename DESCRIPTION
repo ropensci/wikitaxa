@@ -34,8 +34,9 @@ Suggests:
     testthat,
     knitr,
     rmarkdown,
-    vcr
-RoxygenNote: 6.1.0
+    vcr (>= 0.2.0.9114)
+RoxygenNote: 6.1.1
+Remotes: ropensci/vcr
 X-schema.org-applicationCategory: Taxonomy
 X-schema.org-keywords: taxonomy, species, API, web-services, Wikipedia, vernacular, Wikispecies, Wikicommons
 X-schema.org-isPartOf: https://ropensci.org
