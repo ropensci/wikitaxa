@@ -14,7 +14,7 @@ matrix:
       r: devel
       env: _R_CHECK_LENGTH_1_LOGIC2_=TRUE
 
-r_check_args: "--as-cran --run-dontrun"
+r_check_args: "--no-build-vignettes --as-cran --run-dontrun"
 
 r_binary_packages:
   - covr
