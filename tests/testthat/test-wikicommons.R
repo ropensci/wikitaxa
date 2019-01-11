@@ -1,9 +1,9 @@
 context("wt_wikicommons")
 
-test_that("wt_wikicommons returns non-empty results", {
-  skip_on_cran()
+vcr::use_cassette("wt_wikicommons1", {
+  test_that("wt_wikicommons returns non-empty results", {
+    skip_on_cran()
 
-  vcr::use_cassette("wt_wikicommons1", {
     aa <- wt_wikicommons(name = "Malus domestica")
 
     expect_is(aa, "list")
@@ -16,8 +16,10 @@ test_that("wt_wikicommons returns non-empty results", {
     expect_is(aa$classification, "data.frame")
     expect_named(aa$classification, c('rank', 'name'))
   })
+})
 
-  vcr::use_cassette("wt_wikicommons2", {
+vcr::use_cassette("wt_wikicommons2", {
+  test_that("wt_wikicommons returns non-empty results", {
     bb <- wt_wikicommons(name = "Poa annua")
 
     expect_is(bb, "list")
@@ -61,10 +63,10 @@ test_that("wt_wikicommons fails well", {
 
 context("wt_wikicommons_parse")
 
-test_that("wt_wikicommons_parse returns non-empty results", {
-  skip_on_cran()
+vcr::use_cassette("wt_wikicommons_parse", {
+  test_that("wt_wikicommons_parse returns non-empty results", {
+    skip_on_cran()
 
-  vcr::use_cassette("wt_wikicommons_parse", {
     url <- "https://commons.wikimedia.org/wiki/Malus_domestica"
     pg <- wt_wiki_page(url)
     types <- c("common_names")
@@ -79,10 +81,10 @@ test_that("wt_wikicommons_parse returns non-empty results", {
 
 context("wt_wikicommons_search")
 
-test_that("wt_wikicommons_search works", {
-  skip_on_cran()
+vcr::use_cassette("wt_wikicommons_search", {
+  test_that("wt_wikicommons_search works", {
+    skip_on_cran()
 
-  vcr::use_cassette("wt_wikicommons_search", {
     aa <- wt_wikicommons_search(query = "Pinus")
 
     expect_is(aa, "list")
@@ -93,9 +95,11 @@ test_that("wt_wikicommons_search works", {
     expect_named(aa$query$search, c('ns', 'title', 'pageid', 'size', 'wordcount',
                                     'snippet', 'timestamp'))
   })
+})
 
-  # no results when not found
-  vcr::use_cassette("wt_wikicommons_search_not_found", {
+# no results when not found
+vcr::use_cassette("wt_wikicommons_search_not_found", {
+  test_that("wt_wikicommons_search_not_found", {
     expect_equal(NROW(wt_wikicommons_search("asdfadfaadfadfs")$query$search), 0)
   })
 })

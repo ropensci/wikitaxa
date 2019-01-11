@@ -1,9 +1,9 @@
 context("wt_wikispecies")
 
-test_that("wt_wikispecies returns non-empty results", {
-  skip_on_cran()
+vcr::use_cassette("wt_wikispecies_malus", {
+  test_that("wt_wikispecies returns non-empty results", {
+    skip_on_cran()
 
-  vcr::use_cassette("wt_wikispecies_malus", {
     aa <- wt_wikispecies(name = "Malus domestica")
 
     expect_is(aa, "list")
@@ -16,8 +16,10 @@ test_that("wt_wikispecies returns non-empty results", {
     expect_is(aa$classification, "data.frame")
     expect_named(aa$classification, c('rank', 'name'))
   })
+})
 
-  vcr::use_cassette("wt_wikispecies_poa", {
+vcr::use_cassette("wt_wikispecies_poa", {
+  test_that("wt_wikispecies returns non-empty results", {
     bb <- wt_wikispecies(name = "Poa annua")
 
     expect_is(bb, "list")
@@ -55,10 +57,10 @@ test_that("wt_wikispecies fails well", {
 
 context("wt_wikispecies_parse")
 
-test_that("wt_wikispecies_parse returns non-empty results", {
-  skip_on_cran()
+vcr::use_cassette("wt_wikispecies_parse", {
+  test_that("wt_wikispecies_parse returns non-empty results", {
+    skip_on_cran()
 
-  vcr::use_cassette("wt_wikispecies_parse", {
     url <- "https://species.wikimedia.org/wiki/Malus_domestica"
     pg <- wt_wiki_page(url)
     types <- c("common_names")
@@ -73,10 +75,10 @@ test_that("wt_wikispecies_parse returns non-empty results", {
 
 context("wt_wikispecies_search")
 
-test_that("wt_wikispecies_search works", {
-  skip_on_cran()
+vcr::use_cassette("wt_wikispecies_search", {
+  test_that("wt_wikispecies_search works", {
+    skip_on_cran()
 
-  vcr::use_cassette("wt_wikispecies_search", {
     aa <- wt_wikispecies_search(query = "Pinus")
 
     expect_is(aa, "list")
@@ -87,9 +89,11 @@ test_that("wt_wikispecies_search works", {
     expect_named(aa$query$search, c('ns', 'title', 'pageid', 'size', 'wordcount',
                                     'snippet', 'timestamp'))
   })
+})
 
-  # no results when not found
-  vcr::use_cassette("wt_wikispecies_search_not_found", {
+# no results when not found
+vcr::use_cassette("wt_wikispecies_search_not_found", {
+  test_that("wt_wikispecies_search_not_found", {
     expect_equal(NROW(wt_wikispecies_search("asdfadfaadfadfs")$query$search), 0)
   })
 })

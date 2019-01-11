@@ -1,9 +1,9 @@
 context("wt_wikipedia")
 
-test_that("wt_wikipedia returns non-empty results", {
-  skip_on_cran()
+vcr::use_cassette("wt_wikipedia_malus", {
+  test_that("wt_wikipedia returns non-empty results", {
+    skip_on_cran()
 
-  vcr::use_cassette("wt_wikipedia_malus", {
     aa <- wt_wikipedia(name = "Malus domestica")
 
     expect_is(aa, "list")
@@ -16,8 +16,10 @@ test_that("wt_wikipedia returns non-empty results", {
     expect_is(aa$classification, "data.frame")
     expect_named(aa$classification, c('rank', 'name'))
   })
+})
 
-  vcr::use_cassette("wt_wikipedia_poa", {
+vcr::use_cassette("wt_wikipedia_poa", {
+  test_that("wt_wikipedia returns non-empty results", {
     bb <- wt_wikipedia(name = "Poa annua")
 
     expect_is(bb, "list")
@@ -60,10 +62,10 @@ test_that("wt_wikipedia fails well", {
 
 context("wt_wikipedia_parse")
 
-test_that("wt_wikipedia_parse returns non-empty results", {
-  skip_on_cran()
+vcr::use_cassette("wt_wikipedia_parse", {
+  test_that("wt_wikipedia_parse returns non-empty results", {
+    skip_on_cran()
 
-  vcr::use_cassette("wt_wikipedia_parse", {
     url <- "https://species.wikimedia.org/wiki/Malus_domestica"
     pg <- wt_wiki_page(url)
     types <- c("common_names")
@@ -78,10 +80,10 @@ test_that("wt_wikipedia_parse returns non-empty results", {
 
 context("wt_wikipedia_search")
 
-test_that("wt_wikipedia_search works", {
-  skip_on_cran()
+vcr::use_cassette("wt_wikipedia_search", {
+  test_that("wt_wikipedia_search works", {
+    skip_on_cran()
 
-  vcr::use_cassette("wt_wikipedia_search", {
     aa <- wt_wikipedia_search(query = "Pinus")
 
     expect_is(aa, "list")
@@ -92,9 +94,12 @@ test_that("wt_wikipedia_search works", {
     expect_named(aa$query$search, c('ns', 'title', 'pageid', 'size', 'wordcount',
                                     'snippet', 'timestamp'))
   })
+})
 
-  # no results when not found
-  vcr::use_cassette("wt_wikipedia_search_not_found", {
+
+# no results when not found
+vcr::use_cassette("wt_wikipedia_search_not_found", {
+  test_that("wt_wikipedia_search_not_found", {
     expect_equal(NROW(wt_wikipedia_search("asdfadfaadfadfs")$query$search), 0)
   })
 })
