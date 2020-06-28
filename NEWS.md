@@ -1,3 +1,12 @@
+wikitaxa 0.4.0
+==============
+
+### MINOR IMPROVEMENTS
+
+* remove docs link to httr that's not used in package (#19)
+* remove egs from readme, change vignette name
+
+
 wikitaxa 0.3.0
 ==============
 

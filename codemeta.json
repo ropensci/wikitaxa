@@ -10,14 +10,14 @@
   "codeRepository": "https://github.com/ropensci/wikitaxa",
   "issueTracker": "https://github.com/ropensci/wikitaxa/issues",
   "license": "https://spdx.org/licenses/MIT",
-  "version": "0.3.0",
+  "version": "0.4.0",
   "programmingLanguage": {
     "@type": "ComputerLanguage",
     "name": "R",
-    "version": "3.5.1",
+    "version": "4.0.2",
     "url": "https://r-project.org"
   },
-  "runtimePlatform": "R version 3.5.1 Patched (2018-08-12 r75119)",
+  "runtimePlatform": "R version 4.0.2 (2020-06-22)",
   "provider": {
     "@id": "https://cran.r-project.org",
     "@type": "Organization",
@@ -46,19 +46,6 @@
     }
   ],
   "softwareSuggestions": [
-    {
-      "@type": "SoftwareApplication",
-      "identifier": "roxygen2",
-      "name": "roxygen2",
-      "version": ">= 6.1.0",
-      "provider": {
-        "@id": "https://cran.r-project.org",
-        "@type": "Organization",
-        "name": "Comprehensive R Archive Network (CRAN)",
-        "url": "https://cran.r-project.org"
-      },
-      "sameAs": "https://CRAN.R-project.org/package=roxygen2"
-    },
     {
       "@type": "SoftwareApplication",
       "identifier": "testthat",
@@ -105,7 +92,7 @@
         "name": "Comprehensive R Archive Network (CRAN)",
         "url": "https://cran.r-project.org"
       },
-      "sameAs": "https://CRAN.R-project.org/package=vcr"
+      "sameAs": "https://github.com/ropensci/vcr"
     }
   ],
   "softwareRequirements": [
@@ -205,8 +192,12 @@
   "developmentStatus": "wip",
   "releaseNotes": "https://github.com/ropensci/wikitaxa/blob/master/NEWS.md",
   "readme": "https://github.com/ropensci/wikitaxa/blob/master/README.md",
-  "fileSize": "429.729KB",
+  "fileSize": "689.542KB",
   "keywords": ["taxonomy", "species", "API", "web-services", "Wikipedia", "vernacular", "Wikispecies", "Wikicommons", "wikipedia-api", "wikispecies", "r", "rstats", "r-package", "taxize"],
   "applicationCategory": "Taxonomy",
-  "isPartOf": "https://ropensci.org"
+  "isPartOf": "https://ropensci.org",
+  "relatedLink": "https://docs.ropensci.org/wikitaxa",
+  "contributor": {},
+  "copyrightHolder": {},
+  "funder": {}
 }
