@@ -5,9 +5,6 @@
 \alias{wikitaxa-package}
 \alias{wikitaxa}
 \title{Taxonomic Information from Wikipedia}
-\description{
-Taxonomic Information from Wikipedia
-}
 \author{
 Scott Chamberlain \email{myrmecocystus@gmail.com}
 

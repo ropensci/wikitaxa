@@ -8,11 +8,20 @@
 \usage{
 wt_wikipedia(name, wiki = "en", utf8 = TRUE, ...)
 
-wt_wikipedia_parse(page, types = c("langlinks", "iwlinks",
-  "externallinks", "common_names", "classification"), tidy = FALSE)
+wt_wikipedia_parse(
+  page,
+  types = c("langlinks", "iwlinks", "externallinks", "common_names", "classification"),
+  tidy = FALSE
+)
 
-wt_wikipedia_search(query, wiki = "en", limit = 10, offset = 0,
-  utf8 = TRUE, ...)
+wt_wikipedia_search(
+  query,
+  wiki = "en",
+  limit = 10,
+  offset = 0,
+  utf8 = TRUE,
+  ...
+)
 }
 \arguments{
 \item{name}{(character) Wiki name - as a page title, must be length 1}

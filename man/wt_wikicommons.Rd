@@ -8,11 +8,13 @@
 \usage{
 wt_wikicommons(name, utf8 = TRUE, ...)
 
-wt_wikicommons_parse(page, types = c("langlinks", "iwlinks",
-  "externallinks", "common_names", "classification"), tidy = FALSE)
+wt_wikicommons_parse(
+  page,
+  types = c("langlinks", "iwlinks", "externallinks", "common_names", "classification"),
+  tidy = FALSE
+)
 
-wt_wikicommons_search(query, limit = 10, offset = 0, utf8 = TRUE,
-  ...)
+wt_wikicommons_search(query, limit = 10, offset = 0, utf8 = TRUE, ...)
 }
 \arguments{
 \item{name}{(character) Wiki name - as a page title, must be length 1}

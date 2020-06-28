@@ -29,8 +29,9 @@ wt_wiki_page("https://en.wikipedia.org/wiki/Malus_domestica")
 }
 }
 \seealso{
-Other MediaWiki functions: \code{\link{wt_wiki_page_parse}},
-  \code{\link{wt_wiki_url_build}},
-  \code{\link{wt_wiki_url_parse}}
+Other MediaWiki functions: 
+\code{\link{wt_wiki_page_parse}()},
+\code{\link{wt_wiki_url_build}()},
+\code{\link{wt_wiki_url_parse}()}
 }
 \concept{MediaWiki functions}

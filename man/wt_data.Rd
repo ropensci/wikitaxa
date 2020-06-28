@@ -14,7 +14,7 @@ wt_data_id(x, language = "en", limit = 10, ...)
 
 \item{property}{(character) a property id, e.g., P486}
 
-\item{...}{curl options passed on to \code{\link[httr:GET]{httr::GET()}}}
+\item{...}{curl options passed on to \code{httr::GET()}}
 
 \item{language}{(character) two letter language code}
 

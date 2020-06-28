@@ -8,11 +8,13 @@
 \usage{
 wt_wikispecies(name, utf8 = TRUE, ...)
 
-wt_wikispecies_parse(page, types = c("langlinks", "iwlinks",
-  "externallinks", "common_names", "classification"), tidy = FALSE)
+wt_wikispecies_parse(
+  page,
+  types = c("langlinks", "iwlinks", "externallinks", "common_names", "classification"),
+  tidy = FALSE
+)
 
-wt_wikispecies_search(query, limit = 10, offset = 0, utf8 = TRUE,
-  ...)
+wt_wikispecies_search(query, limit = 10, offset = 0, utf8 = TRUE, ...)
 }
 \arguments{
 \item{name}{(character) Wiki name - as a page title, must be length 1}
