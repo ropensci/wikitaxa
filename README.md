@@ -12,9 +12,9 @@ wikitaxa
 
 `wikitaxa` - taxonomy data from Wikipedia/Wikidata/Wikispecies
 
-Get started below and with the vignette: <https://cran.r-project.org/package=wikitaxa>
+`wikitaxa` docs: https://docs.ropensci.org/wikitaxa/
 
-See also the taxize book: <https://ropensci.github.io/taxize-book/>
+See also the taxize book: https://books.ropensci.org/taxize/
 
 
 ### Low level API
