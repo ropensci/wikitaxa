@@ -6,7 +6,7 @@ Description: 'Taxonomic' information from 'Wikipedia', 'Wikicommons',
     well performing taxonomic search.
 Version: 0.3.1.92
 License: MIT + file LICENSE
-URL: https://github.com/ropensci/wikitaxa
+URL: https://docs.ropensci.org/wikitaxa, https://github.com/ropensci/wikitaxa
 BugReports: https://github.com/ropensci/wikitaxa/issues
 Authors@R: c(
     person("Scott", "Chamberlain", role = c("aut", "cre"),
