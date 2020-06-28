@@ -1,5 +1,5 @@
-#' Taxonomic Information from Wikipedia
-#'
+#' @title wikitaxa
+#' @description Taxonomic Information from Wikipedia
 #' @name wikitaxa-package
 #' @aliases wikitaxa
 #' @docType package
