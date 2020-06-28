@@ -6,7 +6,7 @@ http_interactions:
       encoding: ''
       string: ''
     headers:
-      User-Agent: libcurl/7.71.0 r-curl/4.3 crul/0.9.2.92
+      User-Agent: libcurl/7.64.1 r-curl/4.3 crul/0.9.2.92
       Accept-Encoding: gzip, deflate
       Accept: application/json, text/xml, application/xml, */*
   response:
@@ -16,16 +16,15 @@ http_interactions:
       explanation: Request fulfilled, document follows
     headers:
       accept-ranges: bytes
-      age: '0'
+      age: '1'
       cache-control: private, must-revalidate, max-age=0
-      connection: keep-alive
       content-disposition: inline; filename=api-result.json
       content-encoding: gzip
       content-type: application/json; charset=utf-8
-      date: Sun, 28 Jun 2020 16:13:32 GMT
+      date: Sun, 28 Jun 2020 18:48:34 GMT
       p3p: CP="See https://en.wikipedia.org/wiki/Special:CentralAutoLogin/P3P for
         more info."
-      server: mw1341.eqiad.wmnet
+      server: mw1340.eqiad.wmnet
       server-timing: cache;desc="pass"
       set-cookie:
       - WMF-Last-Access=28-Jun-2020;Path=/;HttpOnly;secure;Expires=Thu, 30 Jul 2020
@@ -33,16 +32,15 @@ http_interactions:
       - WMF-Last-Access-Global=28-Jun-2020;Path=/;Domain=.wikipedia.org;HttpOnly;secure;Expires=Thu,
         30 Jul 2020 12:00:00 GMT
       - GeoIP=US:OR:Portland:45.48:-122.59:v4; Path=/; secure; Domain=.wikipedia.org
-      status: HTTP/1.1 200 OK
+      status: 'HTTP/2 200 '
       strict-transport-security: max-age=106384710; includeSubDomains; preload
-      transfer-encoding: chunked
       vary: Accept-Encoding,Treat-as-Untrusted,X-Forwarded-Proto,Cookie,Authorization
       x-cache: cp4032 miss, cp4027 pass
       x-cache-status: pass
       x-client-ip: 24.21.229.59
       x-content-type-options: nosniff
       x-frame-options: SAMEORIGIN
-      x-search-id: 54pd6ot2n2vegqxdf91zmbrs0
+      x-search-id: 5ztp9ohxu4hsbntianhmm6nph
     body:
       encoding: UTF-8
       file: no
@@ -72,10 +70,6 @@ http_interactions:
         class=\"searchmatch\">Pinus</span> resinosa&quot;. IUCN Red List of Threatened
         Species. 1998. Retrieved 12 May 2006.CS1 maint: ref=harv (link)old-form url
         Hilty, John (2016). &quot;<span class=\"searchmatch\">Pinus</span> resinosa&quot;","timestamp":"2020-05-08T19:49:27Z"},{"ns":0,"title":"Pinus
-        longaeva","pageid":649634,"size":15408,"wordcount":1741,"snippet":"sometimes
-        form dense forests. <span class=\"searchmatch\">Pinus</span> longaeva trees
-        generally do not form closed canopies, usually covering only 15-50%. <span
-        class=\"searchmatch\">Pinus</span> longaeva shares habitats with","timestamp":"2020-04-14T11:28:09Z"},{"ns":0,"title":"Pinus
         lambertiana","pageid":459402,"size":11464,"wordcount":1338,"snippet":"Fire
         affected this specimen, but it survived. <span class=\"searchmatch\">Pinus</span>
         lambertiana is a member of the white pine group (<span class=\"searchmatch\">Pinus</span>
@@ -88,6 +82,9 @@ http_interactions:
         is still repeated surprisingly often. <span class=\"searchmatch\">Pinus</span>
         mugo subsp. mugo, Romania <span class=\"searchmatch\">Pinus</span> mugo subsp.
         uncinata <span class=\"searchmatch\">Pinus</span> mugo subsp. rotundata, Swiss
-        National Park","timestamp":"2020-06-17T08:02:29Z"}]}}'
-  recorded_at: 2020-06-28 16:13:32 GMT
+        National Park","timestamp":"2020-06-17T08:02:29Z"},{"ns":0,"title":"Pinus
+        taeda","pageid":435341,"size":16068,"wordcount":1861,"snippet":"<span class=\"searchmatch\">Pinus</span>
+        taeda, commonly known as loblolly pine, is one of several pines native to
+        the Southeastern United States, from central Texas east to Florida, and","timestamp":"2020-05-07T08:49:50Z"}]}}'
+  recorded_at: 2020-06-28 18:48:34 GMT
   recorded_with: vcr/0.5.4, webmockr/0.6.2

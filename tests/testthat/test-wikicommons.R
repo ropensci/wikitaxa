@@ -4,7 +4,7 @@ test_that("wt_wikicommons returns non-empty results", {
   skip_on_cran()
   vcr::use_cassette("wt_wikicommons1", {
     aa <- wt_wikicommons(name = "Malus domestica")
-  })
+  }, preserve_exact_body_bytes = TRUE)
 
   expect_is(aa, "list")
   expect_named(aa, c('langlinks', 'externallinks', 'common_names',
@@ -20,7 +20,7 @@ test_that("wt_wikicommons returns non-empty results", {
 test_that("wt_wikicommons returns non-empty results", {
   vcr::use_cassette("wt_wikicommons2", {
     bb <- wt_wikicommons(name = "Poa annua")
-  })
+  }, preserve_exact_body_bytes = TRUE)
 
   expect_is(bb, "list")
   expect_named(bb, c('langlinks', 'externallinks', 'common_names',
@@ -69,7 +69,7 @@ test_that("wt_wikicommons_parse returns non-empty results", {
   vcr::use_cassette("wt_wikicommons_parse", {
     pg <- wt_wiki_page(url)
     result <- wt_wikicommons_parse(pg, types = types)
-  })
+  }, preserve_exact_body_bytes = TRUE)
   expect_is(result, "list")
   for (fieldname in types) {
     expect_is(result[fieldname], "list")
