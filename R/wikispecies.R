@@ -29,10 +29,12 @@
 #' wt_wikispecies_parse(pg)
 #'
 #' # search wikispecies
-#' wt_wikispecies_search(query = "pine tree")
+#' # FIXME: utf=FALSE for now until curl::curl_escape fix 
+#' # https://github.com/jeroen/curl/issues/228
+#' wt_wikispecies_search(query = "pine tree", utf8=FALSE)
 #'
 #' ## use search results to dig into pages
-#' res <- wt_wikispecies_search(query = "pine tree")
+#' res <- wt_wikispecies_search(query = "pine tree", utf8=FALSE)
 #' lapply(res$query$search$title[1:3], wt_wikispecies)
 #' }
 wt_wikispecies <- function(name, utf8 = TRUE, ...) {

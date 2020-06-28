@@ -78,13 +78,15 @@ vcr::use_cassette("wt_wikipedia_parse", {
   })
 })
 
+# FIXME: utf=FALSE for now until curl::curl_escape fix 
+# https://github.com/jeroen/curl/issues/228
 context("wt_wikipedia_search")
 
 vcr::use_cassette("wt_wikipedia_search", {
   test_that("wt_wikipedia_search works", {
     skip_on_cran()
 
-    aa <- wt_wikipedia_search(query = "Pinus")
+    aa <- wt_wikipedia_search(query = "Pinus", utf8=FALSE)
 
     expect_is(aa, "list")
     expect_is(aa$continue, "list")
@@ -100,7 +102,7 @@ vcr::use_cassette("wt_wikipedia_search", {
 # no results when not found
 vcr::use_cassette("wt_wikipedia_search_not_found", {
   test_that("wt_wikipedia_search_not_found", {
-    expect_equal(NROW(wt_wikipedia_search("asdfadfaadfadfs")$query$search), 0)
+    expect_equal(NROW(wt_wikipedia_search("asdfadfaadfadfs", utf8=FALSE)$query$search), 0)
   })
 })
 

@@ -32,10 +32,12 @@
 #' wt_wikicommons_parse(pg)
 #'
 #' # search wikicommons
-#' wt_wikicommons_search(query = "Pinus")
+#' # FIXME: utf=FALSE for now until curl::curl_escape fix 
+#' # https://github.com/jeroen/curl/issues/228
+#' wt_wikicommons_search(query = "Pinus", utf8 = FALSE)
 #'
 #' ## use search results to dig into pages
-#' res <- wt_wikicommons_search(query = "Pinus")
+#' res <- wt_wikicommons_search(query = "Pinus", utf8 = FALSE)
 #' lapply(res$query$search$title[1:3], wt_wikicommons)
 #' }
 wt_wikicommons <- function(name, utf8 = TRUE, ...) {
