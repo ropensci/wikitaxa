@@ -3,7 +3,7 @@
 #' @export
 #' @param x (character) a taxonomic name
 #' @param property (character) a property id, e.g., P486
-#' @param ... curl options passed on to [httr::GET()]
+#' @param ... curl options passed on to `httr::GET()`
 #' @param language (character) two letter language code
 #' @param limit (integer) records to return. Default: 10
 #' @return `wt_data` searches Wikidata, and returns a list with elements:
