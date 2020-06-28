@@ -1,12 +1,12 @@
 http_interactions:
 - request:
     method: get
-    uri: https://en.wikipedia.org/w/api.php?action=query&list=search&srsearch=Pinus&utf8=&format=json&srprop=size%7Cwordcount%7Ctimestamp%7Csnippet&srlimit=10&sroffset=0
+    uri: https://en.wikipedia.org/w/api.php?action=query&list=search&srsearch=Pinus&format=json&srprop=size%7Cwordcount%7Ctimestamp%7Csnippet&srlimit=10&sroffset=0
     body:
       encoding: ''
       string: ''
     headers:
-      User-Agent: libcurl/7.54.0 r-curl/3.2 crul/0.6.0
+      User-Agent: libcurl/7.71.0 r-curl/4.3 crul/0.9.2.92
       Accept-Encoding: gzip, deflate
       Accept: application/json, text/xml, application/xml, */*
   response:
@@ -15,77 +15,79 @@ http_interactions:
       message: OK
       explanation: Request fulfilled, document follows
     headers:
-      status: HTTP/1.1 200 OK
-      date: Fri, 19 Oct 2018 19:08:01 GMT
-      content-type: application/json; charset=utf-8
-      content-length: '1367'
-      connection: keep-alive
-      server: mw1340.eqiad.wmnet
-      x-powered-by: HHVM/3.18.6-dev
-      p3p: CP="This is not a P3P policy! See https://en.wikipedia.org/wiki/Special:CentralAutoLogin/P3P
-        for more info."
-      cache-control: private, must-revalidate, max-age=0
-      x-search-id: njzvbvux0iw21ix481yuj0c0
-      x-content-type-options: nosniff
-      vary: Accept-Encoding,Treat-as-Untrusted,X-Forwarded-Proto,Cookie,Authorization
-      content-disposition: inline; filename=api-result.json
-      x-frame-options: SAMEORIGIN
-      backend-timing: D=108650 t=1539976081501007
-      content-encoding: gzip
-      x-varnish: 616833849, 399182561, 449547298, 54008380
-      via: 1.1 varnish (Varnish/5.1), 1.1 varnish (Varnish/5.1), 1.1 varnish (Varnish/5.1),
-        1.1 varnish (Varnish/5.1)
       accept-ranges: bytes
       age: '0'
-      x-cache: cp1087 pass, cp2004 pass, cp4030 pass, cp4028 pass
-      x-cache-status: pass
+      cache-control: private, must-revalidate, max-age=0
+      connection: keep-alive
+      content-disposition: inline; filename=api-result.json
+      content-encoding: gzip
+      content-type: application/json; charset=utf-8
+      date: Sun, 28 Jun 2020 16:13:32 GMT
+      p3p: CP="See https://en.wikipedia.org/wiki/Special:CentralAutoLogin/P3P for
+        more info."
+      server: mw1341.eqiad.wmnet
+      server-timing: cache;desc="pass"
+      set-cookie:
+      - WMF-Last-Access=28-Jun-2020;Path=/;HttpOnly;secure;Expires=Thu, 30 Jul 2020
+        12:00:00 GMT
+      - WMF-Last-Access-Global=28-Jun-2020;Path=/;Domain=.wikipedia.org;HttpOnly;secure;Expires=Thu,
+        30 Jul 2020 12:00:00 GMT
+      - GeoIP=US:OR:Portland:45.48:-122.59:v4; Path=/; secure; Domain=.wikipedia.org
+      status: HTTP/1.1 200 OK
       strict-transport-security: max-age=106384710; includeSubDomains; preload
-      x-analytics: ns=-1;special=Badtitle;WMF-Last-Access=19-Oct-2018;WMF-Last-Access-Global=19-Oct-2018;https=1
-      x-client-ip: 157.130.179.86
+      transfer-encoding: chunked
+      vary: Accept-Encoding,Treat-as-Untrusted,X-Forwarded-Proto,Cookie,Authorization
+      x-cache: cp4032 miss, cp4027 pass
+      x-cache-status: pass
+      x-client-ip: 24.21.229.59
+      x-content-type-options: nosniff
+      x-frame-options: SAMEORIGIN
+      x-search-id: 54pd6ot2n2vegqxdf91zmbrs0
     body:
       encoding: UTF-8
-      string: '{"batchcomplete":"","continue":{"sroffset":10,"continue":"-||"},"query":{"searchinfo":{"totalhits":3144},"search":[{"ns":0,"title":"Pine","pageid":39389,"size":28676,"wordcount":3298,"snippet":"A
-        pine is any conifer in the genus <span class=\"searchmatch\">Pinus</span>,
-        /<span class=\"searchmatch\">ˈpiːnuːs</span>/, of the family Pinaceae. <span
-        class=\"searchmatch\">Pinus</span> is the sole genus in the subfamily Pinoideae.
-        The Plant List compiled","timestamp":"2018-10-13T07:58:58Z"},{"ns":0,"title":"Pinus
-        ponderosa","pageid":532941,"size":28882,"wordcount":2778,"snippet":"misidentified
+      file: no
+      string: '{"batchcomplete":"","continue":{"sroffset":10,"continue":"-||"},"query":{"searchinfo":{"totalhits":3374,"suggestion":"penis","suggestionsnippet":"penis"},"search":[{"ns":0,"title":"Pine","pageid":39389,"size":36555,"wordcount":4058,"snippet":"A
+        pine is any conifer in the genus <span class=\"searchmatch\">Pinus</span>
+        (/<span class=\"searchmatch\">\u02c8pi\u02d0nu\u02d0s</span>/) of the family
+        Pinaceae. <span class=\"searchmatch\">Pinus</span> is the sole genus in the
+        subfamily Pinoideae. The Plant List compiled","timestamp":"2020-06-26T20:27:35Z"},{"ns":0,"title":"Pinus
+        ponderosa","pageid":532941,"size":31087,"wordcount":3069,"snippet":"misidentified
         it as <span class=\"searchmatch\">Pinus</span> resinosa (red pine). In 1829,
         Douglas concluded that he had a new pine among his specimens and coined the
-        name <span class=\"searchmatch\">Pinus</span> ponderosa for","timestamp":"2018-08-16T22:22:37Z"},{"ns":0,"title":"Pinus
-        strobus","pageid":464301,"size":28962,"wordcount":3578,"snippet":"3 ft) tall
-        &amp; wide. MBG:<span class=\"searchmatch\">Pinus</span> strobus ''Macopin''
-        <span class=\"searchmatch\">Pinus</span> strobus ''Paul Waxman'' — 61 to 152 cm
-        (2 to 5 ft) tall &amp; wide. MBG: <span class=\"searchmatch\">Pinus</span>
-        strobus ''Paul Waxman'' Smaller","timestamp":"2018-10-10T13:11:23Z"},{"ns":0,"title":"Pinus
-        contorta","pageid":507717,"size":21733,"wordcount":2529,"snippet":"all pines
+        name <span class=\"searchmatch\">Pinus</span> ponderosa for","timestamp":"2020-06-19T19:32:26Z"},{"ns":0,"title":"Pinus
+        contorta","pageid":507717,"size":20486,"wordcount":2343,"snippet":"all pines
         (member species of the genus <span class=\"searchmatch\">Pinus</span>), it
         is an evergreen conifer. There are four subspecies of <span class=\"searchmatch\">Pinus</span>
-        contorta, and one of them is sometimes considered","timestamp":"2018-09-05T02:23:25Z"},{"ns":0,"title":"Pinus
-        longaeva","pageid":649634,"size":12244,"wordcount":1379,"snippet":"sometimes
+        contorta, and one of them is sometimes considered","timestamp":"2020-05-25T00:03:30Z"},{"ns":0,"title":"Pinus
+        jeffreyi","pageid":463015,"size":9130,"wordcount":1008,"snippet":"long, with
+        a large (15 to 25\u00a0mm (0.59 to 0.98\u00a0in)) wing. <span class=\"searchmatch\">Pinus</span>
+        jeffreyi is closely related to <span class=\"searchmatch\">Pinus</span> ponderosa
+        (ponderosa pine) and is similar in appearance","timestamp":"2019-12-22T23:49:58Z"},{"ns":0,"title":"Pinus
+        strobus","pageid":464301,"size":31478,"wordcount":3815,"snippet":"3\u00a0ft)
+        tall &amp; wide. MBG:<span class=\"searchmatch\">Pinus</span> strobus ''Macopin''
+        <span class=\"searchmatch\">Pinus</span> strobus ''Paul Waxman'' \u2014 61
+        to 152\u00a0cm (2 to 5\u00a0ft) tall &amp; wide. MBG: <span class=\"searchmatch\">Pinus</span>
+        strobus ''Paul Waxman'' Smaller","timestamp":"2020-06-22T21:35:51Z"},{"ns":0,"title":"Pinus
+        resinosa","pageid":507802,"size":7501,"wordcount":783,"snippet":"&quot;<span
+        class=\"searchmatch\">Pinus</span> resinosa&quot;. IUCN Red List of Threatened
+        Species. 1998. Retrieved 12 May 2006.CS1 maint: ref=harv (link)old-form url
+        Hilty, John (2016). &quot;<span class=\"searchmatch\">Pinus</span> resinosa&quot;","timestamp":"2020-05-08T19:49:27Z"},{"ns":0,"title":"Pinus
+        longaeva","pageid":649634,"size":15408,"wordcount":1741,"snippet":"sometimes
         form dense forests. <span class=\"searchmatch\">Pinus</span> longaeva trees
         generally do not form closed canopies, usually covering only 15-50%. <span
-        class=\"searchmatch\">Pinus</span> longaeva shares habitats with","timestamp":"2018-09-04T16:59:04Z"},{"ns":0,"title":"Pinus
-        flexilis","pageid":463797,"size":13615,"wordcount":1447,"snippet":"and soft.
-        <span class=\"searchmatch\">Pinus</span> flexilis is typically a high-elevation
-        pine, often marking the tree line either on its own, or with whitebark pine
-        (<span class=\"searchmatch\">Pinus</span> albicaulis)","timestamp":"2018-09-05T03:35:02Z"},{"ns":0,"title":"List
-        of Pinus species","pageid":448990,"size":18644,"wordcount":1659,"snippet":"<span
-        class=\"searchmatch\">Pinus</span>, the pines, is a genus of approximately
-        111 extant tree and shrub species. The genus is currently split into two subgenera:
-        subgenus <span class=\"searchmatch\">Pinus</span> (hard","timestamp":"2018-10-06T03:23:01Z"},{"ns":0,"title":"Bristlecone
-        pine","pageid":215931,"size":16057,"wordcount":1660,"snippet":"bad soils.
-        One of the three species, <span class=\"searchmatch\">Pinus</span> longaeva,
-        is among the longest-lived life forms on Earth. The oldest <span class=\"searchmatch\">Pinus</span>
-        longaeva is more than 5,000 years old","timestamp":"2018-09-14T00:56:16Z"},{"ns":0,"title":"Pinus
-        lambertiana","pageid":459402,"size":10226,"wordcount":1197,"snippet":"Fire
+        class=\"searchmatch\">Pinus</span> longaeva shares habitats with","timestamp":"2020-04-14T11:28:09Z"},{"ns":0,"title":"Pinus
+        lambertiana","pageid":459402,"size":11464,"wordcount":1338,"snippet":"Fire
         affected this specimen, but it survived. <span class=\"searchmatch\">Pinus</span>
         lambertiana is a member of the white pine group (<span class=\"searchmatch\">Pinus</span>
-        subgenus Strobus) and, like all members of that","timestamp":"2018-09-05T03:32:56Z"},{"ns":0,"title":"Pinus
-        mugo","pageid":438946,"size":11703,"wordcount":893,"snippet":"encyclopedia)
+        subgenus Strobus) and, like all members of that","timestamp":"2020-01-15T18:42:16Z"},{"ns":0,"title":"Pinus
+        nigra","pageid":438963,"size":11947,"wordcount":1421,"snippet":"hypodermal
+        cells. P. nigra subsp. nigra var. nigra (syn. <span class=\"searchmatch\">Pinus</span>
+        nigra var. austriaca, <span class=\"searchmatch\">Pinus</span> nigra subsp.
+        dalmatica) (Austrian pine): Austria, Balkans","timestamp":"2020-04-03T08:46:01Z"},{"ns":0,"title":"Pinus
+        mugo","pageid":438946,"size":11964,"wordcount":901,"snippet":"encyclopedia)
         is still repeated surprisingly often. <span class=\"searchmatch\">Pinus</span>
         mugo subsp. mugo, Romania <span class=\"searchmatch\">Pinus</span> mugo subsp.
         uncinata <span class=\"searchmatch\">Pinus</span> mugo subsp. rotundata, Swiss
-        National Park","timestamp":"2018-10-04T16:13:35Z"}]}}'
-  recorded_at: 2018-10-19 19:08:01 GMT
-  recorded_with: vcr/0.2.0, webmockr/0.2.8.9100
+        National Park","timestamp":"2020-06-17T08:02:29Z"}]}}'
+  recorded_at: 2020-06-28 16:13:32 GMT
+  recorded_with: vcr/0.5.4, webmockr/0.6.2

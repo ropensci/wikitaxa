@@ -1,12 +1,12 @@
 http_interactions:
 - request:
     method: get
-    uri: https://commons.wikimedia.org/w/api.php?action=query&list=search&srsearch=Pinus&utf8=&format=json&srprop=size%7Cwordcount%7Ctimestamp%7Csnippet&srlimit=10&sroffset=0
+    uri: https://commons.wikimedia.org/w/api.php?action=query&list=search&srsearch=Pinus&format=json&srprop=size%7Cwordcount%7Ctimestamp%7Csnippet&srlimit=10&sroffset=0
     body:
       encoding: ''
       string: ''
     headers:
-      User-Agent: libcurl/7.54.0 r-curl/3.2 crul/0.6.0
+      User-Agent: libcurl/7.71.0 r-curl/4.3 crul/0.9.2.92
       Accept-Encoding: gzip, deflate
       Accept: application/json, text/xml, application/xml, */*
   response:
@@ -15,78 +15,44 @@ http_interactions:
       message: OK
       explanation: Request fulfilled, document follows
     headers:
-      status: HTTP/1.1 200 OK
-      date: Fri, 19 Oct 2018 19:07:57 GMT
-      content-type: application/json; charset=utf-8
-      content-length: '1127'
-      connection: keep-alive
-      server: mw1286.eqiad.wmnet
-      x-powered-by: HHVM/3.18.6-dev
-      p3p: CP="This is not a P3P policy! See https://commons.wikimedia.org/wiki/Special:CentralAutoLogin/P3P
-        for more info."
-      cache-control: private, must-revalidate, max-age=0
-      x-search-id: 5tuwbammihbf3fidqmfs9ft8e
-      x-content-type-options: nosniff
-      vary: Accept-Encoding,Treat-as-Untrusted,X-Forwarded-Proto,Cookie,Authorization
-      content-disposition: inline; filename=api-result.json
-      x-frame-options: DENY
-      backend-timing: D=96816 t=1539976077503434
-      content-encoding: gzip
-      x-varnish: 621904826, 394578612, 586294132, 54008297
-      via: 1.1 varnish (Varnish/5.1), 1.1 varnish (Varnish/5.1), 1.1 varnish (Varnish/5.1),
-        1.1 varnish (Varnish/5.1)
       accept-ranges: bytes
       age: '0'
-      x-cache: cp1087 pass, cp2004 pass, cp4028 pass, cp4028 pass
-      x-cache-status: pass
+      cache-control: private, must-revalidate, max-age=0
+      connection: keep-alive
+      content-disposition: inline; filename=api-result.json
+      content-encoding: gzip
+      content-length: '447'
+      content-type: application/json; charset=utf-8
+      date: Sun, 28 Jun 2020 16:12:05 GMT
+      p3p: CP="See https://commons.wikimedia.org/wiki/Special:CentralAutoLogin/P3P
+        for more info."
+      server: mw1314.eqiad.wmnet
+      server-timing: cache;desc="pass"
+      set-cookie:
+      - WMF-Last-Access=28-Jun-2020;Path=/;HttpOnly;secure;Expires=Thu, 30 Jul 2020
+        12:00:00 GMT
+      - GeoIP=US:OR:Portland:45.48:-122.59:v4; Path=/; secure; Domain=.wikimedia.org
+      status: HTTP/1.1 200 OK
       strict-transport-security: max-age=106384710; includeSubDomains; preload
-      x-analytics: ns=-1;special=Badtitle;WMF-Last-Access=19-Oct-2018;https=1
-      x-client-ip: 157.130.179.86
+      vary: Accept-Encoding,Treat-as-Untrusted,X-Forwarded-Proto,Cookie,Authorization
+      x-cache: cp4028 miss, cp4027 pass
+      x-cache-status: pass
+      x-client-ip: 24.21.229.59
+      x-content-type-options: nosniff
+      x-frame-options: DENY
+      x-search-id: 774dctjiznx5vnhyzweyy4z3z
     body:
       encoding: UTF-8
-      string: '{"batchcomplete":"","continue":{"sroffset":10,"continue":"-||"},"query":{"searchinfo":{"totalhits":264},"search":[{"ns":0,"title":"Pinus","pageid":82071,"size":4154,"wordcount":336,"snippet":"Ordo: Pinales •
-        Familia: Pinaceae • Genus: <span class=\"searchmatch\">Pinus</span> L. Wikispecies
-        has an entry on: <span class=\"searchmatch\">Pinus</span>  Vernacular names [edit
-        wikidata ''<span class=\"searchmatch\">Pinus</span>''] English: Pine Afrikaans: Denneboom","timestamp":"2017-05-28T10:22:53Z"},{"ns":0,"title":"Pinus
-        × schwerinii","pageid":11923249,"size":634,"wordcount":67,"snippet":"Genus: <span
-        class=\"searchmatch\">Pinus</span> • Nothospecies: <span class=\"searchmatch\">Pinus</span> × schwerinii
-         Vernacular names [edit wikidata ''<span class=\"searchmatch\">Pinus</span>
-        × schwerinii''] polski: Sosna Schwerina Formula hybridae: <span class=\"searchmatch\">Pinus</span>
-        wallichiana","timestamp":"2015-01-20T19:39:28Z"},{"ns":0,"title":"Pinus nigra","pageid":64703,"size":7743,"wordcount":501,"snippet":"Ordo: Pinales •
-        Familia: Pinaceae • Genus: <span class=\"searchmatch\">Pinus</span> • Species: <span
-        class=\"searchmatch\">Pinus</span> nigra Arn. Wikispecies has an entry on:
-        <span class=\"searchmatch\">Pinus</span> nigra  Vernacular names English: European","timestamp":"2018-03-06T10:19:20Z"},{"ns":0,"title":"Spinus
-        pinus","pageid":703299,"size":1560,"wordcount":243,"snippet":"Genus: Spinus •
-        Species: Spinus <span class=\"searchmatch\">pinus</span> (A. Wilson, 1810)
-        Wikispecies has an entry on: Spinus <span class=\"searchmatch\">pinus</span>
-         Synonyms Carduelis <span class=\"searchmatch\">pinus</span>  Vernacular names [edit
-        wikidata","timestamp":"2017-07-30T15:08:29Z"},{"ns":0,"title":"Pinus cooperi","pageid":8853401,"size":564,"wordcount":64,"snippet":"Familia: Pinaceae •
-        Genus: <span class=\"searchmatch\">Pinus</span> • Species: <span class=\"searchmatch\">Pinus</span> cooperi
-        C.E.Blanco  Vernacular names [edit wikidata ''<span class=\"searchmatch\">Pinus</span>
-        cooperi''] English: Cooper''s Pine français: <span class=\"searchmatch\">Pinus</span>
-        arizonica","timestamp":"2014-12-14T02:50:02Z"},{"ns":0,"title":"Pinus distribution
-        maps of North America","pageid":29464212,"size":25972,"wordcount":92,"snippet":"pines,
-        soft pines. Little et al. included the <span class=\"searchmatch\">Pinus</span>
-        chiapensis populations (in Mexico) as part of <span class=\"searchmatch\">Pinus</span>
-        strobus. See [1]. Pinyon pines, lacebark pines","timestamp":"2018-01-13T23:44:34Z"},{"ns":0,"title":"Pinus
-        herrerae","pageid":29975479,"size":206,"wordcount":28,"snippet":"Classis: Pinopsida •
-        Ordo: Pinales • Familia: Pinaceae • Genus: <span class=\"searchmatch\">Pinus</span> •
-        Species: <span class=\"searchmatch\">Pinus</span> herrerae Martínez Wikispecies
-        has an entry on: <span class=\"searchmatch\">Pinus</span> herrerae Cone","timestamp":"2015-01-20T19:39:08Z"},{"ns":0,"title":"Setophaga
-        pinus","pageid":352900,"size":1867,"wordcount":213,"snippet":"Species: Setophaga <span
-        class=\"searchmatch\">pinus</span> (A. Wilson, 1811) Wikispecies has an entry
-        on: Dendroica <span class=\"searchmatch\">pinus</span>  Synonyms Dendroica
-        <span class=\"searchmatch\">pinus</span>  Vernacular names [edit wikidata
-        ''Setophaga <span class=\"searchmatch\">pinus</span>''] English: Pine","timestamp":"2018-04-29T12:37:01Z"},{"ns":0,"title":"Pinus
-        tabuliformis","pageid":235899,"size":1739,"wordcount":145,"snippet":"Familia: Pinaceae •
-        Genus: <span class=\"searchmatch\">Pinus</span> • Species: <span class=\"searchmatch\">Pinus</span> tabuliformis
-        Carrière Wikispecies has an entry on: <span class=\"searchmatch\">Pinus</span>
-        tabuliformis  Vernacular names [edit wikidata ''<span class=\"searchmatch\">Pinus</span>
-        tabuliformis'']","timestamp":"2014-11-24T06:13:30Z"},{"ns":0,"title":"Pinus
-        maximinoi","pageid":20376092,"size":485,"wordcount":60,"snippet":"Familia: Pinaceae •
-        Genus: <span class=\"searchmatch\">Pinus</span> • Species: <span class=\"searchmatch\">Pinus</span> maximinoi
-        H.E.Moore Wikispecies has an entry on: <span class=\"searchmatch\">Pinus</span>
-        maximinoi  Synonyms <span class=\"searchmatch\">Pinus</span> tenuifolia Benth.,
-        non","timestamp":"2012-07-27T00:51:34Z"}]}}'
-  recorded_at: 2018-10-19 19:07:57 GMT
-  recorded_with: vcr/0.2.0, webmockr/0.2.8.9100
+      file: no
+      string: '{"batchcomplete":"","continue":{"sroffset":10,"continue":"-||"},"query":{"searchinfo":{"totalhits":270},"search":[{"ns":0,"title":"Pinus
+        sylvestris","pageid":9066,"size":null,"wordcount":0,"snippet":"","timestamp":"2020-05-13T19:27:03Z"},{"ns":0,"title":"Pinus
+        ponderosa","pageid":250435,"size":null,"wordcount":0,"snippet":"","timestamp":"2020-04-18T15:11:01Z"},{"ns":0,"title":"Pinus
+        nigra","pageid":64703,"size":null,"wordcount":0,"snippet":"","timestamp":"2018-03-06T10:19:20Z"},{"ns":0,"title":"Pinus","pageid":82071,"size":null,"wordcount":0,"snippet":"","timestamp":"2017-05-28T10:22:53Z"},{"ns":0,"title":"Pinus
+        mugo","pageid":132442,"size":null,"wordcount":0,"snippet":"","timestamp":"2019-07-26T09:08:08Z"},{"ns":0,"title":"Rog\u00f3w
+        Arboretum","pageid":10563490,"size":null,"wordcount":0,"snippet":"","timestamp":"2020-01-01T13:34:22Z"},{"ns":0,"title":"Pinus
+        contorta","pageid":186918,"size":null,"wordcount":0,"snippet":"","timestamp":"2020-01-19T19:02:19Z"},{"ns":0,"title":"Anacortes
+        Community Forest Lands","pageid":2989013,"size":null,"wordcount":0,"snippet":"","timestamp":"2014-12-10T15:56:03Z"},{"ns":0,"title":"Pinus
+        halepensis","pageid":172181,"size":null,"wordcount":0,"snippet":"","timestamp":"2018-05-05T10:49:03Z"},{"ns":0,"title":"Pinus
+        brutia","pageid":139389,"size":null,"wordcount":0,"snippet":"","timestamp":"2014-11-23T11:30:42Z"}]}}'
+  recorded_at: 2020-06-28 16:12:06 GMT
+  recorded_with: vcr/0.5.4, webmockr/0.6.2
