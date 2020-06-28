@@ -21,7 +21,7 @@ test_that("wt_wikipedia returns non-empty results", {
 test_that("wt_wikipedia returns non-empty results", {
   vcr::use_cassette("wt_wikipedia_poa", {
     bb <- wt_wikipedia(name = "Poa annua")
-  })
+  }, preserve_exact_body_bytes = TRUE)
 
   expect_is(bb, "list")
   expect_named(bb, c('langlinks', 'externallinks', 'common_names',
@@ -70,7 +70,7 @@ test_that("wt_wikipedia_parse returns non-empty results", {
     pg <- wt_wiki_page(url)
     types <- c("common_names")
     result <- wt_wikipedia_parse(pg, types = types)
-  })
+  }, preserve_exact_body_bytes = TRUE)
   
   expect_is(result, "list")
   for (fieldname in types) {

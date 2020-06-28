@@ -19,7 +19,7 @@ test_that("wt_wiki_page_parse returns non-empty results", {
     pg <- wt_wiki_page(url)
     types <- c("langlinks", "iwlinks", "externallinks")
     result <- wt_wiki_page_parse(pg, types = types)
-  })
+  }, preserve_exact_body_bytes = TRUE)
 
   expect_is(result, "list")
   for (fieldname in types) {
@@ -36,7 +36,7 @@ test_that("wt_wiki_page_parse returns non-empty results", {
     pg <- wt_wiki_page(url)
     types <- c("common_names")
     result <- wt_wiki_page_parse(pg, types = types)
-  })
+  }, preserve_exact_body_bytes = TRUE)
  
   expect_is(result, "list")
   for (fieldname in types) {

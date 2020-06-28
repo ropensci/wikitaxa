@@ -21,7 +21,7 @@ test_that("wt_wikispecies returns non-empty results", {
 test_that("wt_wikispecies returns non-empty results", {
   vcr::use_cassette("wt_wikispecies_poa", {
     bb <- wt_wikispecies(name = "Poa annua")
-  })
+  }, preserve_exact_body_bytes = TRUE)
 
   expect_is(bb, "list")
   expect_named(bb, c('langlinks', 'externallinks', 'common_names',
@@ -65,7 +65,7 @@ test_that("wt_wikispecies_parse returns non-empty results", {
     pg <- wt_wiki_page(url)
     types <- c("common_names")
     result <- wt_wikispecies_parse(pg, types = types)
-  })
+  }, preserve_exact_body_bytes = TRUE)
 
   expect_is(result, "list")
   for (fieldname in types) {

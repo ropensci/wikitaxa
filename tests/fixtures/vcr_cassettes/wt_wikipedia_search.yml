@@ -16,15 +16,15 @@ http_interactions:
       explanation: Request fulfilled, document follows
     headers:
       accept-ranges: bytes
-      age: '1'
+      age: '0'
       cache-control: private, must-revalidate, max-age=0
       content-disposition: inline; filename=api-result.json
       content-encoding: gzip
       content-type: application/json; charset=utf-8
-      date: Sun, 28 Jun 2020 18:48:34 GMT
+      date: Sun, 28 Jun 2020 19:24:10 GMT
       p3p: CP="See https://en.wikipedia.org/wiki/Special:CentralAutoLogin/P3P for
         more info."
-      server: mw1340.eqiad.wmnet
+      server: mw1345.eqiad.wmnet
       server-timing: cache;desc="pass"
       set-cookie:
       - WMF-Last-Access=28-Jun-2020;Path=/;HttpOnly;secure;Expires=Thu, 30 Jul 2020
@@ -40,7 +40,7 @@ http_interactions:
       x-client-ip: 24.21.229.59
       x-content-type-options: nosniff
       x-frame-options: SAMEORIGIN
-      x-search-id: 5ztp9ohxu4hsbntianhmm6nph
+      x-search-id: mcqqac0egxk49hflct81tg6u
     body:
       encoding: UTF-8
       file: no
@@ -70,6 +70,10 @@ http_interactions:
         class=\"searchmatch\">Pinus</span> resinosa&quot;. IUCN Red List of Threatened
         Species. 1998. Retrieved 12 May 2006.CS1 maint: ref=harv (link)old-form url
         Hilty, John (2016). &quot;<span class=\"searchmatch\">Pinus</span> resinosa&quot;","timestamp":"2020-05-08T19:49:27Z"},{"ns":0,"title":"Pinus
+        longaeva","pageid":649634,"size":15408,"wordcount":1741,"snippet":"sometimes
+        form dense forests. <span class=\"searchmatch\">Pinus</span> longaeva trees
+        generally do not form closed canopies, usually covering only 15-50%. <span
+        class=\"searchmatch\">Pinus</span> longaeva shares habitats with","timestamp":"2020-04-14T11:28:09Z"},{"ns":0,"title":"Pinus
         lambertiana","pageid":459402,"size":11464,"wordcount":1338,"snippet":"Fire
         affected this specimen, but it survived. <span class=\"searchmatch\">Pinus</span>
         lambertiana is a member of the white pine group (<span class=\"searchmatch\">Pinus</span>
@@ -82,9 +86,6 @@ http_interactions:
         is still repeated surprisingly often. <span class=\"searchmatch\">Pinus</span>
         mugo subsp. mugo, Romania <span class=\"searchmatch\">Pinus</span> mugo subsp.
         uncinata <span class=\"searchmatch\">Pinus</span> mugo subsp. rotundata, Swiss
-        National Park","timestamp":"2020-06-17T08:02:29Z"},{"ns":0,"title":"Pinus
-        taeda","pageid":435341,"size":16068,"wordcount":1861,"snippet":"<span class=\"searchmatch\">Pinus</span>
-        taeda, commonly known as loblolly pine, is one of several pines native to
-        the Southeastern United States, from central Texas east to Florida, and","timestamp":"2020-05-07T08:49:50Z"}]}}'
-  recorded_at: 2020-06-28 18:48:34 GMT
+        National Park","timestamp":"2020-06-17T08:02:29Z"}]}}'
+  recorded_at: 2020-06-28 19:24:10 GMT
   recorded_with: vcr/0.5.4, webmockr/0.6.2
