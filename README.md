@@ -5,7 +5,7 @@ wikitaxa
 
 [![Project Status: Active – The project has reached a stable, usable state and is being actively developed.](https://www.repostatus.org/badges/latest/active.svg)](https://www.repostatus.org/#active)
 [![cran checks](https://cranchecks.info/badges/worst/wikitaxa)](https://cranchecks.info/pkgs/wikitaxa)
-[![Build Status](https://api.travis-ci.org/ropensci/wikitaxa.svg?branch=master)](https://travis-ci.org/ropensci/wikitaxa)
+[![R-check](https://github.com/ropensci/wikitaxa/workflows/R-check/badge.svg)](https://github.com/ropensci/wikitaxa/actions/)
 [![codecov](https://codecov.io/gh/ropensci/wikitaxa/branch/master/graph/badge.svg)](https://codecov.io/gh/ropensci/wikitaxa)
 [![rstudio mirror downloads](https://cranlogs.r-pkg.org/badges/wikitaxa)](https://github.com/metacran/cranlogs.app)
 [![cran version](https://www.r-pkg.org/badges/version/wikitaxa)](https://cran.r-project.org/package=wikitaxa)
@@ -59,8 +59,7 @@ Dev version
 
 
 ```r
-install.packages("devtools")
-devtools::install_github("ropensci/wikitaxa")
+remotes::install_github("ropensci/wikitaxa")
 ```
 
 
@@ -94,7 +93,7 @@ lower level
 pg <- wt_wiki_page("https://en.wikipedia.org/wiki/Malus_domestica")
 res <- wt_wiki_page_parse(pg)
 res$iwlinks
-#> [1] "https://commons.wikimedia.org/wiki/Category:apples"         
+#> [1] "https://commons.wikimedia.org/wiki/Category:Apples"         
 #> [2] "https://commons.wikimedia.org/wiki/Category:Apple_cultivars"
 #> [3] "https://www.wikidata.org/wiki/Q158657"                      
 #> [4] "https://www.wikidata.org/wiki/Q18674606"                    
@@ -114,11 +113,11 @@ res$common_names
 #> 1 Apple en
 res$classification
 #> # A tibble: 3 x 2
-#>   rank       name        
-#>   <chr>      <chr>       
-#> 1 plainlinks ""          
-#> 2 species    M. pumila   
-#> 3 binomial   Malus pumila
+#>   rank       name             
+#>   <chr>      <chr>            
+#> 1 plainlinks ""               
+#> 2 binomial   "Malus domestica"
+#> 3 <NA>       ""
 ```
 
 choose a wikipedia language
@@ -176,20 +175,20 @@ res$classification
 #> # A tibble: 15 x 2
 #>    rank       name            
 #>    <chr>      <chr>           
-#>  1 Domain     Eukaryota       
-#>  2 unranked   Archaeplastida  
-#>  3 Regnum     Plantae         
-#>  4 Cladus     angiosperms     
-#>  5 Cladus     eudicots        
-#>  6 Cladus     core eudicots   
-#>  7 Cladus     superrosids     
-#>  8 Cladus     rosids          
-#>  9 Cladus     eurosids II     
-#> 10 Ordo       Malvales        
-#> 11 Familia    Malvaceae       
-#> 12 Subfamilia Malvoideae      
-#> 13 Tribus     Hibisceae       
-#> 14 Genus      Abelmoschus     
+#>  1 Domain     "Eukaryota"     
+#>  2 unranked   "Archaeplastida"
+#>  3 Regnum     "Plantae"       
+#>  4 Cladus     "angiosperms"   
+#>  5 Cladus     "eudicots"      
+#>  6 Cladus     "core eudicots" 
+#>  7 Cladus     "superrosids"   
+#>  8 Cladus     "rosids"        
+#>  9 Cladus     "eurosids II"   
+#> 10 Ordo       "Malvales"      
+#> 11 Familia    "Malvaceae"     
+#> 12 Subfamilia "Malvoideae"    
+#> 13 Tribus     "Hibisceae"     
+#> 14 Genus      "Abelmoschus"   
 #> 15 Authority  " Medik. (1787)"
 res$common_names
 #> # A tibble: 19 x 2
@@ -198,18 +197,18 @@ res$common_names
 #>  1 okra             en      
 #>  2 مسكي             ar      
 #>  3 Abelmoş          az      
-#>  4 Ibiškovec        cs      
-#>  5 Bisameibisch     de      
-#>  6 Okrat            fi      
-#>  7 Abelmosco        gl      
-#>  8 Abelmošus        hr      
-#>  9 Ybiškė           lt      
-#> 10 അബെൽമോസ്കസ്        ml      
-#> 11 Абельмош         mrj     
-#> 12 Abelmoskusslekta nn      
-#> 13 Piżmian          pl      
-#> 14 Абельмош         ru      
-#> 15 موري             sd      
+#>  4 Bamja            bs      
+#>  5 Ibiškovec        cs      
+#>  6 Bisameibisch     de      
+#>  7 Okrat            fi      
+#>  8 Abelmosco        gl      
+#>  9 Abelmošus        hr      
+#> 10 Ybiškė           lt      
+#> 11 അബെൽമോസ്കസ്        ml      
+#> 12 Абельмош         mrj     
+#> 13 Abelmoskusslekta nn      
+#> 14 Piżmian          pl      
+#> 15 Абельмош         ru      
 #> 16 Okrasläktet      sv      
 #> 17 Абельмош         udm     
 #> 18 Chi Vông vang    vi      
@@ -268,19 +267,19 @@ res$classification
 #> 8 Ordo        Rosales
 res$common_names
 #> # A tibble: 22 x 2
-#>    name          language 
-#>    <chr>         <chr>    
-#>  1 Ябълка        български
-#>  2 Poma, pomera  català   
-#>  3 jabloň domácí čeština  
-#>  4 Apfel         Deutsch  
-#>  5 Aed-õunapuu   eesti    
-#>  6 Μηλιά         Ελληνικά 
-#>  7 Apple         English  
-#>  8 Manzano       español  
-#>  9 Pomme         français 
-#> 10 Melâr         furlan   
-#> # ... with 12 more rows
+#>    name          language  
+#>    <chr>         <chr>     
+#>  1 Ябълка        български 
+#>  2 Poma, pomera  català    
+#>  3 jabloň domácí čeština   
+#>  4 Apfel         Deutsch   
+#>  5 Μηλιά         Ελληνικά  
+#>  6 Apple         English   
+#>  7 Manzano       español   
+#>  8 Aed-õunapuu   eesti     
+#>  9 Tarhaomenapuu suomi     
+#> 10 Aapel         Nordfriisk
+#> # … with 12 more rows
 ```
 
 ## Contributors
