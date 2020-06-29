@@ -92,7 +92,7 @@
         "name": "Comprehensive R Archive Network (CRAN)",
         "url": "https://cran.r-project.org"
       },
-      "sameAs": "https://github.com/ropensci/vcr"
+      "sameAs": "https://CRAN.R-project.org/package=vcr"
     }
   ],
   "softwareRequirements": [
@@ -192,7 +192,7 @@
   "developmentStatus": "wip",
   "releaseNotes": "https://github.com/ropensci/wikitaxa/blob/master/NEWS.md",
   "readme": "https://github.com/ropensci/wikitaxa/blob/master/README.md",
-  "fileSize": "689.542KB",
+  "fileSize": "689.52KB",
   "keywords": ["taxonomy", "species", "API", "web-services", "Wikipedia", "vernacular", "Wikispecies", "Wikicommons", "wikipedia-api", "wikispecies", "r", "rstats", "r-package", "taxize"],
   "applicationCategory": "Taxonomy",
   "isPartOf": "https://ropensci.org",

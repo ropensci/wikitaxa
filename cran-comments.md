@@ -17,5 +17,7 @@
 
 This version fixes a documentation link to a package that is not in Depends,  Imports, or Suggests in this package.
 
+This is a re-submission of this version, removing Remotes from DESCRIPTION.
+
 Thanks!
 Scott Chamberlain
