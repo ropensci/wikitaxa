@@ -1,3 +1,5 @@
-# set up vcr
 library("vcr")
-invisible(vcr::vcr_configure(dir = "../fixtures/vcr_cassettes"))
+vcr::vcr_configure(
+	dir = "../fixtures/vcr_cassettes", 
+	serialize_with = "json"
+)
