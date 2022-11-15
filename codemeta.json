@@ -1,27 +1,24 @@
 {
-  "@context": [
-    "http://purl.org/codemeta/2.0",
-    "http://schema.org"
-  ],
+  "@context": "https://doi.org/10.5063/schema/codemeta-2.0",
   "@type": "SoftwareSourceCode",
   "identifier": "wikitaxa",
-  "description": "'Taxonomic' information from 'Wikipedia', 'Wikicommons',\n    'Wikispecies', and 'Wikidata'. Functions included for getting\n    taxonomic information from each of the sources just listed, as\n    well performing taxonomic search.",
+  "description": "'Taxonomic' information from 'Wikipedia', 'Wikicommons', 'Wikispecies', and 'Wikidata'. Functions included for getting taxonomic information from each of the sources just listed, as well performing taxonomic search.",
   "name": "wikitaxa: Taxonomic Information from 'Wikipedia'",
+  "relatedLink": "https://docs.ropensci.org/wikitaxa",
   "codeRepository": "https://github.com/ropensci/wikitaxa",
   "issueTracker": "https://github.com/ropensci/wikitaxa/issues",
   "license": "https://spdx.org/licenses/MIT",
-  "version": "0.4.0",
+  "version": "0.4.0.91",
   "programmingLanguage": {
     "@type": "ComputerLanguage",
     "name": "R",
-    "version": "4.0.2",
     "url": "https://r-project.org"
   },
-  "runtimePlatform": "R version 4.0.2 (2020-06-22)",
+  "runtimePlatform": "R version 4.2.2 (2022-10-31)",
   "provider": {
     "@id": "https://cran.r-project.org",
     "@type": "Organization",
-    "name": "Central R Archive Network (CRAN)",
+    "name": "Comprehensive R Archive Network (CRAN)",
     "url": "https://cran.r-project.org"
   },
   "author": [
@@ -95,14 +92,14 @@
       "sameAs": "https://CRAN.R-project.org/package=vcr"
     }
   ],
-  "softwareRequirements": [
-    {
+  "softwareRequirements": {
+    "1": {
       "@type": "SoftwareApplication",
       "identifier": "R",
       "name": "R",
       "version": ">= 3.2.1"
     },
-    {
+    "2": {
       "@type": "SoftwareApplication",
       "identifier": "WikidataR",
       "name": "WikidataR",
@@ -114,7 +111,7 @@
       },
       "sameAs": "https://CRAN.R-project.org/package=WikidataR"
     },
-    {
+    "3": {
       "@type": "SoftwareApplication",
       "identifier": "data.table",
       "name": "data.table",
@@ -126,7 +123,7 @@
       },
       "sameAs": "https://CRAN.R-project.org/package=data.table"
     },
-    {
+    "4": {
       "@type": "SoftwareApplication",
       "identifier": "curl",
       "name": "curl",
@@ -138,7 +135,7 @@
       },
       "sameAs": "https://CRAN.R-project.org/package=curl"
     },
-    {
+    "5": {
       "@type": "SoftwareApplication",
       "identifier": "crul",
       "name": "crul",
@@ -151,7 +148,7 @@
       },
       "sameAs": "https://CRAN.R-project.org/package=crul"
     },
-    {
+    "6": {
       "@type": "SoftwareApplication",
       "identifier": "tibble",
       "name": "tibble",
@@ -163,7 +160,7 @@
       },
       "sameAs": "https://CRAN.R-project.org/package=tibble"
     },
-    {
+    "7": {
       "@type": "SoftwareApplication",
       "identifier": "jsonlite",
       "name": "jsonlite",
@@ -175,7 +172,7 @@
       },
       "sameAs": "https://CRAN.R-project.org/package=jsonlite"
     },
-    {
+    "8": {
       "@type": "SoftwareApplication",
       "identifier": "xml2",
       "name": "xml2",
@@ -186,18 +183,11 @@
         "url": "https://cran.r-project.org"
       },
       "sameAs": "https://CRAN.R-project.org/package=xml2"
-    }
-  ],
-  "contIntegration": "https://travis-ci.org/ropensci/wikitaxa",
-  "developmentStatus": "wip",
-  "releaseNotes": "https://github.com/ropensci/wikitaxa/blob/master/NEWS.md",
-  "readme": "https://github.com/ropensci/wikitaxa/blob/master/README.md",
-  "fileSize": "689.52KB",
-  "keywords": ["taxonomy", "species", "API", "web-services", "Wikipedia", "vernacular", "Wikispecies", "Wikicommons", "wikipedia-api", "wikispecies", "r", "rstats", "r-package", "taxize"],
+    },
+    "SystemRequirements": null
+  },
   "applicationCategory": "Taxonomy",
   "isPartOf": "https://ropensci.org",
-  "relatedLink": "https://docs.ropensci.org/wikitaxa",
-  "contributor": {},
-  "copyrightHolder": {},
-  "funder": {}
+  "keywords": ["taxonomy", "species", "API", "web-services", "Wikipedia", "vernacular", "Wikispecies", "Wikicommons"],
+  "fileSize": "3073.628KB"
 }
