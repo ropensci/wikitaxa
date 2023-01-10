@@ -9,9 +9,12 @@ License: MIT + file LICENSE
 URL: https://docs.ropensci.org/wikitaxa, https://github.com/ropensci/wikitaxa
 BugReports: https://github.com/ropensci/wikitaxa/issues
 Authors@R: c(
-    person("Scott", "Chamberlain", role = c("aut", "cre"),
+    person("Scott", "Chamberlain", role = "aut",
       email = "myrmecocystus+r@gmail.com"),
-    person("Ethan", "Welty", role = "aut")
+    person("Ethan", "Welty", role = "aut"),
+    person("Grzegorz", "Sapijaszko", role = "aut"),
+    person("Zachary", "Foster", role = c("aut", "cre"),
+      email = "zacharyfoster1989@gmail.com")
   )
 LazyLoad: yes
 LazyData: yes
