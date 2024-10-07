@@ -70,7 +70,7 @@ wt_wikispecies_parse <- function(page, types = c("langlinks", "iwlinks",
     # name1, name2
     vernacular_html <- xml2::xml_find_all(
       xml,
-      "(//h2/span[contains(@id, 'Vernacular')]/parent::*/following-sibling::div)[1]" #nolint
+      "(//h2[contains(@id, 'Vernacular')]/parent::*/following-sibling::div)[1]"
     )
     languages_html <- xml2::xml_find_all(vernacular_html, xpath = "b")
     languages <- gsub("\\s*:\\s*", "",
