@@ -28,8 +28,8 @@ wt_wiki_url_parse("https://en.wikipedia.org/w/api.php?page=Malus_domestica")
 }
 \seealso{
 Other MediaWiki functions: 
-\code{\link{wt_wiki_page_parse}()},
 \code{\link{wt_wiki_page}()},
+\code{\link{wt_wiki_page_parse}()},
 \code{\link{wt_wiki_url_build}()}
 }
 \concept{MediaWiki functions}

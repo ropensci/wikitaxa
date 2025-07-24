@@ -62,8 +62,8 @@ wt_wiki_url_build("en", "wikipedia", "Malus domestica", api = TRUE)
 }
 \seealso{
 Other MediaWiki functions: 
-\code{\link{wt_wiki_page_parse}()},
 \code{\link{wt_wiki_page}()},
+\code{\link{wt_wiki_page_parse}()},
 \code{\link{wt_wiki_url_parse}()}
 }
 \concept{MediaWiki functions}
