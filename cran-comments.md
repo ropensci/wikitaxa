@@ -1,23 +1,14 @@
-## Test environments
+## Test environments and check results
 
-* local OS X install, R 4.0.2
-* ubuntu 16.04 (on travis-ci), R 4.0.2
-* win-builder (devel and release)
-
-## R CMD check results
+### local: Pop!_OS 22.04 LTS, R 4.5.2 
 
 0 errors | 0 warnings | 0 notes
 
-## Reverse dependencies
+### `macos-latest`, `ubuntu-latest`, and `windows-latest` on Github actions
 
-* I have run R CMD check on the 2 reverse dependencies.
-  (Summary at <https://github.com/ropensci/wikitaxa/blob/master/revdep/README.md>). No problems were found.
+0 errors | 0 warnings | 0 notes
 
----
+See results at: https://github.com/ropensci/wikitaxa/actions
 
-This version fixes a documentation link to a package that is not in Depends,  Imports, or Suggests in this package.
+### R-devel with win-builder.r-project.org
 
-This is a re-submission of this version, removing Remotes from DESCRIPTION.
-
-Thanks!
-Scott Chamberlain

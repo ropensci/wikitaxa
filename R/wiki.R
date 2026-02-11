@@ -103,7 +103,7 @@ data_wiki <- function(x, property = NULL, ...) {
   if (is.null(property)) {
     claims <- create_claims(xx[[1]]$claims)
   } else{
-    cl <- Filter(function(x) x$mainsnak$property %in% property, xx[[1]]$claims)
+    cl <- Filter(function(x) any(x$mainsnak$property %in% property), xx[[1]]$claims)
     if (length(cl) == 0) stop("No matching properties", call. = FALSE)
     claims <- create_claims(cl)
   }
