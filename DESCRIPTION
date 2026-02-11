@@ -38,7 +38,6 @@ Suggests:
     knitr,
     rmarkdown,
     vcr
-Remotes: ropensci/vcr
 RoxygenNote: 7.3.2
 X-schema.org-applicationCategory: Taxonomy
 X-schema.org-keywords: taxonomy, species, API, web-services, Wikipedia, vernacular, Wikispecies, Wikicommons
