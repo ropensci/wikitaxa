@@ -7,9 +7,9 @@ developed.](https://www.repostatus.org/badges/latest/active.svg)](https://www.re
 [![cran
 checks](https://badges.cranchecks.info/worst/wikitaxa.svg)](https://cloud.r-project.org/web/checks/check_results_wikitaxa.html)
 [![R-CMD-check](https://github.com/ropensci/wikitaxa/actions/workflows/R-CMD-check.yaml/badge.svg)](https://github.com/ropensci/wikitaxa/actions/workflows/R-CMD-check.yaml)
-[![codecov](https://codecov.io/gh/ropensci/wikitaxa/branch/master/graph/badge.svg)](https://codecov.io/gh/ropensci/wikitaxa)
+[![codecov](https://codecov.io/gh/ropensci/wikitaxa/branch/master/graph/badge.svg)](https://app.codecov.io/gh/ropensci/wikitaxa)
 [![rstudio mirror
-downloads](https://cranlogs.r-pkg.org/badges/wikitaxa)](https://github.com/metacran/cranlogs.app)
+downloads](https://cranlogs.r-pkg.org/badges/wikitaxa)](https://github.com/r-hub/cranlogs.app)
 [![cran
 version](https://www.r-pkg.org/badges/version/wikitaxa)](https://cran.r-project.org/package=wikitaxa)
 
@@ -70,6 +70,7 @@ library('wikitaxa')
 
 - [Ethan Welty](https://github.com/ezwelty)
 - [Scott Chamberlain](https://github.com/sckott)
+- [Zachary S.L. Foster](https://github.com/zachary-foster)
 
 ## Meta
 
