@@ -8,19 +8,13 @@
   "codeRepository": "https://github.com/ropensci/wikitaxa",
   "issueTracker": "https://github.com/ropensci/wikitaxa/issues",
   "license": "https://spdx.org/licenses/MIT",
-  "version": "0.4.0.91",
+  "version": "0.4.0.93",
   "programmingLanguage": {
     "@type": "ComputerLanguage",
     "name": "R",
     "url": "https://r-project.org"
   },
-  "runtimePlatform": "R version 4.2.2 (2022-10-31)",
-  "provider": {
-    "@id": "https://cran.r-project.org",
-    "@type": "Organization",
-    "name": "Comprehensive R Archive Network (CRAN)",
-    "url": "https://cran.r-project.org"
-  },
+  "runtimePlatform": "R version 4.5.2 (2025-10-31)",
   "author": [
     {
       "@type": "Person",
@@ -32,14 +26,25 @@
       "@type": "Person",
       "givenName": "Ethan",
       "familyName": "Welty"
+    },
+    {
+      "@type": "Person",
+      "givenName": "Grzegorz",
+      "familyName": "Sapijaszko"
+    },
+    {
+      "@type": "Person",
+      "givenName": "Zachary",
+      "familyName": "Foster",
+      "email": "zacharyfoster1989@gmail.com"
     }
   ],
   "maintainer": [
     {
       "@type": "Person",
-      "givenName": "Scott",
-      "familyName": "Chamberlain",
-      "email": "myrmecocystus+r@gmail.com"
+      "givenName": "Zachary",
+      "familyName": "Foster",
+      "email": "zacharyfoster1989@gmail.com"
     }
   ],
   "softwareSuggestions": [
@@ -89,7 +94,7 @@
         "name": "Comprehensive R Archive Network (CRAN)",
         "url": "https://cran.r-project.org"
       },
-      "sameAs": "https://CRAN.R-project.org/package=vcr"
+      "sameAs": "https://github.com/ropensci/vcr"
     }
   ],
   "softwareRequirements": {
@@ -101,18 +106,6 @@
     },
     "2": {
       "@type": "SoftwareApplication",
-      "identifier": "WikidataR",
-      "name": "WikidataR",
-      "provider": {
-        "@id": "https://cran.r-project.org",
-        "@type": "Organization",
-        "name": "Comprehensive R Archive Network (CRAN)",
-        "url": "https://cran.r-project.org"
-      },
-      "sameAs": "https://CRAN.R-project.org/package=WikidataR"
-    },
-    "3": {
-      "@type": "SoftwareApplication",
       "identifier": "data.table",
       "name": "data.table",
       "provider": {
@@ -123,7 +116,7 @@
       },
       "sameAs": "https://CRAN.R-project.org/package=data.table"
     },
-    "4": {
+    "3": {
       "@type": "SoftwareApplication",
       "identifier": "curl",
       "name": "curl",
@@ -135,7 +128,7 @@
       },
       "sameAs": "https://CRAN.R-project.org/package=curl"
     },
-    "5": {
+    "4": {
       "@type": "SoftwareApplication",
       "identifier": "crul",
       "name": "crul",
@@ -148,7 +141,7 @@
       },
       "sameAs": "https://CRAN.R-project.org/package=crul"
     },
-    "6": {
+    "5": {
       "@type": "SoftwareApplication",
       "identifier": "tibble",
       "name": "tibble",
@@ -160,7 +153,7 @@
       },
       "sameAs": "https://CRAN.R-project.org/package=tibble"
     },
-    "7": {
+    "6": {
       "@type": "SoftwareApplication",
       "identifier": "jsonlite",
       "name": "jsonlite",
@@ -172,7 +165,7 @@
       },
       "sameAs": "https://CRAN.R-project.org/package=jsonlite"
     },
-    "8": {
+    "7": {
       "@type": "SoftwareApplication",
       "identifier": "xml2",
       "name": "xml2",
@@ -188,6 +181,10 @@
   },
   "applicationCategory": "Taxonomy",
   "isPartOf": "https://ropensci.org",
-  "keywords": ["taxonomy", "species", "API", "web-services", "Wikipedia", "vernacular", "Wikispecies", "Wikicommons"],
-  "fileSize": "3073.657KB"
+  "keywords": ["taxonomy", "species", "API", "web-services", "Wikipedia", "vernacular", "Wikispecies", "Wikicommons", "wikipedia-api", "wikispecies", "r", "rstats", "r-package", "taxize"],
+  "fileSize": "899.035KB",
+  "releaseNotes": "https://github.com/ropensci/wikitaxa/blob/main/NEWS.md",
+  "readme": "https://github.com/ropensci/wikitaxa/blob/master/README.md",
+  "contIntegration": ["https://github.com/ropensci/wikitaxa/actions/", "https://codecov.io/gh/ropensci/wikitaxa"],
+  "developmentStatus": "https://www.repostatus.org/#active"
 }

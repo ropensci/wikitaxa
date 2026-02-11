@@ -1,3 +1,12 @@
+wikitaxa 0.5.0
+==============
+
+### BUG FIXES
+
+* Removed dependency `WikidataR`, which was archived by CRAN, and replaced with direct calls to `WikipediR` 
+* Fixed bug when supplying common names to `wt_wikispecies_parse` ([#21](https://github.com/ropensci/wikitaxa/issues/21))
+
+
 wikitaxa 0.4.0
 ==============
 

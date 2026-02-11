@@ -22,3 +22,4 @@ appveyor.yml
 ^codemeta\.json$
 vcr.log
 tests/testthat/vcr.log
+^\.github$

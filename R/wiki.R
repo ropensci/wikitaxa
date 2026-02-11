@@ -13,7 +13,7 @@
 #'  \item aliases - data.frame with columns: language, value
 #'  \item sitelinks - data.frame with columns: site, title
 #'  \item claims - data.frame with columns: claims, property_value,
-#'  property_description, value (comma separted values in string)
+#'  property_description, value (comma separated values in string)
 #' }
 #'
 #' `wt_data_id` gets the Wikidata ID for the searched term, and
@@ -26,15 +26,16 @@
 #' like
 #' @examples \dontrun{
 #' # search by taxon name
-#' # wt_data("Mimulus alsinoides")
+#' wt_data("Mimulus alsinoides")
 #'
 #' # choose which properties to return
 #' wt_data(x="Mimulus foliatus", property = c("P846", "P815"))
 #'
 #' # get a taxonomic identifier
 #' wt_data_id("Mimulus foliatus")
+#'
 #' # the id can be passed directly to wt_data()
-#' # wt_data(wt_data_id("Mimulus foliatus"))
+#' wt_data(wt_data_id("Mimulus foliatus"))
 #' }
 wt_data <- function(x, property = NULL, ...) {
   UseMethod("wt_data")
@@ -47,22 +48,57 @@ wt_data.wiki_id <- function(x, property = NULL, ...) {
 
 #' @export
 wt_data.default <- function(x, property = NULL, ...) {
-  x <- WikidataR::find_item(search_term = x, ...)
-  if (length(x) == 0) stop("no results found", call. = FALSE)
-  data_wiki(x[[1]]$id, property = property, ...)
+  result <- WikipediR::query(
+    url = "https://www.wikidata.org/w/api.php",
+    out_class = "list",
+    clean_response = FALSE,
+    query_param = list(
+      action   = "wbsearchentities",
+      type     = "item",
+      language = "en",
+      limit    = 10,
+      search   = x
+    ),
+    ...
+  )
+  if (length(result$search) == 0) stop("no results found", call. = FALSE)
+  data_wiki(result$search[[1]]$id, property = property, ...)
 }
 
 #' @export
 #' @rdname wt_data
 wt_data_id <- function(x, language = "en", limit = 10, ...) {
-  x <- WikidataR::find_item(search_term = x, language = language,
-                            limit = limit, ...)
-  x <- if (length(x) == 0) NA else x[[1]]$id
-  structure(x, class = "wiki_id")
+  result <- WikipediR::query(
+    url = "https://www.wikidata.org/w/api.php",
+    out_class = "list",
+    clean_response = FALSE,
+    query_param = list(
+      action   = "wbsearchentities",
+      type     = "item",
+      language = language,
+      limit    = limit,
+      search   = x
+    ),
+    ...
+  )
+  out <- result$search
+  out <- if (length(out) == 0) NA else out[[1]]$id
+  structure(out, class = "wiki_id")
 }
 
 data_wiki <- function(x, property = NULL, ...) {
-  xx <- WikidataR::get_item(x, ...)
+  x <- sub(x,pattern = '^([0-9]+)', replacement = 'Q\\1')
+  xx <- lapply(x, function(page, ...){
+    result <- WikipediR::page_content(
+      domain = "wikidata.org",
+      page_name = page,
+      as_wikitext = TRUE,
+      httr::user_agent("wikitaxa"),
+      ...
+    )
+    out <- jsonlite::fromJSON(result$parse$wikitext[[1]])
+    return(out)
+  })
 
   if (is.null(property)) {
     claims <- create_claims(xx[[1]]$claims)
@@ -83,7 +119,20 @@ data_wiki <- function(x, property = NULL, ...) {
 }
 
 fetch_property <- function(x) {
-  tmp <- WikidataR::get_property(x)
+  x <- sub(x,pattern = '^([0-9]+)', replacement = 'P\\1')
+  x <- sub(x,pattern = '^(P[0-9]+)', replacement = 'Property:\\1')
+  tmp <- lapply(x, function(page, ...){
+    result <- WikipediR::page_content(
+      domain = "wikidata.org",
+      page_name = page,
+      as_wikitext = TRUE,
+      httr::user_agent("wikitaxa"),
+      ...
+    )
+    out <- jsonlite::fromJSON(result$parse$wikitext[[1]])
+    return(out)
+  })
+
   list(
     property_value = tmp[[1]]$labels$en$value,
     property_description = tmp[[1]]$descriptions$en$value
