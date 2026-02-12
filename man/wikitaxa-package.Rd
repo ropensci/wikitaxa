@@ -11,7 +11,7 @@ Taxonomic Information from Wikipedia
 \seealso{
 Useful links:
 \itemize{
-  \item \url{https://docs.ropensci.org/wikitaxa}
+  \item \url{https://docs.ropensci.org/wikitaxa/}
   \item \url{https://github.com/ropensci/wikitaxa}
   \item Report bugs at \url{https://github.com/ropensci/wikitaxa/issues}
 }

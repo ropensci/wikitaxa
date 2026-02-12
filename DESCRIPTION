@@ -6,7 +6,7 @@ Description: 'Taxonomic' information from 'Wikipedia', 'Wikicommons',
     well performing taxonomic search.
 Version: 0.5.0
 License: MIT + file LICENSE
-URL: https://docs.ropensci.org/wikitaxa, https://github.com/ropensci/wikitaxa
+URL: https://docs.ropensci.org/wikitaxa/, https://github.com/ropensci/wikitaxa
 BugReports: https://github.com/ropensci/wikitaxa/issues
 Authors@R: c(
     person("Scott", "Chamberlain", role = "aut",
@@ -38,7 +38,7 @@ Suggests:
     knitr,
     rmarkdown,
     vcr
-RoxygenNote: 7.3.2
+RoxygenNote: 7.3.3
 X-schema.org-applicationCategory: Taxonomy
 X-schema.org-keywords: taxonomy, species, API, web-services, Wikipedia, vernacular, Wikispecies, Wikicommons
 X-schema.org-isPartOf: https://ropensci.org

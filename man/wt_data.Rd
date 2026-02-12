@@ -28,7 +28,7 @@ wt_data_id(x, language = "en", limit = 10, ...)
 \item aliases - data.frame with columns: language, value
 \item sitelinks - data.frame with columns: site, title
 \item claims - data.frame with columns: claims, property_value,
-property_description, value (comma separted values in string)
+property_description, value (comma separated values in string)
 }
 
 \code{wt_data_id} gets the Wikidata ID for the searched term, and
@@ -47,14 +47,15 @@ like
 \examples{
 \dontrun{
 # search by taxon name
-# wt_data("Mimulus alsinoides")
+wt_data("Mimulus alsinoides")
 
 # choose which properties to return
 wt_data(x="Mimulus foliatus", property = c("P846", "P815"))
 
 # get a taxonomic identifier
 wt_data_id("Mimulus foliatus")
+
 # the id can be passed directly to wt_data()
-# wt_data(wt_data_id("Mimulus foliatus"))
+wt_data(wt_data_id("Mimulus foliatus"))
 }
 }
