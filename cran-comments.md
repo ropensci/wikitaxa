@@ -25,15 +25,6 @@ Package was archived on CRAN
 CRAN repository db overrides:
   X-CRAN-Comment: Archived on 2026-02-08 as requires archived package
     'WikidataQueryServiceR'
-
-Found the following (possibly) invalid URLs:
-  URL: https://cloud.r-project.org/web/checks/check_results_wikitaxa.html
-    From: README.md
-    Status: 404
-    Message: Not Found
-    CRAN URL not in canonical form
-Canonical CRAN.R-project.org URLs use https.
 ```
 
 * I have removed the dependency `WikidataR`, which depended on `WikidataQueryServiceR`.
-* "https://cloud.r-project.org/web/checks/check_results_wikitaxa.html" should be valid once published
